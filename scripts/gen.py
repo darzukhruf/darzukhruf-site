@@ -105,6 +105,13 @@ def build(spec, browser, ident, slot=None):
     for s, (u, q) in zip(slides, shots):
         if not u: continue
         n += 1; photo = to_jpg(fetch(u))
+        pt = (q or {}).get("point")
+        if not s["item"].get("hex") and pt and s["item"].get("sample_color", True):
+            try:  # swatch = colour sampled from the image at the marked point ("أقرب درجة")
+                im = Image.open(io.BytesIO(photo)).convert("RGB"); x, y = int(pt[0] * 1080), int(pt[1] * 1440)
+                c = im.crop((max(0, x - 20), max(0, y - 20), min(1080, x + 20), min(1440, y + 20))).resize((1, 1), Image.BOX).getpixel((0, 0))
+                s["item"]["hex"] = "#%02X%02X%02X" % c
+            except Exception: pass
         page.set_content(card_html(photo, s["item"], (q or {}).get("point"), n, total), wait_until="networkidle")
         page.wait_for_timeout(300)
         fn = f"gen/{ident}_{n}.jpg"; page.screenshot(path=os.path.join(OUT, fn), type="jpeg", quality=90)
