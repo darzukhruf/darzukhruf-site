@@ -51,12 +51,26 @@ def vision(prompt, url):
             except Exception: pass
     return None, None
 
-QA = ("You are a strict QA inspector for a Saudi interior design studio. Look at the image and reply ONLY JSON: "
-      '{"photoreal":0-10,"artifacts":true|false,"inappropriate":true|false,"point":[x,y],"reason":"short"}. '
-      "photoreal: how much it looks like a real professional photo (10 = indistinguishable). artifacts: warped or melted furniture, "
-      "impossible geometry, bent lines, garbled text, merged objects, CGI/plastic look. inappropriate: anything against Saudi public "
-      "decency or culture (people in revealing clothes, nudity incl. art/statues, alcohol, crosses/idols, offensive symbols). "
-      "point: normalized [x,y] (0..1, from top-left) of the centre of: ")
+QA = ("You are a senior QA inspector for AI-generated interior photos of a Saudi design studio. You know the typical failures of "
+  "image models. Inspect the image very carefully and reply ONLY JSON: "
+  '{"photoreal":0-10,"artifacts":true|false,"issues":["short fixable problem", ...],"inappropriate":true|false,'
+  '"item_visible":true|false,"point":[x,y],"reason":"short"}. '
+  "Check this list of AI-generation errors: (1) bent, wavy or non-parallel lines in walls, ceilings, door/window frames, tiles, shelves; "
+  "(2) inconsistent perspective / multiple vanishing points; (3) furniture with missing, extra, floating or merged legs, sofas/cushions "
+  "melting into each other, objects fused into walls; (4) duplicated or cloned objects (two identical lamps/vases where one is expected), "
+  "illogical symmetry; (5) impossible geometry: doors or windows that lead nowhere, stairs to nowhere, cabinets without space, "
+  "unrealistic scale (tiny chairs, giant lamps); (6) wrong lighting: shadows in different directions, light with no source, glowing "
+  "edges, reflections that do not match the room (mirrors, glossy floors); (7) garbled text, fake letters, random symbols, watermarks; "
+  "(8) smeared, blurry, plastic/CGI or over-smooth textures, repeating texture tiles, tiles not aligned; (9) curtains, rugs or fabrics "
+  "clipping through furniture; (10) electrical oddities (cables to nowhere, switches in impossible places); (11) over-saturation, HDR halos, "
+  "noise. artifacts=true if ANY of these is visible. issues = each problem found, written as a precise retouch instruction "
+  "(e.g. 'straighten the left window frame', 'remove the duplicated vase on the right'). inappropriate: anything against Saudi public "
+  "decency or culture (people, revealing clothing, nudity incl. art/statues, alcohol, crosses/idols, offensive symbols). "
+  "photoreal: 10 = indistinguishable from a real professional photo. item_visible: whether this element is clearly visible. "
+  "point: normalized [x,y] (0..1 from top-left) of the centre of: ")
+
+def qa_ok(q):
+    return q.get("photoreal", 0) >= 8 and not q.get("artifacts") and not q.get("inappropriate") and q.get("item_visible", True)
 
 def to_jpg(raw, size=(1080, 1440)):
     im = Image.open(io.BytesIO(raw)).convert("RGB"); w, h = im.size; t = size[0] / size[1]
@@ -94,6 +108,7 @@ def different_view(ref_url, url):
     return (j.get("same_room", True) and not j.get("same_viewpoint")), j
 
 def gen_image(prompt, ref_url=None, locate="the main element"):
+    """Generate -> QA -> (repair -> QA) up to 2 times -> viewpoint check. Every generated or edited image passes QA."""
     for attempt in range(3):
         if ref_url:
             model = PRO_EDIT if attempt == 2 else EDIT
@@ -103,13 +118,27 @@ def gen_image(prompt, ref_url=None, locate="the main element"):
         if not url: continue
         q, ep = vision(QA + locate, url)
         if q is None:
-            log("QA unavailable; accepting with unchecked flag"); return url, {"unchecked": True}
-        ok = q.get("photoreal", 0) >= 8 and not q.get("artifacts") and not q.get("inappropriate")
-        log("QA", ep, json.dumps(q, ensure_ascii=False))
-        if ok and ref_url:
+            log("QA unavailable -> rejecting (never publish unchecked)"); continue
+        log("QA", json.dumps(q, ensure_ascii=False))
+        repairs = 0
+        while not qa_ok(q) and not q.get("inappropriate") and q.get("issues") and repairs < 2:
+            repairs += 1
+            fix = "; ".join(q["issues"][:5])
+            r = fal(EDIT, {"prompt": "Retouch this interior photograph. Fix ONLY these problems: " + fix + ". Keep the composition, "
+                           "camera, furniture, materials, colours and lighting identical. Result must look like a real professional photo, "
+                           "no text, no people.", "image_urls": [url], "num_images": 1, "aspect_ratio": "3:4", "output_format": "jpeg"})
+            u2 = (((r or {}).get("images") or [{}])[0]).get("url")
+            if not u2: break
+            q2, _ = vision(QA + locate, u2)
+            if q2 is None: break
+            log("REPAIR", repairs, fix, "->", json.dumps(q2, ensure_ascii=False))
+            url, q = u2, q2
+        if not qa_ok(q): log("rejected after repairs:", q.get("reason")); continue
+        if ref_url:
             dv, dj = different_view(ref_url, url); q["diff"] = dj
             if not dv: log("rejected: same viewpoint"); continue
-        if ok: return url, q
+        q["raw"] = url
+        return url, q
     return None, None
 
 def build(spec, browser, ident, slot=None):
