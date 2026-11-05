@@ -1,6 +1,7 @@
 [build]
   publish = "."
-  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':!specs' ':!scripts' ':!.github'"
+  # Skip any non-main branch (e.g. the generator's "media" branch) and tooling-only changes.
+  ignore = "[ \"$BRANCH\" != \"main\" ] || git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':!specs' ':!scripts' ':!.github'"
 
 [[headers]]
   for = "/*"
