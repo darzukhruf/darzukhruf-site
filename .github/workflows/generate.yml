@@ -2,6 +2,9 @@ name: generate-designs
 on:
   schedule:
     - cron: "55 19,1,7,13 * * *"   # 22:55, 04:55, 10:55, 16:55 Riyadh = ~1h before slots 00,06,12,18
+  push:
+    branches: [main]
+    paths: ["specs/run/**"]
   workflow_dispatch: {}
 permissions:
   contents: write
@@ -11,7 +14,7 @@ concurrency:
 jobs:
   gen:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
         with: { path: site }
@@ -19,18 +22,20 @@ jobs:
         with: { ref: media, path: media }
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
-      - run: pip install pillow requests
-      - run: python site/scripts/gen.py media
+      - run: pip install pillow requests playwright && python -m playwright install --with-deps chromium
+      - run: python site/scripts/gen.py media site/specs/run
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          IMAGE_MODEL: ${{ vars.IMAGE_MODEL }}
+          FAL_KEY: ${{ secrets.FAL_KEY }}
+          T2I_MODEL: ${{ vars.T2I_MODEL }}
+          EDIT_MODEL: ${{ vars.EDIT_MODEL }}
           REPO: ${{ github.repository }}
       - name: push to media branch
+        if: always()
         run: |
           cd media
           git config user.name "dar-zukhruf-bot"
           git config user.email "darzukhruf@gmail.com"
           git add -A
           git diff --cached --quiet && exit 0
-          git commit -m "new design $(date -u +%Y%m%d-%H%M)"
+          git commit -m "designs $(date -u +%Y%m%d-%H%M)"
           git push origin media

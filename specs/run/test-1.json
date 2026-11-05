@@ -1,0 +1,66 @@
+{
+ "id": "test-1",
+ "title_ar": "اختبار",
+ "space_en": "men's majlis",
+ "room": {
+  "w": 6,
+  "l": 8,
+  "h": 3.2
+ },
+ "openings": [
+  {
+   "type": "door",
+   "wall": "S",
+   "pos": 2.4,
+   "width": 1.2
+  },
+  {
+   "type": "window",
+   "wall": "N",
+   "pos": 1.5,
+   "width": 3.0
+  }
+ ],
+ "furniture": [
+  {
+   "label_ar": "جلسة",
+   "x": 0,
+   "y": 0.6,
+   "w": 0.8,
+   "d": 6.8
+  },
+  {
+   "label_ar": "جلسة",
+   "x": 5.2,
+   "y": 0.6,
+   "w": 0.8,
+   "d": 6.8
+  }
+ ],
+ "scene_en": "a modern Najdi men's majlis in a Riyadh villa with long low floor seating along both side walls in sand linen, warm off-white lime-plaster walls, triangular Najdi niches, a timber beam ceiling with cove lighting, a large Sadu-pattern rug and a low walnut coffee table",
+ "slides": [
+  {
+   "view_en": "a wide view from the entrance door",
+   "locate_en": "the plastered side wall",
+   "item": {
+    "type_ar": "البوية",
+    "name": "TEST",
+    "code": "0000",
+    "brand": "Test",
+    "where_ar": "اختبار",
+    "hex": "#E8E0D0"
+   }
+  },
+  {
+   "view_en": "a close-up of the floor seating fabric",
+   "locate_en": "the seating cushion fabric",
+   "item": {
+    "type_ar": "القماش",
+    "name": "TEST",
+    "code": "",
+    "brand": "Test",
+    "where_ar": "اختبار"
+   }
+  }
+ ]
+}
