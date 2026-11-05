@@ -1,0 +1,36 @@
+name: generate-designs
+on:
+  schedule:
+    - cron: "10 4,10,16,22 * * *"   # 07:10, 13:10, 19:10, 01:10 Riyadh (before each 6h posting slot)
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: generate-designs
+  cancel-in-progress: false
+jobs:
+  gen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with: { path: site }
+      - uses: actions/checkout@v4
+        with: { ref: media, path: media }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install pillow requests
+      - run: python site/scripts/gen.py media
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          IMAGE_MODEL: ${{ vars.IMAGE_MODEL }}
+          REPO: ${{ github.repository }}
+      - name: push to media branch
+        run: |
+          cd media
+          git config user.name "dar-zukhruf-bot"
+          git config user.email "darzukhruf@gmail.com"
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -m "new design $(date -u +%Y%m%d-%H%M)"
+          git push origin media
