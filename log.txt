@@ -1,2 +1,30 @@
-2026-11-06T00:01:47.694449+03:00
-no spec for 2026-11-06 06:00
+2026-11-06T00:53:03.158539+03:00
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.4], "reason": "No issues detected."}
+QA openrouter/router/vision {"photoreal": 8, "artifacts": false, "inappropriate": false, "point": [0.5, 0.85], "reason": "Excellent example of traditional Saudi majlis interior. The colors, lighting and details contribute to a warm and inviting space."}
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.22, 0.49], "reason": "Cushions are slightly oversaturated, making them look less natural."}
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.505, 0.065], "reason": "Excellent image quality."}
+OK opening-1-majlis 5 images
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.4], "reason": "None"}
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.75], "reason": "Floor has slight reflectivity and consistent marble pattern."}
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.47, 0.5], "reason": "None"}
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.51, 0.57], "reason": "The image looks very real with good lighting and textures. No obvious artifacts or inappropriate elements."}
+OK opening-2-women-majlis 5 images
+QA openrouter/router/vision {"photoreal": 8, "artifacts": false, "inappropriate": false, "point": [0.38, 0.43], "reason": "None"}
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.44, 0.88], "reason": "floor"}
+QA openrouter/router/vision {"photoreal": 7, "artifacts": false, "inappropriate": false, "point": [0.24, 0.53], "reason": "none"}
+QA openrouter/router/vision {"photoreal": 7, "artifacts": true, "inappropriate": false, "point": [0.32, 0.51], "reason": "Slightly plastic look on the sofa fabric, lighting appears somewhat artificial near the ceiling."}
+QA openrouter/router/vision {"photoreal": 8, "artifacts": true, "inappropriate": false, "point": [0.27, 0.59], "reason": "Slightly plastic look on some surfaces, particularly the wooden floor."}
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.6], "reason": "none"}
+note: some slides dropped opening-3-family-living
+OK opening-3-family-living 4 images
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.22], "reason": "Design pattern looks slightly repetitive and lacks depth."}
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.78], "reason": "Floor looks real."}
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.67, 0.5], "reason": "None"}
+QA openrouter/router/vision {"photoreal": 8, "artifacts": false, "inappropriate": false, "point": [0.35, 0.44], "reason": "None"}
+OK opening-4-master-bedroom 5 images
+QA openrouter/router/vision {"photoreal": 7, "artifacts": true, "inappropriate": false, "point": [0.49, 0.51], "reason": "Some textures look artificial, especially on the cabinets and the wall panel on the left. Lighting is a bit flat, lacking depth. The island marble texture feels somewhat repeated."}
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.47], "reason": "The painted cabinet fronts are well-rendered and realistic."}
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.61], "reason": "none"}
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.47], "reason": "Backsplash is well-rendered."}
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.47], "reason": "The linen texture looks quite real, with subtle variations."}
+OK opening-5-kitchen 5 images
