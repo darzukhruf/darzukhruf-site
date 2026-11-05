@@ -433,7 +433,8 @@ textarea{min-height:96px;resize:vertical}
       <div class="done" id="f-done" tabindex="-1" hidden>
         <svg viewBox="0 0 100 100" width="56" height="56" aria-hidden="true"><use href="#mark" style="color:var(--gold-ink)"/></svg>
         <h3>وصلنا طلبك</h3>
-        <p>بنتواصل معك عبر واتساب في الوقت اللي اخترته.</p>
+        <p>بنتواصل معك عبر واتساب في الوقت اللي اخترته. وتقدر تختصر الوقت وترسل طلبك لنا على واتساب الحين.</p>
+        <a class="btn btn-gold" id="f-wa" href="https://wa.me/966578771717" target="_blank" rel="noopener">أرسل طلبي على واتساب</a>
       </div>
     </div>
   </div>
@@ -486,7 +487,11 @@ textarea{min-height:96px;resize:vertical}
       err.hidden = false; if (bad) bad.focus(); return;
     }
     btn.disabled = true; btn.textContent = 'جارٍ الإرسال…';
-    var finish = function(){ form.hidden = true; done.hidden = false; done.focus(); };
+    var finish = function(){
+      var fd = new FormData(form), g = function(k){ return (fd.get(k) || '').toString().trim(); };
+      var msg = 'السلام عليكم، أرسلت طلب تصميم من موقع دار زخرف:\n' + 'الاسم: ' + g('name') + '\nنوع المساحة: ' + g('space') + (g('area') ? '\nالمساحة: ' + g('area') + ' م²' : '') + '\nالميزانية: ' + g('budget') + '\nالوقت المناسب: ' + g('time') + (g('notes') ? '\nملاحظات: ' + g('notes') : '');
+      document.getElementById('f-wa').href = 'https://wa.me/966578771717?text=' + encodeURIComponent(msg);
+      form.hidden = true; done.hidden = false; done.focus(); };
     if (!live) { finish(); return; }
     fetch('/', {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:new URLSearchParams(new FormData(form)).toString()})
       .then(function(r){ if (!r.ok) throw new Error(r.status); finish(); })
