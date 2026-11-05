@@ -469,5 +469,535 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-5-kitchen_5_plan.jpg"
   ],
   "created_riyadh": "2026-11-06 00:53"
+ },
+ {
+  "id": "opening-1-majlis-v2",
+  "slot": "opening",
+  "title_ar": "مجلس رجال نجدي عصري",
+  "space_ar": "مجلس رجال",
+  "style_ar": "نجدي عصري",
+  "palette_ar": "رملي وكتاني",
+  "room": {
+   "w": 7,
+   "l": 9,
+   "h": 3.4
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "واشد لينن (Washed Linen)",
+    "code": "10679",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن وموزعوها في المملكة",
+    "hex": "#B09F8E"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Royal Beige · بورسلان 19.5×120",
+    "code": "A99GRYAL",
+    "brand": "RAK Ceramics",
+    "where_ar": "معارض راك سيراميكس ومتجرها في السعودية",
+    "sample_color": false
+   },
+   {
+    "type_ar": "قماش الوسائد",
+    "name": "DYTÅG · كتان رمادي مخضر",
+    "code": "705.541.29",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "sample_color": false
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "NARRKOLV · راتان 56 سم",
+    "code": "005.943.41",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "sample_color": false
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 9,
+    "artifacts": false,
+    "inappropriate": false,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "Excellent realism, natural lighting and textures."
+   },
+   {
+    "photoreal": 9,
+    "artifacts": false,
+    "inappropriate": false,
+    "point": [
+     0.5,
+     0.74
+    ],
+    "reason": "Floor tiles are clearly visible.",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 0,
+     "reason": "Different camera position, further back and centered."
+    }
+   },
+   {
+    "photoreal": 8,
+    "artifacts": false,
+    "inappropriate": false,
+    "point": [
+     0.26,
+     0.51
+    ],
+    "reason": "Clear linen texture and realistic lighting.",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 15,
+     "reason": "The second image shows more of the left bench and less of the right window and door, indicating a slight rotation to the left and a slight zoom out."
+    }
+   },
+   {
+    "photoreal": 9,
+    "artifacts": false,
+    "inappropriate": false,
+    "point": [
+     0.5,
+     0.43
+    ],
+    "reason": "none",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 0,
+     "reason": "Image 2 is a close-up, cropped view of the ceiling and pendant light from the same room as Image 1."
+    }
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-1-majlis-v2_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-1-majlis-v2_2.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-1-majlis-v2_3.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-1-majlis-v2_4.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-1-majlis-v2_5_plan.jpg"
+  ],
+  "created_riyadh": "2026-11-06 00:59"
+ },
+ {
+  "id": "opening-2-women-majlis-v2",
+  "slot": "opening",
+  "title_ar": "مجلس نساء كلاسيك معاصر",
+  "space_ar": "مجلس نساء",
+  "style_ar": "كلاسيك معاصر",
+  "palette_ar": "غريج وعاجي ونحاسي",
+  "room": {
+   "w": 6,
+   "l": 7,
+   "h": 3.2
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "سيلكي غريج (Silky Greige)",
+    "code": "12307",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن وموزعوها في المملكة",
+    "hex": "#726151"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Soft Lux White · بورسلان 120×120",
+    "code": "A22GSFLX",
+    "brand": "RAK Ceramics",
+    "where_ar": "معارض راك سيراميكس ومتجرها في السعودية",
+    "sample_color": false
+   },
+   {
+    "type_ar": "قطعة مختارة",
+    "name": "مزهرية صدف Pebble Capiz · 49 سم",
+    "code": "",
+    "brand": "Home Centre",
+    "where_ar": "هوم سنتر · فروع المملكة",
+    "sample_color": false
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 9,
+    "artifacts": false,
+    "inappropriate": false,
+    "point": [
+     0.24,
+     0.48
+    ],
+    "reason": "Wall paneling is well-rendered."
+   },
+   {
+    "photoreal": 8,
+    "artifacts": false,
+    "inappropriate": false,
+    "point": [
+     0.5,
+     0.75
+    ],
+    "reason": "Floor appears normal.",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 0,
+     "reason": "Camera moved forward, closer to the sofas."
+    }
+   },
+   {
+    "photoreal": 9,
+    "artifacts": false,
+    "inappropriate": false,
+    "point": [
+     0.5,
+     0.61
+    ],
+    "reason": "No issues detected.",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 0,
+     "reason": "Image 2 is a closer shot (zoom-in) of the same scene as Image 1."
+    }
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-2-women-majlis-v2_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-2-women-majlis-v2_2.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-2-women-majlis-v2_3.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-2-women-majlis-v2_4_plan.jpg"
+  ],
+  "created_riyadh": "2026-11-06 01:01"
+ },
+ {
+  "id": "opening-3-family-living-v2",
+  "slot": "opening",
+  "title_ar": "صالة عائلية ياباندي",
+  "space_ar": "صالة عائلية",
+  "style_ar": "ياباندي",
+  "palette_ar": "كاشو وعاجي وجوزي",
+  "room": {
+   "w": 6.5,
+   "l": 7.5,
+   "h": 3.0
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "كاشو (Cashew)",
+    "code": "1931",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن وموزعوها في المملكة",
+    "hex": "#CC9C5E"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Hard Wood Ivory · بورسلان بمظهر الخشب",
+    "code": "A99GZHRD",
+    "brand": "RAK Ceramics",
+    "where_ar": "معارض راك سيراميكس ومتجرها في السعودية",
+    "sample_color": false
+   },
+   {
+    "type_ar": "الكنبة",
+    "name": "VIMLE · كنبة 3 مقاعد بيج",
+    "code": "694.013.35",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "sample_color": false
+   },
+   {
+    "type_ar": "قطعة مختارة",
+    "name": "UGGLERUM · طاولة جوز 130×65",
+    "code": "",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "sample_color": false
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": false,
+    "inappropriate": false,
+    "point": [
+     0.38,
+     0.49
+    ],
+    "reason": "Image is good quality, no issues found."
+   },
+   {
+    "photoreal": 9,
+    "artifacts": false,
+    "inappropriate": false,
+    "point": [
+     0.22,
+     0.85
+    ],
+    "reason": "Floor",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 30,
+     "reason": "The room is the same, but the camera has moved to the right and slightly forward, changing the perspective of the room and the objects within it. The sofa is now closer and partially out of frame, and the TV wall is more central."
+    }
+   },
+   {
+    "photoreal": 9,
+    "artifacts": false,
+    "inappropriate": false,
+    "point": [
+     0.77,
+     0.44
+    ],
+    "reason": "Image is of high quality and appropriate.",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 45,
+     "reason": "Second image is a composite of two shots, both from different angles than the reference. The top part of the second image is a wider shot from the same wall as the reference, but from a more central position. The bottom part of the second image is from the opposite corner of the room, looking towards the window and the sofa."
+    }
+   },
+   {
+    "photoreal": 9,
+    "artifacts": false,
+    "inappropriate": false,
+    "point": [
+     0.53,
+     0.61
+    ],
+    "reason": "No issues detected.",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 0,
+     "reason": "Image 2 is a close-up of the coffee table and sofa from a similar angle, but cropped differently."
+    }
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-3-family-living-v2_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-3-family-living-v2_2.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-3-family-living-v2_3.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-3-family-living-v2_4.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-3-family-living-v2_5_plan.jpg"
+  ],
+  "created_riyadh": "2026-11-06 01:03"
+ },
+ {
+  "id": "opening-4-master-bedroom-v2",
+  "slot": "opening",
+  "title_ar": "غرفة نوم رئيسية بفخامة هادئة",
+  "space_ar": "غرفة نوم رئيسية",
+  "style_ar": "فخامة هادئة",
+  "palette_ar": "أنتويرب بيج وجوزي ونحاسي",
+  "room": {
+   "w": 5,
+   "l": 6,
+   "h": 3.0
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "أنتويرب بيج (Antwerp Beige)",
+    "code": "12290",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن وموزعوها في المملكة",
+    "hex": "#B3A594"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Line Wood Beige · بورسلان بمظهر الخشب",
+    "code": "A99GZLNW",
+    "brand": "RAK Ceramics",
+    "where_ar": "معارض راك سيراميكس ومتجرها في السعودية",
+    "sample_color": false
+   },
+   {
+    "type_ar": "الستائر",
+    "name": "SILVERLÖNN · شيفون قطني بيج",
+    "code": "104.939.78",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "sample_color": false
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "ÅRSTID · إضاءة جدارية نحاسي",
+    "code": "203.303.25",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "sample_color": false
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 9,
+    "artifacts": false,
+    "inappropriate": false,
+    "point": [
+     0.49,
+     0.22
+    ],
+    "reason": "Lighting above the headboard appears slightly artificial."
+   },
+   {
+    "photoreal": 9,
+    "artifacts": false,
+    "inappropriate": false,
+    "point": [
+     0.5,
+     0.7
+    ],
+    "reason": "The image exhibits high photorealism with natural lighting and realistic textures. No artifacts or inappropriate content are detected. The floor appears consistent and well-rendered.",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 30,
+     "reason": "The camera has panned significantly to the right, showing more of the wall opposite the bed and less of the headboard side."
+    }
+   },
+   {
+    "photoreal": 8,
+    "artifacts": false,
+    "inappropriate": false,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "Excellent",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 0,
+     "reason": "Image 2 is taken from further back, showing the curtains that were not visible in Image 1."
+    }
+   },
+   {
+    "photoreal": 8,
+    "artifacts": false,
+    "inappropriate": false,
+    "point": [
+     0.301,
+     0.449
+    ],
+    "reason": "No major issues, but the lighting could be more dynamic for a perfect score.",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 15,
+     "reason": "Viewpoint shifted to the right and zoomed in slightly, changing the framing of the bedside table and bed."
+    }
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-4-master-bedroom-v2_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-4-master-bedroom-v2_2.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-4-master-bedroom-v2_3.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-4-master-bedroom-v2_4.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-4-master-bedroom-v2_5_plan.jpg"
+  ],
+  "created_riyadh": "2026-11-06 01:05"
+ },
+ {
+  "id": "opening-5-kitchen-v2",
+  "slot": "opening",
+  "title_ar": "مطبخ مفتوح بمينيمال دافئ",
+  "space_ar": "مطبخ مفتوح",
+  "style_ar": "مينيمال دافئ",
+  "palette_ar": "سيج بيج وأبيض ورمادي",
+  "room": {
+   "w": 4.5,
+   "l": 5.5,
+   "h": 3.0
+  },
+  "materials": [
+   {
+    "type_ar": "لون الخزائن · أقرب درجة",
+    "name": "سيج بيج (Sage Beige)",
+    "code": "8584",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن وموزعوها في المملكة",
+    "hex": "#9F9381"
+   },
+   {
+    "type_ar": "سطح الجزيرة",
+    "name": "Dekton Helena",
+    "code": "",
+    "brand": "Cosentino",
+    "where_ar": "كوزنتينو · استوديو EBA بالرياض",
+    "sample_color": false
+   },
+   {
+    "type_ar": "الجدار الخلفي",
+    "name": "Tech Marble White · بورسلان 60×120",
+    "code": "A12GTCMB",
+    "brand": "RAK Ceramics",
+    "where_ar": "معارض راك سيراميكس ومتجرها في السعودية",
+    "sample_color": false
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": false,
+    "inappropriate": false,
+    "point": [
+     0.499,
+     0.444
+    ],
+    "reason": "None"
+   },
+   {
+    "photoreal": 8,
+    "artifacts": false,
+    "inappropriate": false,
+    "point": [
+     0.69,
+     0.61
+    ],
+    "reason": "None",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 0,
+     "reason": "Image 2 is a close-up of Image 1, zoomed in and shifted to the right, showing more of the window on the left."
+    }
+   },
+   {
+    "photoreal": 8,
+    "artifacts": false,
+    "inappropriate": false,
+    "point": [
+     0.27,
+     0.66
+    ],
+    "reason": "marble counter rather than backsplash",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 90,
+     "reason": "Image 1 is a frontal shot of the kitchen. Image 2 is taken from the kitchen looking towards the living room, showing the side of the kitchen island."
+    }
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-5-kitchen-v2_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-5-kitchen-v2_2.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-5-kitchen-v2_3.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-5-kitchen-v2_4_plan.jpg"
+  ],
+  "created_riyadh": "2026-11-06 01:06"
  }
 ]

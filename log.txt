@@ -1,30 +1,80 @@
-2026-11-06T00:53:03.158539+03:00
-QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.4], "reason": "No issues detected."}
-QA openrouter/router/vision {"photoreal": 8, "artifacts": false, "inappropriate": false, "point": [0.5, 0.85], "reason": "Excellent example of traditional Saudi majlis interior. The colors, lighting and details contribute to a warm and inviting space."}
-QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.22, 0.49], "reason": "Cushions are slightly oversaturated, making them look less natural."}
-QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.505, 0.065], "reason": "Excellent image quality."}
-OK opening-1-majlis 5 images
-QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.4], "reason": "None"}
-QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.75], "reason": "Floor has slight reflectivity and consistent marble pattern."}
-QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.47, 0.5], "reason": "None"}
-QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.51, 0.57], "reason": "The image looks very real with good lighting and textures. No obvious artifacts or inappropriate elements."}
-OK opening-2-women-majlis 5 images
-QA openrouter/router/vision {"photoreal": 8, "artifacts": false, "inappropriate": false, "point": [0.38, 0.43], "reason": "None"}
-QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.44, 0.88], "reason": "floor"}
-QA openrouter/router/vision {"photoreal": 7, "artifacts": false, "inappropriate": false, "point": [0.24, 0.53], "reason": "none"}
-QA openrouter/router/vision {"photoreal": 7, "artifacts": true, "inappropriate": false, "point": [0.32, 0.51], "reason": "Slightly plastic look on the sofa fabric, lighting appears somewhat artificial near the ceiling."}
-QA openrouter/router/vision {"photoreal": 8, "artifacts": true, "inappropriate": false, "point": [0.27, 0.59], "reason": "Slightly plastic look on some surfaces, particularly the wooden floor."}
-QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.6], "reason": "none"}
-note: some slides dropped opening-3-family-living
-OK opening-3-family-living 4 images
-QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.22], "reason": "Design pattern looks slightly repetitive and lacks depth."}
-QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.78], "reason": "Floor looks real."}
-QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.67, 0.5], "reason": "None"}
-QA openrouter/router/vision {"photoreal": 8, "artifacts": false, "inappropriate": false, "point": [0.35, 0.44], "reason": "None"}
-OK opening-4-master-bedroom 5 images
-QA openrouter/router/vision {"photoreal": 7, "artifacts": true, "inappropriate": false, "point": [0.49, 0.51], "reason": "Some textures look artificial, especially on the cabinets and the wall panel on the left. Lighting is a bit flat, lacking depth. The island marble texture feels somewhat repeated."}
-QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.47], "reason": "The painted cabinet fronts are well-rendered and realistic."}
-QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.61], "reason": "none"}
-QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.47], "reason": "Backsplash is well-rendered."}
-QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.47], "reason": "The linen texture looks quite real, with subtle variations."}
-OK opening-5-kitchen 5 images
+2026-11-06T01:06:47.176515+03:00
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.5], "reason": "Excellent realism, natural lighting and textures."}
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.85], "reason": "Floor tiles are perfectly rendered."}
+DIFF {"same_room": true, "same_viewpoint": true, "angle_change_deg": 0, "reason": "The room, furniture, and decor are identical. The camera position is nearly the same, with only minor adjustments that appear to be subtle framing changes."}
+rejected: same viewpoint
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.74], "reason": "Floor tiles are clearly visible."}
+DIFF {"same_room": true, "same_viewpoint": false, "angle_change_deg": 0, "reason": "Different camera position, further back and centered."}
+QA openrouter/router/vision {"photoreal": 8, "artifacts": false, "inappropriate": false, "point": [0.26, 0.51], "reason": "Clear linen texture and realistic lighting."}
+DIFF {"same_room": true, "same_viewpoint": false, "angle_change_deg": 15, "reason": "The second image shows more of the left bench and less of the right window and door, indicating a slight rotation to the left and a slight zoom out."}
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.38], "reason": "none"}
+DIFF {"same_room": true, "same_viewpoint": true, "angle_change_deg": 0, "reason": "Images depict the identical room, furniture, and decor from essentially the same camera position and angle, with only a slight zoom difference."}
+rejected: same viewpoint
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.5], "reason": "Excellent realism and detail."}
+DIFF {"same_room": true, "same_viewpoint": true, "angle_change_deg": 0, "reason": "The only significant difference is the wider lens / zoom level, making the room appear slightly larger and the central light fixture more prominent in Image 2. The camera position and direction are virtually identical."}
+rejected: same viewpoint
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.43], "reason": "none"}
+DIFF {"same_room": true, "same_viewpoint": false, "angle_change_deg": 0, "reason": "Image 2 is a close-up, cropped view of the ceiling and pendant light from the same room as Image 1."}
+OK opening-1-majlis-v2 5 images
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.24, 0.48], "reason": "Wall paneling is well-rendered."}
+QA openrouter/router/vision {"photoreal": 8, "artifacts": false, "inappropriate": false, "point": [0.5, 0.75], "reason": "Floor appears normal."}
+DIFF {"same_room": true, "same_viewpoint": false, "angle_change_deg": 0, "reason": "Camera moved forward, closer to the sofas."}
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.47], "reason": "The lighting above the curtains has a slightly artificial glow, lacking a natural falloff. Otherwise, the image quality is very high."}
+DIFF {"same_room": true, "same_viewpoint": true, "angle_change_deg": 0, "reason": "Images are identical, likely duplicates."}
+rejected: same viewpoint
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.47], "reason": "The beige curtains are present in the middle of the image and blend seamlessly into the photorealistic scene."}
+DIFF {"same_room": true, "same_viewpoint": true, "angle_change_deg": 0, "reason": "Images are identical."}
+rejected: same viewpoint
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.57], "reason": "The lighting on the ceiling appears slightly artificial."}
+DIFF {"same_room": true, "same_viewpoint": true, "angle_change_deg": 0, "reason": "slightly shifted to the right"}
+rejected: same viewpoint
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.61], "reason": "No issues detected."}
+DIFF {"same_room": true, "same_viewpoint": false, "angle_change_deg": 0, "reason": "Image 2 is a closer shot (zoom-in) of the same scene as Image 1."}
+note: some slides dropped opening-2-women-majlis-v2
+OK opening-2-women-majlis-v2 4 images
+QA openrouter/router/vision {"photoreal": 7, "artifacts": true, "inappropriate": false, "point": [0.28, 0.39], "reason": "Slightly flat lighting, minor texturing issues on sofa and wall art. The wall art behind the sofa is abstract and slightly garbled."}
+QA openrouter/router/vision {"photoreal": 7, "artifacts": false, "inappropriate": false, "point": [0.27, 0.48], "reason": "The painted wall behind the sofa is only visible on the left side of the feature wall."}
+QA openrouter/router/vision {"photoreal": 8, "artifacts": false, "inappropriate": false, "point": [0.38, 0.49], "reason": "Image is good quality, no issues found."}
+QA openrouter/router/vision {"photoreal": 8, "artifacts": false, "inappropriate": false, "point": [0.49, 0.88], "reason": "none"}
+DIFF {"same_room": true, "same_viewpoint": true, "angle_change_deg": 0, "reason": "Images are virtually identical, indicating the same room and viewpoint without any discernible changes."}
+rejected: same viewpoint
+QA openrouter/router/vision {"photoreal": 7, "artifacts": false, "inappropriate": false, "point": [0.5, 0.85], "reason": "Floor texture"}
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.22, 0.85], "reason": "Floor"}
+DIFF {"same_room": true, "same_viewpoint": false, "angle_change_deg": 30, "reason": "The room is the same, but the camera has moved to the right and slightly forward, changing the perspective of the room and the objects within it. The sofa is now closer and partially out of frame, and the TV wall is more central."}
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.22, 0.59], "reason": "None"}
+DIFF {"same_room": true, "same_viewpoint": true, "angle_change_deg": 0, "reason": "Images are identical."}
+rejected: same viewpoint
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.27, 0.56], "reason": "none"}
+DIFF {"same_room": true, "same_viewpoint": true, "angle_change_deg": 0, "reason": "Images are nearly identical, with only minor variations in lighting and possibly a very slight shift in camera position, but effectively the same viewpoint and room."}
+rejected: same viewpoint
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.77, 0.44], "reason": "Image is of high quality and appropriate."}
+DIFF {"same_room": true, "same_viewpoint": false, "angle_change_deg": 45, "reason": "Second image is a composite of two shots, both from different angles than the reference. The top part of the second image is a wider shot from the same wall as the reference, but from a more central position. The bottom part of the second image is from the opposite corner of the room, looking towards the window and the sofa."}
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.53, 0.61], "reason": "No issues detected."}
+DIFF {"same_room": true, "same_viewpoint": false, "angle_change_deg": 0, "reason": "Image 2 is a close-up of the coffee table and sofa from a similar angle, but cropped differently."}
+OK opening-3-family-living-v2 5 images
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.49, 0.22], "reason": "Lighting above the headboard appears slightly artificial."}
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.5, 0.7], "reason": "The image exhibits high photorealism with natural lighting and realistic textures. No artifacts or inappropriate content are detected. The floor appears consistent and well-rendered."}
+DIFF {"same_room": true, "same_viewpoint": false, "angle_change_deg": 30, "reason": "The camera has panned significantly to the right, showing more of the wall opposite the bed and less of the headboard side."}
+QA openrouter/router/vision {"photoreal": 9, "artifacts": false, "inappropriate": false, "point": [0.22, 0.47], "reason": "The sheer curtains are well-rendered."}
+DIFF {"same_room": true, "same_viewpoint": true, "angle_change_deg": 0, "reason": "Only minor lighting difference."}
+rejected: same viewpoint
+QA openrouter/router/vision {"photoreal": 8, "artifacts": false, "inappropriate": false, "point": [0.5, 0.5], "reason": "Excellent"}
+DIFF {"same_room": true, "same_viewpoint": false, "angle_change_deg": 0, "reason": "Image 2 is taken from further back, showing the curtains that were not visible in Image 1."}
+QA openrouter/router/vision {"photoreal": 8, "artifacts": false, "inappropriate": false, "point": [0.301, 0.449], "reason": "No major issues, but the lighting could be more dynamic for a perfect score."}
+DIFF {"same_room": true, "same_viewpoint": false, "angle_change_deg": 15, "reason": "Viewpoint shifted to the right and zoomed in slightly, changing the framing of the bedside table and bed."}
+OK opening-4-master-bedroom-v2 5 images
+QA openrouter/router/vision {"photoreal": 8, "artifacts": false, "inappropriate": false, "point": [0.499, 0.444], "reason": "None"}
+QA openrouter/router/vision {"photoreal": 8, "artifacts": false, "inappropriate": false, "point": [0.69, 0.61], "reason": "None"}
+DIFF {"same_room": true, "same_viewpoint": false, "angle_change_deg": 0, "reason": "Image 2 is a close-up of Image 1, zoomed in and shifted to the right, showing more of the window on the left."}
+QA openrouter/router/vision {"photoreal": 6, "artifacts": false, "inappropriate": false, "point": [0.35, 0.65], "reason": "No marble-look backsplash, only a kitchen island with a marble finish"}
+QA openrouter/router/vision {"photoreal": 8, "artifacts": false, "inappropriate": false, "point": [0.27, 0.66], "reason": "marble counter rather than backsplash"}
+DIFF {"same_room": true, "same_viewpoint": false, "angle_change_deg": 90, "reason": "Image 1 is a frontal shot of the kitchen. Image 2 is taken from the kitchen looking towards the living room, showing the side of the kitchen island."}
+QA openrouter/router/vision {"photoreal": 8, "artifacts": false, "inappropriate": false, "point": [0.5, 0.08], "reason": "The linen pendant lamp is actually a flush mount ceiling light, not a pendant."}
+DIFF {"same_room": true, "same_viewpoint": true, "angle_change_deg": 0, "reason": "zoom out slightly, same room and viewpoint"}
+rejected: same viewpoint
+QA openrouter/router/vision {"photoreal": 7, "artifacts": false, "inappropriate": false, "point": [0.27, 0.51], "reason": "Minor inconsistencies in light reflection on cabinet surfaces, and subtle lack of detail in fabric texture of lamps."}
+QA openrouter/router/vision {"photoreal": 8, "artifacts": false, "inappropriate": false, "point": [0.3, 0.38], "reason": "none"}
+DIFF {"same_room": true, "same_viewpoint": true, "angle_change_deg": 0, "reason": "virtually identical shots, lighting is the only noticeable difference"}
+rejected: same viewpoint
+note: some slides dropped opening-5-kitchen-v2
+OK opening-5-kitchen-v2 4 images
