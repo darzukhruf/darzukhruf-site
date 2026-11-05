@@ -74,9 +74,30 @@ def layout_text(sp):
     for o in sp.get("openings", []): s += f" A {o['type']} on the {dict(N='north',S='south',E='east',W='west')[o['wall']]} wall."
     return s
 
+PRO_EDIT = os.environ.get("PRO_EDIT_MODEL", "").strip() or "fal-ai/nano-banana-pro/edit"
+DIFF = ("Compare IMAGE 1 (reference) and IMAGE 2 of an interior. Reply ONLY JSON: "
+        '{"same_room":true|false,"same_viewpoint":true|false,"angle_change_deg":0-180,"reason":"short"}. '
+        "same_room = same space, furniture, materials and colours. same_viewpoint = the camera position/direction/framing is "
+        "nearly the same (a crop, zoom or tiny shift of the same shot counts as same_viewpoint). Close-up detail shots of a "
+        "different element count as a different viewpoint.")
+
+def different_view(ref_url, url):
+    j = None
+    for ep, extra in VISION:
+        r = fal(ep, {**extra, "prompt": DIFF, "image_urls": [ref_url, url], "image_url": ref_url}, timeout=120)
+        txt = (r or {}).get("output") or ""; m = re.search(r"\{.*\}", txt, re.S)
+        if m:
+            try: j = json.loads(m.group(0)); break
+            except Exception: pass
+    if j is None: return True, {"diff": "unchecked"}
+    log("DIFF", json.dumps(j, ensure_ascii=False))
+    return (j.get("same_room", True) and not j.get("same_viewpoint")), j
+
 def gen_image(prompt, ref_url=None, locate="the main element"):
     for attempt in range(3):
-        if ref_url: j = fal(EDIT, {"prompt": prompt, "image_urls": [ref_url], "num_images": 1, "aspect_ratio": "3:4", "output_format": "jpeg"})
+        if ref_url:
+            model = PRO_EDIT if attempt == 2 else EDIT
+            j = fal(model, {"prompt": prompt, "image_urls": [ref_url], "num_images": 1, "aspect_ratio": "3:4", "output_format": "jpeg"})
         else: j = fal(T2I, {"prompt": prompt, "num_images": 1, "aspect_ratio": "3:4", "output_format": "jpeg"})
         url = (((j or {}).get("images") or [{}])[0]).get("url")
         if not url: continue
@@ -85,6 +106,9 @@ def gen_image(prompt, ref_url=None, locate="the main element"):
             log("QA unavailable; accepting with unchecked flag"); return url, {"unchecked": True}
         ok = q.get("photoreal", 0) >= 8 and not q.get("artifacts") and not q.get("inappropriate")
         log("QA", ep, json.dumps(q, ensure_ascii=False))
+        if ok and ref_url:
+            dv, dj = different_view(ref_url, url); q["diff"] = dj
+            if not dv: log("rejected: same viewpoint"); continue
         if ok: return url, q
     return None, None
 
@@ -96,8 +120,10 @@ def build(spec, browser, ident, slot=None):
     if not master_url: log("master failed", ident); return None
     shots = [(master_url, q0)]
     for s in slides[1:]:
-        u, q = gen_image("Using the reference photo, show the EXACT same room with identical layout, furniture, materials, colours "
-                         f"and lighting, seen as: {s['view_en']}." + STYLE, master_url, s.get("locate_en", "the main element"))
+        u, q = gen_image("NEW CAMERA POSITION. This is the same room as the reference photo (identical layout, furniture, materials, "
+                         "colours and lighting), but photographed from a COMPLETELY DIFFERENT viewpoint — do NOT reuse the reference "
+                         f"framing or direction. New shot: {s['view_en']}. Show the parts of the room that are not visible in the "
+                         "reference, consistent with the layout." + STYLE, master_url, s.get("locate_en", "the main element"))
         shots.append((u, q) if u else (None, None))
     os.makedirs(os.path.join(OUT, "gen"), exist_ok=True)
     page = browser.new_page(viewport={"width": 1080, "height": 1440})

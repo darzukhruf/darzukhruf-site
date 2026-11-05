@@ -1,5 +1,5 @@
 {
- "id": "opening-4-master-bedroom",
+ "id": "opening-4-master-bedroom-v2",
  "title_ar": "غرفة نوم رئيسية بفخامة هادئة",
  "space_en": "master-bedroom",
  "space_ar": "غرفة نوم رئيسية",
@@ -69,7 +69,7 @@
  "scene_en": "a quiet-luxury master bedroom in a Saudi villa: walls painted warm Antwerp beige, a full-width upholstered headboard wall in soft taupe, a king bed with layered ivory linen bedding, walnut bedside tables with brass-and-white swing-arm wall lamps above them, a boucle bench at the foot of the bed, beige wood-look porcelain floor planks, sheer beige cotton curtains over a large window, soft cove lighting",
  "slides": [
   {
-   "view_en": "a wide view from the door toward the bed wall",
+   "view_en": "wide shot from the bedroom door looking at the bed and the headboard wall",
    "locate_en": "the painted side wall",
    "item": {
     "type_ar": "البوية · أقرب درجة",
@@ -80,7 +80,7 @@
    }
   },
   {
-   "view_en": "a view from the bed side across the floor toward the window",
+   "view_en": "REVERSE ANGLE: camera beside the headboard looking toward the window and the room entrance (180 degrees from the first photo), the wood-look floor visible",
    "locate_en": "the wood-look floor",
    "item": {
     "type_ar": "الأرضية",
@@ -92,7 +92,7 @@
    }
   },
   {
-   "view_en": "a close-up of the sheer curtains glowing with daylight",
+   "view_en": "side view from the window toward the bed, sheer curtains glowing in the foreground",
    "locate_en": "the sheer curtains",
    "item": {
     "type_ar": "الستائر",
@@ -104,7 +104,7 @@
    }
   },
   {
-   "view_en": "a close-up of the bedside table and the wall lamp above it",
+   "view_en": "close-up of the walnut bedside table and the brass swing-arm wall lamp above it",
    "locate_en": "the brass wall lamp",
    "item": {
     "type_ar": "الإضاءة",

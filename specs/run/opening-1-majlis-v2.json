@@ -1,5 +1,5 @@
 {
- "id": "opening-1-majlis",
+ "id": "opening-1-majlis-v2",
  "title_ar": "مجلس رجال نجدي عصري",
  "space_en": "mens-majlis",
  "space_ar": "مجلس رجال",
@@ -75,7 +75,7 @@
  "scene_en": "a modern Najdi men's majlis in a Riyadh villa: long low floor seating along both side walls and the back wall upholstered in warm sand linen with grey-green linen cushions, walls painted a soft warm linen white with triangular Najdi niches and gentle lime-plaster texture, a timber beam ceiling with warm cove lighting, a large beige handmade wool flatweave rug, a low walnut coffee table with a brass dallah and small finjan cups, a large rattan pendant lamp, beige marble-effect long porcelain floor planks",
  "slides": [
   {
-   "view_en": "a wide view from the entrance door looking at the back seating wall",
+   "view_en": "wide shot from the entrance door looking toward the back seating wall and the windows",
    "locate_en": "the painted back wall",
    "item": {
     "type_ar": "البوية · أقرب درجة",
@@ -86,7 +86,7 @@
    }
   },
   {
-   "view_en": "a low angle view across the floor toward the side seating, showing the floor tiles",
+   "view_en": "REVERSE ANGLE: camera standing in front of the back seating wall under the windows, looking back toward the entrance door (180 degrees from the first photo), the door and the floor tiles clearly visible",
    "locate_en": "the floor tiles",
    "item": {
     "type_ar": "الأرضية",
@@ -98,7 +98,7 @@
    }
   },
   {
-   "view_en": "a close-up of the floor seating with the cushions",
+   "view_en": "diagonal three-quarter view from the left corner looking across the right-hand side seating, cushions in the foreground",
    "locate_en": "the grey-green linen cushions",
    "item": {
     "type_ar": "قماش الوسائد",
@@ -110,7 +110,7 @@
    }
   },
   {
-   "view_en": "a view looking up at the rattan pendant lamp over the coffee table",
+   "view_en": "close-up looking up at the rattan pendant lamp hanging above the coffee table, timber ceiling beams behind it",
    "locate_en": "the rattan pendant lamp",
    "item": {
     "type_ar": "الإضاءة",

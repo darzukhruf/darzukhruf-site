@@ -1,5 +1,5 @@
 {
- "id": "opening-5-kitchen",
+ "id": "opening-5-kitchen-v2",
  "title_ar": "مطبخ مفتوح بمينيمال دافئ",
  "space_en": "open-kitchen",
  "space_ar": "مطبخ مفتوح",
@@ -62,7 +62,7 @@
  "scene_en": "a warm-minimal open kitchen in a Riyadh home: handleless flat-front cabinets painted soft sage beige, a large island with a light warm-grey ultra-compact stone countertop and waterfall edge, three linen pendant lamps above the island, light wood stools, a full-height white marble-look porcelain backsplash, concrete-grey large-format porcelain floor tiles, a window with daylight, a few ceramic bowls and fresh herbs",
  "slides": [
   {
-   "view_en": "a wide view from the living area toward the island and cabinets",
+   "view_en": "wide shot from the living area looking at the island and the cabinet wall",
    "locate_en": "the painted cabinet fronts",
    "item": {
     "type_ar": "لون الخزائن · أقرب درجة",
@@ -73,7 +73,7 @@
    }
   },
   {
-   "view_en": "a close-up of the island countertop and its waterfall edge",
+   "view_en": "close-up at counter height of the island countertop corner and its waterfall edge",
    "locate_en": "the island countertop",
    "item": {
     "type_ar": "سطح الجزيرة",
@@ -85,7 +85,7 @@
    }
   },
   {
-   "view_en": "a view of the backsplash and counter behind the island",
+   "view_en": "REVERSE ANGLE: camera standing between the cabinets and the island looking back toward the living area, the backsplash visible at the side (180 degrees from the first photo)",
    "locate_en": "the marble-look backsplash",
    "item": {
     "type_ar": "الجدار الخلفي",
@@ -97,7 +97,7 @@
    }
   },
   {
-   "view_en": "a view looking up at the linen pendant lamps above the island",
+   "view_en": "view looking up at the three linen pendant lamps above the island",
    "locate_en": "the linen pendant lamp",
    "item": {
     "type_ar": "الإضاءة",

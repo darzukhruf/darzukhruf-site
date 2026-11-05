@@ -1,5 +1,5 @@
 {
- "id": "opening-3-family-living",
+ "id": "opening-3-family-living-v2",
  "title_ar": "صالة عائلية ياباندي",
  "space_en": "family-living",
  "space_ar": "صالة عائلية",
@@ -70,7 +70,7 @@
  "scene_en": "a calm Japandi family living room in a Riyadh apartment: walls painted a warm cashew beige, a wide beige three-seat sofa with wide armrests, a walnut veneer coffee table with tapered legs, a Berber-inspired beige low-pile rug, a slatted oak TV wall with hidden storage, ivory wood-look porcelain floor planks, a rice-paper floor lamp, linen curtains, a few ceramics and a potted olive tree",
  "slides": [
   {
-   "view_en": "a wide view from the doorway toward the sofa and window",
+   "view_en": "wide shot from the doorway looking toward the sofa and the window",
    "locate_en": "the painted wall behind the sofa",
    "item": {
     "type_ar": "البوية · أقرب درجة",
@@ -81,7 +81,7 @@
    }
   },
   {
-   "view_en": "a low view along the wood-look floor toward the TV wall",
+   "view_en": "REVERSE ANGLE: camera sitting behind the sofa looking toward the slatted oak TV wall with hidden storage (180 degrees from the first photo), the wood-look floor visible",
    "locate_en": "the wood-look floor",
    "item": {
     "type_ar": "الأرضية",
@@ -93,7 +93,7 @@
    }
   },
   {
-   "view_en": "a three-quarter view of the beige sofa with cushions",
+   "view_en": "three-quarter view from the window corner showing the full beige sofa with its cushions",
    "locate_en": "the beige sofa",
    "item": {
     "type_ar": "الكنبة",
@@ -105,7 +105,7 @@
    }
   },
   {
-   "view_en": "a close-up of the walnut coffee table on the rug",
+   "view_en": "close-up of the walnut coffee table on the Berber rug with ceramics, shallow depth of field",
    "locate_en": "the walnut coffee table",
    "item": {
     "type_ar": "قطعة مختارة",

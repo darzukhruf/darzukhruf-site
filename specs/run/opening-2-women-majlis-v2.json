@@ -1,5 +1,5 @@
 {
- "id": "opening-2-women-majlis",
+ "id": "opening-2-women-majlis-v2",
  "title_ar": "مجلس نساء كلاسيك معاصر",
  "space_en": "womens-majlis",
  "space_ar": "مجلس نساء",
@@ -70,7 +70,7 @@
  "scene_en": "an elegant contemporary-classic women's majlis in a Saudi home: soft silky greige walls with simple classic plaster wall panelling, three-seat sofas in ivory boucle with brass legs, a round marble coffee table with a capiz shell vase, large white Calacatta-look porcelain floor slabs with soft grey veining, floor-to-ceiling beige blackout curtains with pinch pleats, a brass multi-arm floor lamp, warm cove lighting",
  "slides": [
   {
-   "view_en": "a wide view from the door toward the window wall",
+   "view_en": "wide shot from the entrance door looking toward the window wall with curtains",
    "locate_en": "the painted panelled wall",
    "item": {
     "type_ar": "البوية · أقرب درجة",
@@ -81,7 +81,7 @@
    }
   },
   {
-   "view_en": "a view across the shiny marble-look floor toward the sofas",
+   "view_en": "REVERSE ANGLE: camera at the window looking back toward the entrance door and the back sofa (180 degrees from the first photo), the glossy marble-look floor clearly visible",
    "locate_en": "the marble-look floor",
    "item": {
     "type_ar": "الأرضية",
@@ -93,7 +93,7 @@
    }
   },
   {
-   "view_en": "a close-up of the curtains with pinch pleats beside the window",
+   "view_en": "side view standing next to the right-hand sofa, focusing on the floor-to-ceiling curtains and the window",
    "locate_en": "the beige curtains",
    "item": {
     "type_ar": "الستائر",
@@ -105,7 +105,7 @@
    }
   },
   {
-   "view_en": "a close-up of the round coffee table with the capiz shell vase",
+   "view_en": "close-up detail of the round marble coffee table and the capiz shell vase, shallow depth of field",
    "locate_en": "the capiz shell vase",
    "item": {
     "type_ar": "قطعة مختارة",
