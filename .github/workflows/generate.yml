@@ -1,7 +1,7 @@
 name: generate-designs
 on:
   schedule:
-    - cron: "10 4,10,16,22 * * *"   # 07:10, 13:10, 19:10, 01:10 Riyadh (before each 6h posting slot)
+    - cron: "55 19,1,7,13 * * *"   # 22:55, 04:55, 10:55, 16:55 Riyadh = ~1h before slots 00,06,12,18
   workflow_dispatch: {}
 permissions:
   contents: write
