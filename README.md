@@ -10,3 +10,5 @@
 | `netlify.toml` | إعدادات النشر |
 
 رقم واتساب الأعمال يُضاف في `WA_NUMBER` داخل `index.html`، وزر واتساب يظهر تلقائياً بعدها.
+
+الرابط: https://darzukhruf.netlify.app
