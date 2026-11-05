@@ -1,0 +1,119 @@
+{
+ "id": "opening-4-master-bedroom",
+ "title_ar": "غرفة نوم رئيسية بفخامة هادئة",
+ "space_en": "master-bedroom",
+ "space_ar": "غرفة نوم رئيسية",
+ "style_ar": "فخامة هادئة",
+ "palette_ar": "أنتويرب بيج وجوزي ونحاسي",
+ "room": {
+  "w": 5,
+  "l": 6,
+  "h": 3.0
+ },
+ "openings": [
+  {
+   "type": "door",
+   "wall": "S",
+   "pos": 0.5,
+   "width": 1.0
+  },
+  {
+   "type": "window",
+   "wall": "E",
+   "pos": 1.8,
+   "width": 2.4
+  }
+ ],
+ "furniture": [
+  {
+   "label_ar": "سرير 200×200",
+   "x": 1.4,
+   "y": 3.6,
+   "w": 2.2,
+   "d": 2.25
+  },
+  {
+   "label_ar": "كوميدينة",
+   "x": 0.85,
+   "y": 5.4,
+   "w": 0.5,
+   "d": 0.45
+  },
+  {
+   "label_ar": "كوميدينة",
+   "x": 3.65,
+   "y": 5.4,
+   "w": 0.5,
+   "d": 0.45
+  },
+  {
+   "label_ar": "كنبة طرف السرير",
+   "x": 1.7,
+   "y": 3.0,
+   "w": 1.6,
+   "d": 0.5
+  },
+  {
+   "label_ar": "تسريحة",
+   "x": 0,
+   "y": 1.2,
+   "w": 0.5,
+   "d": 1.4
+  }
+ ],
+ "plan_notes_ar": [
+  "لوح سرير منجد بعرض الجدار",
+  "إضاءة جانبية جدارية",
+  "ستائر شفافة وطبقة معتمة"
+ ],
+ "scene_en": "a quiet-luxury master bedroom in a Saudi villa: walls painted warm Antwerp beige, a full-width upholstered headboard wall in soft taupe, a king bed with layered ivory linen bedding, walnut bedside tables with brass-and-white swing-arm wall lamps above them, a boucle bench at the foot of the bed, beige wood-look porcelain floor planks, sheer beige cotton curtains over a large window, soft cove lighting",
+ "slides": [
+  {
+   "view_en": "a wide view from the door toward the bed wall",
+   "locate_en": "the painted side wall",
+   "item": {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "أنتويرب بيج (Antwerp Beige)",
+    "code": "12290",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن وموزعوها في المملكة"
+   }
+  },
+  {
+   "view_en": "a view from the bed side across the floor toward the window",
+   "locate_en": "the wood-look floor",
+   "item": {
+    "type_ar": "الأرضية",
+    "name": "Line Wood Beige · بورسلان بمظهر الخشب",
+    "code": "A99GZLNW",
+    "brand": "RAK Ceramics",
+    "where_ar": "معارض راك سيراميكس ومتجرها في السعودية",
+    "sample_color": false
+   }
+  },
+  {
+   "view_en": "a close-up of the sheer curtains glowing with daylight",
+   "locate_en": "the sheer curtains",
+   "item": {
+    "type_ar": "الستائر",
+    "name": "SILVERLÖNN · شيفون قطني بيج",
+    "code": "104.939.78",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "sample_color": false
+   }
+  },
+  {
+   "view_en": "a close-up of the bedside table and the wall lamp above it",
+   "locate_en": "the brass wall lamp",
+   "item": {
+    "type_ar": "الإضاءة",
+    "name": "ÅRSTID · إضاءة جدارية نحاسي",
+    "code": "203.303.25",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "sample_color": false
+   }
+  }
+ ]
+}

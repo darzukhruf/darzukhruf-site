@@ -1,0 +1,112 @@
+{
+ "id": "opening-5-kitchen",
+ "title_ar": "مطبخ مفتوح بمينيمال دافئ",
+ "space_en": "open-kitchen",
+ "space_ar": "مطبخ مفتوح",
+ "style_ar": "مينيمال دافئ",
+ "palette_ar": "سيج بيج وأبيض ورمادي",
+ "room": {
+  "w": 4.5,
+  "l": 5.5,
+  "h": 3.0
+ },
+ "openings": [
+  {
+   "type": "window",
+   "wall": "N",
+   "pos": 1.2,
+   "width": 2.0
+  },
+  {
+   "type": "door",
+   "wall": "S",
+   "pos": 3.0,
+   "width": 1.2
+  }
+ ],
+ "furniture": [
+  {
+   "label_ar": "خزائن سفلية",
+   "x": 0,
+   "y": 4.9,
+   "w": 4.5,
+   "d": 0.6
+  },
+  {
+   "label_ar": "خزائن طويلة",
+   "x": 0,
+   "y": 1.0,
+   "w": 0.6,
+   "d": 3.6
+  },
+  {
+   "label_ar": "جزيرة 2.4×1.0",
+   "x": 1.4,
+   "y": 2.3,
+   "w": 2.4,
+   "d": 1.0
+  },
+  {
+   "label_ar": "كراسي",
+   "x": 1.6,
+   "y": 1.75,
+   "w": 2.0,
+   "d": 0.45
+  }
+ ],
+ "plan_notes_ar": [
+  "جزيرة بسطح Dekton",
+  "خزائن بدون مقابض",
+  "إضاءة معلقة فوق الجزيرة"
+ ],
+ "scene_en": "a warm-minimal open kitchen in a Riyadh home: handleless flat-front cabinets painted soft sage beige, a large island with a light warm-grey ultra-compact stone countertop and waterfall edge, three linen pendant lamps above the island, light wood stools, a full-height white marble-look porcelain backsplash, concrete-grey large-format porcelain floor tiles, a window with daylight, a few ceramic bowls and fresh herbs",
+ "slides": [
+  {
+   "view_en": "a wide view from the living area toward the island and cabinets",
+   "locate_en": "the painted cabinet fronts",
+   "item": {
+    "type_ar": "لون الخزائن · أقرب درجة",
+    "name": "سيج بيج (Sage Beige)",
+    "code": "8584",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن وموزعوها في المملكة"
+   }
+  },
+  {
+   "view_en": "a close-up of the island countertop and its waterfall edge",
+   "locate_en": "the island countertop",
+   "item": {
+    "type_ar": "سطح الجزيرة",
+    "name": "Dekton Helena",
+    "code": "",
+    "brand": "Cosentino",
+    "where_ar": "كوزنتينو · استوديو EBA بالرياض",
+    "sample_color": false
+   }
+  },
+  {
+   "view_en": "a view of the backsplash and counter behind the island",
+   "locate_en": "the marble-look backsplash",
+   "item": {
+    "type_ar": "الجدار الخلفي",
+    "name": "Tech Marble White · بورسلان 60×120",
+    "code": "A12GTCMB",
+    "brand": "RAK Ceramics",
+    "where_ar": "معارض راك سيراميكس ومتجرها في السعودية",
+    "sample_color": false
+   }
+  },
+  {
+   "view_en": "a view looking up at the linen pendant lamps above the island",
+   "locate_en": "the linen pendant lamp",
+   "item": {
+    "type_ar": "الإضاءة",
+    "name": "Dexter · معلقة كتان 45 سم",
+    "code": "",
+    "brand": "Home Centre",
+    "where_ar": "هوم سنتر · فروع المملكة",
+    "sample_color": false
+   }
+  }
+ ]
+}

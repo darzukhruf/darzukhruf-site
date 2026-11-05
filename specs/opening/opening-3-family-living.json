@@ -1,0 +1,120 @@
+{
+ "id": "opening-3-family-living",
+ "title_ar": "صالة عائلية ياباندي",
+ "space_en": "family-living",
+ "space_ar": "صالة عائلية",
+ "style_ar": "ياباندي",
+ "palette_ar": "كاشو وعاجي وجوزي",
+ "room": {
+  "w": 6.5,
+  "l": 7.5,
+  "h": 3.0
+ },
+ "openings": [
+  {
+   "type": "door",
+   "wall": "W",
+   "pos": 0.6,
+   "width": 1.0
+  },
+  {
+   "type": "window",
+   "wall": "E",
+   "pos": 2.0,
+   "width": 3.2
+  }
+ ],
+ "furniture": [
+  {
+   "label_ar": "كنبة",
+   "x": 1.9,
+   "y": 0.8,
+   "w": 2.55,
+   "d": 0.98
+  },
+  {
+   "label_ar": "طاولة",
+   "x": 2.5,
+   "y": 2.3,
+   "w": 1.3,
+   "d": 0.65
+  },
+  {
+   "label_ar": "سجادة",
+   "x": 1.7,
+   "y": 1.2,
+   "w": 3.0,
+   "d": 2.0
+  },
+  {
+   "label_ar": "جدار تلفزيون وتخزين",
+   "x": 1.3,
+   "y": 7.05,
+   "w": 3.9,
+   "d": 0.45
+  },
+  {
+   "label_ar": "أباجورة",
+   "x": 4.8,
+   "y": 0.9,
+   "w": 0.4,
+   "d": 0.4,
+   "round": true
+  }
+ ],
+ "plan_notes_ar": [
+  "جدار تلفزيون خشبي بتخزين مخفي",
+  "أرضية بورسلان بمظهر الخشب",
+  "إضاءة دافئة"
+ ],
+ "scene_en": "a calm Japandi family living room in a Riyadh apartment: walls painted a warm cashew beige, a wide beige three-seat sofa with wide armrests, a walnut veneer coffee table with tapered legs, a Berber-inspired beige low-pile rug, a slatted oak TV wall with hidden storage, ivory wood-look porcelain floor planks, a rice-paper floor lamp, linen curtains, a few ceramics and a potted olive tree",
+ "slides": [
+  {
+   "view_en": "a wide view from the doorway toward the sofa and window",
+   "locate_en": "the painted wall behind the sofa",
+   "item": {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "كاشو (Cashew)",
+    "code": "1931",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن وموزعوها في المملكة"
+   }
+  },
+  {
+   "view_en": "a low view along the wood-look floor toward the TV wall",
+   "locate_en": "the wood-look floor",
+   "item": {
+    "type_ar": "الأرضية",
+    "name": "Hard Wood Ivory · بورسلان بمظهر الخشب",
+    "code": "A99GZHRD",
+    "brand": "RAK Ceramics",
+    "where_ar": "معارض راك سيراميكس ومتجرها في السعودية",
+    "sample_color": false
+   }
+  },
+  {
+   "view_en": "a three-quarter view of the beige sofa with cushions",
+   "locate_en": "the beige sofa",
+   "item": {
+    "type_ar": "الكنبة",
+    "name": "VIMLE · كنبة 3 مقاعد بيج",
+    "code": "694.013.35",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "sample_color": false
+   }
+  },
+  {
+   "view_en": "a close-up of the walnut coffee table on the rug",
+   "locate_en": "the walnut coffee table",
+   "item": {
+    "type_ar": "قطعة مختارة",
+    "name": "UGGLERUM · طاولة جوز 130×65",
+    "code": "",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "sample_color": false
+   }
+  }
+ ]
+}

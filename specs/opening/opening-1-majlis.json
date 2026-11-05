@@ -1,0 +1,125 @@
+{
+ "id": "opening-1-majlis",
+ "title_ar": "مجلس رجال نجدي عصري",
+ "space_en": "mens-majlis",
+ "space_ar": "مجلس رجال",
+ "style_ar": "نجدي عصري",
+ "palette_ar": "رملي وكتاني",
+ "room": {
+  "w": 7,
+  "l": 9,
+  "h": 3.4
+ },
+ "openings": [
+  {
+   "type": "door",
+   "wall": "S",
+   "pos": 2.9,
+   "width": 1.4
+  },
+  {
+   "type": "window",
+   "wall": "N",
+   "pos": 2.0,
+   "width": 3.0
+  },
+  {
+   "type": "window",
+   "wall": "E",
+   "pos": 3.5,
+   "width": 2.0
+  }
+ ],
+ "furniture": [
+  {
+   "label_ar": "جلسة أرضية",
+   "x": 0,
+   "y": 0.8,
+   "w": 0.85,
+   "d": 7.6
+  },
+  {
+   "label_ar": "جلسة أرضية",
+   "x": 6.15,
+   "y": 0.8,
+   "w": 0.85,
+   "d": 7.6
+  },
+  {
+   "label_ar": "جلسة صدر",
+   "x": 1.2,
+   "y": 8.15,
+   "w": 4.6,
+   "d": 0.85
+  },
+  {
+   "label_ar": "سجادة",
+   "x": 1.6,
+   "y": 2.4,
+   "w": 3.8,
+   "d": 4.6
+  },
+  {
+   "label_ar": "طاولة",
+   "x": 2.7,
+   "y": 4.0,
+   "w": 1.6,
+   "d": 1.2
+  }
+ ],
+ "plan_notes_ar": [
+  "إضاءة مخفية بالسقف",
+  "نيشات نجدية مثلثة",
+  "سقف خشبي بعوارض"
+ ],
+ "scene_en": "a modern Najdi men's majlis in a Riyadh villa: long low floor seating along both side walls and the back wall upholstered in warm sand linen with grey-green linen cushions, walls painted a soft warm linen white with triangular Najdi niches and gentle lime-plaster texture, a timber beam ceiling with warm cove lighting, a large beige handmade wool flatweave rug, a low walnut coffee table with a brass dallah and small finjan cups, a large rattan pendant lamp, beige marble-effect long porcelain floor planks",
+ "slides": [
+  {
+   "view_en": "a wide view from the entrance door looking at the back seating wall",
+   "locate_en": "the painted back wall",
+   "item": {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "واشد لينن (Washed Linen)",
+    "code": "10679",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن وموزعوها في المملكة"
+   }
+  },
+  {
+   "view_en": "a low angle view across the floor toward the side seating, showing the floor tiles",
+   "locate_en": "the floor tiles",
+   "item": {
+    "type_ar": "الأرضية",
+    "name": "Royal Beige · بورسلان 19.5×120",
+    "code": "A99GRYAL",
+    "brand": "RAK Ceramics",
+    "where_ar": "معارض راك سيراميكس ومتجرها في السعودية",
+    "sample_color": false
+   }
+  },
+  {
+   "view_en": "a close-up of the floor seating with the cushions",
+   "locate_en": "the grey-green linen cushions",
+   "item": {
+    "type_ar": "قماش الوسائد",
+    "name": "DYTÅG · كتان رمادي مخضر",
+    "code": "705.541.29",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "sample_color": false
+   }
+  },
+  {
+   "view_en": "a view looking up at the rattan pendant lamp over the coffee table",
+   "locate_en": "the rattan pendant lamp",
+   "item": {
+    "type_ar": "الإضاءة",
+    "name": "NARRKOLV · راتان 56 سم",
+    "code": "005.943.41",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "sample_color": false
+   }
+  }
+ ]
+}

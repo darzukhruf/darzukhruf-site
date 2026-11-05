@@ -1,0 +1,120 @@
+{
+ "id": "opening-2-women-majlis",
+ "title_ar": "مجلس نساء كلاسيك معاصر",
+ "space_en": "womens-majlis",
+ "space_ar": "مجلس نساء",
+ "style_ar": "كلاسيك معاصر",
+ "palette_ar": "غريج وعاجي ونحاسي",
+ "room": {
+  "w": 6,
+  "l": 7,
+  "h": 3.2
+ },
+ "openings": [
+  {
+   "type": "door",
+   "wall": "S",
+   "pos": 0.6,
+   "width": 1.2
+  },
+  {
+   "type": "window",
+   "wall": "N",
+   "pos": 1.5,
+   "width": 3.0
+  }
+ ],
+ "furniture": [
+  {
+   "label_ar": "كنبة",
+   "x": 0.4,
+   "y": 2.0,
+   "w": 0.95,
+   "d": 3.2
+  },
+  {
+   "label_ar": "كنبة",
+   "x": 4.65,
+   "y": 2.0,
+   "w": 0.95,
+   "d": 3.2
+  },
+  {
+   "label_ar": "كنبة",
+   "x": 1.6,
+   "y": 5.9,
+   "w": 2.8,
+   "d": 0.95
+  },
+  {
+   "label_ar": "طاولة",
+   "x": 2.4,
+   "y": 3.2,
+   "w": 1.2,
+   "d": 1.2,
+   "round": true
+  },
+  {
+   "label_ar": "ستارة",
+   "x": 1.3,
+   "y": 6.85,
+   "w": 3.4,
+   "d": 0.15
+  }
+ ],
+ "plan_notes_ar": [
+  "تكسيات جبس كلاسيكية",
+  "ستائر معتمة بطيات",
+  "أرضية رخام مستوحى"
+ ],
+ "scene_en": "an elegant contemporary-classic women's majlis in a Saudi home: soft silky greige walls with simple classic plaster wall panelling, three-seat sofas in ivory boucle with brass legs, a round marble coffee table with a capiz shell vase, large white Calacatta-look porcelain floor slabs with soft grey veining, floor-to-ceiling beige blackout curtains with pinch pleats, a brass multi-arm floor lamp, warm cove lighting",
+ "slides": [
+  {
+   "view_en": "a wide view from the door toward the window wall",
+   "locate_en": "the painted panelled wall",
+   "item": {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "سيلكي غريج (Silky Greige)",
+    "code": "12307",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن وموزعوها في المملكة"
+   }
+  },
+  {
+   "view_en": "a view across the shiny marble-look floor toward the sofas",
+   "locate_en": "the marble-look floor",
+   "item": {
+    "type_ar": "الأرضية",
+    "name": "Soft Lux White · بورسلان 120×120",
+    "code": "A22GSFLX",
+    "brand": "RAK Ceramics",
+    "where_ar": "معارض راك سيراميكس ومتجرها في السعودية",
+    "sample_color": false
+   }
+  },
+  {
+   "view_en": "a close-up of the curtains with pinch pleats beside the window",
+   "locate_en": "the beige curtains",
+   "item": {
+    "type_ar": "الستائر",
+    "name": "ستارة معتمة بطيات · بيج",
+    "code": "A8BL03",
+    "brand": "Sedar",
+    "where_ar": "معارض سدر في الرياض وجدة والخبر",
+    "sample_color": false
+   }
+  },
+  {
+   "view_en": "a close-up of the round coffee table with the capiz shell vase",
+   "locate_en": "the capiz shell vase",
+   "item": {
+    "type_ar": "قطعة مختارة",
+    "name": "مزهرية صدف Pebble Capiz · 49 سم",
+    "code": "",
+    "brand": "Home Centre",
+    "where_ar": "هوم سنتر · فروع المملكة",
+    "sample_color": false
+   }
+  }
+ ]
+}
