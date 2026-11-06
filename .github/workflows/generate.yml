@@ -22,7 +22,7 @@ jobs:
         with: { ref: media, path: media }
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
-      - run: pip install pillow requests playwright && python -m playwright install --with-deps chromium
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg && pip install pillow requests playwright && python -m playwright install --with-deps chromium
       - run: python site/scripts/gen.py media site/specs/run
         env:
           FAL_KEY: ${{ secrets.FAL_KEY }}

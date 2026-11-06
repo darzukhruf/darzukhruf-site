@@ -272,7 +272,7 @@ def main():
     for m in manifest:
         try: st = dt.datetime.strptime(m.get("slot", ""), "%Y-%m-%d %H:%M")
         except Exception: continue
-        if st > now0 and "stories" not in m:
+        if st > now0 and ("stories" not in m or not m.get("reel")):
             files = [u.split("/media/", 1)[1] for u in m.get("images", [])]
             if files and all(os.path.exists(os.path.join(OUT, f)) for f in files):
                 try:
