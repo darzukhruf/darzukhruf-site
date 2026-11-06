@@ -250,6 +250,14 @@ def build(spec, browser, ident, slot=None):
             "stories": [raw + f for f in stories], "reel": (raw + reel) if reel else None,
             "created_riyadh": dt.datetime.now(RIY).strftime("%Y-%m-%d %H:%M")}
 
+def norm_slot(v):
+    """Google Sheets turns "2026-11-07 00:00" into a date and exports it as "2026-11-07 0:00" — normalise to YYYY-MM-DD HH:MM."""
+    v = (v or "").strip()
+    for f in ("%Y-%m-%d %H:%M", "%Y-%m-%d %H:%M:%S", "%Y/%m/%d %H:%M", "%m/%d/%Y %H:%M:%S", "%m/%d/%Y %H:%M"):
+        try: return dt.datetime.strptime(v, f).strftime("%Y-%m-%d %H:%M")
+        except ValueError: pass
+    return v
+
 def main():
     from playwright.sync_api import sync_playwright
     man_path = os.path.join(OUT, "manifest.json")
@@ -280,7 +288,11 @@ def main():
         done_slots = {m.get("slot") for m in manifest}
         try:
             r = requests.get(PLAN_CSV, timeout=30); r.encoding = "utf-8"
-            plan = {(row.get("slot") or "").strip(): row for row in csv.DictReader(io.StringIO(r.text)) if (row.get("spec_json") or "").strip()}
+            plan = {}
+            for row in csv.DictReader(io.StringIO(r.text)):
+                if not (row.get("spec_json") or "").strip(): continue
+                k = norm_slot(row.get("slot"))
+                if k: plan[k] = row
         except Exception as ex:
             log("plan read failed", ex); plan = {}
         for slot in slots:
