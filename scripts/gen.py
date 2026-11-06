@@ -4,7 +4,7 @@ Modes:
   * otherwise: next slot (00/06/12/18 Riyadh); spec_json from the design agent's sheet for that slot
 Per set: N photoreal slides (same room, different views) each with a real material card, + a final 2D plan slide.
 Output: gen/<id>_<n>.jpg + manifest.json on the `media` branch; log.txt with diagnostics."""
-import base64, csv, glob, io, json, os, re, sys, time, datetime as dt, requests
+import base64, csv, glob, io, json, os, re, subprocess, sys, time, datetime as dt, requests
 from PIL import Image
 sys.path.insert(0, os.path.dirname(__file__))
 from render import card_html, plan_html
@@ -174,6 +174,34 @@ def gen_image(prompt, ref_url=None, locate="the main element", layout=""):
         return url, q
     return None, None
 
+def to_vertical(path_in, path_out):
+    """3:4 card slide -> 9:16 story frame (1080x1920): blurred, darkened fill behind the full slide."""
+    from PIL import ImageFilter, ImageEnhance
+    im = Image.open(path_in).convert("RGB")
+    bg = im.resize((1080, 1920)).filter(ImageFilter.GaussianBlur(40)); bg = ImageEnhance.Brightness(bg).enhance(0.55)
+    fg = im.resize((1080, int(im.height * 1080 / im.width)))
+    bg.paste(fg, (0, (1920 - fg.height) // 2)); bg.save(path_out, "JPEG", quality=90)
+
+def make_vertical(ident, files):
+    """Stories (first 3 photos) + one reel (all photos + plan, crossfades). Reuses the same images: no new generation."""
+    stories, frames = [], []
+    for i, f in enumerate(files):
+        out = f"gen/{ident}_v{i+1}.jpg"; to_vertical(os.path.join(OUT, f), os.path.join(OUT, out)); frames.append(out)
+        if i < 3 and not f.endswith("_plan.jpg"): stories.append(out)
+    reel = f"gen/{ident}_reel.mp4"; d, x = 3.2, 0.6
+    try:
+        args = ["ffmpeg", "-y", "-loglevel", "error"]
+        for fr in frames: args += ["-loop", "1", "-t", str(d), "-i", os.path.join(OUT, fr)]
+        chain, last = [], "[0:v]"
+        for i in range(1, len(frames)):
+            chain.append(f"{last}[{i}:v]xfade=transition=fade:duration={x}:offset={i*(d-x):.2f}[x{i}]"); last = f"[x{i}]"
+        args += ["-filter_complex", ";".join(chain) + f";{last}format=yuv420p,fps=30[v]" if chain else f"[0:v]format=yuv420p,fps=30[v]",
+                 "-map", "[v]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "23", "-movflags", "+faststart", os.path.join(OUT, reel)]
+        subprocess.run(args, check=True, timeout=300)
+    except Exception as ex:
+        log("reel failed", ex); reel = None
+    return stories, reel
+
 def build(spec, browser, ident, slot=None):
     slides = spec["slides"]; total = len(slides) + 1
     base = spec["scene_en"].strip() + layout_text(spec)
@@ -212,10 +240,14 @@ def build(spec, browser, ident, slot=None):
     page.close()
     if n != total:  # renumber badge mismatch is cosmetic; keep as is
         log("note: some slides dropped", ident)
+    try: stories, reel = make_vertical(ident, files)
+    except Exception as ex: log("vertical failed", ex); stories, reel = [], None
+    raw = f"https://raw.githubusercontent.com/{REPO}/media/"
     return {"id": ident, "slot": slot or spec.get("slot") or "opening", "title_ar": spec.get("title_ar"),
             "space_ar": spec.get("space_ar"), "style_ar": spec.get("style_ar"), "palette_ar": spec.get("palette_ar"),
             "room": spec["room"], "materials": materials, "qa": qas, "notes": spec.get("notes_ar", ""),
             "images": [f"https://raw.githubusercontent.com/{REPO}/media/{f}" for f in files],
+            "stories": [raw + f for f in stories], "reel": (raw + reel) if reel else None,
             "created_riyadh": dt.datetime.now(RIY).strftime("%Y-%m-%d %H:%M")}
 
 def main():
@@ -227,6 +259,20 @@ def main():
     for p in sorted(glob.glob(os.path.join(SPEC_DIR, "*.json"))):
         sp = json.load(open(p, encoding="utf-8")); ident = sp.get("id") or os.path.splitext(os.path.basename(p))[0]
         if ident not in done: jobs.append((sp, ident, sp.get("slot")))
+    # backfill stories + reel for upcoming slot entries made before this feature (reuses their images)
+    now0 = dt.datetime.now(RIY).replace(tzinfo=None); changed = False
+    for m in manifest:
+        try: st = dt.datetime.strptime(m.get("slot", ""), "%Y-%m-%d %H:%M")
+        except Exception: continue
+        if st > now0 and "stories" not in m:
+            files = [u.split("/media/", 1)[1] for u in m.get("images", [])]
+            if files and all(os.path.exists(os.path.join(OUT, f)) for f in files):
+                try:
+                    stories, reel = make_vertical(m["id"], files); raw = f"https://raw.githubusercontent.com/{REPO}/media/"
+                    m["stories"] = [raw + f for f in stories]; m["reel"] = (raw + reel) if reel else None; changed = True
+                    log("backfilled vertical", m["id"])
+                except Exception as ex: log("backfill failed", m.get("id"), ex)
+    if changed: json.dump(manifest, open(man_path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     if not jobs:  # buffer: build up to MAX_SETS upcoming slots (next 36h) that have a spec and no design yet
         now = dt.datetime.now(RIY).replace(tzinfo=None); max_sets = int(os.environ.get("MAX_SETS", "2"))
         slots = [c for c in ((now + dt.timedelta(hours=a)).replace(minute=0, second=0, microsecond=0) for a in range(37))
