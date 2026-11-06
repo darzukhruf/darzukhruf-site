@@ -999,5 +999,157 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-5-kitchen-v2_4_plan.jpg"
   ],
   "created_riyadh": "2026-11-06 01:06"
+ },
+ {
+  "id": "2026-11-06_1800_ladies-dressing-room",
+  "slot": "2026-11-06 18:00",
+  "title_ar": "غرفة زينة للسيدة بلمسة موكا وعاج",
+  "space_ar": "غرفة زينة وملابس للسيدة",
+  "style_ar": "فخامة هادئة",
+  "palette_ar": "موكا فاتح، خشب عاجي، بيج شفاف، بلوط",
+  "room": {
+   "w": 4.5,
+   "l": 4.0,
+   "h": 3.0
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "White Mocha",
+    "code": "WH-2108",
+    "brand": "Jazeera Paints",
+    "where_ar": "معارض ووكلاء الجزيرة للدهانات في الرياض",
+    "sample_color": true,
+    "hex": "#8E6C45"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Hard Wood Ivory",
+    "code": "A99GZHRD#IV0.W2S5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "متجر راك سيراميكس الإلكتروني (السعودية)",
+    "sample_color": false
+   },
+   {
+    "type_ar": "القماش",
+    "name": "SILVERLÖNN sheer curtains beige",
+    "code": "104.939.78",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "sample_color": false
+   },
+   {
+    "type_ar": "قطعة مختارة",
+    "name": "DVÄRGSYREN mirror oak veneer",
+    "code": "305.915.91",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "sample_color": false
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top left corner of the ceiling cove light",
+     "straighten the top right corner of the ceiling cove light",
+     "adjust texture on the white mocha wall around the window to remove slight plastic look"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.73,
+     0.45
+    ],
+    "reason": "slight plastic look",
+    "raw": "https://v3b.fal.media/files/b/0ab16241/z8qjvdywvrDuqjRJOmNnR_sv3sj6nY.jpg"
+   },
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the horizontal lines of the ceiling light cove",
+     "adjust the shadow and highlight under the floating vanity to make it more realistic",
+     "add texture to the ceiling and walls to reduce the over-smooth appearance",
+     "smooth out the slight waviness in the mirror's reflection of the cabinet interior",
+     "adjust the perspective of the wall panel pattern on the right to align better with the room's perspective"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.75
+    ],
+    "reason": "The floor is clearly visible and is a wood-look plank.",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 45,
+     "reason": "Different wood finishes, but the overall layout, furniture, and lighting are the same. The second image is taken from a different angle, rotated to the right and zoomed in slightly."
+    },
+    "raw": "https://v3b.fal.media/files/b/0ab1624a/4XvsF-4_yrTOwKu2K3_X2_LRbTIKEo.jpg"
+   },
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the ceiling light strip on the right side",
+     "correct the perspective of the left door frame, it seems slightly skewed",
+     "sharpen the texture of the decorative mirror frame",
+     "adjust the shadow consistency under the floating vanity table"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.89,
+     0.58
+    ],
+    "reason": "The beige sheer curtain at the window is clearly visible.",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 0,
+     "reason": "The images show the same room and elements. Image 2 has the curtains open to reveal a door instead of a window, and the viewpoint has shifted slightly closer and to the right, showing more of the right wall and the back of the white armchair."
+    },
+    "raw": "https://v3b.fal.media/files/b/0ab16255/-YU2mnchrmbuQEefdKey4_hCBbJf0V.jpg"
+   },
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top left corner of the patterned frame around the mirror",
+     "adjust the light reflection in the mirror to match the room's light source",
+     "clarify the pattern on the vase as it looks slightly smudged"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.49,
+     0.39
+    ],
+    "reason": "the oak veneer mirror is clearly visible",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 45,
+     "reason": "Second image is a closer shot from the right, angled towards the left"
+    },
+    "raw": "https://v3b.fal.media/files/b/0ab16258/n-oIW5p7uYTdHWGpBODSp_ae8OF2KL.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-06_1800_ladies-dressing-room_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-06_1800_ladies-dressing-room_2.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-06_1800_ladies-dressing-room_3.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-06_1800_ladies-dressing-room_4.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-06_1800_ladies-dressing-room_5_plan.jpg"
+  ],
+  "created_riyadh": "2026-11-06 16:35"
  }
 ]
