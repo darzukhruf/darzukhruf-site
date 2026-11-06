@@ -1406,5 +1406,324 @@
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_0600_hejazi-family-living_reel.mp4",
   "created_riyadh": "2026-11-06 17:56"
+ },
+ {
+  "id": "2026-11-07_1200_master-bedroom",
+  "slot": "2026-11-07 12:00",
+  "title_ar": "غرفة نوم رئيسية بمينيمال دافئ وأخضر مريمي",
+  "space_ar": "غرفة نوم رئيسية",
+  "style_ar": "مينيمال دافئ",
+  "palette_ar": "سيج بيج، خشب بلوط فاتح، بيج كتاني، لمسة نحاسي",
+  "room": {
+   "w": 4.5,
+   "l": 5.0,
+   "h": 3.0
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "سيج بيج / Sage Beige",
+    "code": "8584",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن في الرياض",
+    "sample_color": true,
+    "hex": "#CEB9A0"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Line Wood Beige",
+    "code": "A99GZLNW#DBE.W2S5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "متجر راك سيراميكس / موزعوها في الرياض",
+    "sample_color": false
+   },
+   {
+    "type_ar": "القماش",
+    "name": "Blackout curtain pinch pleat - Beige",
+    "code": "A8BL03",
+    "brand": "Sedar Global",
+    "where_ar": "سدر جلوبال – معارض الرياض",
+    "sample_color": false
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "ÅRSTID wall lamp brass/white",
+    "code": "203.303.25",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "sample_color": false
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top edge of the wall panel decoration",
+     "remove glowing edge around the curtain on the right",
+     "adjust texture of window frame on the right to remove smudged appearance",
+     "soften over-saturated glow from the bedside lamps",
+     "improve texture consistency of the right nightstand drawer"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "overall room view",
+    "raw": "https://v3b.fal.media/files/b/0ab16b33/Bvrp2AlFlRuop7pLrs2Ja_V5wiaLJB.jpg"
+   },
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top edge of the headboard where it meets the decorative wall panel",
+     "fix the slight waviness in the vertical lines of the wardrobe panels on the left",
+     "correct the minor shadow inconsistency under the armchair legs"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "General check",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 0,
+     "reason": "viewpoint moved back and slightly to the right, showing more of the foreground chair, and slightly higher."
+    },
+    "raw": "https://v3b.fal.media/files/b/0ab16b38/8ViEEti0XiGLy71273FPx_mW7FcyTy.jpg"
+   },
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top curtain rod where it sags slightly in the middle-right",
+     "fix the minor sag in the ceiling at the right corner",
+     "correct the slightly blurry/soft texture of the curtains",
+     "improve the texture of the bed linen, it looks a bit too smooth/plastic",
+     "adjust the light reflection on the floor to be more consistent with the window light source"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "Overall good, but some minor texture and geometry imperfections reduce photorealism.",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 45,
+     "reason": "Viewpoint shifted to the right, showing more of the window and chair, and less of the wardrobe. Bed and other elements are the same."
+    },
+    "raw": "https://v3b.fal.media/files/b/0ab16b40/93RPC-NkcE7NRYBWL8SVe_hcROdC7X.jpg"
+   },
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the wall lamp's bracket, it is slightly bent",
+     "adjust the light reflection on the lampshade, it looks a bit flat",
+     "add a subtle power cable to the wall lamp, or integrate it more seamlessly into the wall",
+     "refine the texture of the headboard fabric, it looks slightly uniform"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.43
+    ],
+    "reason": "slightly bent bracket",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 0,
+     "reason": "Image 2 is a close-up detail of the bedside lamp and part of the bed and curtains, while image 1 is a wider shot of the entire room."
+    },
+    "raw": "https://v3b.fal.media/files/b/0ab16b4a/h9UQR2w3KG-JaP1-7dGgL_XX78GgT9.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_1200_master-bedroom_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_1200_master-bedroom_2.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_1200_master-bedroom_3.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_1200_master-bedroom_4.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_1200_master-bedroom_5_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_1200_master-bedroom_v1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_1200_master-bedroom_v2.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_1200_master-bedroom_v3.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_1200_master-bedroom_reel.mp4",
+  "created_riyadh": "2026-11-06 22:56"
+ },
+ {
+  "id": "2026-11-07_1800_ladies-majlis",
+  "slot": "2026-11-07 18:00",
+  "title_ar": "مجلس نساء بفخامة هادئة ومشربية حجازية",
+  "space_ar": "مجلس نساء",
+  "style_ar": "فخامة هادئة بلمسة حجازية",
+  "palette_ar": "أنتويرب بيج، رخام كالكاتا أبيض، عاجي، ذهبي ناعم",
+  "room": {
+   "w": 5.0,
+   "l": 6.0,
+   "h": 3.2
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "أنتويرب بيج / Antwerp Beige",
+    "code": "12290",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن في الرياض",
+    "sample_color": true,
+    "hex": "#A29B93"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Tech Marble White (Calacatta Africa)",
+    "code": "A12GTCMB-CCA.O0X5P",
+    "brand": "RAK Ceramics",
+    "where_ar": "متجر راك سيراميكس / موزعوها في الرياض",
+    "sample_color": false
+   },
+   {
+    "type_ar": "القماش",
+    "name": "SILVERLÖNN sheer curtains beige",
+    "code": "104.939.78",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "sample_color": false
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "Multi-Lite Floor Lamp - Brass/Shiny Brass",
+    "code": "10014434",
+    "brand": "Gubi",
+    "where_ar": "ذا بويري كومباني – العليا، الرياض",
+    "sample_color": false
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top edge of the recessed lighting on the left wall",
+     "correct the slightly warped top of the door frame on the left",
+     "fix the slight distortion in the top right corner of the recessed lighting",
+     "adjust the inconsistent reflections on the floor tiles to match the light sources accurately"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.28,
+     0.15
+    ],
+    "reason": "slightly bent top edge of recessed lighting",
+    "raw": "https://v3b.fal.media/files/b/0ab16b4d/QRh0vNZueY1q7UNNPQqcP_E1Y1GVnE.jpg"
+   },
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the ceiling line above the door, it is slightly wavy",
+     "correct the perspective of the left wall and ceiling, they diverge slightly",
+     "straighten the left door frame, it is slightly bent inwards",
+     "adjust the reflection of the ceiling light on the floor, it appears to float",
+     "smooth the texture of the back wall panel, it looks slightly blurry and plastic-like"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "General room view",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 10,
+     "reason": "Slight pan to the left, revealing more of the door and less of the window area, but all core elements and materials are identical."
+    },
+    "raw": "https://v3b.fal.media/files/b/0ab16b51/AgQ-43byASMK2CUUPXOCO_Aui80MPx.jpg"
+   },
+   {
+    "photoreal": 9,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the slight curve on the right ceiling light line",
+     "remove the slightly distracting dark shadow/line on the left curtain near the top"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.22,
+     0.44
+    ],
+    "reason": "curtains",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 180,
+     "reason": "The door is on the south wall in Image 2, and the window on the east wall, compared to the north wall for the main sofa in Image 1, indicating a 180-degree turn."
+    },
+    "raw": "https://v3b.fal.media/files/b/0ab16b56/MNlstxCnLPg817Ut-YiQu_TyZWESAm.jpg"
+   },
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top left corner where wall meets ceiling",
+     "adjust the top light strip to be consistently straight along the wall and ceiling",
+     "fix the slight curve in the baseboard near the floor lamp",
+     "correct the light source of the floor lamp, as it has a strange glow effect on the wall behind it",
+     "straighten the back edge of the right armrest of the sofa where it meets the wall"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.28,
+     0.57
+    ],
+    "reason": "floor lamp",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 45,
+     "reason": "Image 2 is a closer shot from a different angle, focusing on the west wall sofa and floor lamp, whereas Image 1 is a wider shot of the entire room."
+    },
+    "raw": "https://v3b.fal.media/files/b/0ab16b59/PKr-qnIwHesh9lzIeELKe_S94hg9QW.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_1800_ladies-majlis_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_1800_ladies-majlis_2.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_1800_ladies-majlis_3.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_1800_ladies-majlis_4.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_1800_ladies-majlis_5_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_1800_ladies-majlis_v1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_1800_ladies-majlis_v2.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_1800_ladies-majlis_v3.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_1800_ladies-majlis_reel.mp4",
+  "created_riyadh": "2026-11-06 22:59"
  }
 ]
