@@ -87,9 +87,36 @@ STYLE = (" Shot as a real professional architectural interior photograph: full-f
          "Modest and family-friendly: no people, no statues or nude art, no alcohol, no religious symbols except Arabic "
          "geometric patterns, no text, no logos, no watermark.")
 
+WALLS = dict(N="north", S="south", E="east", W="west")
+FURN_EN = {"خزانة": "wardrobe", "زينة": "vanity", "كرسي": "chair", "شيزلونغ": "chaise longue", "جزيرة": "island",
+           "كنبة": "sofa", "جلسة": "floor seating", "طاولة": "table", "تلفاز": "TV unit", "خزائن": "cabinets", "بنش": "bench",
+           "إضاءة": "floor lamp", "مغسلة": "sink", "ثلاجة": "fridge", "قهوة": "coffee", "بار": "bar stools", "سرير": "bed"}
+
+def furn_name(lb):
+    hits = [en for ar, en in FURN_EN.items() if ar in lb]
+    return (" ".join(dict.fromkeys(hits)) or "furniture piece") + f" ({lb})"
+
+def wall_map(sp):
+    """Which wall each piece stands against (nearest wall within 0.6 m), else centre. Same text goes into every photo prompt."""
+    r = sp["room"]; W, L = float(r["w"]), float(r["l"]); walls = {k: [] for k in "NSEW"}; centre = []
+    for o in sp.get("openings", []): walls[o["wall"]].append(o["type"])
+    for f in sp.get("furniture", []):
+        x, y, w, d = (float(f[k]) for k in ("x", "y", "w", "d"))
+        dist = {"W": x, "E": W - (x + w), "S": y, "N": L - (y + d)}; k = min(dist, key=dist.get)
+        (walls[k] if dist[k] <= 0.6 else centre).append(furn_name(f.get("label_ar", "")))
+    parts = [f"{WALLS[k]} wall: " + ", ".join(v) for k, v in walls.items() if v]
+    if centre: parts.append("centre of the room: " + ", ".join(centre))
+    return "; ".join(parts)
+
+def materials_text(sp):
+    m = [f"{s.get('locate_en','element')} = {s['item'].get('name','')} by {s['item'].get('brand','')}" for s in sp.get("slides", []) if s.get("item")]
+    return "; ".join(m)
+
 def layout_text(sp):
     r = sp["room"]; s = f" The room is {r['w']} m wide, {r['l']} m long, ceiling height {r.get('h',3)} m."
-    for o in sp.get("openings", []): s += f" A {o['type']} on the {dict(N='north',S='south',E='east',W='west')[o['wall']]} wall."
+    s += " FIXED LAYOUT (identical in every photo of this room, nothing added or moved): " + wall_map(sp) + "."
+    mt = materials_text(sp)
+    if mt: s += " FIXED MATERIALS AND COLOURS (identical in every photo): " + mt + "."
     return s
 
 PRO_EDIT = os.environ.get("PRO_EDIT_MODEL", "").strip() or "fal-ai/nano-banana-pro/edit"
@@ -97,12 +124,14 @@ DIFF = ("Compare IMAGE 1 (reference) and IMAGE 2 of an interior. Reply ONLY JSON
         '{"same_room":true|false,"same_viewpoint":true|false,"angle_change_deg":0-180,"reason":"short"}. '
         "same_room = same space, furniture, materials and colours. same_viewpoint = the camera position/direction/framing is "
         "nearly the same (a crop, zoom or tiny shift of the same shot counts as same_viewpoint). Close-up detail shots of a "
-        "different element count as a different viewpoint.")
+        "different element count as a different viewpoint. same_room must be FALSE if, compared with the layout below, the floor "
+        "material/colour or wall colour differs, any piece stands on a different wall, a piece is missing that should be in view, "
+        "or furniture that is not in the layout appears (e.g. an extra sofa). Layout: ")
 
-def different_view(ref_url, url):
+def different_view(ref_url, url, layout=""):
     j = None
     for ep, extra in VISION:
-        r = fal(ep, {**extra, "prompt": DIFF, "image_urls": [ref_url, url], "image_url": ref_url}, timeout=120)
+        r = fal(ep, {**extra, "prompt": DIFF + (layout or "not given"), "image_urls": [ref_url, url], "image_url": ref_url}, timeout=120)
         txt = (r or {}).get("output") or ""; m = re.search(r"\{.*\}", txt, re.S)
         if m:
             try: j = json.loads(m.group(0)); break
@@ -111,7 +140,7 @@ def different_view(ref_url, url):
     log("DIFF", json.dumps(j, ensure_ascii=False))
     return (j.get("same_room", True) and not j.get("same_viewpoint")), j
 
-def gen_image(prompt, ref_url=None, locate="the main element"):
+def gen_image(prompt, ref_url=None, locate="the main element", layout=""):
     """Generate -> QA -> (repair -> QA) up to 2 times -> viewpoint check. Every generated or edited image passes QA."""
     for attempt in range(3):
         if ref_url:
@@ -139,8 +168,8 @@ def gen_image(prompt, ref_url=None, locate="the main element"):
             url, q = u2, q2
         if not qa_ok(q): log("rejected after repairs:", q.get("reason")); continue
         if ref_url:
-            dv, dj = different_view(ref_url, url); q["diff"] = dj
-            if not dv: log("rejected: same viewpoint"); continue
+            dv, dj = different_view(ref_url, url, layout); q["diff"] = dj
+            if not dv: log("rejected: same viewpoint or different room"); continue
         q["raw"] = url
         return url, q
     return None, None
@@ -155,8 +184,10 @@ def build(spec, browser, ident, slot=None):
     for s in slides[1:]:
         u, q = gen_image("NEW CAMERA POSITION. This is the same room as the reference photo (identical layout, furniture, materials, "
                          "colours and lighting), but photographed from a COMPLETELY DIFFERENT viewpoint — do NOT reuse the reference "
-                         f"framing or direction. New shot: {s['view_en']}. Show the parts of the room that are not visible in the "
-                         "reference, consistent with the layout." + STYLE, master_url, s.get("locate_en", "the main element"))
+                         f"framing or direction. New shot: {s['view_en']}." + layout_text(spec) + " Show the parts of the room "
+                         "that are not visible in the reference EXACTLY as described in the fixed layout, and keep at least one element "
+                         "that is also visible in the reference photo in frame so it reads as the same room. Do not invent extra furniture."
+                         + STYLE, master_url, s.get("locate_en", "the main element"), wall_map(spec) + " | materials: " + materials_text(spec))
         shots.append((u, q) if u else (None, None))
     os.makedirs(os.path.join(OUT, "gen"), exist_ok=True)
     page = browser.new_page(viewport={"width": 1080, "height": 1440})
@@ -196,20 +227,26 @@ def main():
     for p in sorted(glob.glob(os.path.join(SPEC_DIR, "*.json"))):
         sp = json.load(open(p, encoding="utf-8")); ident = sp.get("id") or os.path.splitext(os.path.basename(p))[0]
         if ident not in done: jobs.append((sp, ident, sp.get("slot")))
-    if not jobs:
-        now = dt.datetime.now(RIY).replace(tzinfo=None)
-        slot = next(c for c in ((now + dt.timedelta(hours=a)).replace(minute=0, second=0, microsecond=0) for a in range(30))
-                    if c.hour % 6 == 0 and c - now >= dt.timedelta(minutes=20))
-        key = slot.strftime("%Y-%m-%d %H:%M"); ident = slot.strftime("%Y-%m-%d_%H%M")
-        if ident in done: log("already done", key); return
+    if not jobs:  # buffer: build up to MAX_SETS upcoming slots (next 36h) that have a spec and no design yet
+        now = dt.datetime.now(RIY).replace(tzinfo=None); max_sets = int(os.environ.get("MAX_SETS", "2"))
+        slots = [c for c in ((now + dt.timedelta(hours=a)).replace(minute=0, second=0, microsecond=0) for a in range(37))
+                 if c.hour % 6 == 0 and c - now >= dt.timedelta(minutes=20)]
+        done_slots = {m.get("slot") for m in manifest}
         try:
             r = requests.get(PLAN_CSV, timeout=30); r.encoding = "utf-8"
-            for row in csv.DictReader(io.StringIO(r.text)):
-                if (row.get("slot") or "").strip() == key and (row.get("spec_json") or "").strip():
-                    sp = json.loads(row["spec_json"]); jobs.append((sp, ident + "_" + re.sub(r"[^a-z0-9]+", "-", sp.get("space_en", "design").lower())[:20], key))
+            plan = {(row.get("slot") or "").strip(): row for row in csv.DictReader(io.StringIO(r.text)) if (row.get("spec_json") or "").strip()}
         except Exception as ex:
-            log("plan read failed", ex)
-        if not jobs: log("no spec for", key); return
+            log("plan read failed", ex); plan = {}
+        for slot in slots:
+            key = slot.strftime("%Y-%m-%d %H:%M")
+            if key in done_slots: continue
+            if key not in plan: log("no spec for", key); continue
+            try: sp = json.loads(plan[key]["spec_json"])
+            except Exception as ex: log("bad spec", key, ex); continue
+            ident = slot.strftime("%Y-%m-%d_%H%M") + "_" + re.sub(r"[^a-z0-9]+", "-", sp.get("space_en", "design").lower())[:20]
+            jobs.append((sp, ident, key))
+            if len(jobs) >= max_sets: break
+        if not jobs: log("buffer full or no specs"); return
     with sync_playwright() as p:
         br = p.chromium.launch()
         for sp, ident, slot in jobs:
