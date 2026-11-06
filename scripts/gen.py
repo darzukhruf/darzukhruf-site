@@ -53,7 +53,7 @@ def vision(prompt, url):
 
 QA = ("You are a senior QA inspector for AI-generated interior photos of a Saudi design studio. You know the typical failures of "
   "image models. Inspect the image very carefully and reply ONLY JSON: "
-  '{"photoreal":0-10,"artifacts":true|false,"issues":["short fixable problem", ...],"inappropriate":true|false,'
+  '{"photoreal":0-10,"artifacts":true|false,"major_artifacts":true|false,"issues":["short fixable problem", ...],"inappropriate":true|false,'
   '"item_visible":true|false,"point":[x,y],"reason":"short"}. '
   "Check this list of AI-generation errors: (1) bent, wavy or non-parallel lines in walls, ceilings, door/window frames, tiles, shelves; "
   "(2) inconsistent perspective / multiple vanishing points; (3) furniture with missing, extra, floating or merged legs, sofas/cushions "
@@ -63,14 +63,18 @@ QA = ("You are a senior QA inspector for AI-generated interior photos of a Saudi
   "edges, reflections that do not match the room (mirrors, glossy floors); (7) garbled text, fake letters, random symbols, watermarks; "
   "(8) smeared, blurry, plastic/CGI or over-smooth textures, repeating texture tiles, tiles not aligned; (9) curtains, rugs or fabrics "
   "clipping through furniture; (10) electrical oddities (cables to nowhere, switches in impossible places); (11) over-saturation, HDR halos, "
-  "noise. artifacts=true if ANY of these is visible. issues = each problem found, written as a precise retouch instruction "
+  "noise. artifacts=true if ANY of these is visible. major_artifacts=true ONLY for obvious errors an ordinary viewer would notice "
+  "on a phone screen without zooming: missing/extra/merged/floating furniture legs, duplicated or fused objects, garbled text, impossible "
+  "doors/windows/geometry, clearly bent or wavy walls/frames, absurd scale, or melted/clipping fabric; slight imperfections (small line "
+  "deviations, subtle shadow or reflection inconsistencies, slightly smooth textures, minor halos) are NOT major. issues = each problem found, written as a precise retouch instruction "
   "(e.g. 'straighten the left window frame', 'remove the duplicated vase on the right'). inappropriate: anything against Saudi public "
   "decency or culture (people, revealing clothing, nudity incl. art/statues, alcohol, crosses/idols, offensive symbols). "
   "photoreal: 10 = indistinguishable from a real professional photo. item_visible: whether this element is clearly visible. "
   "point: normalized [x,y] (0..1 from top-left) of the centre of: ")
 
 def qa_ok(q):
-    return q.get("photoreal", 0) >= 8 and not q.get("artifacts") and not q.get("inappropriate") and q.get("item_visible", True)
+    major = q.get("major_artifacts", q.get("artifacts"))  # minor nitpicks are retouched but do not block publishing
+    return q.get("photoreal", 0) >= 8 and not major and not q.get("inappropriate") and q.get("item_visible", True)
 
 def to_jpg(raw, size=(1080, 1440)):
     im = Image.open(io.BytesIO(raw)).convert("RGB"); w, h = im.size; t = size[0] / size[1]

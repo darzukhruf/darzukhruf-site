@@ -1,7 +1,7 @@
 name: generate-designs
 on:
   schedule:
-    - cron: "55 19,1,7,13 * * *"   # 22:55, 04:55, 10:55, 16:55 Riyadh = ~1h before slots 00,06,12,18
+    - cron: "7 19,1,7,13 * * *"   # 22:07, 04:07, 10:07, 16:07 Riyadh = ~2h before slots 00,06,12,18 (GitHub cron can lag ~1h)
   push:
     branches: [main]
     paths: ["specs/run/**"]
