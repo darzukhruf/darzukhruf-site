@@ -1150,6 +1150,261 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-06_1800_ladies-dressing-room_4.jpg",
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-06_1800_ladies-dressing-room_5_plan.jpg"
   ],
-  "created_riyadh": "2026-11-06 16:35"
+  "created_riyadh": "2026-11-06 16:35",
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-06_1800_ladies-dressing-room_v1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-06_1800_ladies-dressing-room_v2.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-06_1800_ladies-dressing-room_v3.jpg"
+  ],
+  "reel": null
+ },
+ {
+  "id": "2026-11-07_0000_japandi-kitchen",
+  "slot": "2026-11-07 00:00",
+  "title_ar": "مطبخ ياباندي مفتوح بجزيرة زمردية",
+  "space_ar": "مطبخ مفتوح بجزيرة",
+  "style_ar": "ياباندي",
+  "palette_ar": "أخضر: سيج بيج، زمردي، خشب فاتح، روطان",
+  "room": {
+   "w": 5.0,
+   "l": 4.5,
+   "h": 3.0
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Sage Beige سيج بيج",
+    "code": "8584",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن المعتمدة في الرياض وجدة والدمام",
+    "sample_color": true,
+    "hex": "#B48755"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "NARRKOLV pendant lamp rattan",
+    "code": "005.943.41",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "sample_color": false
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the horizontal line on the upper left wall where it meets the ceiling",
+     "correct the perspective of the window frame, it appears slightly wider on the right",
+     "adjust the lighting and shadows on the ceiling, they look somewhat artificial and inconsistent with the main light source",
+     "clarify the texture of the light reflections on the counter surface on the right, they appear slightly blurred",
+     "ensure the vertical alignment of the cabinet doors on the right, some seem slightly off",
+     "refine the texture and lighting of the objects on the shelves, they appear slightly CGI",
+     "correct the warped lines of the wall on the left, near the ceiling"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.41
+    ],
+    "reason": "The wall around the north window is the main 'Sage Beige' wall mentioned. The point is the center of this wall section.",
+    "raw": "https://v3b.fal.media/files/b/0ab16414/dJCYsT9dvR8V_DP7oy4l__4GCSDVDD.jpg"
+   },
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the horizontal lines of the far-left window frame",
+     "adjust the top edge of the integrated cabinet doors to be perfectly straight",
+     "correct the slightly warped wood grain on the rightmost bar stool's leg",
+     "remove the subtle HDR halo around the window frame"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.3,
+     0.37
+    ],
+    "reason": "rattan pendant lamp",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 30,
+     "reason": "Closer, higher angle towards the island."
+    },
+    "raw": "https://v3b.fal.media/files/b/0ab16431/ES9fnfZFHMjRFadqYfF5F_PN3ZjYjH.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_0000_japandi-kitchen_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_0000_japandi-kitchen_2.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_0000_japandi-kitchen_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_0000_japandi-kitchen_v1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_0000_japandi-kitchen_v2.jpg"
+  ],
+  "reel": null,
+  "created_riyadh": "2026-11-06 17:54"
+ },
+ {
+  "id": "2026-11-07_0600_hejazi-family-living",
+  "slot": "2026-11-07 06:00",
+  "title_ar": "صالة عائلية حجازية عصرية بالأزرق والرخام",
+  "space_ar": "صالة عائلية",
+  "style_ar": "حجازي عصري",
+  "palette_ar": "أزرق ديكو، أبيض رخامي، بيج، كشمير",
+  "room": {
+   "w": 6.5,
+   "l": 5.0,
+   "h": 3.2
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Deco Blue دكو بلو",
+    "code": "4477",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن المعتمدة في الرياض وجدة والدمام",
+    "sample_color": true,
+    "hex": "#364448"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Calacatta Gold White",
+    "code": "A05GCTAG-WHE.M0X0R",
+    "brand": "RAK Ceramics",
+    "where_ar": "متجر راك سيراميكس الإلكتروني (السعودية)",
+    "sample_color": false
+   },
+   {
+    "type_ar": "الكنبة",
+    "name": "VIMLE 3-seat sofa wide armrests Gunnared beige",
+    "code": "694.013.35",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "sample_color": false
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "Collect Socket Pendant Lamp High - Cashmere",
+    "code": "100297693",
+    "brand": "Ferm Living",
+    "where_ar": "ذا بويري كومباني - الرياض، العليا",
+    "sample_color": false
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top left corner of the blue wall",
+     "adjust the reflection pattern on the ceiling to be more consistent with the window pattern and light source"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.3,
+     0.37
+    ],
+    "reason": "visible",
+    "raw": "https://v3b.fal.media/files/b/0ab16434/ihdM_89DJqgIvrLWeQBG8_Jg5iyEQc.jpg"
+   },
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top left corner of the blue wall where it meets the ceiling molding",
+     "adjust the shadow consistency on the floor, especially under the coffee table and chairs",
+     "reduce the slightly plastic/CGI look of the white ceiling and molding"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.75
+    ],
+    "reason": "Floor",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 5,
+     "reason": "The viewpoint in Image 2 is slightly shifted to the left and angled slightly more towards the window compared to Image 1. Also the TV unit and TV on the north wall is now visible."
+    },
+    "raw": "https://v3b.fal.media/files/b/0ab16438/ZTOjl2p2Vwg7eSTjxDBiH_5ASuKkaO.jpg"
+   },
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the horizontal lines of the crown molding above the blue wall",
+     "align the right door frame with the wall",
+     "correct the perspective distortion of the ceiling lamp (it leans to the left)",
+     "straighten the top bar of the right window frame",
+     "adjust the shadow on the ceiling to match the light source from the right window, currently it looks like a reflection from the floor",
+     "clarify the texture of the floor tiles, they appear slightly blurry and repetitive in some areas"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.33,
+     0.62
+    ],
+    "reason": "beige three-seat sofa",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 15,
+     "reason": "Viewpoint shifted slightly to the left, revealing more of the door on the west wall and less of the window on the east wall."
+    },
+    "raw": "https://v3b.fal.media/files/b/0ab1643d/dg6qHS1cXDUg_wjWgWncx_1l6ZzZ6B.jpg"
+   },
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top left corner where the wall meets the ceiling",
+     "remove the slight HDR halo around the window frame and the main lamp"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.51,
+     0.32
+    ],
+    "reason": "clearly visible",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 0,
+     "reason": "Close-up, different framing."
+    },
+    "raw": "https://v3b.fal.media/files/b/0ab1643e/8wk2Hcez6viyOXXPjRRUm_FzveUXkO.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_0600_hejazi-family-living_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_0600_hejazi-family-living_2.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_0600_hejazi-family-living_3.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_0600_hejazi-family-living_4.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_0600_hejazi-family-living_5_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_0600_hejazi-family-living_v1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_0600_hejazi-family-living_v2.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_0600_hejazi-family-living_v3.jpg"
+  ],
+  "reel": null,
+  "created_riyadh": "2026-11-06 17:56"
  }
 ]
