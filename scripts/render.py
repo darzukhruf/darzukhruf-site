@@ -39,7 +39,7 @@ def card_html(photo_bytes, item, point=None, idx=1, total=5):
 
 def plan_html(spec, idx=5, total=5):
     r = spec["room"]; W, L, H = float(r["w"]), float(r["l"]), float(r.get("h", 3.0))
-    box = 820; sc = box / max(W, L); ox = (1080 - W * sc) / 2; oy = 330 + (box - L * sc) / 2
+    box = 780; sc = box / max(W, L); ox = (1080 - W * sc) / 2; oy = 300 + (box - L * sc) / 2
     X = lambda m: ox + m * sc; Y = lambda m: oy + (L - m) * sc  # y up in plan meters
     t = 0.2 * sc; parts = []
     parts.append(f"<rect x='{X(0)-t}' y='{Y(L)-t}' width='{W*sc+2*t}' height='{L*sc+2*t}' fill='none' stroke='{G}' stroke-width='4'/>")
@@ -124,7 +124,7 @@ def plan_html(spec, idx=5, total=5):
     return f"""<!doctype html><html lang='ar' dir='rtl'><head><meta charset='utf-8'>{FONT_CSS}<style>{BASE_CSS}
 .pl{{position:absolute;inset:0}} .hd{{position:absolute;top:70px;right:0;left:0;text-align:center;color:{G}}}
 .hd .t{{font-size:58px;font-weight:700}} .hd .s{{font-size:28px;margin-top:10px;opacity:.9}}
-.ft{{position:absolute;bottom:150px;right:0;left:0;display:flex;justify-content:center;gap:26px;color:{G};font-size:32px;font-weight:500}}
+.ft{{position:absolute;bottom:172px;right:0;left:0;display:flex;justify-content:center;gap:26px;color:{G};font-size:32px;font-weight:500}}
 .ft span{{border:2px solid {G};border-radius:40px;padding:10px 26px}}
 .lg{{position:absolute;bottom:86px;right:70px;left:70px;height:76px;line-height:38px;text-align:center;color:{G};font-size:24px;opacity:.92;overflow:hidden}}
 .br{{position:absolute;bottom:34px;left:0;right:0;display:flex;justify-content:center;align-items:center;gap:12px;color:{G};font-size:26px}}
