@@ -7,7 +7,7 @@ Output: gen/<id>_<n>.jpg + manifest.json on the `media` branch; log.txt with dia
 import base64, csv, glob, io, json, os, re, subprocess, sys, time, datetime as dt, requests
 from PIL import Image
 sys.path.insert(0, os.path.dirname(__file__))
-from render import card_html, plan_html
+from render import card_html, plan_html, board_html, story_html, hero_html
 
 OUT = sys.argv[1] if len(sys.argv) > 1 else "media"
 SPEC_DIR = sys.argv[2] if len(sys.argv) > 2 else "site/specs/run"
@@ -140,13 +140,13 @@ def different_view(ref_url, url, layout=""):
     log("DIFF", json.dumps(j, ensure_ascii=False))
     return (j.get("same_room", True) and not j.get("same_viewpoint")), j
 
-def gen_image(prompt, ref_url=None, locate="the main element", layout=""):
+def gen_image(prompt, ref_url=None, locate="the main element", layout="", t2i=None):
     """Generate -> QA -> (repair -> QA) up to 2 times -> viewpoint check. Every generated or edited image passes QA."""
     for attempt in range(3):
         if ref_url:
             model = PRO_EDIT if attempt == 2 else EDIT
             j = fal(model, {"prompt": prompt, "image_urls": [ref_url], "num_images": 1, "aspect_ratio": "3:4", "output_format": "jpeg"})
-        else: j = fal(T2I, {"prompt": prompt, "num_images": 1, "aspect_ratio": "3:4", "output_format": "jpeg"})
+        else: j = fal(t2i or T2I, {"prompt": prompt, "num_images": 1, "aspect_ratio": "3:4", "output_format": "jpeg"})
         url = (((j or {}).get("images") or [{}])[0]).get("url")
         if not url: continue
         q, ep = vision(QA + locate, url)
@@ -202,7 +202,7 @@ def make_vertical(ident, files):
         log("reel failed", ex); reel = None
     return stories, reel
 
-def build(spec, browser, ident, slot=None):
+def build_multi(spec, browser, ident, slot=None):
     slides = spec["slides"]; total = len(slides) + 1
     base = spec["scene_en"].strip() + layout_text(spec)
     master_url, q0 = gen_image("Photorealistic photograph of " + base + " View: " + slides[0]["view_en"] + "." + STYLE,
@@ -250,6 +250,77 @@ def build(spec, browser, ident, slot=None):
             "stories": [raw + f for f in stories], "reel": (raw + reel) if reel else None,
             "created_riyadh": dt.datetime.now(RIY).strftime("%Y-%m-%d %H:%M")}
 
+HERO_T2I = os.environ.get("HERO_MODEL", "").strip() or "fal-ai/nano-banana-pro"
+LOCATE = ("Reply ONLY JSON {\"points\":[[x,y],...]} with the normalized (0..1 from top-left) centre of each of these elements "
+          "in this interior photo, in the same order (use null if not visible): ")
+
+def shoot(page, html, path, w=1080, h=1440):
+    page.set_viewport_size({"width": w, "height": h}); page.set_content(html, wait_until="networkidle")
+    page.wait_for_timeout(500); page.screenshot(path=path, type="jpeg", quality=91)
+
+def reel_from(frames, out):
+    d, x = 3.4, 0.6
+    args = ["ffmpeg", "-y", "-loglevel", "error"]
+    for fr in frames: args += ["-loop", "1", "-t", str(d), "-i", fr]
+    chain, last = [], "[0:v]"
+    for i in range(1, len(frames)):
+        chain.append(f"{last}[{i}:v]xfade=transition=fade:duration={x}:offset={i*(d-x):.2f}[x{i}]"); last = f"[x{i}]"
+    fc = (";".join(chain) + f";{last}format=yuv420p,fps=30[v]") if chain else "[0:v]format=yuv420p,fps=30[v]"
+    subprocess.run(args + ["-filter_complex", fc, "-map", "[v]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "23",
+                           "-movflags", "+faststart", out], check=True, timeout=300)
+
+def build_single(spec, browser, ident, slot=None):
+    """One strong hero photo + material board + (optional) 2D plan; stories and a reel from the same three images."""
+    mats = [dict(m) for m in spec.get("materials", [])][:4]
+    prompt = ("Photorealistic photograph of " + spec["scene_en"].strip() + layout_text({**spec, "slides": [
+              {"locate_en": m.get("locate_en", "element"), "item": m} for m in mats]}) + " View: " + spec.get("view_en", "wide shot from the entrance") + "." + STYLE)
+    url, q = gen_image(prompt, locate=(mats[0].get("locate_en") if mats else "the main element"), t2i=HERO_T2I)
+    if not url: log("hero failed", ident); return None
+    photo = to_jpg(fetch(url))
+    try:  # swatches sampled from the hero where each material is
+        pts, _ = vision(LOCATE + "; ".join(m.get("locate_en", "element") for m in mats), url)
+        pts = (pts or {}).get("points") or []
+        im = Image.open(io.BytesIO(photo)).convert("RGB")
+        for m, pt in zip(mats, pts):
+            if m.get("hex") or not pt or m.get("sample_color") is False: continue
+            x, y = int(pt[0] * 1080), int(pt[1] * 1440)
+            c = im.crop((max(0, x - 18), max(0, y - 18), min(1080, x + 18), min(1440, y + 18))).resize((1, 1), Image.BOX).getpixel((0, 0))
+            m["hex"] = "#%02X%02X%02X" % c
+    except Exception as ex: log("swatch sampling failed", ex)
+    os.makedirs(os.path.join(OUT, "gen"), exist_ok=True)
+    page = browser.new_page(); files = []
+    with_plan = spec.get("include_plan", True) and spec.get("room"); total = 3 if with_plan else 2
+    f1 = f"gen/{ident}_1.jpg"; shoot(page, hero_html(photo), os.path.join(OUT, f1)); files.append(f1)
+    f2 = f"gen/{ident}_2_board.jpg"; shoot(page, board_html(spec, photo, mats, 2, total), os.path.join(OUT, f2)); files.append(f2)
+    if with_plan:
+        f3 = f"gen/{ident}_3_plan.jpg"; shoot(page, plan_html(spec, 3, 3), os.path.join(OUT, f3)); files.append(f3)
+    stories, frames = [], []
+    for i, f in enumerate(files):
+        b = open(os.path.join(OUT, f), "rb").read()
+        sv = f"gen/{ident}_s{i+1}.jpg"; shoot(page, story_html(b), os.path.join(OUT, sv), 1080, 1920)
+        if i < 2: stories.append(sv)
+        rv = f"gen/{ident}_r{i+1}.jpg"; shoot(page, story_html(b, spec.get("reel_hook_ar") if i == 0 else None), os.path.join(OUT, rv), 1080, 1920)
+        frames.append(os.path.join(OUT, rv))
+    page.close()
+    reel = f"gen/{ident}_reel.mp4"
+    try: reel_from(frames, os.path.join(OUT, reel))
+    except Exception as ex: log("reel failed", ex); reel = None
+    for fr in frames:
+        try: os.remove(fr)
+        except Exception: pass
+    raw = f"https://raw.githubusercontent.com/{REPO}/media/"
+    return {"id": ident, "format": "single", "category": spec.get("category", "residential"), "slot": slot or spec.get("slot") or "manual",
+            "title_ar": spec.get("title_ar"), "space_ar": spec.get("space_ar"), "style_ar": spec.get("style_ar"),
+            "palette_ar": spec.get("palette_ar"), "reel_hook_ar": spec.get("reel_hook_ar"), "room": spec.get("room"),
+            "materials": mats, "qa": [q], "notes": spec.get("notes_ar", ""), "images": [raw + f for f in files],
+            "stories": [raw + f for f in stories], "reel": (raw + reel) if reel else None,
+            "created_riyadh": dt.datetime.now(RIY).strftime("%Y-%m-%d %H:%M")}
+
+def build(spec, browser, ident, slot=None):
+    if spec.get("format") == "single" or ("materials" in spec and "slides" not in spec):
+        return build_single(spec, browser, ident, slot)
+    return build_multi(spec, browser, ident, slot)
+
 def norm_slot(v):
     """Google Sheets turns "2026-11-07 00:00" into a date and exports it as "2026-11-07 0:00" — normalise to YYYY-MM-DD HH:MM."""
     v = (v or "").strip()
@@ -282,9 +353,7 @@ def main():
                 except Exception as ex: log("backfill failed", m.get("id"), ex)
     if changed: json.dump(manifest, open(man_path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     if not jobs:  # buffer: build up to MAX_SETS upcoming slots (next 36h) that have a spec and no design yet
-        now = dt.datetime.now(RIY).replace(tzinfo=None); max_sets = int(os.environ.get("MAX_SETS", "2"))
-        slots = [c for c in ((now + dt.timedelta(hours=a)).replace(minute=0, second=0, microsecond=0) for a in range(37))
-                 if c.hour % 6 == 0 and c - now >= dt.timedelta(minutes=20)]
+        now = dt.datetime.now(RIY).replace(tzinfo=None); max_sets = int(os.environ.get("MAX_SETS", "3"))
         done_slots = {m.get("slot") for m in manifest}
         try:
             r = requests.get(PLAN_CSV, timeout=30); r.encoding = "utf-8"
@@ -295,10 +364,10 @@ def main():
                 if k: plan[k] = row
         except Exception as ex:
             log("plan read failed", ex); plan = {}
-        for slot in slots:
-            key = slot.strftime("%Y-%m-%d %H:%M")
-            if key in done_slots: continue
-            if key not in plan: log("no spec for", key); continue
+        for key in sorted(plan):  # flexible publishing times chosen by the design/market agents
+            try: slot = dt.datetime.strptime(key, "%Y-%m-%d %H:%M")
+            except ValueError: log("bad slot", key); continue
+            if not (dt.timedelta(minutes=20) <= slot - now <= dt.timedelta(hours=36)) or key in done_slots: continue
             try: sp = json.loads(plan[key]["spec_json"])
             except Exception as ex: log("bad spec", key, ex); continue
             ident = slot.strftime("%Y-%m-%d_%H%M") + "_" + re.sub(r"[^a-z0-9]+", "-", sp.get("space_en", "design").lower())[:20]

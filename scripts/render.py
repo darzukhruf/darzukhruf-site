@@ -66,19 +66,46 @@ def plan_html(spec, idx=5, total=5):
             else:
                 for d_ in (-t / 3, t / 3):
                     parts.append(f"<line x1='{xo+d_}' y1='{y1}' x2='{xo+d_}' y2='{y2}' stroke='{G}' stroke-width='2.5'/>")
-    used = []
+    # furniture outlines + collision-free labels (never overlapping, never outside their shape)
+    boxes, legend = [], []
+    AR_NUM = "٠١٢٣٤٥٦٧٨٩"
+    def hit(b):
+        return any(not (b[2] <= o[0] or b[0] >= o[2] or b[3] <= o[1] or b[1] >= o[3]) for o in boxes)
     for f in spec.get("furniture", []):
         x, y, w, d = (float(f[k]) for k in ("x", "y", "w", "d"))
         rx = 10 if f.get("round") else 4
         parts.append(f"<rect x='{X(x)}' y='{Y(y+d)}' width='{w*sc}' height='{d*sc}' rx='{rx}' fill='none' stroke='{G}' stroke-width='2' opacity='.95'/>")
-        if f.get("label_ar") and min(w, d) * sc > 34:
-            fs = max(16, min(24, int(min(w, d) * sc / 3.2)))
-            rot = " transform='rotate(-90 {cx} {cy})'" if d > w * 1.6 and w * sc < 140 else ""
-            cx, cy = X(x + w / 2), Y(y + d / 2)
-            if any(abs(cx - a) < 90 and abs(cy - b) < 40 for a, b in used):
-                cy = Y(y + d) + fs + 8  # move label to the top edge inside the shape
-            used.append((cx, cy))
-            parts.append(f"<text x='{cx}' y='{cy}' font-size='{fs}' fill='{G}' text-anchor='middle' dominant-baseline='middle'{rot.format(cx=cx, cy=cy)}>{e(f['label_ar'])}</text>")
+    for f in sorted(spec.get("furniture", []), key=lambda f: float(f["w"]) * float(f["d"])):  # small pieces first
+        lb = str(f.get("label_ar") or "").strip()
+        if not lb: continue
+        x, y, w, d = (float(f[k]) for k in ("x", "y", "w", "d"))
+        L0, T0, R0, B0 = X(x) + 4, Y(y + d) + 4, X(x + w) - 4, Y(y) - 4
+        placed = False
+        for rot in ([False, True] if d > w * 1.4 else [False]):
+            for fs in (24, 21, 18, 16, 14):
+                tw, th = fs * 0.62 * len(lb) + 8, fs * 1.35
+                bw, bh = (th, tw) if rot else (tw, th)
+                if bw > R0 - L0 or bh > B0 - T0: continue
+                cxm = (L0 + R0) / 2
+                for cy in ((T0 + B0) / 2, T0 + bh / 2, B0 - bh / 2):
+                    b = (cxm - bw / 2, cy - bh / 2, cxm + bw / 2, cy + bh / 2)
+                    if hit(b): continue
+                    boxes.append(b); placed = True
+                    tr = f" transform='rotate(-90 {cxm} {cy})'" if rot else ""
+                    parts.append(f"<text x='{cxm}' y='{cy}' font-size='{fs}' fill='{G}' text-anchor='middle' dominant-baseline='central'{tr}>{e(lb)}</text>")
+                    break
+                if placed: break
+            if placed: break
+        if not placed:  # numbered marker + legend entry instead of a squeezed label
+            n = len(legend) + 1; num = "".join(AR_NUM[int(c)] for c in str(n))
+            cx, cy = (L0 + R0) / 2, (T0 + B0) / 2
+            for dy_ in (0, -30, 30, -60, 60):
+                b = (cx - 15, cy + dy_ - 15, cx + 15, cy + dy_ + 15)
+                if not hit(b): cy += dy_; break
+            boxes.append((cx - 15, cy - 15, cx + 15, cy + 15))
+            parts.append(f"<circle cx='{cx}' cy='{cy}' r='14' fill='{D}' stroke='{G}' stroke-width='2'/>"
+                         f"<text x='{cx}' y='{cy}' font-size='17' fill='{G}' text-anchor='middle' dominant-baseline='central'>{num}</text>")
+            legend.append(f"{num} {lb}")
     # dimension lines
     dy = Y(0) + t + 46
     parts.append(f"<line x1='{X(0)}' y1='{dy}' x2='{X(W)}' y2='{dy}' stroke='{G}' stroke-width='2'/>")
@@ -92,7 +119,7 @@ def plan_html(spec, idx=5, total=5):
     parts.append(f"<g transform='translate(110,1190)'><circle r='34' fill='none' stroke='{G}' stroke-width='2'/><path d='M0,-26 L12,12 L0,4 L-12,12 Z' fill='{G}'/><text y='-44' font-size='22' fill='{G}' text-anchor='middle'>ش</text></g>")
     svg = "<svg class='pl' width='1080' height='1440'>" + "".join(parts) + "</svg>"
     area = W * L
-    legend = " · ".join(e(x) for x in spec.get("plan_notes_ar", [])[:3])
+    legend = " · ".join(e(x) for x in (legend + spec.get("plan_notes_ar", [])[:3]))
     return f"""<!doctype html><html lang='ar' dir='rtl'><head><meta charset='utf-8'>{FONT_CSS}<style>{BASE_CSS}
 .pl{{position:absolute;inset:0}} .hd{{position:absolute;top:70px;right:0;left:0;text-align:center;color:{G}}}
 .hd .t{{font-size:58px;font-weight:700}} .hd .s{{font-size:28px;margin-top:10px;opacity:.9}}
@@ -105,3 +132,69 @@ def plan_html(spec, idx=5, total=5):
 <div class='hd'><div class='t'>{e(spec.get('title_ar'))}</div><div class='s'>مخطط توضيحي · الأبعاد بالمتر</div></div>
 <div class='ft'><span>المساحة {area:.1f} م²</span><span>الارتفاع {H:.2f} م</span></div>
 <div class='lg'>{legend}</div><div class='br'>{STAR.format(s=30, c=G)}<span>دار زخرف · تصميم مقترح</span></div></body></html>"""
+
+
+FIT_JS = """<script>
+document.fonts && document.fonts.ready.then(fit); setTimeout(fit, 400);
+function fit(){document.querySelectorAll('[data-fit]').forEach(function(el){var fs=parseFloat(getComputedStyle(el).fontSize);
+ var min=parseFloat(el.dataset.fit)||16; while((el.scrollWidth>el.clientWidth+1||el.scrollHeight>el.clientHeight+1)&&fs>min){fs-=1;el.style.fontSize=fs+'px';}});}
+</script>"""
+
+def board_html(spec, hero_bytes, materials, idx=2, total=3):
+    """Material board slide: brand colours, hero thumbnail, one clean row per material. Text auto-shrinks and is clipped
+    per row, so lines can never overlap."""
+    b64 = base64.b64encode(hero_bytes).decode(); rows = []
+    for m in materials[:4]:
+        hx = m.get("hex") or ""
+        sw = (f"<div class='sw' style='background:{e(hx)}'></div>" if hx else f"<div class='sw ico'>{STAR.format(s=44, c=G)}</div>")
+        code = " · ".join(x for x in [m.get("code"), m.get("brand")] if x)
+        rows.append(f"<div class='row'>{sw}<div class='tx'><div class='k' data-fit='18'>{e(m.get('type_ar'))}</div>"
+                    f"<div class='n' data-fit='24'>{e(m.get('name'))}</div>"
+                    f"<div class='w' data-fit='18'><span class='c'>{e(code)}</span>{' — ' if code and m.get('where_ar') else ''}{e(m.get('where_ar'))}</div></div></div>")
+    n = max(1, len(rows)); rh = min(200, int((1440 - 500 - 130 - (n - 1) * 20) / n))
+    return f"""<!doctype html><html lang='ar' dir='rtl'><head><meta charset='utf-8'>{FONT_CSS}<style>{BASE_CSS}
+.hd{{position:absolute;top:44px;right:56px;left:56px;display:flex;gap:28px;align-items:center}}
+.th{{width:300px;height:400px;flex:none;border-radius:22px;border:3px solid {G};background:url(data:image/jpeg;base64,{b64}) center/cover}}
+.ti{{flex:1;min-width:0;height:400px;display:flex;flex-direction:column;justify-content:center;gap:16px;overflow:hidden}}
+.ti .a{{color:{G};font-size:30px;font-weight:500}} .ti .t{{color:{S};font-size:54px;font-weight:700;line-height:1.25;max-height:210px;overflow:hidden}}
+.ti .s{{color:{G};font-size:28px;opacity:.95;max-height:80px;overflow:hidden}}
+.list{{position:absolute;top:500px;right:56px;left:56px;bottom:130px;display:flex;flex-direction:column;gap:20px}}
+.row{{height:{rh}px;flex:none;display:flex;align-items:center;gap:28px;border:1.5px solid rgba(194,160,107,.55);border-radius:22px;padding:16px 28px;overflow:hidden}}
+.sw{{width:{min(110, rh-30)}px;height:{min(110, rh-30)}px;border-radius:50%;flex:none;border:3px solid {G}}} .sw.ico{{display:flex;align-items:center;justify-content:center}}
+.tx{{flex:1;min-width:0;display:flex;flex-direction:column;justify-content:center;gap:8px;overflow:hidden;height:100%}}
+.tx>div{{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.3}}
+.k{{color:{G};font-size:28px;font-weight:700}} .n{{color:{S};font-size:42px;font-weight:700}}
+.c{{color:{S};unicode-bidi:isolate;direction:ltr}} .w{{color:{G};font-size:27px}}
+.ft{{position:absolute;bottom:40px;right:56px;left:56px;display:flex;justify-content:space-between;align-items:center;color:{G};font-size:24px}}
+.ft .b{{display:flex;align-items:center;gap:10px;font-size:28px;font-weight:700}}
+.pg{{position:absolute;top:14px;left:20px;color:{G};font-size:22px}}
+</style></head><body><div class='pg'>{idx}/{total}</div>
+<div class='hd'><div class='th'></div><div class='ti'><div class='a'>لوحة المواد</div><div class='t' data-fit='34'>{e(spec.get('title_ar'))}</div>
+<div class='s' data-fit='20'>{e(" · ".join(x for x in [spec.get('style_ar'), spec.get('palette_ar')] if x))}</div></div></div>
+<div class='list'>{''.join(rows)}</div>
+<div class='ft'><span>الألوان تقريبية وتختلف حسب الإضاءة والشاشة</span><span class='b'>{STAR.format(s=30, c=G)}دار زخرف</span></div>
+{FIT_JS}</body></html>"""
+
+def story_html(img_bytes, hook=None):
+    """9:16 frame: blurred fill + full image; optional hook text (reel opening) in a clean band — never over other text."""
+    b64 = base64.b64encode(img_bytes).decode()
+    band = (f"<div class='hk'><div data-fit='34'>{e(hook)}</div></div>" if hook else "")
+    return f"""<!doctype html><html lang='ar' dir='rtl'><head><meta charset='utf-8'>{FONT_CSS}<style>
+*{{margin:0;padding:0;box-sizing:border-box}} html,body{{width:1080px;height:1920px;overflow:hidden;background:{D};font-family:'Tajawal',sans-serif}}
+.bg{{position:absolute;inset:-60px;background:url(data:image/jpeg;base64,{b64}) center/cover;filter:blur(40px) brightness(.5)}}
+.fg{{position:absolute;left:0;right:0;top:240px;height:1440px;background:url(data:image/jpeg;base64,{b64}) center/contain no-repeat}}
+.hk{{position:absolute;top:60px;left:60px;right:60px;height:150px;display:flex;align-items:center;justify-content:center;
+ background:rgba(20,51,46,.9);border:2px solid {G};border-radius:26px;padding:0 30px}}
+.hk div{{color:{S};font-size:56px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}}
+.br{{position:absolute;bottom:90px;left:0;right:0;text-align:center;color:{G};font-size:34px;font-weight:700}}
+</style></head><body><div class='bg'></div><div class='fg'></div>{band}{FIT_JS}</body></html>"""
+
+
+def hero_html(photo_bytes):
+    """Clean hero photo (no cards): only a small, quiet brand mark in the corner."""
+    b64 = base64.b64encode(photo_bytes).decode()
+    return f"""<!doctype html><html lang='ar' dir='rtl'><head><meta charset='utf-8'>{FONT_CSS}<style>{BASE_CSS}
+.ph{{position:absolute;inset:0;background:url(data:image/jpeg;base64,{b64}) center/cover}}
+.br{{position:absolute;bottom:30px;left:34px;display:flex;align-items:center;gap:10px;color:{S};font-size:26px;font-weight:700;
+ opacity:.85;text-shadow:0 2px 8px #0009}}</style></head><body><div class='ph'></div>
+<div class='br'>{STAR.format(s=28, c=S)}<span>دار زخرف</span></div></body></html>"""
