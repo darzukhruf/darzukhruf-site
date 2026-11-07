@@ -1,3 +1,2 @@
-2026-11-07T15:48:49.443771+03:00
-QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": [{"point": [0.5, 0.5], "reason": "slightly blur or soften the reflections on the floor tiles to make them less distinct and more natural"}, {"point": [0.3, 0.08], "reason": "light banding or uneven illumination in the ceiling coving light strip."}, {"point": [0.7, 0.08], "reason": "light banding or uneven illumination in the ceiling coving light strip."}, {"point": [0.18, 0.67], "reason": "soften the texture on the side of the wooden bench to match the rest of the wood."}, {"point": [0.3, 0.87], "reason": "ensure the circular rug is perfectly round."}], "inappropriate": false, "item_visible": true}
-OK 2026-11-08_2130_villa-entrance-hall 3 images
+2026-11-07T17:40:27.036678+03:00
+buffer full or no specs
