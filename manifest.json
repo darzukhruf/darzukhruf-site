@@ -2645,5 +2645,98 @@
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_2130_villa-entrance-hall_reel.mp4",
   "created_riyadh": "2026-11-07 15:48"
+ },
+ {
+  "id": "2026-11-09_1300_specialty-cafe",
+  "format": "single",
+  "category": "commercial",
+  "slot": "2026-11-09 13:00",
+  "title_ar": "كافيه مختص بدفء اللاتيه",
+  "space_ar": "كافيه مختص",
+  "style_ar": "ياباندي عضوي",
+  "palette_ar": "لاتيه، خرسانة رمادية فاتحة، بلوط، روطان أسود",
+  "reel_hook_ar": "تجلس هنا ولا تاخذ قهوتك وتمشي؟",
+  "room": {
+   "w": 8.0,
+   "l": 6.0,
+   "h": 3.4
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Latte لاتاي",
+    "code": "1393",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن في الرياض",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#E7DED2"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Neutra Concrete Grey",
+    "code": "A12GNTRC-LIG.A6X5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "معارض ومتجر راك السعودية",
+    "locate_en": "floor",
+    "sample_color": false,
+    "hex": "#C4C3BF"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "SANDKORN/HAVSDJUP pendant",
+    "code": "596.127.86",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "rattan pendant lamps",
+    "sample_color": false,
+    "hex": "#C5A783"
+   },
+   {
+    "type_ar": "القماش",
+    "name": "GURLI cushion unbleached",
+    "code": "805.987.31",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "banquette cushions",
+    "sample_color": false,
+    "hex": "#F3EFE9"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top left edge of the wall to ceiling junction, it is slightly wavy",
+     "correct the warped perspective of the window frames on the far right, they are slightly bent",
+     "adjust the top frame of the long window on the right, it is slightly bowed",
+     "align the top section of the rightmost pillar-like wall element with the lower section, it's slightly off-kilter",
+     "straighten the horizontal lines of the decorative pattern above the bar, they are slightly wavy",
+     "refine the texture of the back wall, it appears slightly blurry/over-smooth in areas"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "overall good but minor line distortions and subtle texture issues",
+    "raw": "https://v3b.fal.media/files/b/0ab190ce/awV6n3QkXENneFnoSehYj_JmPMMDHH.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-09_1300_specialty-cafe_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-09_1300_specialty-cafe_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-09_1300_specialty-cafe_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-09_1300_specialty-cafe_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-09_1300_specialty-cafe_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-09_1300_specialty-cafe_reel.mp4",
+  "created_riyadh": "2026-11-08 01:37"
  }
 ]
