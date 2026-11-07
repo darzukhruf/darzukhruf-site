@@ -251,8 +251,13 @@ def build_multi(spec, browser, ident, slot=None):
             "created_riyadh": dt.datetime.now(RIY).strftime("%Y-%m-%d %H:%M")}
 
 HERO_T2I = os.environ.get("HERO_MODEL", "").strip() or "fal-ai/nano-banana-pro"
-LOCATE = ("Reply ONLY JSON {\"points\":[[x,y],...]} with the normalized (0..1 from top-left) centre of each of these elements "
-          "in this interior photo, in the same order (use null if not visible): ")
+LOCATE = ("Reply ONLY JSON {\"items\":[{\"point\":[x,y],\"hex\":\"#RRGGBB\"},...]} — one item per element below, same order: "
+          "point = normalized (0..1 from top-left) centre of a clean, evenly lit patch of that element (not a shadow, highlight, window or "
+          "another object); hex = the element's true base colour as it appears in the photo (null if not visible). Elements: ")
+
+def _hex(c): return "#%02X%02X%02X" % tuple(int(v) for v in c[:3])
+def _rgb(h):
+    h = (h or "").lstrip("#"); return tuple(int(h[i:i+2], 16) for i in (0, 2, 4)) if len(h) == 6 else None
 
 def shoot(page, html, path, w=1080, h=1440):
     page.set_viewport_size({"width": w, "height": h}); page.set_content(html, wait_until="networkidle")
@@ -277,15 +282,21 @@ def build_single(spec, browser, ident, slot=None):
     url, q = gen_image(prompt, locate=(mats[0].get("locate_en") if mats else "the main element"), t2i=HERO_T2I)
     if not url: log("hero failed", ident); return None
     photo = to_jpg(fetch(url))
-    try:  # swatches sampled from the hero where each material is
-        pts, _ = vision(LOCATE + "; ".join(m.get("locate_en", "element") for m in mats), url)
-        pts = (pts or {}).get("points") or []
+    try:  # swatches: median colour of a patch at the located point, cross-checked with the vision model's colour reading
+        res, _ = vision(LOCATE + "; ".join(m.get("locate_en", "element") for m in mats), url)
+        items = (res or {}).get("items") or []
         im = Image.open(io.BytesIO(photo)).convert("RGB")
-        for m, pt in zip(mats, pts):
-            if m.get("hex") or not pt or m.get("sample_color") is False: continue
-            x, y = int(pt[0] * 1080), int(pt[1] * 1440)
-            c = im.crop((max(0, x - 18), max(0, y - 18), min(1080, x + 18), min(1440, y + 18))).resize((1, 1), Image.BOX).getpixel((0, 0))
-            m["hex"] = "#%02X%02X%02X" % c
+        for m, it in zip(mats, items):
+            if m.get("hex") or not isinstance(it, dict): continue
+            vh, pt, samp = _rgb(it.get("hex")), it.get("point"), None
+            if pt and len(pt) == 2 and pt[0] is not None:
+                x, y = int(pt[0] * 1080), int(pt[1] * 1440)
+                patch = im.crop((max(0, x - 30), max(0, y - 30), min(1080, x + 30), min(1440, y + 30)))
+                px = sorted(patch.getdata(), key=lambda c: sum(c)); mid = px[len(px) // 4: 3 * len(px) // 4] or px
+                samp = tuple(sum(c[i] for c in mid) / len(mid) for i in range(3))
+            if samp and vh and sum((a - b) ** 2 for a, b in zip(samp, vh)) ** 0.5 > 70: m["hex"] = _hex(vh)  # sample hit the wrong thing
+            elif samp: m["hex"] = _hex(samp)
+            elif vh: m["hex"] = _hex(vh)
     except Exception as ex: log("swatch sampling failed", ex)
     os.makedirs(os.path.join(OUT, "gen"), exist_ok=True)
     page = browser.new_page(); files = []

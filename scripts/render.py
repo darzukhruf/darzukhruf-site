@@ -125,13 +125,13 @@ def plan_html(spec, idx=5, total=5):
 .hd .t{{font-size:58px;font-weight:700}} .hd .s{{font-size:28px;margin-top:10px;opacity:.9}}
 .ft{{position:absolute;bottom:150px;right:0;left:0;display:flex;justify-content:center;gap:26px;color:{G};font-size:32px;font-weight:500}}
 .ft span{{border:2px solid {G};border-radius:40px;padding:10px 26px}}
-.lg{{position:absolute;bottom:96px;right:60px;left:60px;text-align:center;color:{G};font-size:24px;opacity:.85}}
+.lg{{position:absolute;bottom:92px;right:60px;left:60px;height:44px;line-height:44px;text-align:center;color:{G};font-size:24px;opacity:.9;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
 .br{{position:absolute;bottom:34px;left:0;right:0;display:flex;justify-content:center;align-items:center;gap:12px;color:{G};font-size:26px}}
 .pg{{position:absolute;top:40px;left:40px;color:{G};font-size:26px;border:1.5px solid {G};border-radius:30px;padding:6px 18px}}
 </style></head><body>{svg}<div class='pg'>{idx}/{total}</div>
 <div class='hd'><div class='t'>{e(spec.get('title_ar'))}</div><div class='s'>مخطط توضيحي · الأبعاد بالمتر</div></div>
 <div class='ft'><span>المساحة {area:.1f} م²</span><span>الارتفاع {H:.2f} م</span></div>
-<div class='lg'>{legend}</div><div class='br'>{STAR.format(s=30, c=G)}<span>دار زخرف · تصميم مقترح</span></div></body></html>"""
+<div class='lg' data-fit='15'>{legend}</div><div class='br'>{STAR.format(s=30, c=G)}<span>دار زخرف · تصميم مقترح</span></div>{FIT_JS}</body></html>"""
 
 
 FIT_JS = """<script>
