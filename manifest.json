@@ -2528,5 +2528,122 @@
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_1300_najdi-annex-lounge_reel.mp4",
   "created_riyadh": "2026-11-07 14:53"
+ },
+ {
+  "id": "2026-11-08_2130_villa-entrance-hall",
+  "format": "single",
+  "category": "residential",
+  "slot": "2026-11-08 21:30",
+  "title_ar": "مدخل فيلا يرحّب بضيفك",
+  "space_ar": "مدخل الفيلا",
+  "style_ar": "كلاسيك معاصر",
+  "palette_ar": "رمادي دافئ، رخام أبيض، بلوط، نحاسي",
+  "reel_hook_ar": "وش أول انطباع يعطيه مدخل بيتك؟",
+  "room": {
+   "w": 3.0,
+   "l": 5.0,
+   "h": 3.4
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Tender Greige تندر غريج",
+    "code": "12306",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن في الرياض",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#D9D9D9"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Tech Marble White",
+    "code": "A12GTCMB-CCA.O0X5P",
+    "brand": "RAK Ceramics",
+    "where_ar": "معارض ومتجر راك السعودية",
+    "locate_en": "floor",
+    "sample_color": false,
+    "hex": "#F0F0F0"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "STOCKHOLM 2025 table lamp",
+    "code": "905.859.31",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "table lamp on console",
+    "sample_color": false,
+    "hex": "#C7B6A4"
+   },
+   {
+    "type_ar": "قطعة مختارة",
+    "name": "STOCKHOLM mirror oak 80 cm",
+    "code": "",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "round mirror",
+    "sample_color": false,
+    "hex": "#B68B66"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     {
+      "point": [
+       0.5,
+       0.5
+      ],
+      "reason": "slightly blur or soften the reflections on the floor tiles to make them less distinct and more natural"
+     },
+     {
+      "point": [
+       0.3,
+       0.08
+      ],
+      "reason": "light banding or uneven illumination in the ceiling coving light strip."
+     },
+     {
+      "point": [
+       0.7,
+       0.08
+      ],
+      "reason": "light banding or uneven illumination in the ceiling coving light strip."
+     },
+     {
+      "point": [
+       0.18,
+       0.67
+      ],
+      "reason": "soften the texture on the side of the wooden bench to match the rest of the wood."
+     },
+     {
+      "point": [
+       0.3,
+       0.87
+      ],
+      "reason": "ensure the circular rug is perfectly round."
+     }
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "raw": "https://v3b.fal.media/files/b/0ab18301/qH6j_yTnXOKd3-SJxrpiY_xNH97bKS.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_2130_villa-entrance-hall_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_2130_villa-entrance-hall_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_2130_villa-entrance-hall_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_2130_villa-entrance-hall_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_2130_villa-entrance-hall_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_2130_villa-entrance-hall_reel.mp4",
+  "created_riyadh": "2026-11-07 15:48"
  }
 ]
