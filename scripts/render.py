@@ -119,19 +119,20 @@ def plan_html(spec, idx=5, total=5):
     parts.append(f"<g transform='translate(110,1190)'><circle r='34' fill='none' stroke='{G}' stroke-width='2'/><path d='M0,-26 L12,12 L0,4 L-12,12 Z' fill='{G}'/><text y='-44' font-size='22' fill='{G}' text-anchor='middle'>ش</text></g>")
     svg = "<svg class='pl' width='1080' height='1440'>" + "".join(parts) + "</svg>"
     area = W * L
-    legend = " · ".join(e(x) for x in (legend + spec.get("plan_notes_ar", [])[:3]))
+    notes = [n if len(n) <= 34 else n[:32].rsplit(" ", 1)[0] + "…" for n in (str(x) for x in spec.get("plan_notes_ar", [])[:2])]
+    legend = " · ".join(e(x) for x in (legend + notes))
     return f"""<!doctype html><html lang='ar' dir='rtl'><head><meta charset='utf-8'>{FONT_CSS}<style>{BASE_CSS}
 .pl{{position:absolute;inset:0}} .hd{{position:absolute;top:70px;right:0;left:0;text-align:center;color:{G}}}
 .hd .t{{font-size:58px;font-weight:700}} .hd .s{{font-size:28px;margin-top:10px;opacity:.9}}
 .ft{{position:absolute;bottom:150px;right:0;left:0;display:flex;justify-content:center;gap:26px;color:{G};font-size:32px;font-weight:500}}
 .ft span{{border:2px solid {G};border-radius:40px;padding:10px 26px}}
-.lg{{position:absolute;bottom:92px;right:60px;left:60px;height:44px;line-height:44px;text-align:center;color:{G};font-size:24px;opacity:.9;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
+.lg{{position:absolute;bottom:86px;right:70px;left:70px;height:76px;line-height:38px;text-align:center;color:{G};font-size:24px;opacity:.92;overflow:hidden}}
 .br{{position:absolute;bottom:34px;left:0;right:0;display:flex;justify-content:center;align-items:center;gap:12px;color:{G};font-size:26px}}
 .pg{{position:absolute;top:40px;left:40px;color:{G};font-size:26px;border:1.5px solid {G};border-radius:30px;padding:6px 18px}}
 </style></head><body>{svg}<div class='pg'>{idx}/{total}</div>
 <div class='hd'><div class='t'>{e(spec.get('title_ar'))}</div><div class='s'>مخطط توضيحي · الأبعاد بالمتر</div></div>
 <div class='ft'><span>المساحة {area:.1f} م²</span><span>الارتفاع {H:.2f} م</span></div>
-<div class='lg' data-fit='15'>{legend}</div><div class='br'>{STAR.format(s=30, c=G)}<span>دار زخرف · تصميم مقترح</span></div>{FIT_JS}</body></html>"""
+<div class='lg' data-fit='19'>{legend}</div><div class='br'>{STAR.format(s=30, c=G)}<span>دار زخرف · تصميم مقترح</span></div>{FIT_JS}</body></html>"""
 
 
 FIT_JS = """<script>
