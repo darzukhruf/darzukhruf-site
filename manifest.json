@@ -2008,5 +2008,255 @@
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_0600_dining-room_reel.mp4",
   "created_riyadh": "2026-11-07 05:02"
+ },
+ {
+  "id": "2026-11-08_1200_entrance-foyer",
+  "slot": "2026-11-08 12:00",
+  "title_ar": "مدخل كلاسيكي معاصر بالأخضر العميق",
+  "space_ar": "مدخل البيت",
+  "style_ar": "كلاسيك معاصر",
+  "palette_ar": "أخضر إيفننغ عميق، أبيض كالكاتا ذهبي، بلوط، نحاسي",
+  "room": {
+   "w": 3.0,
+   "l": 4.5,
+   "h": 3.2
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "ايفننغ جرين / Evening Green",
+    "code": "6352",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن في الرياض",
+    "sample_color": true,
+    "hex": "#DAC5A4"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Calacatta Gold White",
+    "code": "A05GCTAG-WHE.M0X0R",
+    "brand": "RAK Ceramics",
+    "where_ar": "متجر راك سيراميكس / موزعوها في الرياض",
+    "sample_color": false
+   },
+   {
+    "type_ar": "قطعة مختارة",
+    "name": "DVÄRGSYREN mirror oak veneer",
+    "code": "305.915.91",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "sample_color": false
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top edge of the baseboard on the far wall through the archway",
+     "correct the light reflections on the rightmost wall paneling to be consistent with the light source",
+     "add a subtle shadow under the console table legs to ground it",
+     "soften the specular highlight on the golden vase to be less CGI-like"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "minor imperfections in reflections, lighting, and texture",
+    "raw": "https://v3b.fal.media/files/b/0ab17c40/qbLClfmNe7Hz6F4z4zMAP_YSloMeim.jpg"
+   },
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top left corner of the archway",
+     "adjust the reflection in the mirror to match the room's depth and perspective",
+     "fix the slightly wavy line on the bottom right moulding near the table leg"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "overall good, minor perspective and reflection issues",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 180,
+     "reason": "Room is identical but viewed from the opposite end. "
+    },
+    "raw": "https://v3b.fal.media/files/b/0ab17c49/Laiaw3VmJii_06w2WEhnb_1M4lurgJ.jpg"
+   },
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the bottom edge of the mirror's reflection on the right side",
+     "straighten the reflection of the light fixture in the mirror",
+     "improve the texture detail on the lower carved panel of the door",
+     "soften the strong shadow under the console table to be more natural"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.4
+    ],
+    "reason": "mirror",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 90,
+     "reason": "Image 2 is a close-up of the console and mirror from a different angle, rotating the view towards the west wall."
+    },
+    "raw": "https://v3b.fal.media/files/b/0ab17c59/aja7Z98pOYe4wZPrMBH09_iBLNGP5v.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_1200_entrance-foyer_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_1200_entrance-foyer_2.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_1200_entrance-foyer_3.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_1200_entrance-foyer_4_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_1200_entrance-foyer_v1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_1200_entrance-foyer_v2.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_1200_entrance-foyer_v3.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_1200_entrance-foyer_reel.mp4",
+  "created_riyadh": "2026-11-07 11:04"
+ },
+ {
+  "id": "2026-11-08_1800_girl-bedroom",
+  "slot": "2026-11-08 18:00",
+  "title_ar": "غرفة بنت شابة بياباندي ناعم وسدو",
+  "space_ar": "غرفة نوم بنت",
+  "style_ar": "ياباندي ناعم",
+  "palette_ar": "لافينغ بيج، أوف وايت، خشب أبيض مطفي، لمسة نحاسي",
+  "room": {
+   "w": 4.2,
+   "l": 4.2,
+   "h": 3.0
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "لافينغ بيج / Loving Beige",
+    "code": "12293",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن في الرياض",
+    "sample_color": true,
+    "hex": "#ACA59D"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Clapton White",
+    "code": "",
+    "brand": "Navarti (Spain)",
+    "where_ar": "أرض الفخامة (Luxury Land)",
+    "sample_color": false
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "STOCKHOLM 2025 table lamp white textile/brass-plated",
+    "code": "905.859.31",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "sample_color": false
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the slightly wavy right edge of the white wardrobe on the right",
+     "adjust the perspective of the wardrobe on the right, it leans slightly inward at the top",
+     "remove the slight HDR halo around the bed and the rug",
+     "soften the glowing edge around the lamp shade",
+     "align the texture of the wooden floor planks more consistently, some planks appear to slightly overlap or be misaligned",
+     "ensure the texture of the bed frame doesn't look overly smooth/plastic"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.89,
+     0.5
+    ],
+    "reason": "wardrobe",
+    "raw": "https://v3b.fal.media/files/b/0ab17c5c/R1XdQSPj8EgBVQ3a5PSkc_PjBeDA1U.jpg"
+   },
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top left corner of the ceiling",
+     "adjust the light reflection on the floor to match the light source",
+     "fix the slightly blurred texture on the bedside table"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "Overall good, but some minor inconsistencies in lines, lighting, and texture prevent a perfect score.",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 10,
+     "reason": "The large red rug on the right is missing, replaced by a large light-coloured rug. The white cushion covers are replaced by brown ones. The desk is missing a leg, and its position changed slightly. The table lamp is missing a shade. The room is rotated slightly."
+    },
+    "raw": "https://v3b.fal.media/files/b/0ab17c63/e7WEKfjv5I2V5LWc1tbQd_LNeIWzWH.jpg"
+   },
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "soften the glowing edge of the lampshade",
+     "add more realistic texture to the curtain",
+     "adjust lighting to match light source behind curtain",
+     "straighten the table base vertical lines"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.42,
+     0.54
+    ],
+    "reason": "The lamp is clearly visible.",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 45,
+     "reason": "Image 2 is a close-up detail shot of the bedside table and lamp, which are present in Image 1. The general layout, wall color, floor, and furniture match the description and the reference image, indicating it's the same room. However, the viewpoint is significantly different, focusing on a specific element rather than the overall room."
+    },
+    "raw": "https://v3b.fal.media/files/b/0ab17c71/uf8jzoBGdRJq4s1ckDZNR_ME5JYVHm.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_1800_girl-bedroom_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_1800_girl-bedroom_2.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_1800_girl-bedroom_3.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_1800_girl-bedroom_4_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_1800_girl-bedroom_v1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_1800_girl-bedroom_v2.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_1800_girl-bedroom_v3.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_1800_girl-bedroom_reel.mp4",
+  "created_riyadh": "2026-11-07 11:08"
  }
 ]
