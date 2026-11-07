@@ -1725,5 +1725,288 @@
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_1800_ladies-majlis_reel.mp4",
   "created_riyadh": "2026-11-06 22:59"
+ },
+ {
+  "id": "2026-11-08_0000_home-office",
+  "slot": "2026-11-08 00:00",
+  "title_ar": "مكتب منزلي أورجانك بجدار تيراكوتا",
+  "space_ar": "مكتب منزلي وركن قراءة",
+  "style_ar": "أورجانك مودرن",
+  "palette_ar": "تيراكوتا، كتاني فاتح، خشب جوز داكن، أخضر رمادي",
+  "room": {
+   "w": 3.6,
+   "l": 4.0,
+   "h": 3.0
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "رستك تيراكوتا / Rustic Terracotta",
+    "code": "2771",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن في الرياض",
+    "sample_color": true,
+    "hex": "#080705"
+   },
+   {
+    "type_ar": "القماش",
+    "name": "DYTÅG cushion cover grey-green",
+    "code": "705.541.29",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "sample_color": false
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "NARRKOLV pendant lamp rattan",
+    "code": "005.943.41",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "sample_color": false
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten top left corner of the ceiling",
+     "adjust reflections of the ceiling light on the wall",
+     "correct the light rays pattern on the ceiling as they appear inconsistent",
+     "straighten the top right edge of the window frame",
+     "remove the vague reflection of a person in the window pane",
+     "fix the slight distortion/warping on the back of the desk chair"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "accent wall",
+    "raw": "https://v3b.fal.media/files/b/0ab173c3/J1iWa8RTIP63g36la91tm_jl9Feet7.jpg"
+   },
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top edge of the bookshelf",
+     "correct the light reflection pattern on the ceiling from the pendant lamp, it's too sharp and angular in some places",
+     "straighten the left edge of the doorway/wall",
+     "adjust the shadow under the desk chair, it seems slightly unnatural/dark compared to the overall lighting"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.69,
+     0.73
+    ],
+    "reason": "cushion",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 30,
+     "reason": "Image 2 is taken from further back and to the left, showing more of the bookshelf."
+    },
+    "raw": "https://v3b.fal.media/files/b/0ab173cb/0FL-kXfQvbmwN_8IVpREN_3DXd0RXA.jpg"
+   },
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top left corner of the window frame",
+     "adjust the reflection on the table surface to match the light source"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.62,
+     0.3
+    ],
+    "reason": "pendant lamp",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 45,
+     "reason": "Image 2 is a close-up of the desk and pendant lamp, showing a different angle and framing."
+    },
+    "raw": "https://v3b.fal.media/files/b/0ab173d0/Wfr_EIomctsQIgV-zvQIh_dFjVuxR2.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_0000_home-office_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_0000_home-office_2.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_0000_home-office_3.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_0000_home-office_4_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_0000_home-office_v1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_0000_home-office_v2.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_0000_home-office_v3.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_0000_home-office_reel.mp4",
+  "created_riyadh": "2026-11-07 05:00"
+ },
+ {
+  "id": "2026-11-08_0600_dining-room",
+  "slot": "2026-11-08 06:00",
+  "title_ar": "غرفة طعام ياباندي بطاقات نجدية",
+  "space_ar": "غرفة طعام",
+  "style_ar": "ياباندي بلمسة نجدية",
+  "palette_ar": "تندر غريج، بلوط طبيعي، بني قهوة، كشمير",
+  "room": {
+   "w": 4.6,
+   "l": 5.0,
+   "h": 3.0
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "تندر غريج / Tender Greige",
+    "code": "12306",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن في الرياض",
+    "sample_color": true,
+    "hex": "#938675"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Navona Greige",
+    "code": "",
+    "brand": "Navarti (Spain)",
+    "where_ar": "أرض الفخامة (Luxury Land)",
+    "sample_color": false
+   },
+   {
+    "type_ar": "القماش",
+    "name": "Blackout curtain pinch pleat - Brown",
+    "code": "CBL702-12-C",
+    "brand": "Sedar Global",
+    "where_ar": "سدر جلوبال – معارض الرياض",
+    "sample_color": false
+   },
+   {
+    "type_ar": "قطعة مختارة",
+    "name": "Collect Socket Pendant Lamp High - Cashmere",
+    "code": "100297693",
+    "brand": "Ferm Living",
+    "where_ar": "ذا بويري كومباني – العليا، الرياض",
+    "sample_color": false
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top left curtain rod",
+     "adjust the inconsistent pattern on the right wall decor",
+     "fix the slight distortion of the ceiling molding near the front window",
+     "correct the minor waviness of the bottom molding on the left wall"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.2,
+     0.04
+    ],
+    "reason": "Top curtain rod bent",
+    "raw": "https://v3b.fal.media/files/b/0ab173d3/bA182qu5jtzdGoHhfeRhY_f3JJlwQP.jpg"
+   },
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the wall molding above the right window",
+     "correct the perspective of the wall decorative strip on the left wall",
+     "adjust the reflection on the floor to match the light source",
+     "remove the slight HDR halo around the rightmost window curtain"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "overall good, minor perspective and reflection issues",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": -15,
+     "reason": "Viewpoint shifted left, revealing the door on the south wall and changing the angle of the dining table."
+    },
+    "raw": "https://v3b.fal.media/files/b/0ab173d6/C9KhI0bxxJUtxvZQvw1ai_SEV65ZdH.jpg"
+   },
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the crown molding above the door",
+     "adjust the shadow direction under the table to be consistent with the light source from the right window",
+     "enhance texture details of the fabric on the chairs to appear less smooth",
+     "adjust reflections on the floor to better match the room's lighting"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.85,
+     0.6
+    ],
+    "reason": "curtains",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 180,
+     "reason": "Viewpoint rotated 180 degrees, west wall with window in image 1 is now south wall with door in image 2."
+    },
+    "raw": "https://v3b.fal.media/files/b/0ab173d8/9I-adLaaEUfqOwT_1lGBM_UMI64hoj.jpg"
+   },
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the horizontal lines of the wainscoting on the right",
+     "adjust the shadow on the right wall to be consistent with the light source",
+     "smooth the texture of the pendant lamp shade, it appears slightly lumpy"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.39
+    ],
+    "reason": "Pendant lamp is clearly visible.",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 0,
+     "reason": "Image 2 is a close-up detail of the pendant lamp and part of the table and chairs. It is clearly a different viewpoint than Image 1 which shows the entire room."
+    },
+    "raw": "https://v3b.fal.media/files/b/0ab173dc/d88jNcC6qyTf1Z9RP0ajs_VPUgLbYz.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_0600_dining-room_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_0600_dining-room_2.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_0600_dining-room_3.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_0600_dining-room_4.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_0600_dining-room_5_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_0600_dining-room_v1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_0600_dining-room_v2.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_0600_dining-room_v3.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_0600_dining-room_reel.mp4",
+  "created_riyadh": "2026-11-07 05:02"
  }
 ]
