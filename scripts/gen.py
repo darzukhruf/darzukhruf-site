@@ -156,7 +156,7 @@ def gen_image(prompt, ref_url=None, locate="the main element", layout="", t2i=No
         repairs = 0
         while not qa_ok(q) and not q.get("inappropriate") and q.get("issues") and repairs < 2:
             repairs += 1
-            fix = "; ".join(q["issues"][:5])
+            fix = "; ".join(i if isinstance(i, str) else json.dumps(i, ensure_ascii=False) for i in q["issues"][:5])
             r = fal(EDIT, {"prompt": "Retouch this interior photograph. Fix ONLY these problems: " + fix + ". Keep the composition, "
                            "camera, furniture, materials, colours and lighting identical. Result must look like a real professional photo, "
                            "no text, no people.", "image_urls": [url], "num_images": 1, "aspect_ratio": "3:4", "output_format": "jpeg"})
