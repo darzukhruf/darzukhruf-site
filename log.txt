@@ -1,3 +1,2 @@
-2026-11-08T01:37:39.813161+03:00
-QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the top left edge of the wall to ceiling junction, it is slightly wavy", "correct the warped perspective of the window frames on the far right, they are slightly bent", "adjust the top frame of the long window on the right, it is slightly bowed", "align the top section of the rightmost pillar-like wall element with the lower section, it's slightly off-kilter", "straighten the horizontal lines of the decorative pattern above the bar, they are slightly wavy", "refine the texture of the back wall, it appears slightly blurry/over-smooth in areas"], "inappropriate": false, "item_visible": true, "point": [0.5, 0.5], "reason": "overall good but minor line distortions and subtle texture issues"}
-OK 2026-11-09_1300_specialty-cafe 3 images
+2026-11-08T03:58:27.797100+03:00
+buffer full or no specs
