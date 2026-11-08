@@ -1,3 +1,2 @@
-2026-11-08T09:55:37.453894+03:00
-QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the top edge of the window frame near the ceiling", "adjust the light reflections on the right wall near the ceiling to be consistent with the light strip", "straighten the top edge of the door frame"], "inappropriate": false, "item_visible": true, "point": [0.5, 0.5], "reason": "Overall good, but some minor architectural inconsistencies and subtle light anomalies prevent a higher score."}
-OK 2026-11-09_2130_ladies-majlis 3 images
+2026-11-08T11:50:28.638356+03:00
+buffer full or no specs
