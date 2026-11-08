@@ -2738,5 +2738,95 @@
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-09_1300_specialty-cafe_reel.mp4",
   "created_riyadh": "2026-11-08 01:37"
+ },
+ {
+  "id": "2026-11-09_2130_ladies-majlis",
+  "format": "single",
+  "category": "residential",
+  "slot": "2026-11-09 21:30",
+  "title_ar": "مجلس نساء بلمسة القط العسيري",
+  "space_ar": "مجلس نساء",
+  "style_ar": "مودرن عضوي",
+  "palette_ar": "كتاني فاتح، رخام بيج، أبيض وأسود، نحاسي",
+  "reel_hook_ar": "مجلس يخلي الزيارة تطوّل؟",
+  "room": {
+   "w": 6.0,
+   "l": 5.0,
+   "h": 3.2
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Washed Linen واشد لينن",
+    "code": "10679",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن في الرياض",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#E7E2D8"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Amalfi Ravello Naturale",
+    "code": "",
+    "brand": "Baldocer",
+    "where_ar": "أرض الفخامة، توصيل للمملكة",
+    "locate_en": "floor",
+    "sample_color": false,
+    "hex": "#CDC6BF"
+   },
+   {
+    "type_ar": "القماش",
+    "name": "STOCKHOLM 2025 curtains",
+    "code": "106.010.96",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "curtains",
+    "sample_color": false,
+    "hex": "#F8F8F8"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "Matin Floor Lamp 500 - White",
+    "code": "AB970-A570-AB77",
+    "brand": "HAY",
+    "where_ar": "ذا بويري كومباني، العليا",
+    "locate_en": "floor lamp",
+    "sample_color": false,
+    "hex": "#EFD2AD"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top edge of the window frame near the ceiling",
+     "adjust the light reflections on the right wall near the ceiling to be consistent with the light strip",
+     "straighten the top edge of the door frame"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "Overall good, but some minor architectural inconsistencies and subtle light anomalies prevent a higher score.",
+    "raw": "https://v3b.fal.media/files/b/0ab19c79/LHs8JmysuR9pGay99aqz6_IVIEYma6.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-09_2130_ladies-majlis_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-09_2130_ladies-majlis_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-09_2130_ladies-majlis_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-09_2130_ladies-majlis_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-09_2130_ladies-majlis_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-09_2130_ladies-majlis_reel.mp4",
+  "created_riyadh": "2026-11-08 09:55"
  }
 ]
