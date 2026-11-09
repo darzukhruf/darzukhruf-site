@@ -2828,5 +2828,98 @@
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-09_2130_ladies-majlis_reel.mp4",
   "created_riyadh": "2026-11-08 09:55"
+ },
+ {
+  "id": "2026-11-10_1300_family-dining-room",
+  "format": "single",
+  "category": "residential",
+  "slot": "2026-11-10 13:00",
+  "title_ar": "سفرة ثمانية بروح حجازية",
+  "space_ar": "غرفة طعام عائلية",
+  "style_ar": "مينيمال دافئ بلمسة حجازية",
+  "palette_ar": "بيج أنتويرب، رمل فاتح، بلوط، كشميري",
+  "reel_hook_ar": "سفرة ثمانية في غرفة 4.5×5؟",
+  "room": {
+   "w": 4.5,
+   "l": 5.0,
+   "h": 3.2
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Antwerp Beige أنتويرب بيج",
+    "code": "12290",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن في الرياض",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#C4B9AA"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Rhode Island Beige",
+    "code": "A12GRDIL-BEE.M0X5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "معارض ومتجر راك السعودية",
+    "locate_en": "floor",
+    "sample_color": false,
+    "hex": "#D9D1C3"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "Collect Socket Pendant Cashmere",
+    "code": "100297693",
+    "brand": "Ferm Living",
+    "where_ar": "ذا بويري كومباني، العليا",
+    "locate_en": "pendant lamps",
+    "sample_color": false,
+    "hex": "#F2EADE"
+   },
+   {
+    "type_ar": "القماش",
+    "name": "SILVERLÖNN sheer curtains",
+    "code": "104.939.78",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "sheer curtains",
+    "sample_color": false,
+    "hex": "#F2E5D4"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top left ceiling trim",
+     "straighten the top right ceiling trim",
+     "fix the wavy window curtain texture near the bottom right",
+     "fix the wavy wall and baseboard on the left",
+     "straighten the back left chair leg",
+     "straighten the right back chair leg"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "general room",
+    "raw": "https://v3b.fal.media/files/b/0ab1bb97/qpXs2wdB--LNhNvo1LJ7A_KB170ZYn.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-10_1300_family-dining-room_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-10_1300_family-dining-room_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-10_1300_family-dining-room_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-10_1300_family-dining-room_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-10_1300_family-dining-room_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-10_1300_family-dining-room_reel.mp4",
+  "created_riyadh": "2026-11-09 08:03"
  }
 ]

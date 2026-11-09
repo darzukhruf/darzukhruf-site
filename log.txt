@@ -1,2 +1,3 @@
-2026-11-09T05:51:58.162921+03:00
-buffer full or no specs
+2026-11-09T08:03:14.427875+03:00
+QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the top left ceiling trim", "straighten the top right ceiling trim", "fix the wavy window curtain texture near the bottom right", "fix the wavy wall and baseboard on the left", "straighten the back left chair leg", "straighten the right back chair leg"], "inappropriate": false, "item_visible": true, "point": [0.5, 0.5], "reason": "general room"}
+OK 2026-11-10_1300_family-dining-room 3 images
