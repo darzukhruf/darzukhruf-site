@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>دار زخرف | تصميم داخلي بروح عصرية</title>
-<meta name="description" content="نصمّم مساحتك كما تتخيلها.. وأجمل. دار زخرف استوديو تصميم داخلي بروح عصرية يجمع أحدث التوجهات العالمية بلمسة من هويتنا.">
+<meta name="description" content="استوديو تصميم داخلي أونلاين في السعودية: تصاميم مقترحة للبيوت والمجالس والكافيهات مع لوحة مواد بموردين في الرياض ومخطط 2D. باقات من 790 ريال وتسليم خلال 5 أيام عمل.">
 <meta name="theme-color" content="#14332E">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
@@ -192,6 +192,20 @@ textarea{min-height:96px;resize:vertical}
 .copy{width:100%;margin:0;font-size:13px}
 
 .wa{position:fixed;z-index:8;left:calc(18px + env(safe-area-inset-left,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));box-shadow:0 6px 20px rgb(0 0 0/.18)}
+/* packages */
+.offer{display:inline-block;margin-top:12px;padding:4px 14px;border-radius:999px;background:var(--gold);color:#14332E;font-weight:600;font-size:15px}
+.pkgs{display:grid;gap:16px;grid-template-columns:1fr}
+@media (min-width:640px){.pkgs{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1000px){.pkgs{grid-template-columns:repeat(4,1fr)}}
+.pkg{position:relative;display:grid;gap:10px;align-content:start;padding:24px;border:1px solid var(--line);border-radius:var(--radius);background:var(--bg);min-width:0}
+.pkg.hot{border:2px solid var(--gold)}
+.pkg h3{font-size:26px}.pkg .for{font-size:13px;color:var(--gold-ink);margin:0}
+.badge{position:absolute;top:-12px;inset-inline-start:20px;font-style:normal;font-size:12px;font-weight:600;padding:2px 12px;border-radius:999px;background:var(--gold);color:#14332E}
+.price{margin:0;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}.price del{color:var(--muted);font-size:15px}.price b{font-family:var(--display);font-size:34px;line-height:1}.price small{font-size:15px}
+.incl{display:flex;flex-wrap:wrap;gap:8px;margin:28px 0 0;padding:0;list-style:none}.incl li{font-size:14px;padding:4px 12px;border-radius:999px;border:1px solid var(--line);background:var(--bg)}
+.only{margin:14px 0 0;font-weight:600;color:var(--gold-ink)}
+.extras{display:grid;gap:6px;margin-top:18px}.extras p{margin:0;font-size:15px}
+.faq{display:grid;gap:8px;margin-top:26px;max-width:46em}.faq details{border:1px solid var(--line);border-radius:12px;padding:12px 16px;background:var(--bg)}.faq summary{cursor:pointer;font-weight:600}.faq p{margin:8px 0 0;color:var(--muted)}
 </style>
 </head>
 <body>
@@ -225,7 +239,7 @@ textarea{min-height:96px;resize:vertical}
       <span><b>دار زخرف</b><small>DAR ZUKHRUF</small></span>
     </a>
     <nav class="nav" aria-label="الأقسام">
-      <a href="#styles">أنماطنا</a><a href="#work">من تصاميمنا</a><a href="#services">خدماتنا</a><a href="#process">كيف نشتغل</a>
+      <a href="#styles">أنماطنا</a><a href="#work">من تصاميمنا</a><a href="#services">خدماتنا</a><a href="#packages">الباقات</a><a href="#process">كيف نشتغل</a>
     </nav>
     <a class="btn btn-gold" href="#register">سجّل طلبك</a>
   </div>
@@ -244,6 +258,7 @@ textarea{min-height:96px;resize:vertical}
       </div>
       <ul class="facts">
         <li>من غرفة واحدة إلى بيت كامل</li>
+        <li>باقات من 790 ريال (عرض الافتتاح)</li>
         <li>تواصل مباشر عبر واتساب</li>
         <li>عربي و English</li>
       </ul>
@@ -312,17 +327,17 @@ textarea{min-height:96px;resize:vertical}
       <p>تصاميم مقترحة بأنماط مختلفة، وكل تصميم نفصّله على مقاسات مساحتك وذوقك.</p>
     </div>
     <div class="gallery">
-      <figure class="tile"><div class="art"><img src="/assets/designs/majlis.webp" alt="مجلس رجال بتصميم نجدي عصري" loading="lazy" width="400" height="500"></div>
+      <figure class="tile"><div class="art"><img src="/assets/designs/sm/majlis.webp" srcset="/assets/designs/sm/majlis.webp 640w, /assets/designs/majlis.webp 960w" sizes="(min-width:820px) 360px, 48vw" alt="مجلس رجال بتصميم نجدي عصري" loading="lazy" width="400" height="500"></div>
         <figcaption><div><strong>مجلس رجال</strong><span>نجدي عصري</span></div><em class="soon">تصميم مقترح</em></figcaption></figure>
-      <figure class="tile"><div class="art"><img src="/assets/designs/living.webp" alt="صالة معيشة بنمط ياباندي" loading="lazy" width="400" height="500"></div>
+      <figure class="tile"><div class="art"><img src="/assets/designs/sm/living.webp" srcset="/assets/designs/sm/living.webp 640w, /assets/designs/living.webp 960w" sizes="(min-width:820px) 360px, 48vw" alt="صالة معيشة بنمط ياباندي" loading="lazy" width="400" height="500"></div>
         <figcaption><div><strong>صالة معيشة</strong><span>ياباندي</span></div><em class="soon">تصميم مقترح</em></figcaption></figure>
-      <figure class="tile"><div class="art"><img src="/assets/designs/bedroom.webp" alt="غرفة نوم ماستر بفخامة هادئة" loading="lazy" width="400" height="500"></div>
+      <figure class="tile"><div class="art"><img src="/assets/designs/sm/bedroom.webp" srcset="/assets/designs/sm/bedroom.webp 640w, /assets/designs/bedroom.webp 960w" sizes="(min-width:820px) 360px, 48vw" alt="غرفة نوم ماستر بفخامة هادئة" loading="lazy" width="400" height="500"></div>
         <figcaption><div><strong>غرفة نوم ماستر</strong><span>فخامة هادئة</span></div><em class="soon">تصميم مقترح</em></figcaption></figure>
-      <figure class="tile"><div class="art"><img src="/assets/designs/kitchen.webp" alt="مطبخ مفتوح بنمط مينيمال دافئ" loading="lazy" width="400" height="500"></div>
+      <figure class="tile"><div class="art"><img src="/assets/designs/sm/kitchen.webp" srcset="/assets/designs/sm/kitchen.webp 640w, /assets/designs/kitchen.webp 960w" sizes="(min-width:820px) 360px, 48vw" alt="مطبخ مفتوح بنمط مينيمال دافئ" loading="lazy" width="400" height="500"></div>
         <figcaption><div><strong>مطبخ مفتوح</strong><span>مينيمال دافئ</span></div><em class="soon">تصميم مقترح</em></figcaption></figure>
-      <figure class="tile"><div class="art"><img src="/assets/designs/entrance.webp" alt="مدخل وممر بفخامة هادئة" loading="lazy" width="400" height="500"></div>
+      <figure class="tile"><div class="art"><img src="/assets/designs/sm/entrance.webp" srcset="/assets/designs/sm/entrance.webp 640w, /assets/designs/entrance.webp 960w" sizes="(min-width:820px) 360px, 48vw" alt="مدخل وممر بفخامة هادئة" loading="lazy" width="400" height="500"></div>
         <figcaption><div><strong>مدخل وممر</strong><span>فخامة هادئة</span></div><em class="soon">تصميم مقترح</em></figcaption></figure>
-      <figure class="tile"><div class="art"><img src="/assets/designs/office.webp" alt="مكتب منزلي بنمط ياباندي" loading="lazy" width="400" height="500"></div>
+      <figure class="tile"><div class="art"><img src="/assets/designs/sm/office.webp" srcset="/assets/designs/sm/office.webp 640w, /assets/designs/office.webp 960w" sizes="(min-width:820px) 360px, 48vw" alt="مكتب منزلي بنمط ياباندي" loading="lazy" width="400" height="500"></div>
         <figcaption><div><strong>مكتب منزلي</strong><span>ياباندي</span></div><em class="soon">تصميم مقترح</em></figcaption></figure>
     </div>
   </div>
@@ -354,9 +369,9 @@ textarea{min-height:96px;resize:vertical}
     <h3 class="get-title">في كل تصميم تستلم</h3>
     <ul class="get">
       <li><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#mark" style="color:var(--gold-ink)"/></svg><span>مخطط توزيع الأثاث على مقاسات مساحتك</span></li>
-      <li><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#mark" style="color:var(--gold-ink)"/></svg><span>صور واقعية للتصميم من أكثر من زاوية</span></li>
-      <li><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#mark" style="color:var(--gold-ink)"/></svg><span>لوحة الألوان والخامات المقترحة</span></li>
-      <li><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#mark" style="color:var(--gold-ink)"/></svg><span>عرض تقديمي متكامل لتصميمك</span></li>
+      <li><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#mark" style="color:var(--gold-ink)"/></svg><span>صورة واقعية للتصميم المقترح</span></li>
+      <li><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#mark" style="color:var(--gold-ink)"/></svg><span>لوحة المواد والألوان بموردين في الرياض</span></li>
+      <li><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#mark" style="color:var(--gold-ink)"/></svg><span>تعديلان وتسليم خلال 5 أيام عمل</span></li>
     </ul>
   </div>
 </section>
@@ -376,6 +391,54 @@ textarea{min-height:96px;resize:vertical}
   </div>
 </section>
 
+<section class="sec alt" id="packages">
+  <div class="wrap">
+    <div class="head">
+      <p class="kicker">الباقات والعروض</p>
+      <h2>صمّم مساحتك قبل لا تشتري — باقات بسعر واضح</h2>
+      <p class="offer">عرض الافتتاح حتى 30 نوفمبر لأول 20 عميل</p>
+    </div>
+    <div class="pkgs">
+      <article class="pkg">
+        <p class="for">غرفة نوم، مكتب، غرفة أطفال، مدخل</p>
+        <h3>باقة الغرفة</h3>
+        <p class="price"><del>990 ريال</del><b>790 <small>ريال</small></b></p>
+        <a class="btn btn-gold" href="https://wa.me/966578771717?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%A8%D9%8A%20%D8%A3%D8%B7%D9%84%D8%A8%20%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%BA%D8%B1%D9%81%D8%A9%20%D9%85%D9%86%20%D8%AF%D8%A7%D8%B1%20%D8%B2%D8%AE%D8%B1%D9%81%20%28%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%A7%D9%81%D8%AA%D8%AA%D8%A7%D8%AD%29.%20%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%AD%D8%A9%20%D9%88%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D9%88%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B3%20%D8%A7%D9%84%D8%AA%D9%82%D8%B1%D9%8A%D8%A8%D9%8A%3A%20" target="_blank" rel="noopener">اطلب باقتك على واتساب</a>
+      </article>
+      <article class="pkg hot">
+        <em class="badge">الأكثر طلباً</em><p class="for">جناح نوم، أو مجلس مع صالة</p>
+        <h3>باقة الجناح أو المجلس+الصالة</h3>
+        <p class="price"><del>2,490 ريال</del><b>1,990 <small>ريال</small></b></p>
+        <a class="btn btn-gold" href="https://wa.me/966578771717?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%A8%D9%8A%20%D8%A3%D8%B7%D9%84%D8%A8%20%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%AC%D9%86%D8%A7%D8%AD%20%D8%A3%D9%88%20%D8%A7%D9%84%D9%85%D8%AC%D9%84%D8%B3%2B%D8%A7%D9%84%D8%B5%D8%A7%D9%84%D8%A9%20%D9%85%D9%86%20%D8%AF%D8%A7%D8%B1%20%D8%B2%D8%AE%D8%B1%D9%81%20%28%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%A7%D9%81%D8%AA%D8%AA%D8%A7%D8%AD%29.%20%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%AD%D8%A9%20%D9%88%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D9%88%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B3%20%D8%A7%D9%84%D8%AA%D9%82%D8%B1%D9%8A%D8%A8%D9%8A%3A%20" target="_blank" rel="noopener">اطلب باقتك على واتساب</a>
+      </article>
+      <article class="pkg">
+        <p class="for">بيت كامل بهوية وحدة</p>
+        <h3>باقة الشقة أو الفيلا</h3>
+        <p class="price"><del>من 6,900 ريال</del><b>من 5,500 <small>ريال</small></b></p>
+        <a class="btn btn-gold" href="https://wa.me/966578771717?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%A8%D9%8A%20%D8%A3%D8%B7%D9%84%D8%A8%20%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%B4%D9%82%D8%A9%20%D8%A3%D9%88%20%D8%A7%D9%84%D9%81%D9%8A%D9%84%D8%A7%20%D9%85%D9%86%20%D8%AF%D8%A7%D8%B1%20%D8%B2%D8%AE%D8%B1%D9%81%20%28%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%A7%D9%81%D8%AA%D8%AA%D8%A7%D8%AD%29.%20%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%AD%D8%A9%20%D9%88%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D9%88%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B3%20%D8%A7%D9%84%D8%AA%D9%82%D8%B1%D9%8A%D8%A8%D9%8A%3A%20" target="_blank" rel="noopener">اطلب باقتك على واتساب</a>
+      </article>
+      <article class="pkg">
+        <p class="for">كافيه، صالون، عيادة</p>
+        <h3>الباقة التجارية</h3>
+        <p class="price"><del>من 3,900 ريال</del><b>من 2,990 <small>ريال</small></b></p>
+        <a class="btn btn-gold" href="https://wa.me/966578771717?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%A8%D9%8A%20%D8%A3%D8%B7%D9%84%D8%A8%20%D8%A7%D9%84%D8%A8%D8%A7%D9%82%D8%A9%20%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D8%A9%20%D9%85%D9%86%20%D8%AF%D8%A7%D8%B1%20%D8%B2%D8%AE%D8%B1%D9%81%20%28%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%A7%D9%81%D8%AA%D8%AA%D8%A7%D8%AD%29.%20%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%AD%D8%A9%20%D9%88%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%20%D9%88%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%B3%20%D8%A7%D9%84%D8%AA%D9%82%D8%B1%D9%8A%D8%A8%D9%8A%3A%20" target="_blank" rel="noopener">اطلب باقتك على واتساب</a>
+      </article>
+    </div>
+    <ul class="incl">
+      <li>تصميم مقترح بصورة واقعية</li><li>لوحة مواد بموردين في الرياض</li><li>مخطط 2D لتوزيع الأثاث</li><li>تعديلان (الثالث مجاني في العرض)</li><li>تسليم خلال 5 أيام عمل</li>
+    </ul>
+    <p class="only">تصميم داخلي فقط، بدون تنفيذ.</p>
+    <div class="extras">
+      <p><b>رشّح صديق:</b> له خصم 10% ولك رصيد 150 ريال على باقتك الجاية.</p>
+      <p><b>دليل ألوان البيت السعودي 2027 مجاناً:</b> <a href="https://wa.me/966578771717?text=%D8%AF%D9%84%D9%8A%D9%84" target="_blank" rel="noopener">اكتب (دليل) على واتساب</a></p>
+    </div>
+    <div class="faq">
+      <details><summary>كم المدة؟</summary><p>5 أيام عمل من استلام المقاسات والصور.</p></details>
+      <details><summary>تنفذون؟</summary><p>لا، تصميم فقط، ونعطيك لوحة مواد بموردين في الرياض تنفذ منها مع من تختار.</p></details>
+      <details><summary>كيف أبدأ؟</summary><p>أرسل نوع المساحة والمقاس على واتساب، أو عبّ نموذج الطلب تحت.</p></details>
+    </div>
+  </div>
+</section>
 <section class="sec" id="process">
   <div class="wrap">
     <div class="head">
@@ -386,7 +449,7 @@ textarea{min-height:96px;resize:vertical}
       <li><h3>سجّل طلبك</h3><p>دقيقة وحدة: نوع المساحة وميزانيتك والوقت المناسب للتواصل.</p></li>
       <li><h3>نتواصل معك</h3><p>عبر واتساب نفهم ذوقك واحتياجك، وتشاركنا مقاسات المساحة وصورها.</p></li>
       <li><h3>نصمّم مساحتك</h3><p>نختار النمط والألوان والخامات، ونوزّع الأثاث على مقاساتك.</p></li>
-      <li><h3>تستلم تصميمك</h3><p>صور واقعية ومخطط وعرض متكامل، مع تعديلاتك حسب باقتك.</p></li>
+      <li><h3>تستلم تصميمك</h3><p>صورة التصميم المقترح ولوحة المواد والمخطط خلال 5 أيام عمل، مع تعديلين.</p></li>
     </ol>
   </div>
 </section>
