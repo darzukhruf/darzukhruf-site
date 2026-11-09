@@ -1,3 +1,2 @@
-2026-11-09T10:25:01.388883+03:00
-QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the top left light strip", "correct the perspective of the left wall's wood slats so they are parallel to the door frame", "adjust the light source of the floor lamp to match the light distribution on the floor and wall", "straighten the horizontal line where the ceiling meets the right wall"], "inappropriate": false, "item_visible": true, "point": [0.24, 0.05], "reason": "Top light strip is slightly bent"}
-OK 2026-11-10_2130_private-master-bedro 3 images
+2026-11-09T12:08:04.312188+03:00
+buffer full or no specs
