@@ -373,6 +373,7 @@ def main():
                 if not (row.get("spec_json") or "").strip(): continue
                 k = norm_slot(row.get("slot"))
                 if k: plan[k] = row
+            log("plan", r.status_code, len(plan), "rows", (sorted(plan)[-1] if plan else repr(r.text[:120])))
         except Exception as ex:
             log("plan read failed", ex); plan = {}
         for key in sorted(plan):  # flexible publishing times chosen by the design/market agents
