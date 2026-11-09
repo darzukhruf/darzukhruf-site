@@ -379,7 +379,9 @@ def main():
         for key in sorted(plan):  # flexible publishing times chosen by the design/market agents
             try: slot = dt.datetime.strptime(key, "%Y-%m-%d %H:%M")
             except ValueError: log("bad slot", key); continue
-            if not (dt.timedelta(minutes=20) <= slot - now <= dt.timedelta(hours=36)) or key in done_slots: continue
+            if not (dt.timedelta(minutes=20) <= slot - now <= dt.timedelta(hours=36)) or key in done_slots:
+                if slot > now: log("skip", key, "in", slot - now, "done" if key in done_slots else "")
+                continue
             try: sp = json.loads(plan[key]["spec_json"])
             except Exception as ex: log("bad spec", key, ex); continue
             ident = slot.strftime("%Y-%m-%d_%H%M") + "_" + re.sub(r"[^a-z0-9]+", "-", sp.get("space_en", "design").lower())[:20]
