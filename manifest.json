@@ -2921,5 +2921,96 @@
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-10_1300_family-dining-room_reel.mp4",
   "created_riyadh": "2026-11-09 08:03"
+ },
+ {
+  "id": "2026-11-10_2130_private-master-bedro",
+  "format": "single",
+  "category": "residential",
+  "slot": "2026-11-10 21:30",
+  "title_ar": "غرفة نوم موكا لا تنكشف",
+  "space_ar": "غرفة نوم رئيسية",
+  "style_ar": "فخامة هادئة نجدية معاصرة",
+  "palette_ar": "وايت موكا، خشب بني دافئ، أوف وايت، نحاسي",
+  "reel_hook_ar": "سريرك ينشاف أول ما ينفتح الباب؟",
+  "room": {
+   "w": 4.5,
+   "l": 5.5,
+   "h": 3.0
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "White Mocha",
+    "code": "WH-2108",
+    "brand": "Jazeera Paints",
+    "where_ar": "معارض الجزيرة للدهانات بالرياض",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#E7E1D4"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Kyoto Brown",
+    "code": "A45RKYOT-BRN.M0X0R",
+    "brand": "RAK Ceramics",
+    "where_ar": "معارض ومتجر راك السعودية",
+    "locate_en": "floor",
+    "sample_color": false,
+    "hex": "#744E2E"
+   },
+   {
+    "type_ar": "القماش",
+    "name": "VALLKRASSING cushion cover",
+    "code": "705.709.59",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "bed cushions",
+    "sample_color": false,
+    "hex": "#F3F2EE"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "Multi-Lite Floor Lamp Brass",
+    "code": "10014434",
+    "brand": "Gubi",
+    "where_ar": "ذا بويري كومباني، العليا",
+    "locate_en": "brass floor lamp",
+    "sample_color": false,
+    "hex": "#E2AB66"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top left light strip",
+     "correct the perspective of the left wall's wood slats so they are parallel to the door frame",
+     "adjust the light source of the floor lamp to match the light distribution on the floor and wall",
+     "straighten the horizontal line where the ceiling meets the right wall"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.24,
+     0.05
+    ],
+    "reason": "Top light strip is slightly bent",
+    "raw": "https://v3b.fal.media/files/b/0ab1beea/6-KzVfymuYcBM0MArbV7B_hCzvzQRl.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-10_2130_private-master-bedro_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-10_2130_private-master-bedro_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-10_2130_private-master-bedro_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-10_2130_private-master-bedro_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-10_2130_private-master-bedro_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-10_2130_private-master-bedro_reel.mp4",
+  "created_riyadh": "2026-11-09 10:25"
  }
 ]
