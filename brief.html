@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>استبيان التصميم | دار زخرف</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#14332E">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Markazi+Text:wght@500;600;700&display=swap">
+<style>
+:root{
+  --bg:#F6F1E8; --surface:#FCF9F3; --ink:#14332E; --muted:#5A6A64; --line:#E3D8C6;
+  --gold:#C2A06B; --gold-ink:#7E6030; --on-gold:#14332E; --band:#14332E; --band-ink:#F3ECE1; --band-muted:#B9C6BF;
+  --danger:#A33A2B; --display:"Markazi Text","Amiri","Times New Roman",serif;
+  --body:"IBM Plex Sans Arabic","Geeza Pro","Segoe UI",Tahoma,sans-serif; --radius:14px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F2420; --surface:#142D28; --ink:#F1E9DC; --muted:#A9B5AE; --line:#244540;
+  --gold:#C9A872; --gold-ink:#D9BC88; --band:#0A1A17; --danger:#F0A193; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0F2420; --surface:#142D28; --ink:#F1E9DC; --muted:#A9B5AE; --line:#244540;
+  --gold:#C9A872; --gold-ink:#D9BC88; --band:#0A1A17; --danger:#F0A193; color-scheme:dark}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.7;font-size:16px}
+header{background:var(--band);color:var(--band-ink);padding:28px 16px 34px;text-align:center}
+header a{color:var(--gold);text-decoration:none;font-family:var(--display);font-size:24px;font-weight:700}
+h1{font-family:var(--display);font-size:clamp(30px,6vw,44px);line-height:1.2;margin-top:10px}
+header p{color:var(--band-muted);max-width:620px;margin:8px auto 0}
+main{max-width:760px;margin:0 auto;padding:24px 16px 60px}
+fieldset{border:1px solid var(--line);background:var(--surface);border-radius:var(--radius);padding:18px 16px;margin-bottom:18px}
+legend{font-family:var(--display);font-size:24px;font-weight:700;padding:0 8px;color:var(--gold-ink)}
+.hint{color:var(--muted);font-size:14px;margin:-4px 0 10px}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:flex;flex-direction:column;gap:6px}.full{grid-column:1/-1}
+label{font-weight:500;font-size:15px}.opt{color:var(--muted);font-weight:400;font-size:13px}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px;width:100%}
+textarea{min-height:84px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--gold);outline-offset:1px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:999px;padding:7px 14px;cursor:pointer;background:var(--bg);font-weight:400}
+.chips input{width:auto;accent-color:#14332E}
+.check{display:flex;gap:10px;align-items:flex-start;font-weight:400}.check input{width:auto;margin-top:6px;accent-color:#14332E}
+.hp{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;margin:0}
+button{font:inherit;font-weight:600;background:var(--gold);color:var(--on-gold);border:0;border-radius:12px;padding:14px 22px;width:100%;font-size:18px;cursor:pointer}
+.ok{display:none;text-align:center;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px 16px}
+.ok h2{font-family:var(--display);font-size:32px}
+.err{color:var(--danger);font-size:14px;display:none;margin-top:8px}
+@media (max-width:560px){.fields{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <a href="/">دار زخرف</a>
+  <h1>استبيان التصميم</h1>
+  <p>كل ما كانت إجاباتك أوضح، كان تصميمك أقرب لك من أول مرة. ياخذ قرابة 7 دقائق.</p>
+</header>
+<main>
+<form id="brief-form" name="brief" method="POST" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data" novalidate>
+  <input type="hidden" name="form-name" value="brief">
+  <input type="hidden" name="ref" id="ref">
+  <p class="hp"><label for="bot-field">اترك هذا الحقل فارغاً</label><input id="bot-field" name="bot-field" tabindex="-1" autocomplete="off"></p>
+
+  <fieldset><legend>بياناتك</legend>
+    <div class="fields">
+      <div class="field"><label for="b-name">الاسم</label><input id="b-name" name="name" autocomplete="name" required></div>
+      <div class="field"><label for="b-phone">رقم الجوال (نفس رقم الطلب)</label><input id="b-phone" name="phone" type="tel" inputmode="tel" dir="ltr" placeholder="05xxxxxxxx" pattern="[+0-9 ]{9,16}" required></div>
+      <div class="field"><label for="b-package">الباقة</label>
+        <select id="b-package" name="package" required><option value="">اختر</option><option>باقة الغرفة</option><option>باقة الجناح أو المجلس+الصالة</option><option>باقة الشقة أو الفيلا</option><option>الباقة التجارية</option></select></div>
+      <div class="field"><label for="b-city">المدينة والحي</label><input id="b-city" name="city" placeholder="الرياض، حي الملقا"></div>
+    </div>
+  </fieldset>
+
+  <fieldset><legend>المساحة ومقاساتها</legend>
+    <p class="hint">لو أكثر من مساحة، اكتب مقاسات كل وحدة في الملاحظات.</p>
+    <div class="fields">
+      <div class="field full"><label for="b-space">نوع المساحة</label>
+        <select id="b-space" name="space" required><option value="">اختر</option><option>مجلس رجال</option><option>مجلس نساء</option><option>صالة معيشة</option><option>غرفة نوم رئيسية</option><option>غرفة أطفال أو مراهقين</option><option>مطبخ</option><option>غرفة طعام</option><option>مدخل</option><option>ملحق أو حوش</option><option>دورة مياه ضيوف</option><option>غرفة ملابس</option><option>مكتب منزلي</option><option>شقة كاملة</option><option>فيلا كاملة</option><option>كافيه</option><option>صالون نسائي</option><option>عيادة</option><option>مكتب أو شركة</option><option>محل أو معرض</option><option>أخرى</option></select></div>
+      <div class="field"><label for="b-w">العرض (متر)</label><input id="b-w" name="width_m" type="number" step="0.01" min="0.5" max="100" dir="ltr" inputmode="decimal" placeholder="4.20" required></div>
+      <div class="field"><label for="b-l">الطول (متر)</label><input id="b-l" name="length_m" type="number" step="0.01" min="0.5" max="100" dir="ltr" inputmode="decimal" placeholder="6.00" required></div>
+      <div class="field"><label for="b-h">ارتفاع السقف (متر) <span class="opt">(اختياري)</span></label><input id="b-h" name="height_m" type="number" step="0.01" min="2" max="12" dir="ltr" inputmode="decimal" placeholder="3.00"></div>
+      <div class="field"><label for="b-north">أي جدار جهة الشمال تقريباً؟</label>
+        <select id="b-north" name="north"><option>ما أدري</option><option>جدار الباب</option><option>الجدار المقابل للباب</option><option>الجدار اليمين من الباب</option><option>الجدار اليسار من الباب</option></select></div>
+      <div class="field full"><label for="b-openings">الأبواب والشبابيك ومكانها</label><textarea id="b-openings" name="openings" required placeholder="مثال: الباب في منتصف الجدار القصير عرضه 1 م. شباك عرضه 2 م في الجدار الطويل المقابل للتلفزيون. مكيف سبليت فوق الباب."></textarea></div>
+      <div class="field"><label for="b-p1">صورة للمساحة 1 <span class="opt">(اختياري)</span></label><input id="b-p1" name="photo1" type="file" accept="image/*"></div>
+      <div class="field"><label for="b-p2">صورة للمساحة 2 <span class="opt">(اختياري)</span></label><input id="b-p2" name="photo2" type="file" accept="image/*"></div>
+      <div class="field full"><label for="b-p3">مخطط أو كروكي <span class="opt">(اختياري)</span></label><input id="b-p3" name="plan_file" type="file" accept="image/*,.pdf"></div>
+      <p class="hint full">حجم كل الملفات مع بعض أقل من 8 ميجا. عندك صور أو فيديو أكثر؟ أرسلها لنا على الواتساب.</p>
+    </div>
+  </fieldset>
+
+  <fieldset><legend>مين يستخدمها وكيف</legend>
+    <div class="fields">
+      <div class="field"><label for="b-users">عدد المستخدمين</label><input id="b-users" name="users" placeholder="مثال: زوجين و3 أطفال"></div>
+      <div class="field"><label for="b-kids">أعمار الأطفال <span class="opt">(إن وجد)</span></label><input id="b-kids" name="kids_ages" placeholder="3، 7، 12"></div>
+      <div class="field full"><label for="b-use">وش تسوون في المساحة يومياً؟</label><textarea id="b-use" name="daily_use" required placeholder="مثال: استقبال ضيوف أسبوعياً حتى 15 شخص، جلسة عائلية مع تلفزيون، مكان لألعاب الأطفال، تخزين"></textarea></div>
+      <div class="field full"><label for="b-privacy">الخصوصية</label>
+        <select id="b-privacy" name="privacy"><option>لا ينطبق</option><option>مجلس رجال منفصل</option><option>مجلس نساء منفصل</option><option>مجلس مشترك عائلي</option><option>نحتاج فصل بصري عن المدخل</option></select></div>
+    </div>
+  </fieldset>
+
+  <fieldset><legend>ذوقك</legend>
+    <p class="hint">اختر لين 3 أنماط تحبها.</p>
+    <div class="chips" role="group" aria-label="الأنماط">
+      <label><input type="checkbox" name="styles" value="مودرن دافئ">مودرن دافئ</label>
+      <label><input type="checkbox" name="styles" value="جابندي (ياباني إسكندنافي)">جابندي</label>
+      <label><input type="checkbox" name="styles" value="فخامة هادئة">فخامة هادئة</label>
+      <label><input type="checkbox" name="styles" value="نجدي معاصر">نجدي معاصر</label>
+      <label><input type="checkbox" name="styles" value="حجازي معاصر">حجازي معاصر</label>
+      <label><input type="checkbox" name="styles" value="كلاسيك معاصر">كلاسيك معاصر</label>
+      <label><input type="checkbox" name="styles" value="أورجانيك طبيعي">أورجانيك طبيعي</label>
+      <label><input type="checkbox" name="styles" value="مينيمال">مينيمال</label>
+      <label><input type="checkbox" name="styles" value="ما أدري - اقترحوا علي">ما أدري، اقترحوا علي</label>
+    </div>
+    <div class="fields" style="margin-top:14px">
+      <div class="field"><label for="b-like">ألوان تحبها</label><input id="b-like" name="colors_like" placeholder="بيج، أخضر زيتي، خشبي"></div>
+      <div class="field"><label for="b-dislike">ألوان ما تبيها</label><input id="b-dislike" name="colors_dislike" placeholder="رمادي بارد، أسود"></div>
+      <div class="field full"><label for="b-keep">قطع موجودة تبي تحتفظ فيها <span class="opt">(اختياري)</span></label><textarea id="b-keep" name="keep_items" placeholder="مثال: كنب رمادي 3 مقاعد، سجادة إيرانية حمراء"></textarea></div>
+      <div class="field full"><label for="b-insp">صور أو حسابات تلهمك <span class="opt">(اختياري)</span></label><textarea id="b-insp" name="inspiration" dir="auto" placeholder="روابط إنستقرام أو بنترست"></textarea></div>
+    </div>
+  </fieldset>
+
+  <fieldset><legend>الميزانية والأولويات</legend>
+    <div class="fields">
+      <div class="field"><label for="b-budget">ميزانية التنفيذ (أثاث وتشطيب)</label>
+        <select id="b-budget" name="exec_budget" required><option value="">اختر</option><option>أقل من 15 ألف</option><option>15–40 ألف</option><option>40–100 ألف</option><option>100–250 ألف</option><option>أكثر من 250 ألف</option></select></div>
+      <div class="field"><label for="b-time">متى تبي تبدأ التنفيذ؟</label>
+        <select id="b-time" name="timeline"><option>خلال شهر</option><option>خلال 1–3 شهور</option><option>بعد 3 شهور</option><option>ما حددت</option></select></div>
+      <div class="field"><label for="b-scope">وش تبي تغيّر؟</label>
+        <select id="b-scope" name="scope"><option>أثاث وديكور فقط</option><option>أثاث + دهان + إضاءة</option><option>تجديد كامل (أرضيات وأسقف وغيرها)</option></select></div>
+      <div class="field"><label for="b-occasion">فيه مناسبة قريبة؟ <span class="opt">(اختياري)</span></label><input id="b-occasion" name="occasion" placeholder="زواج، رمضان، افتتاح"></div>
+      <div class="field full"><label for="b-must">أشياء لازم تكون موجودة</label><textarea id="b-must" name="must_haves" placeholder="مثال: مكان للمبخرة، تخزين للضيافة، شاشة 75 بوصة، إضاءة مخفية"></textarea></div>
+      <div class="field full"><label for="b-avoid">أشياء ما تبيها أبداً <span class="opt">(اختياري)</span></label><textarea id="b-avoid" name="avoid" placeholder="مثال: مرايات كثيرة، رخام لامع، ستائر ثقيلة"></textarea></div>
+      <div class="field full"><label for="b-notes">أي شي ثاني تحب نعرفه <span class="opt">(اختياري)</span></label><textarea id="b-notes" name="notes"></textarea></div>
+    </div>
+  </fieldset>
+
+  <label class="check" for="b-consent"><input id="b-consent" name="consent" type="checkbox" value="yes" required><span>أوافق على استخدام دار زخرف لهذه البيانات والصور لتصميم مساحتي فقط، وفق نظام حماية البيانات الشخصية.</span></label>
+  <p class="err" id="err">فضلاً عبّ الحقول المطلوبة وتأكد إن حجم الملفات أقل من 8 ميجا.</p>
+  <div style="margin-top:16px"><button type="submit">أرسل الاستبيان</button></div>
+</form>
+<div class="ok" id="ok"><h2>وصلنا استبيانك ✦</h2><p>بدأنا على تصميمك، ونرسله لك على الواتساب حسب مدة باقتك.</p></div>
+</main>
+<script>
+(function(){
+  var f=document.getElementById('brief-form'),err=document.getElementById('err');
+  try{var r=new URLSearchParams(location.search).get('ref');if(r)document.getElementById('ref').value=r.slice(0,40);}catch(e){}
+  f.addEventListener('submit',function(ev){
+    ev.preventDefault();err.style.display='none';
+    var size=0;f.querySelectorAll('input[type=file]').forEach(function(i){if(i.files[0])size+=i.files[0].size;});
+    if(!f.checkValidity()||size>8e6){err.style.display='block';f.reportValidity();return;}
+    var btn=f.querySelector('button');btn.disabled=true;btn.textContent='جاري الإرسال…';
+    fetch('/',{method:'POST',body:new FormData(f)}).then(function(res){
+      if(!res.ok)throw 0;f.style.display='none';document.getElementById('ok').style.display='block';scrollTo(0,0);
+    }).catch(function(){btn.disabled=false;btn.textContent='أرسل الاستبيان';err.textContent='صار خطأ في الإرسال. جرّب مرة ثانية أو أرسل لنا على الواتساب.';err.style.display='block';});
+  });
+})();
+</script>
+</body>
+</html>

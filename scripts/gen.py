@@ -400,7 +400,7 @@ def main():
     for m in manifest:
         try:
             c = dt.datetime.strptime(m["created_riyadh"], "%Y-%m-%d %H:%M")
-            if c < cut and not m.get("pruned"):
+            if c < cut and not m.get("pruned") and not str(m.get("id", "")).startswith("client-"):  # client deliveries are kept
                 for u in m["images"]:
                     f = os.path.join(OUT, u.split("/media/", 1)[1])
                     if os.path.exists(f): os.remove(f)
