@@ -3012,5 +3012,97 @@
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-10_2130_private-master-bedro_reel.mp4",
   "created_riyadh": "2026-11-09 10:25"
+ },
+ {
+  "id": "2026-11-11_1300_teen-girls-room",
+  "format": "single",
+  "category": "residential",
+  "slot": "2026-11-11 13:00",
+  "title_ar": "غرفة بنت في 12 متر بمكتب",
+  "space_ar": "غرفة بنت مراهقة",
+  "style_ar": "سكاندي ناعم",
+  "palette_ar": "أخضر مغبر، أبيض، خشب فاتح، رمادي دافئ",
+  "reel_hook_ar": "رايح معارض البيت؟ احفظ هذا قبل لا تشتري",
+  "room": {
+   "w": 3.0,
+   "l": 4.0,
+   "h": 3.0
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Dusty Green داستي غرين",
+    "code": "7543",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن في الرياض",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#62867F"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Clapton White",
+    "code": "",
+    "brand": "Navarti",
+    "where_ar": "أرض الفخامة، توصيل للمملكة",
+    "locate_en": "floor",
+    "sample_color": false,
+    "hex": "#D1CFD1"
+   },
+   {
+    "type_ar": "القماش",
+    "name": "GURLI cushion cover",
+    "code": "805.987.31",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "bed cushions",
+    "sample_color": false,
+    "hex": "#E1DBCF"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "STRANDAD floor lamp",
+    "code": "705.948.37",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "floor lamp",
+    "sample_color": false,
+    "hex": "#F8DFB4"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top left corner where the wall meets the ceiling",
+     "straighten the top right corner where the wall meets the ceiling",
+     "straighten the wall on the right next to the curtain",
+     "straighten the left curtain rod",
+     "straighten the right curtain rod"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "overall good but minor distortions",
+    "raw": "https://v3b.fal.media/files/b/0ab1dd17/Z0QFYI6p4G6rGe2ya8UaY_H0AnCqIf.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-11_1300_teen-girls-room_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-11_1300_teen-girls-room_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-11_1300_teen-girls-room_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-11_1300_teen-girls-room_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-11_1300_teen-girls-room_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-11_1300_teen-girls-room_reel.mp4",
+  "created_riyadh": "2026-11-10 07:52"
  }
 ]
