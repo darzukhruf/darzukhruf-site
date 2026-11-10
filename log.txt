@@ -1,9 +1,9 @@
-2026-11-10T10:03:43.443332+03:00
+2026-11-10T12:02:02.496386+03:00
 plan 200 17 rows 2026-11-12 21:30
-skip 2026-11-10 13:00 in 2:56:55.967748 done
-skip 2026-11-10 21:30 in 11:26:55.967748 done
-skip 2026-11-11 13:00 in 1 day, 2:56:55.967748 done
-skip 2026-11-12 13:00 in 2 days, 2:56:55.967748 
-skip 2026-11-12 21:30 in 2 days, 11:26:55.967748 
-QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the top-right ceiling light strip edge", "adjust the shadow direction of the right hanging light to match the left light"], "inappropriate": false, "item_visible": true, "point": [0.73, 0.15], "reason": "ceiling light"}
-OK 2026-11-11_2130_dermatology-clinic-r 3 images
+skip 2026-11-10 13:00 in 0:57:58.111687 done
+skip 2026-11-10 21:30 in 9:27:58.111687 done
+skip 2026-11-11 13:00 in 1 day, 0:57:58.111687 done
+skip 2026-11-11 21:30 in 1 day, 9:27:58.111687 done
+skip 2026-11-12 13:00 in 2 days, 0:57:58.111687 
+skip 2026-11-12 21:30 in 2 days, 9:27:58.111687 
+buffer full or no specs
