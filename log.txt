@@ -1,7 +1,7 @@
-2026-11-10T23:44:38.656669+03:00
+2026-11-11T01:42:04.162466+03:00
 plan 200 17 rows 2026-11-12 21:30
-skip 2026-11-11 13:00 in 13:15:21.921736 done
-skip 2026-11-11 21:30 in 21:45:21.921736 done
-skip 2026-11-12 13:00 in 1 day, 13:15:21.921736 
-skip 2026-11-12 21:30 in 1 day, 21:45:21.921736 
-buffer full or no specs
+skip 2026-11-11 13:00 in 11:18:40.981059 done
+skip 2026-11-11 21:30 in 19:48:40.981059 done
+skip 2026-11-12 21:30 in 1 day, 19:48:40.981059 
+QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the top edge of the baseboard on the right wall", "adjust the reflection of the window in the floor tile to be consistent with the light source", "remove the faint glowing edge around the lamp shade", "straighten the left edge of the carpet slightly", "fix the slight distortion in the top right curtain rail where it meets the ceiling"], "inappropriate": false, "item_visible": true, "point": [0.5, 0.5], "reason": "General room view"}
+OK 2026-11-12_1300_home-office-study 3 images

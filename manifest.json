@@ -3193,5 +3193,97 @@
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-11_2130_dermatology-clinic-r_reel.mp4",
   "created_riyadh": "2026-11-10 10:03"
+ },
+ {
+  "id": "2026-11-12_1300_home-office-study",
+  "format": "single",
+  "category": "residential",
+  "slot": "2026-11-12 13:00",
+  "title_ar": "مكتب منزلي في 8 أمتار",
+  "space_ar": "مكتب منزلي صغير",
+  "style_ar": "كلاسيك معاصر داكن",
+  "palette_ar": "أخضر زيتوني غامق، جوز، كراميل، نحاسي",
+  "reel_hook_ar": "مكتب في 2.6×3 متر؟ ممكن",
+  "room": {
+   "w": 2.6,
+   "l": 3.0,
+   "h": 3.0
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Evening Green ايفننغ جرين",
+    "code": "6352",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن في الرياض",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#525344"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Tereso Marble Grey",
+    "code": "A12GTRSM-SIR.N0X5P",
+    "brand": "RAK Ceramics",
+    "where_ar": "معارض ومتجر راك السعودية",
+    "locate_en": "floor",
+    "sample_color": false,
+    "hex": "#B6BCC0"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "STOCKHOLM 2025 table lamp",
+    "code": "905.859.31",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "table lamp on the desk",
+    "sample_color": false,
+    "hex": "#B3996D"
+   },
+   {
+    "type_ar": "قطعة مختارة",
+    "name": "Rich Heritage Metal Vase",
+    "code": "",
+    "brand": "Home Centre",
+    "where_ar": "فروع هوم سنتر بالمملكة",
+    "locate_en": "metal vase on the shelf",
+    "sample_color": false,
+    "hex": "#947F53"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top edge of the baseboard on the right wall",
+     "adjust the reflection of the window in the floor tile to be consistent with the light source",
+     "remove the faint glowing edge around the lamp shade",
+     "straighten the left edge of the carpet slightly",
+     "fix the slight distortion in the top right curtain rail where it meets the ceiling"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "General room view",
+    "raw": "https://v3b.fal.media/files/b/0ab1f628/5Aj0nG9wlBFWPcvA_vJUy_0Hp8SxHR.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-12_1300_home-office-study_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-12_1300_home-office-study_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-12_1300_home-office-study_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-12_1300_home-office-study_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-12_1300_home-office-study_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-12_1300_home-office-study_reel.mp4",
+  "created_riyadh": "2026-11-11 01:42"
  }
 ]
