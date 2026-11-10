@@ -1,9 +1,9 @@
-2026-11-10T07:52:35.894732+03:00
+2026-11-10T10:03:43.443332+03:00
 plan 200 17 rows 2026-11-12 21:30
-skip 2026-11-10 13:00 in 5:08:04.515476 done
-skip 2026-11-10 21:30 in 13:38:04.515476 done
-skip 2026-11-11 21:30 in 1 day, 13:38:04.515476 
-skip 2026-11-12 13:00 in 2 days, 5:08:04.515476 
-skip 2026-11-12 21:30 in 2 days, 13:38:04.515476 
-QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the top left corner where the wall meets the ceiling", "straighten the top right corner where the wall meets the ceiling", "straighten the wall on the right next to the curtain", "straighten the left curtain rod", "straighten the right curtain rod"], "inappropriate": false, "item_visible": true, "point": [0.5, 0.5], "reason": "overall good but minor distortions"}
-OK 2026-11-11_1300_teen-girls-room 3 images
+skip 2026-11-10 13:00 in 2:56:55.967748 done
+skip 2026-11-10 21:30 in 11:26:55.967748 done
+skip 2026-11-11 13:00 in 1 day, 2:56:55.967748 done
+skip 2026-11-12 13:00 in 2 days, 2:56:55.967748 
+skip 2026-11-12 21:30 in 2 days, 11:26:55.967748 
+QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the top-right ceiling light strip edge", "adjust the shadow direction of the right hanging light to match the left light"], "inappropriate": false, "item_visible": true, "point": [0.73, 0.15], "reason": "ceiling light"}
+OK 2026-11-11_2130_dermatology-clinic-r 3 images

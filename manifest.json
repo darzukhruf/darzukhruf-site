@@ -3104,5 +3104,94 @@
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-11_1300_teen-girls-room_reel.mp4",
   "created_riyadh": "2026-11-10 07:52"
+ },
+ {
+  "id": "2026-11-11_2130_dermatology-clinic-r",
+  "format": "single",
+  "category": "commercial",
+  "slot": "2026-11-11 21:30",
+  "title_ar": "عيادة جلدية تطمّن من الباب",
+  "space_ar": "استقبال عيادة جلدية",
+  "style_ar": "عصري هادئ بروح السبا",
+  "palette_ar": "أزرق رمادي هادئ، أبيض، بلوط، نحاسي مطفي",
+  "reel_hook_ar": "عيادتك تطمّن المريض من الباب؟",
+  "room": {
+   "w": 6.5,
+   "l": 5.0,
+   "h": 3.0
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Skylight سكاي لايت",
+    "code": "1624",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن في الرياض",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#DCE6E5"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Rhode Island White",
+    "code": "A12GRDIL-WHE.M0X5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "معارض ومتجر راك السعودية",
+    "locate_en": "floor",
+    "sample_color": false,
+    "hex": "#EAEAE6"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "Dexter Linen Pendant",
+    "code": "",
+    "brand": "Home Centre",
+    "where_ar": "فروع هوم سنتر بالمملكة",
+    "locate_en": "pendant lamps",
+    "sample_color": false,
+    "hex": "#F8F8F8"
+   },
+   {
+    "type_ar": "سطح الاستقبال",
+    "name": "Uni White (Hyperwhite)",
+    "code": "A83GMAXI-HWH.X0C2P",
+    "brand": "RAK Ceramics",
+    "where_ar": "معارض ومتجر راك السعودية",
+    "locate_en": "white reception counter top",
+    "sample_color": false,
+    "hex": "#F2F2F2"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top-right ceiling light strip edge",
+     "adjust the shadow direction of the right hanging light to match the left light"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.73,
+     0.15
+    ],
+    "reason": "ceiling light",
+    "raw": "https://v3b.fal.media/files/b/0ab1e02a/VMnYdZnvZEd4FgodVeang_U8Alzzvg.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-11_2130_dermatology-clinic-r_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-11_2130_dermatology-clinic-r_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-11_2130_dermatology-clinic-r_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-11_2130_dermatology-clinic-r_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-11_2130_dermatology-clinic-r_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-11_2130_dermatology-clinic-r_reel.mp4",
+  "created_riyadh": "2026-11-10 10:03"
  }
 ]
