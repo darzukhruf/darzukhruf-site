@@ -3376,5 +3376,96 @@
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-12_2130_newlyweds-bedroom_reel.mp4",
   "created_riyadh": "2026-11-11 10:09"
+ },
+ {
+  "id": "2026-11-12_2300_apartment-entrance-h",
+  "format": "single",
+  "category": "residential",
+  "slot": "2026-11-12 23:00",
+  "title_ar": "مدخل شقة في 5 أمتار",
+  "space_ar": "مدخل شقة صغير",
+  "style_ar": "مينيمال دافئ",
+  "palette_ar": "رمادي دخاني، أبيض، بلوط فاتح، نحاسي مطفي",
+  "reel_hook_ar": "مدخل شقتك 5 أمتار بس؟ سوّه ذوق",
+  "room": {
+   "w": 1.6,
+   "l": 3.4,
+   "h": 2.9
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Smoke",
+    "code": "CT-2109",
+    "brand": "Jazeera Paints",
+    "where_ar": "معارض الجزيرة للدهانات",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#C7A483"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Rhode Island Beige",
+    "code": "A12GRDIL-BEE.M0X5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "متجر راك سيراميكس",
+    "locate_en": "floor tiles",
+    "sample_color": true,
+    "hex": "#C7BBAF"
+   },
+   {
+    "type_ar": "قطعة مختارة",
+    "name": "DVÄRGSYREN mirror oak",
+    "code": "305.915.91",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "tall mirror on the left wall",
+    "sample_color": true,
+    "hex": "#B28F71"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "Dexter Linen Pendant",
+    "code": "",
+    "brand": "Home Centre",
+    "where_ar": "هوم سنتر",
+    "locate_en": "pendant lamp",
+    "sample_color": false,
+    "hex": "#FBD9A8"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top left corner where the wall and ceiling meet",
+     "correct the minor waviness in the mirror frame's top left corner",
+     "align the tiles on the floor more consistently near the bottom center",
+     "adjust the shadow consistency on the floor near the right wall"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "overall good but minor distortions and shadow inconsistencies",
+    "raw": "https://v3b.fal.media/files/b/0ab2048a/uiLJW0rTpo_zJFkcJ8N1C_V4WkHc7A.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-12_2300_apartment-entrance-h_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-12_2300_apartment-entrance-h_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-12_2300_apartment-entrance-h_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-12_2300_apartment-entrance-h_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-12_2300_apartment-entrance-h_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-12_2300_apartment-entrance-h_reel.mp4",
+  "created_riyadh": "2026-11-11 11:55"
  }
 ]

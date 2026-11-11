@@ -1,14 +1,14 @@
-2026-11-11T10:09:51.895966+03:00
+2026-11-11T11:55:43.858459+03:00
 plan 200 24 rows 2026-11-14 23:00
-skip 2026-11-11 13:00 in 2:50:48.530657 done
-skip 2026-11-11 21:30 in 11:20:48.530657 done
-skip 2026-11-12 13:00 in 1 day, 2:50:48.530657 done
-skip 2026-11-12 23:00 in 1 day, 12:50:48.530657 
-skip 2026-11-13 13:00 in 2 days, 2:50:48.530657 
-skip 2026-11-13 21:30 in 2 days, 11:20:48.530657 
-skip 2026-11-13 23:00 in 2 days, 12:50:48.530657 
-skip 2026-11-14 13:00 in 3 days, 2:50:48.530657 
-skip 2026-11-14 21:30 in 3 days, 11:20:48.530657 
-skip 2026-11-14 23:00 in 3 days, 12:50:48.530657 
-QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the top edge of the headboard wall", "adjust the shadow on the right curtain to match the lighting", "refine the texture of the white blanket on the bed to remove the slight plastic look", "correct the minor light halo around the ceiling cove lighting"], "inappropriate": false, "item_visible": true, "point": [0.5, 0.34], "reason": "top edge of the headboard wall is slightly wavy"}
-OK 2026-11-12_2130_newlyweds-bedroom 3 images
+skip 2026-11-11 13:00 in 1:04:56.359271 done
+skip 2026-11-11 21:30 in 9:34:56.359271 done
+skip 2026-11-12 13:00 in 1 day, 1:04:56.359271 done
+skip 2026-11-12 21:30 in 1 day, 9:34:56.359271 done
+skip 2026-11-13 13:00 in 2 days, 1:04:56.359271 
+skip 2026-11-13 21:30 in 2 days, 9:34:56.359271 
+skip 2026-11-13 23:00 in 2 days, 11:04:56.359271 
+skip 2026-11-14 13:00 in 3 days, 1:04:56.359271 
+skip 2026-11-14 21:30 in 3 days, 9:34:56.359271 
+skip 2026-11-14 23:00 in 3 days, 11:04:56.359271 
+QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the top left corner where the wall and ceiling meet", "correct the minor waviness in the mirror frame's top left corner", "align the tiles on the floor more consistently near the bottom center", "adjust the shadow consistency on the floor near the right wall"], "inappropriate": false, "item_visible": true, "point": [0.5, 0.5], "reason": "overall good but minor distortions and shadow inconsistencies"}
+OK 2026-11-12_2300_apartment-entrance-h 3 images
