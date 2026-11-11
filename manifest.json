@@ -3285,5 +3285,96 @@
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-12_1300_home-office-study_reel.mp4",
   "created_riyadh": "2026-11-11 01:42"
+ },
+ {
+  "id": "2026-11-12_2130_newlyweds-bedroom",
+  "format": "single",
+  "category": "residential",
+  "slot": "2026-11-12 21:30",
+  "title_ar": "كم تكلف غرفة عروسين؟",
+  "space_ar": "غرفة عروسين",
+  "style_ar": "رومانسي معاصر",
+  "palette_ar": "عاجي، أحمر طيني مكتوم، جوز، ذهبي مطفي",
+  "reel_hook_ar": "غرفة عروسين بأي ميزانية؟ وش تكلف؟",
+  "room": {
+   "w": 4.8,
+   "l": 5.0,
+   "h": 3.0
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Rustic Terracotta رستك تيراكوتا",
+    "code": "2771",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن في الرياض",
+    "locate_en": "headboard wall",
+    "sample_color": true,
+    "hex": "#C4735E"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Hard Wood Ivory",
+    "code": "A99GZHRD#IV0.W2S5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "معارض ومتجر راك السعودية",
+    "locate_en": "floor",
+    "sample_color": false,
+    "hex": "#C1B39D"
+   },
+   {
+    "type_ar": "القماش",
+    "name": "SILVERLÖNN sheer curtains beige",
+    "code": "104.939.78",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "sheer curtains",
+    "sample_color": false,
+    "hex": "#DBD4C4"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "ÅRSTID wall lamp brass/white",
+    "code": "203.303.25",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "wall lamps",
+    "sample_color": false,
+    "hex": "#F8F3EC"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top edge of the headboard wall",
+     "adjust the shadow on the right curtain to match the lighting",
+     "refine the texture of the white blanket on the bed to remove the slight plastic look",
+     "correct the minor light halo around the ceiling cove lighting"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.34
+    ],
+    "reason": "top edge of the headboard wall is slightly wavy",
+    "raw": "https://v3b.fal.media/files/b/0ab2020f/Tob_DEFhr4IgqspCDz1rg_9mUPnMRv.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-12_2130_newlyweds-bedroom_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-12_2130_newlyweds-bedroom_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-12_2130_newlyweds-bedroom_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-12_2130_newlyweds-bedroom_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-12_2130_newlyweds-bedroom_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-12_2130_newlyweds-bedroom_reel.mp4",
+  "created_riyadh": "2026-11-11 10:09"
  }
 ]
