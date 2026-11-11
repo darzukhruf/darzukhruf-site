@@ -22,7 +22,15 @@ jobs:
         with: { ref: media, path: media }
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
-      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg && pip install pillow requests playwright && python -m playwright install --with-deps chromium
+      - name: install deps (with retries and timeouts)
+        timeout-minutes: 20
+        run: |
+          for i in 1 2 3; do
+            timeout 300 sudo apt-get -o Acquire::Retries=3 -o Acquire::http::Timeout=30 update -qq && timeout 300 sudo apt-get install -y -qq ffmpeg && break
+            echo "apt attempt $i failed, retrying"; sleep 20
+          done
+          pip install pillow requests playwright
+          timeout 600 python -m playwright install --with-deps chromium || timeout 600 python -m playwright install chromium
       - run: python site/scripts/gen.py media site/specs/run
         env:
           FAL_KEY: ${{ secrets.FAL_KEY }}
