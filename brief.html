@@ -6,7 +6,7 @@
 <title>استبيان التصميم | دار زخرف</title>
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#14332E">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Markazi+Text:wght@500;600;700&display=swap">
@@ -52,7 +52,7 @@ button{font:inherit;font-weight:600;background:var(--gold);color:var(--on-gold);
 </head>
 <body>
 <header>
-  <a href="/">دار زخرف</a>
+  <a href="./">دار زخرف</a>
   <h1>استبيان التصميم</h1>
   <p>كل ما كانت إجاباتك أوضح، كان تصميمك أقرب لك من أول مرة. ياخذ قرابة 7 دقائق.</p>
 </header>
@@ -151,8 +151,9 @@ button{font:inherit;font-weight:600;background:var(--gold);color:var(--on-gold);
     var size=0;f.querySelectorAll('input[type=file]').forEach(function(i){if(i.files[0])size+=i.files[0].size;});
     if(!f.checkValidity()||size>8e6){err.style.display='block';f.reportValidity();return;}
     var btn=f.querySelector('button');btn.disabled=true;btn.textContent='جاري الإرسال…';
-    fetch('/',{method:'POST',body:new FormData(f)}).then(function(res){
-      if(!res.ok)throw 0;f.style.display='none';document.getElementById('ok').style.display='block';scrollTo(0,0);
+    var gh=/\.github\.io$/.test(location.hostname);
+    fetch(gh?'https://darzukhruf.netlify.app/':'/',{method:'POST',mode:gh?'no-cors':'cors',body:new FormData(f)}).then(function(res){
+      if(!gh&&!res.ok)throw 0;f.style.display='none';document.getElementById('ok').style.display='block';scrollTo(0,0);
     }).catch(function(){btn.disabled=false;btn.textContent='أرسل الاستبيان';err.textContent='صار خطأ في الإرسال. جرّب مرة ثانية أو أرسل لنا على الواتساب.';err.style.display='block';});
   });
 })();

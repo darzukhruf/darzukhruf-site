@@ -1,7 +1,7 @@
 [build]
   publish = "."
-  # Skip any non-main branch (e.g. the generator's "media" branch) and tooling-only changes.
-  ignore = "[ \"$BRANCH\" != \"main\" ] || git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':!specs' ':!scripts' ':!.github'"
+  # Build only when the commit message contains the [netlify] tag (saves free-plan deploy credits). Skip any non-main branch (e.g. the generator's "media" branch) and tooling-only changes.
+  ignore = "[ \"$BRANCH\" != \"main\" ] || ! git log -1 --pretty=%B | grep -q '\\[netlify\\]' || git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':!specs' ':!scripts' ':!.github'"
 
 [[headers]]
   for = "/*"
