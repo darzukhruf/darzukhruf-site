@@ -3572,5 +3572,96 @@
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-13_1300_mens-majlis-hejazi_reel.mp4",
   "created_riyadh": "2026-11-12 01:55"
+ },
+ {
+  "id": "2026-11-13_2130_studio-apartment-38s",
+  "format": "single",
+  "category": "residential",
+  "slot": "2026-11-13 21:30",
+  "title_ar": "شقة 38 متر بغرفة نوم وصالة",
+  "space_ar": "شقة استوديو 38 م²",
+  "style_ar": "سكاندي دافئ",
+  "palette_ar": "وردي ترابي مغبر، كريمي، بيرش، أسود مطفي",
+  "reel_hook_ar": "شقة 38 متر فيها غرفة نوم وصالة؟",
+  "room": {
+   "w": 6.0,
+   "l": 6.3,
+   "h": 2.8
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Cashew",
+    "code": "1931",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن المعتمدة",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#ECE4DC"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Clapton White",
+    "code": "",
+    "brand": "Navarti (Spain)",
+    "where_ar": "أرض الفخامة - جدة",
+    "locate_en": "wood-look floor",
+    "sample_color": false,
+    "hex": "#E7E1D8"
+   },
+   {
+    "type_ar": "قطعة مختارة",
+    "name": "VIMLE 3-seat sofa beige",
+    "code": "694.013.35",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "sofa",
+    "sample_color": true,
+    "hex": "#CFC2B4"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "KAPPELAND pendant black/rattan",
+    "code": "496.040.51",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "pendant lamp over the sofa",
+    "sample_color": true,
+    "hex": "#181919"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the slightly wavy right edge of the door frame",
+     "correct the minor waviness in the top right window frame",
+     "adjust the slightly warped top right curtain rod",
+     "fix the minor texture issue on the floor near the bottom right"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "overall good but minor line distortions and subtle texture issues",
+    "raw": "https://v3b.fal.media/files/b/0ab223e9/BweiLpl6qk1jLMjcCX5A4_HGt2pT3f.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-13_2130_studio-apartment-38s_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-13_2130_studio-apartment-38s_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-13_2130_studio-apartment-38s_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-13_2130_studio-apartment-38s_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-13_2130_studio-apartment-38s_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-13_2130_studio-apartment-38s_reel.mp4",
+  "created_riyadh": "2026-11-12 10:14"
  }
 ]
