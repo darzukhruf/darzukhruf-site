@@ -1,18 +1,17 @@
-2026-11-12T11:59:21.784144+03:00
+2026-11-12T14:00:03.569163+03:00
 plan 200 30 rows 2026-11-17 21:30
-skip 2026-11-12 13:00 in 1:01:23.815272 done
-skip 2026-11-12 21:30 in 9:31:23.815272 done
-skip 2026-11-12 23:00 in 11:01:23.815272 done
-skip 2026-11-13 13:00 in 1 day, 1:01:23.815272 done
-skip 2026-11-13 21:30 in 1 day, 9:31:23.815272 done
-skip 2026-11-14 13:00 in 2 days, 1:01:23.815272 
-skip 2026-11-14 21:30 in 2 days, 9:31:23.815272 
-skip 2026-11-14 23:00 in 2 days, 11:01:23.815272 
-skip 2026-11-15 13:00 in 3 days, 1:01:23.815272 
-skip 2026-11-15 21:30 in 3 days, 9:31:23.815272 
-skip 2026-11-16 13:00 in 4 days, 1:01:23.815272 
-skip 2026-11-16 21:30 in 4 days, 9:31:23.815272 
-skip 2026-11-17 13:00 in 5 days, 1:01:23.815272 
-skip 2026-11-17 21:30 in 5 days, 9:31:23.815272 
-QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the top left corner of the mirror frame", "straighten the left edge of the wall next to the mirror", "fix the minor warping at the top right corner of the mirror frame", "correct the slight wavy appearance of the ceiling line above the mirror", "straighten the bottom right corner of the window frame"], "inappropriate": false, "item_visible": true, "point": [0.49, 0.5], "reason": "overall"}
-OK 2026-11-13_2300_guest-powder-room 3 images
+skip 2026-11-12 21:30 in 7:29:57.232722 done
+skip 2026-11-12 23:00 in 8:59:57.232722 done
+skip 2026-11-13 13:00 in 22:59:57.232722 done
+skip 2026-11-13 21:30 in 1 day, 7:29:57.232722 done
+skip 2026-11-13 23:00 in 1 day, 8:59:57.232722 done
+skip 2026-11-14 13:00 in 1 day, 22:59:57.232722 
+skip 2026-11-14 21:30 in 2 days, 7:29:57.232722 
+skip 2026-11-14 23:00 in 2 days, 8:59:57.232722 
+skip 2026-11-15 13:00 in 2 days, 22:59:57.232722 
+skip 2026-11-15 21:30 in 3 days, 7:29:57.232722 
+skip 2026-11-16 13:00 in 3 days, 22:59:57.232722 
+skip 2026-11-16 21:30 in 4 days, 7:29:57.232722 
+skip 2026-11-17 13:00 in 4 days, 22:59:57.232722 
+skip 2026-11-17 21:30 in 5 days, 7:29:57.232722 
+buffer full or no specs
