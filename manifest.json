@@ -95,7 +95,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-1-majlis_4.jpg",
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-1-majlis_5_plan.jpg"
   ],
-  "created_riyadh": "2026-11-06 00:48"
+  "created_riyadh": "2026-11-06 00:48",
+  "pruned": true
  },
  {
   "id": "opening-2-women-majlis",
@@ -193,7 +194,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-2-women-majlis_4.jpg",
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-2-women-majlis_5_plan.jpg"
   ],
-  "created_riyadh": "2026-11-06 00:49"
+  "created_riyadh": "2026-11-06 00:49",
+  "pruned": true
  },
  {
   "id": "opening-3-family-living",
@@ -272,7 +274,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-3-family-living_3.jpg",
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-3-family-living_4_plan.jpg"
   ],
-  "created_riyadh": "2026-11-06 00:51"
+  "created_riyadh": "2026-11-06 00:51",
+  "pruned": true
  },
  {
   "id": "opening-4-master-bedroom",
@@ -370,7 +373,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-4-master-bedroom_4.jpg",
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-4-master-bedroom_5_plan.jpg"
   ],
-  "created_riyadh": "2026-11-06 00:52"
+  "created_riyadh": "2026-11-06 00:52",
+  "pruned": true
  },
  {
   "id": "opening-5-kitchen",
@@ -468,7 +472,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-5-kitchen_4.jpg",
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-5-kitchen_5_plan.jpg"
   ],
-  "created_riyadh": "2026-11-06 00:53"
+  "created_riyadh": "2026-11-06 00:53",
+  "pruned": true
  },
  {
   "id": "opening-1-majlis-v2",
@@ -584,7 +589,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-1-majlis-v2_4.jpg",
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-1-majlis-v2_5_plan.jpg"
   ],
-  "created_riyadh": "2026-11-06 00:59"
+  "created_riyadh": "2026-11-06 00:59",
+  "pruned": true
  },
  {
   "id": "opening-2-women-majlis-v2",
@@ -675,7 +681,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-2-women-majlis-v2_3.jpg",
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-2-women-majlis-v2_4_plan.jpg"
   ],
-  "created_riyadh": "2026-11-06 01:01"
+  "created_riyadh": "2026-11-06 01:01",
+  "pruned": true
  },
  {
   "id": "opening-3-family-living-v2",
@@ -791,7 +798,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-3-family-living-v2_4.jpg",
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-3-family-living-v2_5_plan.jpg"
   ],
-  "created_riyadh": "2026-11-06 01:03"
+  "created_riyadh": "2026-11-06 01:03",
+  "pruned": true
  },
  {
   "id": "opening-4-master-bedroom-v2",
@@ -907,7 +915,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-4-master-bedroom-v2_4.jpg",
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-4-master-bedroom-v2_5_plan.jpg"
   ],
-  "created_riyadh": "2026-11-06 01:05"
+  "created_riyadh": "2026-11-06 01:05",
+  "pruned": true
  },
  {
   "id": "opening-5-kitchen-v2",
@@ -998,7 +1007,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-5-kitchen-v2_3.jpg",
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/opening-5-kitchen-v2_4_plan.jpg"
   ],
-  "created_riyadh": "2026-11-06 01:06"
+  "created_riyadh": "2026-11-06 01:06",
+  "pruned": true
  },
  {
   "id": "2026-11-06_1800_ladies-dressing-room",
@@ -3755,5 +3765,98 @@
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-13_2300_guest-powder-room_reel.mp4",
   "created_riyadh": "2026-11-12 11:59"
+ },
+ {
+  "id": "2026-11-14_1300_abaya-showroom",
+  "format": "single",
+  "category": "commercial",
+  "slot": "2026-11-14 13:00",
+  "title_ar": "معرض عبايات بأقواس ناعمة",
+  "space_ar": "معرض عبايات",
+  "style_ar": "عصري دافئ بأقواس",
+  "palette_ar": "عنابي مكتوم، عاجي، برونزي، رخام وردي",
+  "reel_hook_ar": "عندك معرض عبايات؟ هذا أول انطباع",
+  "room": {
+   "w": 7.0,
+   "l": 5.0,
+   "h": 3.4
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Organic Red",
+    "code": "20120",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن المعتمدة",
+    "locate_en": "feature wall",
+    "sample_color": true,
+    "hex": "#9A7D55"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Soft Lux White (Calacatta Borghini)",
+    "code": "A22GSFLX-CCB.O0X5P",
+    "brand": "RAK Ceramics",
+    "where_ar": "متجر راك سيراميكس",
+    "locate_en": "floor",
+    "sample_color": true,
+    "hex": "#F2F2F2"
+   },
+   {
+    "type_ar": "القماش",
+    "name": "Blackout pinch pleat - Copper",
+    "code": "HNTB10-13",
+    "brand": "Sedar Global",
+    "where_ar": "سدر جلوبال",
+    "locate_en": "fitting room curtain",
+    "sample_color": true,
+    "hex": "#B1694A"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "ÅRSTID wall lamp brass",
+    "code": "203.303.25",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "brass wall lights",
+    "sample_color": true,
+    "hex": "#C39E5F"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top edge of the window frame on the far left",
+     "adjust the top edge of the window frame on the far right to be straight",
+     "correct the slight curve in the left wall arch next to the recessed niche",
+     "correct the slight curve in the right wall arch next to the recessed niche",
+     "smooth out the texture of the ceiling vents slightly",
+     "ensure the horizontal line where the paint changes color on the back wall is perfectly straight"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.41
+    ],
+    "reason": "feature wall",
+    "raw": "https://v3b.fal.media/files/b/0ab239c1/nMdqh38966UwbhMjeCCgc_Cefhsunr.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-14_1300_abaya-showroom_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-14_1300_abaya-showroom_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-14_1300_abaya-showroom_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-14_1300_abaya-showroom_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-14_1300_abaya-showroom_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-14_1300_abaya-showroom_reel.mp4",
+  "created_riyadh": "2026-11-13 01:46"
  }
 ]
