@@ -1,12 +1,12 @@
-2026-11-12T01:55:39.572618+03:00
+2026-11-12T04:06:56.185806+03:00
 plan 200 24 rows 2026-11-14 23:00
-skip 2026-11-12 13:00 in 11:04:57.638830 done
-skip 2026-11-12 21:30 in 19:34:57.638830 done
-skip 2026-11-12 23:00 in 21:04:57.638830 done
-skip 2026-11-13 21:30 in 1 day, 19:34:57.638830 
-skip 2026-11-13 23:00 in 1 day, 21:04:57.638830 
-skip 2026-11-14 13:00 in 2 days, 11:04:57.638830 
-skip 2026-11-14 21:30 in 2 days, 19:34:57.638830 
-skip 2026-11-14 23:00 in 2 days, 21:04:57.638830 
-QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": [{"item_visible": true, "point": [0.03, 0.58], "reason": "soften the crease in the left curtain"}, {"item_visible": true, "point": [0.49, 0.69], "reason": "slightly improve the texture of the carpet to be less uniform"}, {"item_visible": true, "point": [0.77, 0.46], "reason": "ensure the shadow lines on the right wall are perfectly straight"}], "inappropriate": false}
-OK 2026-11-13_1300_mens-majlis-hejazi 3 images
+skip 2026-11-12 13:00 in 8:53:04.657210 done
+skip 2026-11-12 21:30 in 17:23:04.657210 done
+skip 2026-11-12 23:00 in 18:53:04.657210 done
+skip 2026-11-13 13:00 in 1 day, 8:53:04.657210 done
+skip 2026-11-13 21:30 in 1 day, 17:23:04.657210 
+skip 2026-11-13 23:00 in 1 day, 18:53:04.657210 
+skip 2026-11-14 13:00 in 2 days, 8:53:04.657210 
+skip 2026-11-14 21:30 in 2 days, 17:23:04.657210 
+skip 2026-11-14 23:00 in 2 days, 18:53:04.657210 
+buffer full or no specs
