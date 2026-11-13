@@ -1166,7 +1166,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-06_1800_ladies-dressing-room_v2.jpg",
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-06_1800_ladies-dressing-room_v3.jpg"
   ],
-  "reel": null
+  "reel": null,
+  "pruned": true
  },
  {
   "id": "2026-11-07_0000_japandi-kitchen",
@@ -1259,7 +1260,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_0000_japandi-kitchen_v2.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_0000_japandi-kitchen_reel.mp4",
-  "created_riyadh": "2026-11-06 17:54"
+  "created_riyadh": "2026-11-06 17:54",
+  "pruned": true
  },
  {
   "id": "2026-11-07_0600_hejazi-family-living",
@@ -1415,7 +1417,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_0600_hejazi-family-living_v3.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_0600_hejazi-family-living_reel.mp4",
-  "created_riyadh": "2026-11-06 17:56"
+  "created_riyadh": "2026-11-06 17:56",
+  "pruned": true
  },
  {
   "id": "2026-11-07_1200_master-bedroom",
@@ -1575,7 +1578,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_1200_master-bedroom_v3.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_1200_master-bedroom_reel.mp4",
-  "created_riyadh": "2026-11-06 22:56"
+  "created_riyadh": "2026-11-06 22:56",
+  "pruned": true
  },
  {
   "id": "2026-11-07_1800_ladies-majlis",
@@ -1734,7 +1738,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_1800_ladies-majlis_v3.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_1800_ladies-majlis_reel.mp4",
-  "created_riyadh": "2026-11-06 22:59"
+  "created_riyadh": "2026-11-06 22:59",
+  "pruned": true
  },
  {
   "id": "2026-11-08_0000_home-office",
@@ -4043,5 +4048,97 @@
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-14_2300_small-office-recepti_reel.mp4",
   "created_riyadh": "2026-11-13 11:57"
+ },
+ {
+  "id": "2026-11-15_1300_shared-kids-room-thr",
+  "format": "single",
+  "category": "residential",
+  "slot": "2026-11-15 13:00",
+  "title_ar": "غرفة 3 إخوة في 18 متر",
+  "space_ar": "غرفة أطفال مشتركة (3 إخوة)",
+  "style_ar": "ياباندي ناعم",
+  "palette_ar": "أزرق جليدي، بتولا، أبيض، أصفر خردلي مطفي",
+  "reel_hook_ar": "3 إخوة في غرفة 18 متر؟ كيف؟",
+  "room": {
+   "w": 3.6,
+   "l": 5.0,
+   "h": 2.8
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Skylight",
+    "code": "1624",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن في الرياض",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#EFE6DA"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Hard Wood Ivory",
+    "code": "A99GZHRD#IV0.W2S5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "متجر راك سيراميكس",
+    "locate_en": "wood plank floor",
+    "sample_color": false,
+    "hex": "#E0DCCD"
+   },
+   {
+    "type_ar": "القماش",
+    "name": "SILVERLÖNN ستارة شفافة",
+    "code": "104.939.78",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "window sheer curtain",
+    "sample_color": false,
+    "hex": "#DFCCC2"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "NARRKOLV",
+    "code": "005.943.41",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "rattan pendant lamp",
+    "sample_color": false,
+    "hex": "#C69964"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the door frame on the left",
+     "fix the warping on the top bunk bed railing",
+     "straighten the right window frame",
+     "add missing shadow under the small stool",
+     "straighten the wall tapestry's bottom edge"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.12,
+     0.5
+    ],
+    "reason": "door frame",
+    "raw": "https://v3b.fal.media/files/b/0ab25b78/e3MjJxv5GtJmMTWvgwawk_Wea2EU3k.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-15_1300_shared-kids-room-thr_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-15_1300_shared-kids-room-thr_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-15_1300_shared-kids-room-thr_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-15_1300_shared-kids-room-thr_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-15_1300_shared-kids-room-thr_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-15_1300_shared-kids-room-thr_reel.mp4",
+  "created_riyadh": "2026-11-14 01:44"
  }
 ]
