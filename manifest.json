@@ -3951,5 +3951,97 @@
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-14_2130_winter-family-living_reel.mp4",
   "created_riyadh": "2026-11-13 10:12"
+ },
+ {
+  "id": "2026-11-14_2300_small-office-recepti",
+  "format": "single",
+  "category": "commercial",
+  "slot": "2026-11-14 23:00",
+  "title_ar": "استقبال شركة صغيرة بدفء",
+  "space_ar": "استقبال مكتب صغير",
+  "style_ar": "عصري دافئ",
+  "palette_ar": "بلوط، زنجبيل مكتوم، أبيض، أسود مطفي",
+  "reel_hook_ar": "استقبال شركتك 25 متر؟ هذا انطباعك",
+  "room": {
+   "w": 5.5,
+   "l": 4.5,
+   "h": 2.9
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Ginger Brown",
+    "code": "1445",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن المعتمدة",
+    "locate_en": "feature wall",
+    "sample_color": true,
+    "hex": "#64391B"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Line Wood Beige",
+    "code": "A99GZLNW#DBE.W2S5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "متجر راك سيراميكس",
+    "locate_en": "wood-look floor",
+    "sample_color": true,
+    "hex": "#B38965"
+   },
+   {
+    "type_ar": "قطعة مختارة",
+    "name": "Lucina 3-Seater Sofa",
+    "code": "",
+    "brand": "Homebox",
+    "where_ar": "هوم بوكس",
+    "locate_en": "waiting sofa",
+    "sample_color": false,
+    "hex": "#C6B8A8"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "STRANDAD floor lamp",
+    "code": "705.948.37",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "floor lamp",
+    "sample_color": true,
+    "hex": "#CBA786"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the horizontal bottom edge of the illuminated wood slat panel",
+     "correct the inconsistent wood grain on the illuminated panel",
+     "fix the slight distortion in the top right wall corner",
+     "ensure consistent tile alignment on the floor, especially in the foreground",
+     "adjust reflections in the glass on the left to match the interior"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.35,
+     0.43
+    ],
+    "reason": "feature wall",
+    "raw": "https://v3b.fal.media/files/b/0ab24817/xIKEVVXmCzF4-xarYnFwK_lQJu9W1b.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-14_2300_small-office-recepti_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-14_2300_small-office-recepti_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-14_2300_small-office-recepti_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-14_2300_small-office-recepti_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-14_2300_small-office-recepti_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-14_2300_small-office-recepti_reel.mp4",
+  "created_riyadh": "2026-11-13 11:57"
  }
 ]
