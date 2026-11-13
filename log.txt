@@ -1,17 +1,16 @@
-2026-11-13T11:57:46.623853+03:00
+2026-11-13T13:58:18.139526+03:00
 plan 200 32 rows 2026-11-18 21:30
-skip 2026-11-13 13:00 in 1:02:54.574500 done
-skip 2026-11-13 21:30 in 9:32:54.574500 done
-skip 2026-11-13 23:00 in 11:02:54.574500 done
-skip 2026-11-14 13:00 in 1 day, 1:02:54.574500 done
-skip 2026-11-14 21:30 in 1 day, 9:32:54.574500 done
-skip 2026-11-15 13:00 in 2 days, 1:02:54.574500 
-skip 2026-11-15 21:30 in 2 days, 9:32:54.574500 
-skip 2026-11-16 13:00 in 3 days, 1:02:54.574500 
-skip 2026-11-16 21:30 in 3 days, 9:32:54.574500 
-skip 2026-11-17 13:00 in 4 days, 1:02:54.574500 
-skip 2026-11-17 21:30 in 4 days, 9:32:54.574500 
-skip 2026-11-18 13:00 in 5 days, 1:02:54.574500 
-skip 2026-11-18 21:30 in 5 days, 9:32:54.574500 
-QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the horizontal bottom edge of the illuminated wood slat panel", "correct the inconsistent wood grain on the illuminated panel", "fix the slight distortion in the top right wall corner", "ensure consistent tile alignment on the floor, especially in the foreground", "adjust reflections in the glass on the left to match the interior"], "inappropriate": false, "item_visible": true, "point": [0.35, 0.43], "reason": "feature wall"}
-OK 2026-11-14_2300_small-office-recepti 3 images
+skip 2026-11-13 21:30 in 7:31:42.615031 done
+skip 2026-11-13 23:00 in 9:01:42.615031 done
+skip 2026-11-14 13:00 in 23:01:42.615031 done
+skip 2026-11-14 21:30 in 1 day, 7:31:42.615031 done
+skip 2026-11-14 23:00 in 1 day, 9:01:42.615031 done
+skip 2026-11-15 13:00 in 1 day, 23:01:42.615031 
+skip 2026-11-15 21:30 in 2 days, 7:31:42.615031 
+skip 2026-11-16 13:00 in 2 days, 23:01:42.615031 
+skip 2026-11-16 21:30 in 3 days, 7:31:42.615031 
+skip 2026-11-17 13:00 in 3 days, 23:01:42.615031 
+skip 2026-11-17 21:30 in 4 days, 7:31:42.615031 
+skip 2026-11-18 13:00 in 4 days, 23:01:42.615031 
+skip 2026-11-18 21:30 in 5 days, 7:31:42.615031 
+buffer full or no specs
