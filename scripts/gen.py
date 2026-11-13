@@ -7,7 +7,7 @@ Output: gen/<id>_<n>.jpg + manifest.json on the `media` branch; log.txt with dia
 import base64, csv, glob, io, json, os, re, subprocess, sys, time, datetime as dt, requests
 from PIL import Image
 sys.path.insert(0, os.path.dirname(__file__))
-from render import card_html, plan_html, board_html, story_html, hero_html
+from render import card_html, plan_html, board_html, story_html, hero_html, end_card_html
 
 OUT = sys.argv[1] if len(sys.argv) > 1 else "media"
 SPEC_DIR = sys.argv[2] if len(sys.argv) > 2 else "site/specs/run"
@@ -312,6 +312,9 @@ def build_single(spec, browser, ident, slot=None):
         if i < 2: stories.append(sv)
         rv = f"gen/{ident}_r{i+1}.jpg"; shoot(page, story_html(b, spec.get("reel_hook_ar") if i == 0 else None), os.path.join(OUT, rv), 1080, 1920)
         frames.append(os.path.join(OUT, rv))
+    try:  # E-22: WhatsApp end card as the last reel frame (never blocks the reel if it fails)
+        ec = os.path.join(OUT, f"gen/{ident}_rend.jpg"); shoot(page, end_card_html(), ec, 1080, 1920); frames.append(ec)
+    except Exception as ex: log("end card failed", ex)
     page.close()
     reel = f"gen/{ident}_reel.mp4"
     try: reel_from(frames, os.path.join(OUT, reel))

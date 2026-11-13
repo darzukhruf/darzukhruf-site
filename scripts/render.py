@@ -199,3 +199,16 @@ def hero_html(photo_bytes):
 .br{{position:absolute;bottom:30px;left:34px;display:flex;align-items:center;gap:10px;color:{S};font-size:26px;font-weight:700;
  opacity:.85;text-shadow:0 2px 8px #0009}}</style></head><body><div class='ph'></div>
 <div class='br'>{STAR.format(s=28, c=S)}<span>دار زخرف</span></div></body></html>"""
+
+
+def end_card_html():
+    """Last reel frame (E-22): a clear call to action with the WhatsApp number — TikTok viewers rarely read captions."""
+    return f"""<!doctype html><html lang='ar' dir='rtl'><head><meta charset='utf-8'>{FONT_CSS}<style>
+*{{margin:0;padding:0;box-sizing:border-box}} html,body{{width:1080px;height:1920px;overflow:hidden;background:{D};font-family:'Tajawal',sans-serif}}
+.w{{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:56px;text-align:center;padding:0 80px}}
+.q{{color:{S};font-size:84px;font-weight:700;line-height:1.3}} .s{{color:{S};opacity:.85;font-size:46px;font-weight:500;line-height:1.5}}
+.n{{color:{D};background:{G};font-size:92px;font-weight:700;padding:28px 64px;border-radius:40px;direction:ltr;letter-spacing:2px}}
+.b{{display:flex;align-items:center;gap:16px;color:{G};font-size:44px;font-weight:700}}
+</style></head><body><div class='w'><div class='q'>تبي تصميم مثل هذا لمساحتك؟</div>
+<div class='s'>أرسل مقاسات مساحتك على واتساب</div><div class='n'>0578771717</div>
+<div class='b'>{STAR.format(s=44, c=G)}<span>دار زخرف · تصميم مقترح</span></div></div></body></html>"""
