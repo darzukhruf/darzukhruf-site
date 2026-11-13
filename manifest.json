@@ -3858,5 +3858,98 @@
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-14_1300_abaya-showroom_reel.mp4",
   "created_riyadh": "2026-11-13 01:46"
+ },
+ {
+  "id": "2026-11-14_2130_winter-family-living",
+  "format": "single",
+  "category": "residential",
+  "slot": "2026-11-14 21:30",
+  "title_ar": "ركن شتوي لصالة 5×6",
+  "space_ar": "ركن معيشة شتوي",
+  "style_ar": "كلاسيك معاصر هادئ",
+  "palette_ar": "رمادي حجري فاتح، أبيض مكسور، خشب رماد، فضي مطفي",
+  "reel_hook_ar": "صالة 5×6 تدفّي العائلة في الشتاء؟",
+  "room": {
+   "w": 5.0,
+   "l": 6.0,
+   "h": 2.8
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Tender Greige",
+    "code": "12306",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن المعتمدة",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#C9C4BB"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Hard Wood Ivory",
+    "code": "A99GZHRD#IV0.W2S5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "متجر راك سيراميكس",
+    "locate_en": "wood-look floor",
+    "sample_color": true,
+    "hex": "#D1CFCF"
+   },
+   {
+    "type_ar": "قطعة مختارة",
+    "name": "LINANÄS corner sofa beige",
+    "code": "305.122.35",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "sofa",
+    "sample_color": true,
+    "hex": "#B5AAA0"
+   },
+   {
+    "type_ar": "القماش",
+    "name": "STOENSE rug low pile",
+    "code": "806.076.84",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "rug",
+    "sample_color": true,
+    "hex": "#B0A89C"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top edge of the fireplace mantel, it's slightly wavy",
+     "correct the slightly warped window frame on the right side of the fireplace",
+     "adjust the reflection on the floor to match the light source more accurately, especially under the fireplace",
+     "smooth out the texture of the far wall, it has a slight plastic look near the ceiling",
+     "fix the slight HDR halo around the window frames against the wall",
+     "sharpen the texture of the rug, it's a bit too soft and uniform"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.37,
+     0.48
+    ],
+    "reason": "fireplace",
+    "raw": "https://v3b.fal.media/files/b/0ab245a0/WkeLCqivSBBmCe3G6pLtN_3Ciqvf0d.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-14_2130_winter-family-living_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-14_2130_winter-family-living_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-14_2130_winter-family-living_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-14_2130_winter-family-living_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-14_2130_winter-family-living_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-14_2130_winter-family-living_reel.mp4",
+  "created_riyadh": "2026-11-13 10:12"
  }
 ]
