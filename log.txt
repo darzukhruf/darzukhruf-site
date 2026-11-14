@@ -1,14 +1,14 @@
-2026-11-14T01:44:44.725306+03:00
+2026-11-14T03:57:04.554149+03:00
 plan 200 32 rows 2026-11-18 21:30
-skip 2026-11-14 13:00 in 11:15:55.594012 done
-skip 2026-11-14 21:30 in 19:45:55.594012 done
-skip 2026-11-14 23:00 in 21:15:55.594012 done
-skip 2026-11-15 21:30 in 1 day, 19:45:55.594012 
-skip 2026-11-16 13:00 in 2 days, 11:15:55.594012 
-skip 2026-11-16 21:30 in 2 days, 19:45:55.594012 
-skip 2026-11-17 13:00 in 3 days, 11:15:55.594012 
-skip 2026-11-17 21:30 in 3 days, 19:45:55.594012 
-skip 2026-11-18 13:00 in 4 days, 11:15:55.594012 
-skip 2026-11-18 21:30 in 4 days, 19:45:55.594012 
-QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the door frame on the left", "fix the warping on the top bunk bed railing", "straighten the right window frame", "add missing shadow under the small stool", "straighten the wall tapestry's bottom edge"], "inappropriate": false, "item_visible": true, "point": [0.12, 0.5], "reason": "door frame"}
-OK 2026-11-15_1300_shared-kids-room-thr 3 images
+skip 2026-11-14 13:00 in 9:02:56.586726 done
+skip 2026-11-14 21:30 in 17:32:56.586726 done
+skip 2026-11-14 23:00 in 19:02:56.586726 done
+skip 2026-11-15 13:00 in 1 day, 9:02:56.586726 done
+skip 2026-11-15 21:30 in 1 day, 17:32:56.586726 
+skip 2026-11-16 13:00 in 2 days, 9:02:56.586726 
+skip 2026-11-16 21:30 in 2 days, 17:32:56.586726 
+skip 2026-11-17 13:00 in 3 days, 9:02:56.586726 
+skip 2026-11-17 21:30 in 3 days, 17:32:56.586726 
+skip 2026-11-18 13:00 in 4 days, 9:02:56.586726 
+skip 2026-11-18 21:30 in 4 days, 17:32:56.586726 
+buffer full or no specs
