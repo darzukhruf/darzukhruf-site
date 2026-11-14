@@ -2148,7 +2148,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_1200_entrance-foyer_v3.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_1200_entrance-foyer_reel.mp4",
-  "created_riyadh": "2026-11-07 11:04"
+  "created_riyadh": "2026-11-07 11:04",
+  "pruned": true
  },
  {
   "id": "2026-11-08_1800_girl-bedroom",
@@ -2274,7 +2275,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_1800_girl-bedroom_v3.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_1800_girl-bedroom_reel.mp4",
-  "created_riyadh": "2026-11-07 11:08"
+  "created_riyadh": "2026-11-07 11:08",
+  "pruned": true
  },
  {
   "id": "2026-11-07_2030_womens-salon",
@@ -2363,7 +2365,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_2030_womens-salon_s2.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_2030_womens-salon_reel.mp4",
-  "created_riyadh": "2026-11-07 14:52"
+  "created_riyadh": "2026-11-07 14:52",
+  "pruned": true
  },
  {
   "id": "2026-11-07_2300_shared-kids-room",
@@ -2454,7 +2457,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_2300_shared-kids-room_s2.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-07_2300_shared-kids-room_reel.mp4",
-  "created_riyadh": "2026-11-07 14:53"
+  "created_riyadh": "2026-11-07 14:53",
+  "pruned": true
  },
  {
   "id": "2026-11-08_1300_najdi-annex-lounge",
@@ -2544,7 +2548,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_1300_najdi-annex-lounge_s2.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_1300_najdi-annex-lounge_reel.mp4",
-  "created_riyadh": "2026-11-07 14:53"
+  "created_riyadh": "2026-11-07 14:53",
+  "pruned": true
  },
  {
   "id": "2026-11-08_2130_villa-entrance-hall",
@@ -2661,7 +2666,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_2130_villa-entrance-hall_s2.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_2130_villa-entrance-hall_reel.mp4",
-  "created_riyadh": "2026-11-07 15:48"
+  "created_riyadh": "2026-11-07 15:48",
+  "pruned": true
  },
  {
   "id": "2026-11-09_1300_specialty-cafe",
@@ -2754,7 +2760,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-09_1300_specialty-cafe_s2.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-09_1300_specialty-cafe_reel.mp4",
-  "created_riyadh": "2026-11-08 01:37"
+  "created_riyadh": "2026-11-08 01:37",
+  "pruned": true
  },
  {
   "id": "2026-11-09_2130_ladies-majlis",
@@ -4234,5 +4241,98 @@
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-15_2130_dessert-patisserie-s_reel.mp4",
   "created_riyadh": "2026-11-14 09:57"
+ },
+ {
+  "id": "2026-11-16_1300_family-living-room-m",
+  "format": "single",
+  "category": "residential",
+  "slot": "2026-11-16 13:00",
+  "title_ar": "صالة 4×5 قبل شراء الكنب",
+  "space_ar": "صالة معيشة عائلية",
+  "style_ar": "متوسطي حديث",
+  "palette_ar": "جير أبيض دافئ، تراكوتا، خشب جوز، حديد أسود",
+  "reel_hook_ar": "كنبة الجمعة البيضاء تدخل صالة 4×5؟",
+  "room": {
+   "w": 4.0,
+   "l": 5.0,
+   "h": 2.9
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Natural White",
+    "code": "12303",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن في الرياض",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#E1DACF"
+   },
+   {
+    "type_ar": "لون ثانٍ",
+    "name": "Rustic Terracotta",
+    "code": "2771",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن في الرياض",
+    "locate_en": "arched niche",
+    "sample_color": true,
+    "hex": "#AA5B44"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Rhode Island Beige",
+    "code": "A12GRDIL-BEE.M0X5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "معارض راك سيراميكس",
+    "locate_en": "floor",
+    "sample_color": false,
+    "hex": "#C4B29E"
+   },
+   {
+    "type_ar": "قطعة مختارة",
+    "name": "EKHOLMA كنبة 3 مقاعد",
+    "code": "795.355.94",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "sofa",
+    "sample_color": false,
+    "hex": "#B4A390"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the horizontal lines of the floor tiles near the bottom edge of the image",
+     "fix the slight waviness in the arch niche's right edge",
+     "correct the slightly warped and wavy upper right edge of the arch niche",
+     "adjust the shadow on the right side of the couch, it appears slightly too sharp and detached in some areas",
+     "correct the lighting on the ceiling, the light source seems to cause an inconsistent brightness distribution",
+     "align the right side door frame; it's slightly bent inwards at the top"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "overall inspection",
+    "raw": "https://v3b.fal.media/files/b/0ab27d15/6eiWipnFVc813PgxH_mV0_sfay64bb.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-16_1300_family-living-room-m_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-16_1300_family-living-room-m_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-16_1300_family-living-room-m_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-16_1300_family-living-room-m_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-16_1300_family-living-room-m_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-16_1300_family-living-room-m_reel.mp4",
+  "created_riyadh": "2026-11-15 01:39"
  }
 ]
