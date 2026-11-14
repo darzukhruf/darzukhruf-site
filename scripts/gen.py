@@ -263,16 +263,32 @@ def shoot(page, html, path, w=1080, h=1440):
     page.set_viewport_size({"width": w, "height": h}); page.set_content(html, wait_until="networkidle")
     page.wait_for_timeout(500); page.screenshot(path=path, type="jpeg", quality=91)
 
-def reel_from(frames, out):
-    d, x = 3.4, 0.6
+def reel_from(frames, out, kb=True):
+    """Reel with crossfades. kb=True adds a slow Ken Burns zoom/pan to every photo frame (E-26, T-20261114-04);
+    the WhatsApp end card (_rend.jpg) stays static so its text is readable. Any ffmpeg error -> static fallback."""
+    d, x, fps = 3.4, 0.6, 30
     args = ["ffmpeg", "-y", "-loglevel", "error"]
-    for fr in frames: args += ["-loop", "1", "-t", str(d), "-i", fr]
-    chain, last = [], "[0:v]"
+    for fr in frames: args += ["-framerate", str(fps), "-loop", "1", "-t", str(d), "-i", fr]
+    pre, src = [], []
+    for i, fr in enumerate(frames):
+        if kb and not fr.endswith("_rend.jpg"):
+            n = int(d * fps); zin = i % 2 == 0  # alternate zoom-in / zoom-out, drift direction alternates too
+            z = f"1+0.07*on/{n}" if zin else f"1.07-0.07*on/{n}"
+            px = "(iw-iw/zoom)/2" if i % 4 < 2 else f"(iw-iw/zoom)*on/{n}"
+            pre.append(f"[{i}:v]scale=2160:3840,zoompan=z='{z}':x='{px}':y='(ih-ih/zoom)/2':d=1:s=1080x1920:fps={fps},setsar=1[k{i}]")
+        else:
+            pre.append(f"[{i}:v]scale=1080:1920,setsar=1,fps={fps}[k{i}]")
+        src.append(f"[k{i}]")
+    chain, last = [], src[0]
     for i in range(1, len(frames)):
-        chain.append(f"{last}[{i}:v]xfade=transition=fade:duration={x}:offset={i*(d-x):.2f}[x{i}]"); last = f"[x{i}]"
-    fc = (";".join(chain) + f";{last}format=yuv420p,fps=30[v]") if chain else "[0:v]format=yuv420p,fps=30[v]"
-    subprocess.run(args + ["-filter_complex", fc, "-map", "[v]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "23",
-                           "-movflags", "+faststart", out], check=True, timeout=300)
+        chain.append(f"{last}{src[i]}xfade=transition=fade:duration={x}:offset={i*(d-x):.2f}[x{i}]"); last = f"[x{i}]"
+    fc = ";".join(pre + chain + [f"{last}format=yuv420p[v]"])
+    enc = ["-map", "[v]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "23", "-movflags", "+faststart", out]
+    try:
+        subprocess.run(args + ["-filter_complex", fc] + enc, check=True, timeout=300)
+    except Exception as ex:
+        if not kb: raise
+        log("ken burns failed, static reel", ex); reel_from(frames, out, kb=False)
 
 def build_single(spec, browser, ident, slot=None):
     """One strong hero photo + material board + (optional) 2D plan; stories and a reel from the same three images."""
