@@ -1864,7 +1864,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_0000_home-office_v3.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_0000_home-office_reel.mp4",
-  "created_riyadh": "2026-11-07 05:00"
+  "created_riyadh": "2026-11-07 05:00",
+  "pruned": true
  },
  {
   "id": "2026-11-08_0600_dining-room",
@@ -2022,7 +2023,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_0600_dining-room_v3.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-08_0600_dining-room_reel.mp4",
-  "created_riyadh": "2026-11-07 05:02"
+  "created_riyadh": "2026-11-07 05:02",
+  "pruned": true
  },
  {
   "id": "2026-11-08_1200_entrance-foyer",
@@ -4140,5 +4142,97 @@
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-15_1300_shared-kids-room-thr_reel.mp4",
   "created_riyadh": "2026-11-14 01:44"
+ },
+ {
+  "id": "2026-11-15_2130_dessert-patisserie-s",
+  "format": "single",
+  "category": "commercial",
+  "slot": "2026-11-15 21:30",
+  "title_ar": "محل حلويات بأناقة وسط القرن",
+  "space_ar": "محل حلويات ومخبز",
+  "style_ar": "حداثة منتصف القرن دافئة",
+  "palette_ar": "كريمي دافئ، جوز، ذهبي مطفي، رخام",
+  "reel_hook_ar": "محلك الحلويات يبيع قبل ما يذوقون؟",
+  "room": {
+   "w": 6.0,
+   "l": 4.5,
+   "h": 3.2
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Cashew",
+    "code": "1931",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن في الرياض",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#EEC185"
+   },
+   {
+    "type_ar": "سطح العمل",
+    "name": "Calacatta Imperiale",
+    "code": "",
+    "brand": "RAK Ceramics",
+    "where_ar": "متجر راك سيراميكس",
+    "locate_en": "counter top",
+    "sample_color": false,
+    "hex": "#F3F2F0"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "Collect Socket Pendant",
+    "code": "100297693",
+    "brand": "Ferm Living",
+    "where_ar": "ذا بويري الرياض العليا",
+    "locate_en": "pendant lamps over the counter",
+    "sample_color": false,
+    "hex": "#986E47"
+   },
+   {
+    "type_ar": "قطعة مختارة",
+    "name": "FRÖTORP طاولة مدورة",
+    "code": "",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "round café tables",
+    "sample_color": false,
+    "hex": "#F8F8F8"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the wall above the arch niche",
+     "adjust the shadow direction on the ceiling (top left)",
+     "correct the warped perspective of the glass reflections on the right side window",
+     "smooth the texture of the white marble countertop, especially the curved edge",
+     "add more realistic detail to the objects on the shelves to prevent a 'plastic' look"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.28,
+     0.28
+    ],
+    "reason": "wall is slightly wavy",
+    "raw": "https://v3b.fal.media/files/b/0ab26702/TmnyjP0Q7g1V0iPtAuGD0_puBAz32y.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-15_2130_dessert-patisserie-s_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-15_2130_dessert-patisserie-s_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-15_2130_dessert-patisserie-s_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-15_2130_dessert-patisserie-s_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-15_2130_dessert-patisserie-s_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-15_2130_dessert-patisserie-s_reel.mp4",
+  "created_riyadh": "2026-11-14 09:57"
  }
 ]
