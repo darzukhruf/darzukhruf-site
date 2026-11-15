@@ -10,6 +10,7 @@
 - [تصميم غرفة نوم](https://darzukhruf.github.io/darzukhruf-site/bedroom.html)
 - [تصميم كافيه وصالون](https://darzukhruf.github.io/darzukhruf-site/cafe-salon.html)
 - [الدليل](https://darzukhruf.github.io/darzukhruf-site/guide.html)
+- [كيف نشتغل](https://darzukhruf.github.io/darzukhruf-site/how.html)
 - [سياسة الخصوصية](https://darzukhruf.github.io/darzukhruf-site/privacy.html)
 
 ## الموقع الرئيسي ونموذج الطلب
