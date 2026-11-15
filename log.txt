@@ -1,11 +1,11 @@
-2026-11-15T01:39:00.248299+03:00
+2026-11-15T04:00:19.608072+03:00
 plan 200 32 rows 2026-11-18 21:30
-skip 2026-11-15 13:00 in 11:21:47.382840 done
-skip 2026-11-15 21:30 in 19:51:47.382840 done
-skip 2026-11-16 21:30 in 1 day, 19:51:47.382840 
-skip 2026-11-17 13:00 in 2 days, 11:21:47.382840 
-skip 2026-11-17 21:30 in 2 days, 19:51:47.382840 
-skip 2026-11-18 13:00 in 3 days, 11:21:47.382840 
-skip 2026-11-18 21:30 in 3 days, 19:51:47.382840 
-QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the horizontal lines of the floor tiles near the bottom edge of the image", "fix the slight waviness in the arch niche's right edge", "correct the slightly warped and wavy upper right edge of the arch niche", "adjust the shadow on the right side of the couch, it appears slightly too sharp and detached in some areas", "correct the lighting on the ceiling, the light source seems to cause an inconsistent brightness distribution", "align the right side door frame; it's slightly bent inwards at the top"], "inappropriate": false, "item_visible": true, "point": [0.5, 0.5], "reason": "overall inspection"}
-OK 2026-11-16_1300_family-living-room-m 3 images
+skip 2026-11-15 13:00 in 8:59:41.119748 done
+skip 2026-11-15 21:30 in 17:29:41.119748 done
+skip 2026-11-16 13:00 in 1 day, 8:59:41.119748 done
+skip 2026-11-16 21:30 in 1 day, 17:29:41.119748 
+skip 2026-11-17 13:00 in 2 days, 8:59:41.119748 
+skip 2026-11-17 21:30 in 2 days, 17:29:41.119748 
+skip 2026-11-18 13:00 in 3 days, 8:59:41.119748 
+skip 2026-11-18 21:30 in 3 days, 17:29:41.119748 
+buffer full or no specs
