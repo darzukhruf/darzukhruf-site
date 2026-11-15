@@ -1,9 +1,9 @@
-2026-11-15T23:39:38.168003+03:00
+2026-11-16T01:40:14.861533+03:00
 plan 200 32 rows 2026-11-18 21:30
-skip 2026-11-16 13:00 in 13:20:22.328828 done
-skip 2026-11-16 21:30 in 21:50:22.328828 done
-skip 2026-11-17 13:00 in 1 day, 13:20:22.328828 
-skip 2026-11-17 21:30 in 1 day, 21:50:22.328828 
-skip 2026-11-18 13:00 in 2 days, 13:20:22.328828 
-skip 2026-11-18 21:30 in 2 days, 21:50:22.328828 
-buffer full or no specs
+skip 2026-11-16 13:00 in 11:20:28.089777 done
+skip 2026-11-16 21:30 in 19:50:28.089777 done
+skip 2026-11-17 21:30 in 1 day, 19:50:28.089777 
+skip 2026-11-18 13:00 in 2 days, 11:20:28.089777 
+skip 2026-11-18 21:30 in 2 days, 19:50:28.089777 
+QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the top left door frame slightly inward", "adjust the reflection on the closet door to better match the room", "smooth the texture of the ceiling light", "clarify the texture of the wooden floor planks, especially in the foreground"], "inappropriate": false, "item_visible": true, "point": [0.05, 0.5], "reason": "door frame"}
+OK 2026-11-17_1300_teen-boy-room-soft-i 3 images

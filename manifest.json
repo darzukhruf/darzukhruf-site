@@ -4426,5 +4426,97 @@
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-16_2130_womens-walk-in-close_reel.mp4",
   "reel_frame_sec": 2.4,
   "created_riyadh": "2026-11-15 10:00"
+ },
+ {
+  "id": "2026-11-17_1300_teen-boy-room-soft-i",
+  "format": "single",
+  "category": "residential",
+  "slot": "2026-11-17 13:00",
+  "title_ar": "غرفة ولد 11 متر بركن دراسة",
+  "space_ar": "غرفة ولد مراهق",
+  "style_ar": "إندستريال ناعم",
+  "palette_ar": "رمادي إسمنتي، كراميل، جوز، أسود مطفي",
+  "reel_hook_ar": "سرير ابنك يبلع غرفة 11 متر؟",
+  "room": {
+   "w": 3.3,
+   "l": 3.4,
+   "h": 2.8
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Smoke",
+    "code": "CT-2109",
+    "brand": "Jazeera Paints",
+    "where_ar": "معارض الجزيرة للدهانات",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#81817D"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Kyoto Brown",
+    "code": "A45RKYOT-BRN.M0X0R",
+    "brand": "RAK Ceramics",
+    "where_ar": "معارض راك سيراميكس",
+    "locate_en": "floor",
+    "sample_color": false,
+    "hex": "#714C32"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "KAPPELAND مصباح معلق",
+    "code": "496.040.51",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "pendant lamp",
+    "sample_color": false,
+    "hex": "#413A32"
+   },
+   {
+    "type_ar": "السجاد",
+    "name": "STOENSE سجادة",
+    "code": "806.076.84",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "rug",
+    "sample_color": false,
+    "hex": "#C0AFA1"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top left door frame slightly inward",
+     "adjust the reflection on the closet door to better match the room",
+     "smooth the texture of the ceiling light",
+     "clarify the texture of the wooden floor planks, especially in the foreground"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.05,
+     0.5
+    ],
+    "reason": "door frame",
+    "raw": "https://v3b.fal.media/files/b/0ab29edd/mgSEtxo5BJIQitnzOuz8K_TNFKKgZn.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-17_1300_teen-boy-room-soft-i_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-17_1300_teen-boy-room-soft-i_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-17_1300_teen-boy-room-soft-i_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-17_1300_teen-boy-room-soft-i_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-17_1300_teen-boy-room-soft-i_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-17_1300_teen-boy-room-soft-i_reel.mp4",
+  "reel_frame_sec": 3.4,
+  "created_riyadh": "2026-11-16 01:40"
  }
 ]
