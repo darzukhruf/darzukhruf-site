@@ -263,10 +263,16 @@ def shoot(page, html, path, w=1080, h=1440):
     page.set_viewport_size({"width": w, "height": h}); page.set_content(html, wait_until="networkidle")
     page.wait_for_timeout(500); page.screenshot(path=path, type="jpeg", quality=91)
 
-def reel_from(frames, out, kb=True):
+def reel_sec(ident):
+    """E-29 (T-20261115-03): reels on even calendar days are short loops (2.4 s per frame, ~8 s total) to test completion rate;
+    odd days keep 3.4 s (~12 s). Any parsing problem -> the normal length."""
+    try: return 2.4 if int(ident[8:10]) % 2 == 0 else 3.4
+    except Exception: return 3.4
+
+def reel_from(frames, out, kb=True, d=3.4):
     """Reel with crossfades. kb=True adds a slow Ken Burns zoom/pan to every photo frame (E-26, T-20261114-04);
     the WhatsApp end card (_rend.jpg) stays static so its text is readable. Any ffmpeg error -> static fallback."""
-    d, x, fps = 3.4, 0.6, 30
+    x, fps = 0.6, 30
     args = ["ffmpeg", "-y", "-loglevel", "error"]
     for fr in frames: args += ["-framerate", str(fps), "-loop", "1", "-t", str(d), "-i", fr]
     pre, src = [], []
@@ -288,7 +294,7 @@ def reel_from(frames, out, kb=True):
         subprocess.run(args + ["-filter_complex", fc] + enc, check=True, timeout=300)
     except Exception as ex:
         if not kb: raise
-        log("ken burns failed, static reel", ex); reel_from(frames, out, kb=False)
+        log("ken burns failed, static reel", ex); reel_from(frames, out, kb=False, d=d)
 
 def build_single(spec, browser, ident, slot=None):
     """One strong hero photo + material board + (optional) 2D plan; stories and a reel from the same three images."""
@@ -333,7 +339,8 @@ def build_single(spec, browser, ident, slot=None):
     except Exception as ex: log("end card failed", ex)
     page.close()
     reel = f"gen/{ident}_reel.mp4"
-    try: reel_from(frames, os.path.join(OUT, reel))
+    rsec = reel_sec(ident)
+    try: reel_from(frames, os.path.join(OUT, reel), d=rsec)
     except Exception as ex: log("reel failed", ex); reel = None
     for fr in frames:
         try: os.remove(fr)
@@ -343,7 +350,7 @@ def build_single(spec, browser, ident, slot=None):
             "title_ar": spec.get("title_ar"), "space_ar": spec.get("space_ar"), "style_ar": spec.get("style_ar"),
             "palette_ar": spec.get("palette_ar"), "reel_hook_ar": spec.get("reel_hook_ar"), "room": spec.get("room"),
             "materials": mats, "qa": [q], "notes": spec.get("notes_ar", ""), "images": [raw + f for f in files],
-            "stories": [raw + f for f in stories], "reel": (raw + reel) if reel else None,
+            "stories": [raw + f for f in stories], "reel": (raw + reel) if reel else None, "reel_frame_sec": rsec,
             "created_riyadh": dt.datetime.now(RIY).strftime("%Y-%m-%d %H:%M")}
 
 def build(spec, browser, ident, slot=None):
