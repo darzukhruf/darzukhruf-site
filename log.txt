@@ -1,3 +1,12 @@
-2026-11-16T12:58:43.927477+03:00
-QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the top-left ceiling line and light channel", "straighten the top-right ceiling line and light channel", "fix the slight distortion in the right wall mirror reflection", "adjust the shadow direction and intensity of the right floor lamp", "adjust the shadow direction and intensity of the left floor lamp", "improve the texture of the main ceiling light fixture to appear less flat"], "inappropriate": false, "item_visible": true, "point": [0.5, 0.5], "reason": "overall good but minor line imperfections and lighting inconsistencies"}
-OK sample-client-women-majlis-5x7 3 images
+2026-11-16T14:24:33.640555+03:00
+plan 200 36 rows 2026-11-20 21:30
+skip 2026-11-16 21:30 in 7:05:26.825333 done
+skip 2026-11-17 13:00 in 22:35:26.825333 done
+skip 2026-11-17 21:30 in 1 day, 7:05:26.825333 done
+skip 2026-11-18 13:00 in 1 day, 22:35:26.825333 
+skip 2026-11-18 21:30 in 2 days, 7:05:26.825333 
+skip 2026-11-19 13:00 in 2 days, 22:35:26.825333 
+skip 2026-11-19 21:30 in 3 days, 7:05:26.825333 
+skip 2026-11-20 13:00 in 3 days, 22:35:26.825333 
+skip 2026-11-20 21:30 in 4 days, 7:05:26.825333 
+buffer full or no specs
