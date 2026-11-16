@@ -1,4 +1,15 @@
 /* يضيف مصدر الزيارة (من رابط البايو/البن) لنص رسالة واتساب الجاهزة — بلا كوكيز ولا تتبع خارجي */
+/* عدّ زيارات نسخة github.io: طلب صورة SVG صغيرة موجودة أصلاً من darzukhruf.netlify.app؛ المرجع (الصفحة وutm) يظهر في إحصاءات Netlify. بلا كوكيز ولا بيانات شخصية */
+(function(){
+  try {
+    if (!/github\.io$/.test(location.hostname)) return;
+    var k = 'dz_px_' + location.pathname;
+    try { if (sessionStorage.getItem(k)) return; sessionStorage.setItem(k, '1'); } catch (e) {}
+    var i = new Image();
+    i.referrerPolicy = 'unsafe-url';
+    i.src = 'https://darzukhruf.netlify.app/favicon.svg?gh=1';
+  } catch (e) {}
+})();
 (function(){
   var s = '';
   try {
