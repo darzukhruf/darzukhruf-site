@@ -318,29 +318,32 @@ def openings_text(sp):
             + "; ".join(f"{WALLS[k]} wall: " + ", ".join(v) for k, v in per.items())
             + "; every other wall is a solid wall without any door or window.")
 
-ACCURACY = ("You check an interior design photo against the client's floor plan. Judge ONLY what is visible in the photo. "
-            "Reply ONLY JSON: {\"ok\":true|false,\"problems\":[\"precise retouch instruction\", ...]}. ok=false if: a door, window, arch "
-            "or opening is visible that is not in the plan, an opening from the plan is missing on a visible wall, a furniture zone "
-            "stands on a different wall than in the plan, a piece is missing or an extra large piece appears, or a forbidden item is "
-            "present. problems = how to fix each one (e.g. 'remove the door on the right wall and continue the plain wall'). Plan: ")
+ACCURACY = ("You check an interior design photo against the client's list of doors and windows. Judge ONLY what is clearly "
+            "visible; walls outside the frame are unknown, not errors. Do NOT judge furniture, colours, rugs, lamps or decor. "
+            "Reply ONLY JSON: {\"ok\":true|false,\"problems\":[\"precise retouch instruction\", ...]}. ok=false ONLY if a door, "
+            "window, arch or opening is visible that is not in the list (e.g. a second door), or a clearly forbidden item is visible. "
+            "problems = how to remove each one (e.g. 'remove the door on the right wall and continue the plain wall'). List: ")
 
 def accuracy_fix(url, sp, plan_txt, locate):
-    """Client designs only: plan-vs-photo check with up to 2 retouches; returns (url, check). Never hides a failure."""
-    chk = None
-    for i in range(3):
-        chk, _ = vision(ACCURACY + plan_txt + (" Forbidden: " + sp["avoid_en"] if sp.get("avoid_en") else ""), url)
-        if chk is None: return url, {"ok": None, "problems": ["accuracy check unavailable"]}
-        log("ACCURACY", i, json.dumps(chk, ensure_ascii=False))
-        if chk.get("ok") or i == 2 or not chk.get("problems"): break
-        fix = "; ".join(str(x) for x in chk["problems"][:5])
+    """Client designs only: openings/forbidden-items check; a retouch is kept ONLY if it passes QA and the re-check.
+    Advisory: the client designer agent does the full plan-vs-photo review before delivery."""
+    ops = openings_text(sp) or "not given"
+    ask = ACCURACY + ops + (" Forbidden: " + sp["avoid_en"] if sp.get("avoid_en") else "")
+    chk, _ = vision(ask, url)
+    if chk is None: return url, {"ok": None, "problems": ["accuracy check unavailable"]}
+    log("ACCURACY", json.dumps(chk, ensure_ascii=False))
+    for i in range(2):
+        if chk.get("ok") or not chk.get("problems"): break
+        fix = "; ".join(str(x) for x in chk["problems"][:3])
         r = fal(EDIT, {"prompt": "Retouch this interior photograph. Fix ONLY these problems: " + fix + ". Keep everything else "
                        "identical; real professional photo, no text, no people.", "image_urls": [url], "num_images": 1,
                        "aspect_ratio": "3:4", "output_format": "jpeg"})
         u2 = (((r or {}).get("images") or [{}])[0]).get("url")
         if not u2: break
         q2, _ = vision(QA + locate, u2)
-        if not q2 or not qa_ok(q2): log("retouch failed QA"); break
-        url = u2
+        c2, _ = vision(ask, u2)
+        log("ACCURACY retouch", i, json.dumps(c2, ensure_ascii=False))
+        if q2 and qa_ok(q2) and c2 and c2.get("ok"): return u2, c2
     return url, chk
 
 def build_single(spec, browser, ident, slot=None):
