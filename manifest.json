@@ -4708,5 +4708,176 @@
   "reel_frame_sec": 3.4,
   "reel_order": "reveal",
   "created_riyadh": "2026-11-16 12:58"
+ },
+ {
+  "id": "client-sample-20261116",
+  "format": "single",
+  "client": true,
+  "do_not_publish": true,
+  "category": "residential",
+  "slot": "client (لا يُنشر)",
+  "title_ar": "مجلس نساء مودرن دافئ 5×7",
+  "space_ar": "مجلس نساء",
+  "style_ar": "مودرن دافئ",
+  "palette_ar": "كتان مغسول، كاجو، بلوط فاتح، بيج، لمسات زيتي ونحاسي مطفي خفيف",
+  "room": {
+   "w": 5.0,
+   "l": 7.0,
+   "h": 3.0
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · الجدران",
+    "name": "Washed Linen",
+    "code": "10679",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن المعتمدة",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#C1AF92"
+   },
+   {
+    "type_ar": "لون ثانٍ · جدار النافذة",
+    "name": "Cashew",
+    "code": "1931",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن المعتمدة",
+    "locate_en": "north accent wall",
+    "sample_color": true,
+    "hex": "#BDA886"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Line Wood Beige",
+    "code": "A99GZLNW#DBE.W2S5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "متجر راك سيراميكس",
+    "locate_en": "floor",
+    "sample_color": false,
+    "hex": "#AD9E8D"
+   },
+   {
+    "type_ar": "قطعة مختارة",
+    "name": "EKHOLMA كنبة 3 مقاعد",
+    "code": "795.355.94",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض/جدة/الدمام",
+    "locate_en": "sofas",
+    "sample_color": false,
+    "hex": "#D2CBBF"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the base of the ceiling coving on the right",
+     "adjust reflections on the mirror to match the room"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "Overall good quality, minor geometric and reflection issues.",
+    "raw": "https://v3b.fal.media/files/b/0ab2b989/5BGKeQH79eRYah7cJ9__m_zqeClDzQ.jpg",
+    "accuracy": {
+     "ok": false,
+     "problems": [
+      "The north accent wall should be Cashew by Jotun, but it appears to be Washed Linen by Jotun. Change the colour of the north accent wall to Cashew by Jotun.",
+      "There is an extra sofa on the west wall. Remove one sofa from the west wall.",
+      "There is an extra sofa on the east wall. Remove one sofa from the east wall."
+     ]
+    }
+   },
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top left recessed light channel",
+     "straighten the top right recessed light channel",
+     "straighten the left curtain fabric at the top",
+     "correct the reflection in the right mirror to be consistent with the room",
+     "straighten the bottom edge of the wall molding on the right"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "overall good but minor distortions and reflections",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 180,
+     "reason": "viewpoint rotated 180 degrees"
+    },
+    "raw": "https://v3b.fal.media/files/b/0ab2b996/o5KaZylW7Lsm_R2OoQvJG_DA737BJE.jpg",
+    "accuracy": {
+     "ok": false,
+     "problems": [
+      "remove the door on the left wall and continue the plain wall",
+      "remove the door on the right wall and continue the plain wall",
+      "remove the coffee zone and replace it with a sofa (كنبة 3) on the south wall",
+      "add a window 2.2 m wide to the north wall"
+     ]
+    }
+   },
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the ceiling recess on the left",
+     "fix the slight waviness of the trim on the patterned wall panel",
+     "correct the light source of the hanging lamp, it appears to glow without a clear internal light source",
+     "adjust the light reflection on the coffee table to be more consistent with the overall lighting"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "overall look",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 30,
+     "reason": "The overall room layout, furniture, and material colors match the description and the reference image. The viewpoint has shifted to the left, showing a patterned wall panel on the left that was not visible in the reference, and a new light fixture has been added to the ceiling. "
+    },
+    "raw": "https://v3b.fal.media/files/b/0ab2b999/P6idZ1hDDJQ_SQvTN7-Gb_VT5YeWZh.jpg",
+    "accuracy": {
+     "ok": false,
+     "problems": [
+      "The north accent wall should be Cashew by Jotun, but it appears to be Washed Linen. Change the color of the north wall to Cashew by Jotun.",
+      "The layout specifies 'north wall: window, sofa (كنبة 3)', but the visible sofa on the north wall is part of a larger sofa arrangement (L-shaped or two separate sofas). Adjust the sofa configuration on the north wall to be a single 'كنبة 3'.",
+      "The layout specifies 'east wall: sofa (كنبة 3), sofa (كنبة 3)', but only one sofa is clearly visible, and it is positioned as part of the corner arrangement. Ensure two distinct 'كنبة 3' sofas are placed on the east wall.",
+      "The layout specifies 'west wall: sofa (كنبة 3), sofa (كنبة 3)', but no sofas are visible on the west wall. Add two 'كنبة 3' sofas to the west wall.",
+      "The layout specifies 'centre of the room: table (طاولة وسط), table (طاولة وسط)', but only two coffee tables are visible, and their placement suggests they are not exactly in the center of the room. Adjust the placement to ensure both 'طاولة وسط' tables are centrally located.",
+      "The layout specifies 'south wall: door, coffee (ركن قهوة)', but neither the door nor the coffee corner is visible in the photo. Add the door and the coffee corner to the south wall.",
+      "The image shows an L-shaped sofa configuration, but the plan indicates individual sofas on each wall. Remove the L-shaped sofa and replace it with individual 'كنبة 3' sofas as per the plan.",
+      "The image shows a large central rug. The plan does not include a rug. Remove the large central rug."
+     ]
+    }
+   }
+  ],
+  "accuracy_ok": false,
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/client-sample-20261116_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/client-sample-20261116_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/client-sample-20261116_3_plan.jpg"
+  ],
+  "views": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/client-sample-20261116_1b_view.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/client-sample-20261116_1c_view.jpg"
+  ],
+  "pdf": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/client-sample-20261116.pdf",
+  "created_riyadh": "2026-11-16 20:41"
  }
 ]
