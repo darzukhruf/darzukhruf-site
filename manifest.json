@@ -4613,5 +4613,100 @@
   "reel_frame_sec": 3.4,
   "reel_order": "normal",
   "created_riyadh": "2026-11-16 11:43"
+ },
+ {
+  "id": "sample-client-women-majlis-5x7",
+  "format": "single",
+  "category": "residential",
+  "slot": "sample-client (لا يُنشر)",
+  "title_ar": "مجلس نساء مودرن دافئ 5×7",
+  "space_ar": "مجلس نساء",
+  "style_ar": "مودرن دافئ",
+  "palette_ar": "كتان مغسول، كاجو، بلوط فاتح، بيج، لمسات زيتي ونحاسي مطفي خفيف",
+  "reel_hook_ar": "مجلس نساء 5×7 لـ 15 ضيفة بدون تلفزيون",
+  "room": {
+   "w": 5.0,
+   "l": 7.0,
+   "h": 3.0
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · الجدران",
+    "name": "Washed Linen",
+    "code": "10679",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن المعتمدة",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#D5C2A8"
+   },
+   {
+    "type_ar": "لون ثانٍ · جدار النافذة",
+    "name": "Cashew",
+    "code": "1931",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن المعتمدة",
+    "locate_en": "north accent wall",
+    "sample_color": true,
+    "hex": "#C9B89D"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Line Wood Beige",
+    "code": "A99GZLNW#DBE.W2S5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "متجر راك سيراميكس",
+    "locate_en": "floor",
+    "sample_color": false,
+    "hex": "#D2C4B1"
+   },
+   {
+    "type_ar": "قطعة مختارة",
+    "name": "EKHOLMA كنبة 3 مقاعد",
+    "code": "795.355.94",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض/جدة/الدمام",
+    "locate_en": "sofas",
+    "sample_color": false,
+    "hex": "#CFC2B0"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top-left ceiling line and light channel",
+     "straighten the top-right ceiling line and light channel",
+     "fix the slight distortion in the right wall mirror reflection",
+     "adjust the shadow direction and intensity of the right floor lamp",
+     "adjust the shadow direction and intensity of the left floor lamp",
+     "improve the texture of the main ceiling light fixture to appear less flat"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "overall good but minor line imperfections and lighting inconsistencies",
+    "raw": "https://v3b.fal.media/files/b/0ab2aec4/RRAuS2dtVoeQBPTSIU1d5_Ob6xmM7Q.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/sample-client-women-majlis-5x7_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/sample-client-women-majlis-5x7_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/sample-client-women-majlis-5x7_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/sample-client-women-majlis-5x7_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/sample-client-women-majlis-5x7_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/sample-client-women-majlis-5x7_reel.mp4",
+  "reel_frame_sec": 3.4,
+  "reel_order": "reveal",
+  "created_riyadh": "2026-11-16 12:58"
  }
 ]
