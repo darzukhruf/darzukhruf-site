@@ -269,7 +269,13 @@ def reel_sec(ident):
     try: return 2.4 if int(ident[8:10]) % 2 == 0 else 3.4
     except Exception: return 3.4
 
-def reel_from(frames, out, kb=True, d=3.4):
+def reel_reveal(ident):
+    """E-35 (CEO 16-11): from slots dated 2026-11-23 (after E-29 ends) the reel opens on the 2D plan with the hook,
+    then reveals the photo (circle-open transition), then board and end card. Earlier slots keep the old order."""
+    try: return ident[:10] >= "2026-11-23"
+    except Exception: return False
+
+def reel_from(frames, out, kb=True, d=3.4, first_tr="fade"):
     """Reel with crossfades. kb=True adds a slow Ken Burns zoom/pan to every photo frame (E-26, T-20261114-04);
     the WhatsApp end card (_rend.jpg) stays static so its text is readable. Any ffmpeg error -> static fallback."""
     x, fps = 0.6, 30
@@ -287,12 +293,15 @@ def reel_from(frames, out, kb=True, d=3.4):
         src.append(f"[k{i}]")
     chain, last = [], src[0]
     for i in range(1, len(frames)):
-        chain.append(f"{last}{src[i]}xfade=transition=fade:duration={x}:offset={i*(d-x):.2f}[x{i}]"); last = f"[x{i}]"
+        tr = first_tr if i == 1 else "fade"
+        chain.append(f"{last}{src[i]}xfade=transition={tr}:duration={x}:offset={i*(d-x):.2f}[x{i}]"); last = f"[x{i}]"
     fc = ";".join(pre + chain + [f"{last}format=yuv420p[v]"])
     enc = ["-map", "[v]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "23", "-movflags", "+faststart", out]
     try:
         subprocess.run(args + ["-filter_complex", fc] + enc, check=True, timeout=300)
     except Exception as ex:
+        if first_tr != "fade":
+            log("reveal transition failed, plain fade", ex); return reel_from(frames, out, kb=kb, d=d)
         if not kb: raise
         log("ken burns failed, static reel", ex); reel_from(frames, out, kb=False, d=d)
 
@@ -328,19 +337,21 @@ def build_single(spec, browser, ident, slot=None):
     if with_plan:
         f3 = f"gen/{ident}_3_plan.jpg"; shoot(page, plan_html(spec, 3, 3), os.path.join(OUT, f3)); files.append(f3)
     stories, frames = [], []
+    reveal = bool(with_plan) and reel_reveal(ident); hook_i = 2 if reveal else 0
     for i, f in enumerate(files):
         b = open(os.path.join(OUT, f), "rb").read()
         sv = f"gen/{ident}_s{i+1}.jpg"; shoot(page, story_html(b), os.path.join(OUT, sv), 1080, 1920)
         if i < 2: stories.append(sv)
-        rv = f"gen/{ident}_r{i+1}.jpg"; shoot(page, story_html(b, spec.get("reel_hook_ar") if i == 0 else None), os.path.join(OUT, rv), 1080, 1920)
+        rv = f"gen/{ident}_r{i+1}.jpg"; shoot(page, story_html(b, spec.get("reel_hook_ar") if i == hook_i else None), os.path.join(OUT, rv), 1080, 1920)
         frames.append(os.path.join(OUT, rv))
+    if reveal and len(frames) == 3: frames = [frames[2], frames[0], frames[1]]  # E-35: plan -> photo -> board
     try:  # E-22: WhatsApp end card as the last reel frame (never blocks the reel if it fails)
         ec = os.path.join(OUT, f"gen/{ident}_rend.jpg"); shoot(page, end_card_html(), ec, 1080, 1920); frames.append(ec)
     except Exception as ex: log("end card failed", ex)
     page.close()
     reel = f"gen/{ident}_reel.mp4"
     rsec = reel_sec(ident)
-    try: reel_from(frames, os.path.join(OUT, reel), d=rsec)
+    try: reel_from(frames, os.path.join(OUT, reel), d=rsec, first_tr=("circleopen" if reveal else "fade"))
     except Exception as ex: log("reel failed", ex); reel = None
     for fr in frames:
         try: os.remove(fr)
@@ -350,7 +361,7 @@ def build_single(spec, browser, ident, slot=None):
             "title_ar": spec.get("title_ar"), "space_ar": spec.get("space_ar"), "style_ar": spec.get("style_ar"),
             "palette_ar": spec.get("palette_ar"), "reel_hook_ar": spec.get("reel_hook_ar"), "room": spec.get("room"),
             "materials": mats, "qa": [q], "notes": spec.get("notes_ar", ""), "images": [raw + f for f in files],
-            "stories": [raw + f for f in stories], "reel": (raw + reel) if reel else None, "reel_frame_sec": rsec,
+            "stories": [raw + f for f in stories], "reel": (raw + reel) if reel else None, "reel_frame_sec": rsec, "reel_order": ("reveal" if reveal else "normal"),
             "created_riyadh": dt.datetime.now(RIY).strftime("%Y-%m-%d %H:%M")}
 
 def build(spec, browser, ident, slot=None):
