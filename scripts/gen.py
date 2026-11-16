@@ -305,13 +305,64 @@ def reel_from(frames, out, kb=True, d=3.4, first_tr="fade"):
         if not kb: raise
         log("ken burns failed, static reel", ex); reel_from(frames, out, kb=False, d=d)
 
+def is_client(spec, ident):
+    return str(ident).startswith("client-") or bool(spec.get("do_not_publish"))
+
+def openings_text(sp):
+    """Client designs: state the exact doors/windows so the model adds no extra opening (sample 16-11 had an extra side door)."""
+    per = {}
+    for o in sp.get("openings", []):
+        per.setdefault(o["wall"], []).append(f"one {o['type']} {o.get('width', '')} m wide")
+    if not per: return ""
+    return (" EXACT OPENINGS OF THE ROOM (there are NO other doors, windows, arches or openings anywhere): "
+            + "; ".join(f"{WALLS[k]} wall: " + ", ".join(v) for k, v in per.items())
+            + "; every other wall is a solid wall without any door or window.")
+
+ACCURACY = ("You check an interior design photo against the client's floor plan. Judge ONLY what is visible in the photo. "
+            "Reply ONLY JSON: {\"ok\":true|false,\"problems\":[\"precise retouch instruction\", ...]}. ok=false if: a door, window, arch "
+            "or opening is visible that is not in the plan, an opening from the plan is missing on a visible wall, a furniture zone "
+            "stands on a different wall than in the plan, a piece is missing or an extra large piece appears, or a forbidden item is "
+            "present. problems = how to fix each one (e.g. 'remove the door on the right wall and continue the plain wall'). Plan: ")
+
+def accuracy_fix(url, sp, plan_txt, locate):
+    """Client designs only: plan-vs-photo check with up to 2 retouches; returns (url, check). Never hides a failure."""
+    chk = None
+    for i in range(3):
+        chk, _ = vision(ACCURACY + plan_txt + (" Forbidden: " + sp["avoid_en"] if sp.get("avoid_en") else ""), url)
+        if chk is None: return url, {"ok": None, "problems": ["accuracy check unavailable"]}
+        log("ACCURACY", i, json.dumps(chk, ensure_ascii=False))
+        if chk.get("ok") or i == 2 or not chk.get("problems"): break
+        fix = "; ".join(str(x) for x in chk["problems"][:5])
+        r = fal(EDIT, {"prompt": "Retouch this interior photograph. Fix ONLY these problems: " + fix + ". Keep everything else "
+                       "identical; real professional photo, no text, no people.", "image_urls": [url], "num_images": 1,
+                       "aspect_ratio": "3:4", "output_format": "jpeg"})
+        u2 = (((r or {}).get("images") or [{}])[0]).get("url")
+        if not u2: break
+        q2, _ = vision(QA + locate, u2)
+        if not q2 or not qa_ok(q2): log("retouch failed QA"); break
+        url = u2
+    return url, chk
+
 def build_single(spec, browser, ident, slot=None):
-    """One strong hero photo + material board + (optional) 2D plan; stories and a reel from the same three images."""
+    """One strong hero photo + material board + (optional) 2D plan; stories and a reel from the same three images.
+    Client designs (id client-… / do_not_publish) also get: exact-openings prompt, plan-vs-photo accuracy check,
+    up to 2 extra views of the same room (extra_views_en) and a delivery PDF."""
     mats = [dict(m) for m in spec.get("materials", [])][:4]
-    prompt = ("Photorealistic photograph of " + spec["scene_en"].strip() + layout_text({**spec, "slides": [
-              {"locate_en": m.get("locate_en", "element"), "item": m} for m in mats]}) + " View: " + spec.get("view_en", "wide shot from the entrance") + "." + STYLE)
-    url, q = gen_image(prompt, locate=(mats[0].get("locate_en") if mats else "the main element"), t2i=HERO_T2I)
+    client = is_client(spec, ident)
+    lay = layout_text({**spec, "slides": [{"locate_en": m.get("locate_en", "element"), "item": m} for m in mats]})
+    if client: lay += openings_text(spec)
+    prompt = ("Photorealistic photograph of " + spec["scene_en"].strip() + lay + " View: " + spec.get("view_en", "wide shot from the entrance") + "." + STYLE)
+    locate = (mats[0].get("locate_en") if mats else "the main element")
+    url, q = gen_image(prompt, locate=locate, t2i=HERO_T2I)
     if not url: log("hero failed", ident); return None
+    if client:
+        url, chk = accuracy_fix(url, spec, lay, locate)
+        if chk and chk.get("ok") is False:  # one fresh hero, keep the better one
+            u2, q2 = gen_image(prompt, locate=locate, t2i=HERO_T2I)
+            if u2:
+                u2, c2 = accuracy_fix(u2, spec, lay, locate)
+                if c2 and c2.get("ok"): url, q, chk = u2, q2, c2
+        q["accuracy"] = chk; q["raw"] = url
     photo = to_jpg(fetch(url))
     try:  # swatches: median colour of a patch at the located point, cross-checked with the vision model's colour reading
         res, _ = vision(LOCATE + "; ".join(m.get("locate_en", "element") for m in mats), url)
@@ -336,6 +387,27 @@ def build_single(spec, browser, ident, slot=None):
     f2 = f"gen/{ident}_2_board.jpg"; shoot(page, board_html(spec, photo, mats, 2, total), os.path.join(OUT, f2)); files.append(f2)
     if with_plan:
         f3 = f"gen/{ident}_3_plan.jpg"; shoot(page, plan_html(spec, 3, 3), os.path.join(OUT, f3)); files.append(f3)
+    if client:  # paid-client delivery: extra views + PDF, no stories/reel (never published)
+        views, vqa = [], []
+        for k, v in enumerate((spec.get("extra_views_en") or [])[:2]):
+            vp = ("Same room, same furniture, materials, colours and lighting as the reference photo; only the camera moves. "
+                  "New viewpoint: " + v + "." + lay + STYLE)
+            vu, vq = gen_image(vp, ref_url=url, locate=locate, layout=lay)
+            if not vu: log("extra view failed", k); continue
+            vu, vc = accuracy_fix(vu, spec, lay, locate); vq["accuracy"] = vc
+            fv = f"gen/{ident}_1{'bc'[k]}_view.jpg"; shoot(page, hero_html(to_jpg(fetch(vu))), os.path.join(OUT, fv)); views.append(fv); vqa.append(vq)
+        pdf = None
+        try:
+            from client_pdf import build_pdf
+            pdf = f"gen/{ident}.pdf"; build_pdf(page, spec, OUT, files, views, mats, os.path.join(OUT, pdf))
+        except Exception as ex: log("client pdf failed", repr(ex)); pdf = None
+        page.close(); raw = f"https://raw.githubusercontent.com/{REPO}/media/"
+        return {"id": ident, "format": "single", "client": True, "do_not_publish": True, "category": spec.get("category", "residential"),
+                "slot": "client (لا يُنشر)", "title_ar": spec.get("title_ar"), "space_ar": spec.get("space_ar"), "style_ar": spec.get("style_ar"),
+                "palette_ar": spec.get("palette_ar"), "room": spec.get("room"), "materials": mats, "qa": [q] + vqa,
+                "accuracy_ok": all((x.get("accuracy") or {}).get("ok") for x in [q] + vqa),
+                "images": [raw + f for f in files], "views": [raw + f for f in views], "pdf": (raw + pdf) if pdf else None,
+                "created_riyadh": dt.datetime.now(RIY).strftime("%Y-%m-%d %H:%M")}
     stories, frames = [], []
     reveal = bool(with_plan) and reel_reveal(ident); hook_i = 2 if reveal else 0
     for i, f in enumerate(files):
