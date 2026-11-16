@@ -4879,5 +4879,96 @@
   ],
   "pdf": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/client-sample-20261116.pdf",
   "created_riyadh": "2026-11-16 20:41"
+ },
+ {
+  "id": "2026-11-18_1300_master-bedroom-wabi-",
+  "format": "single",
+  "category": "residential",
+  "slot": "2026-11-18 13:00",
+  "title_ar": "غرفة نوم رئيسية: ارسم الممرات",
+  "space_ar": "غرفة نوم رئيسية",
+  "style_ar": "وابي سابي",
+  "palette_ar": "رمادي دافئ، طين، كتان طبيعي، بلوط فاتح",
+  "reel_hook_ar": "سرير 180 في غرفة 4×4؟ كم يبقى ممر؟",
+  "room": {
+   "w": 4.0,
+   "l": 4.2,
+   "h": 2.8
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Tender Greige",
+    "code": "12306",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن في الرياض",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#E3D8CB"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Line Wood Beige",
+    "code": "A99GZLNW#DBE.W2S5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "معارض راك سيراميكس",
+    "locate_en": "floor",
+    "sample_color": false,
+    "hex": "#E7DDD0"
+   },
+   {
+    "type_ar": "القماش",
+    "name": "SILVERLÖNN ستائر شفافة",
+    "code": "104.939.78",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "curtains",
+    "sample_color": false,
+    "hex": "#C7B6A6"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "NARRKOLV مصباح معلق",
+    "code": "005.943.41",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "pendant lamp",
+    "sample_color": false,
+    "hex": "#9A7D5C"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top edge of the window frame near the ceiling",
+     "adjust the shadow under the bed to be more consistent"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "overall good but minor imperfections",
+    "raw": "https://v3b.fal.media/files/b/0ab2c0ce/xHx57CvBrv3xe2MjHzCPD_qfScbrc2.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-18_1300_master-bedroom-wabi-_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-18_1300_master-bedroom-wabi-_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-18_1300_master-bedroom-wabi-_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-18_1300_master-bedroom-wabi-_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-18_1300_master-bedroom-wabi-_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-18_1300_master-bedroom-wabi-_reel.mp4",
+  "reel_frame_sec": 2.4,
+  "reel_order": "normal",
+  "created_riyadh": "2026-11-17 01:48"
  }
 ]
