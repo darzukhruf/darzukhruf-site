@@ -11,6 +11,7 @@
 - [تصميم كافيه وصالون](https://darzukhruf.github.io/darzukhruf-site/cafe-salon.html)
 - [الدليل](https://darzukhruf.github.io/darzukhruf-site/guide.html)
 - [كيف نشتغل](https://darzukhruf.github.io/darzukhruf-site/how.html)
+- [مثال كامل لملف العميل (توضيحي)](https://darzukhruf.github.io/darzukhruf-site/sample.html)
 - [سياسة الخصوصية](https://darzukhruf.github.io/darzukhruf-site/privacy.html)
 
 ## الموقع الرئيسي ونموذج الطلب
