@@ -2945,7 +2945,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-10_1300_family-dining-room_s2.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-10_1300_family-dining-room_reel.mp4",
-  "created_riyadh": "2026-11-09 08:03"
+  "created_riyadh": "2026-11-09 08:03",
+  "pruned": true
  },
  {
   "id": "2026-11-10_2130_private-master-bedro",
@@ -3036,7 +3037,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-10_2130_private-master-bedro_s2.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-10_2130_private-master-bedro_reel.mp4",
-  "created_riyadh": "2026-11-09 10:25"
+  "created_riyadh": "2026-11-09 10:25",
+  "pruned": true
  },
  {
   "id": "2026-11-11_1300_teen-girls-room",
@@ -4518,5 +4520,98 @@
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-17_1300_teen-boy-room-soft-i_reel.mp4",
   "reel_frame_sec": 3.4,
   "created_riyadh": "2026-11-16 01:40"
+ },
+ {
+  "id": "2026-11-17_2130_womens-salon-parisia",
+  "format": "single",
+  "category": "commercial",
+  "slot": "2026-11-17 21:30",
+  "title_ar": "صالون نسائي بأناقة باريسية",
+  "space_ar": "صالون نسائي",
+  "style_ar": "كلاسيك باريسي",
+  "palette_ar": "رمادي مزرق فاتح، أبيض مكسور، وردي مغبر، شمبانيا مطفي",
+  "reel_hook_ar": "صالون من 3 محطات في 5×6؟",
+  "room": {
+   "w": 5.0,
+   "l": 6.0,
+   "h": 3.2
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Skylight",
+    "code": "1624",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن في الرياض",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#CAD8DB"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Hard Wood Ivory",
+    "code": "A99GZHRD#IV0.W2S5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "معارض راك سيراميكس",
+    "locate_en": "floor",
+    "sample_color": false,
+    "hex": "#B19973"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "ÅRSTID مصباح جداري",
+    "code": "203.303.25",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "wall lamps",
+    "sample_color": false,
+    "hex": "#E0B77D"
+   },
+   {
+    "type_ar": "قطعة مختارة",
+    "name": "Lucina كنبة 3 مقاعد",
+    "code": "",
+    "brand": "Homebox",
+    "where_ar": "هوم بوكس فروع المملكة",
+    "locate_en": "waiting sofa",
+    "sample_color": false,
+    "hex": "#CDBCAC"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the base of the mirror frame on the left",
+     "correct the warped perspective of the wall paneling on the right side of the far wall",
+     "fix the slight distortion in the reflection of the chairs in the middle mirror",
+     "adjust the inconsistent shadow under the sofa near the front leg"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "overall good, minor perspective and reflection issues",
+    "raw": "https://v3b.fal.media/files/b/0ab2acfe/PyhrHu52A9_m4CHz3jZBH_ICrYqpnJ.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-17_2130_womens-salon-parisia_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-17_2130_womens-salon-parisia_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-17_2130_womens-salon-parisia_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-17_2130_womens-salon-parisia_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-17_2130_womens-salon-parisia_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-17_2130_womens-salon-parisia_reel.mp4",
+  "reel_frame_sec": 3.4,
+  "reel_order": "normal",
+  "created_riyadh": "2026-11-16 11:43"
  }
 ]
