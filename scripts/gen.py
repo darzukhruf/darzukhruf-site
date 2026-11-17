@@ -322,7 +322,8 @@ ACCURACY = ("You check an interior design photo against the client's list of doo
             "visible; walls outside the frame are unknown, not errors. Do NOT judge furniture, colours, rugs, lamps or decor. "
             "Reply ONLY JSON: {\"ok\":true|false,\"problems\":[\"precise retouch instruction\", ...]}. ok=false ONLY if a door, "
             "window, arch or opening is visible that is not in the list (e.g. a second door), or a clearly forbidden item is visible. "
-            "problems = how to remove each one (e.g. 'remove the door on the right wall and continue the plain wall'). List: ")
+            "problems = how to remove each one (e.g. 'remove the door on the right wall and continue the plain wall'). Never ask to ADD "
+            "anything: a listed door or window that is not visible is NOT an error. List: ")
 
 def accuracy_fix(url, sp, plan_txt, locate):
     """Client designs only: openings/forbidden-items check; a retouch is kept ONLY if it passes QA and the re-check.
@@ -332,6 +333,12 @@ def accuracy_fix(url, sp, plan_txt, locate):
     chk, _ = vision(ask, url)
     if chk is None: return url, {"ok": None, "problems": ["accuracy check unavailable"]}
     log("ACCURACY", json.dumps(chk, ensure_ascii=False))
+    def _drop_adds(c):  # the checker must only remove; "add …" requests are hallucinated misses, not errors
+        if c and c.get("problems"):
+            c["problems"] = [x for x in c["problems"] if not str(x).strip().lower().startswith("add ")]
+            if not c["problems"]: c["ok"] = True
+        return c
+    chk = _drop_adds(chk)
     for i in range(2):
         if chk.get("ok") or not chk.get("problems"): break
         fix = "; ".join(str(x) for x in chk["problems"][:3])
@@ -341,7 +348,7 @@ def accuracy_fix(url, sp, plan_txt, locate):
         u2 = (((r or {}).get("images") or [{}])[0]).get("url")
         if not u2: break
         q2, _ = vision(QA + locate, u2)
-        c2, _ = vision(ask, u2)
+        c2, _ = vision(ask, u2); c2 = _drop_adds(c2)
         log("ACCURACY retouch", i, json.dumps(c2, ensure_ascii=False))
         if q2 and qa_ok(q2) and c2 and c2.get("ok"): return u2, c2
     return url, chk
@@ -353,7 +360,7 @@ def build_single(spec, browser, ident, slot=None):
     mats = [dict(m) for m in spec.get("materials", [])][:4]
     client = is_client(spec, ident)
     lay = layout_text({**spec, "slides": [{"locate_en": m.get("locate_en", "element"), "item": m} for m in mats]})
-    if client: lay += openings_text(spec)
+    if client: lay += openings_text(spec) + (" Strictly absent from the image: " + spec["avoid_en"] + "." if spec.get("avoid_en") else "")
     prompt = ("Photorealistic photograph of " + spec["scene_en"].strip() + lay + " View: " + spec.get("view_en", "wide shot from the entrance") + "." + STYLE)
     locate = (mats[0].get("locate_en") if mats else "the main element")
     url, q = gen_image(prompt, locate=locate, t2i=HERO_T2I)
