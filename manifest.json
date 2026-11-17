@@ -3220,7 +3220,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-11_2130_dermatology-clinic-r_s2.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-11_2130_dermatology-clinic-r_reel.mp4",
-  "created_riyadh": "2026-11-10 10:03"
+  "created_riyadh": "2026-11-10 10:03",
+  "pruned": true
  },
  {
   "id": "2026-11-12_1300_home-office-study",
@@ -5144,5 +5145,100 @@
   ],
   "pdf": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/client-sample-20261117.pdf",
   "created_riyadh": "2026-11-17 08:54"
+ },
+ {
+  "id": "2026-11-18_2130_womens-majlis-modern",
+  "format": "single",
+  "category": "residential",
+  "slot": "2026-11-18 21:30",
+  "title_ar": "مجلس نساء نجدي عصري",
+  "space_ar": "مجلس نساء",
+  "style_ar": "نجدي عصري",
+  "palette_ar": "عاجي، رمل، أزرق مغبر، خشب أثل",
+  "reel_hook_ar": "مجلس نساء يتسع 14 ضيفة؟",
+  "room": {
+   "w": 5.0,
+   "l": 6.0,
+   "h": 3.0
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Sandbeige",
+    "code": "1939",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن في الرياض",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#D9C6AB"
+   },
+   {
+    "type_ar": "لون ثانٍ",
+    "name": "Deco Blue",
+    "code": "4477",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن في الرياض",
+    "locate_en": "cushions and accent panel",
+    "sample_color": true,
+    "hex": "#C3B294"
+   },
+   {
+    "type_ar": "السجاد",
+    "name": "BRÖNDEN سجادة",
+    "code": "705.329.72",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "rug",
+    "sample_color": false,
+    "hex": "#BEAD98"
+   },
+   {
+    "type_ar": "القماش",
+    "name": "ستارة Pinch Pleat بيج",
+    "code": "A8BL03",
+    "brand": "Sedar Global",
+    "where_ar": "سدر جلوبال الرياض وجدة",
+    "locate_en": "curtains",
+    "sample_color": false,
+    "hex": "#A2998C"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top edge of the patterned wall panel on the left",
+     "straighten the top edge of the patterned wall panel on the right",
+     "fix the minor sag in the ceiling molding on the left side",
+     "fix the slight distortion in the top part of the left curtain",
+     "fix the slight distortion in the top part of the right curtain",
+     "adjust the reflection on the floor to be more consistent with the light source"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "overall good, but minor geometric inconsistencies and slight texture smoothness reduce photorealism",
+    "raw": "https://v3b.fal.media/files/b/0ab2ccb8/vDyffKNEWvrh6CkAA3IPc_ZJZ1aWkW.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-18_2130_womens-majlis-modern_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-18_2130_womens-majlis-modern_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-18_2130_womens-majlis-modern_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-18_2130_womens-majlis-modern_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-18_2130_womens-majlis-modern_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-18_2130_womens-majlis-modern_reel.mp4",
+  "reel_frame_sec": 2.4,
+  "reel_order": "normal",
+  "created_riyadh": "2026-11-17 10:16"
  }
 ]
