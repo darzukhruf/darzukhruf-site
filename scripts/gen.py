@@ -331,6 +331,7 @@ def accuracy_fix(url, sp, plan_txt, locate):
     ops = openings_text(sp) or "not given"
     ask = ACCURACY + ops + (" Forbidden: " + sp["avoid_en"] if sp.get("avoid_en") else "")
     chk, _ = vision(ask, url)
+    if chk is None: chk, _ = vision(ask, url)  # one retry: "unavailable" blocked a clean sample on 17-11
     if chk is None: return url, {"ok": None, "problems": ["accuracy check unavailable"]}
     log("ACCURACY", json.dumps(chk, ensure_ascii=False))
     def _drop_adds(c):  # the checker must only remove; "add …" requests are hallucinated misses, not errors

@@ -37,7 +37,7 @@ td{{border-bottom:1px solid #e3dccf;padding:2mm;vertical-align:top}} tr:nth-chil
 .box{{border:1.5px solid {G};border-radius:3mm;padding:6mm;margin-top:5mm;line-height:2;font-size:12.5pt}}"""
 
 def _foot(title, n):
-    return f"<div class='ft'><span>دار زخرف · Dar Zukhruf — تصميم مقترح</span><span>{e(title)}</span><span>{n}</span></div>"
+    return f"<div class='ft'><span>دار زخرف · Dar Zukhruf — تصميم مقترح · وثيقة العمل الحر FL-271313510</span><span>{e(title)}</span><span>{n}</span></div>"
 
 def build_pdf(page, spec, out_dir, files, views, mats, pdf_path):
     """files = [hero, board, plan?] relative to out_dir; views = extra view files. Returns pdf_path or None."""
