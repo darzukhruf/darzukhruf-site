@@ -1,11 +1,11 @@
-2026-11-17T01:48:23.772208+03:00
+2026-11-17T04:02:03.349654+03:00
 plan 200 36 rows 2026-11-20 21:30
-skip 2026-11-17 13:00 in 11:12:14.925868 done
-skip 2026-11-17 21:30 in 19:42:14.925868 done
-skip 2026-11-18 21:30 in 1 day, 19:42:14.925868 
-skip 2026-11-19 13:00 in 2 days, 11:12:14.925868 
-skip 2026-11-19 21:30 in 2 days, 19:42:14.925868 
-skip 2026-11-20 13:00 in 3 days, 11:12:14.925868 
-skip 2026-11-20 21:30 in 3 days, 19:42:14.925868 
-QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the top edge of the window frame near the ceiling", "adjust the shadow under the bed to be more consistent"], "inappropriate": false, "item_visible": true, "point": [0.5, 0.5], "reason": "overall good but minor imperfections"}
-OK 2026-11-18_1300_master-bedroom-wabi- 3 images
+skip 2026-11-17 13:00 in 8:57:57.719810 done
+skip 2026-11-17 21:30 in 17:27:57.719810 done
+skip 2026-11-18 13:00 in 1 day, 8:57:57.719810 done
+skip 2026-11-18 21:30 in 1 day, 17:27:57.719810 
+skip 2026-11-19 13:00 in 2 days, 8:57:57.719810 
+skip 2026-11-19 21:30 in 2 days, 17:27:57.719810 
+skip 2026-11-20 13:00 in 3 days, 8:57:57.719810 
+skip 2026-11-20 21:30 in 3 days, 17:27:57.719810 
+buffer full or no specs
