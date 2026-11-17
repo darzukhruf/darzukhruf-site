@@ -3130,7 +3130,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-11_1300_teen-girls-room_s2.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-11_1300_teen-girls-room_reel.mp4",
-  "created_riyadh": "2026-11-10 07:52"
+  "created_riyadh": "2026-11-10 07:52",
+  "pruned": true
  },
  {
   "id": "2026-11-11_2130_dermatology-clinic-r",
@@ -4970,5 +4971,178 @@
   "reel_frame_sec": 2.4,
   "reel_order": "normal",
   "created_riyadh": "2026-11-17 01:48"
+ },
+ {
+  "id": "client-sample-20261117",
+  "format": "single",
+  "client": true,
+  "do_not_publish": true,
+  "category": "residential",
+  "slot": "client (لا يُنشر)",
+  "title_ar": "مجلس نساء مودرن دافئ 5×7",
+  "space_ar": "مجلس نساء",
+  "style_ar": "مودرن دافئ",
+  "palette_ar": "كتان مغسول، كاجو، بلوط فاتح، بيج، لمسات زيتي ونحاسي مطفي خفيف",
+  "room": {
+   "w": 5.0,
+   "l": 7.0,
+   "h": 3.0
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · الجدران",
+    "name": "Washed Linen",
+    "code": "10679",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن المعتمدة",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#E0DBD1"
+   },
+   {
+    "type_ar": "لون ثانٍ · جدار النافذة",
+    "name": "Cashew",
+    "code": "1931",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن المعتمدة",
+    "locate_en": "north accent wall",
+    "sample_color": true,
+    "hex": "#C9B9A5"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Line Wood Beige",
+    "code": "A99GZLNW#DBE.W2S5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "متجر راك سيراميكس",
+    "locate_en": "floor",
+    "sample_color": false,
+    "hex": "#AC9279"
+   },
+   {
+    "type_ar": "قطعة مختارة",
+    "name": "EKHOLMA كنبة 3 مقاعد",
+    "code": "795.355.94",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض/جدة/الدمام",
+    "locate_en": "sofas",
+    "sample_color": false,
+    "hex": "#DAD2C4"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the ceiling light cove",
+     "adjust reflections on the top right pendant lamp to match light source",
+     "smooth out the texture of the ceiling and walls for a less blurry look",
+     "adjust the shadow on the right side of the main ceiling fixture, it's not consistent with the light source",
+     "fix the slightly warped legs on the far left sofa",
+     "clarify the texture on the rug in the foreground, it appears slightly blurry and repetitive"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.1
+    ],
+    "reason": "ceiling light cove",
+    "raw": "https://v3b.fal.media/files/b/0ab2cab7/Aob6_zSSZjXKS3hBvKe_2_nbsOBRas.jpg",
+    "accuracy": {
+     "ok": false,
+     "problems": [
+      "remove the second door visible on the right wall and continue the plain wall",
+      "remove the gold coffee pot",
+      "remove the gold tray",
+      "remove the copper colored item on the wall shelf next to the gold coffee pot"
+     ]
+    }
+   },
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the slightly wavy right edge of the ceiling's recessed lighting",
+     "adjust the light reflection in the mirror, as it shows a distorted or partially rendered lampshade",
+     "correct the subtle light bloom/halo around the top left ceiling edge and the recessed lighting",
+     "refine the texture of the wooden floor, as it appears slightly repetitive and smooth in some areas"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "overall image quality",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 180,
+     "reason": "The furniture arrangement and overall room layout are identical, but the camera viewpoint has rotated 180 degrees, now facing the south wall with the door and coffee corner, instead of the north wall with the window."
+    },
+    "raw": "https://v3b.fal.media/files/b/0ab2cac6/ziVLChLB_1JE01a52f3at_NEN84kPA.jpg",
+    "accuracy": {
+     "ok": false,
+     "problems": [
+      "remove the archway visible on the right wall and continue the plain wall",
+      "remove any visible gold or copper accents from the objects on the side cabinet and replace them with a neutral color"
+     ]
+    }
+   },
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the ceiling line above the painting",
+     "adjust the shadow on the right side of the main ceiling light to match the light source",
+     "straighten the top edge of the baseboard on the left wall",
+     "smooth the texture of the main ceiling light shade to remove slight pixelation",
+     "smooth the texture of the smaller ceiling light shade to remove slight pixelation",
+     "adjust the perspective of the back wall where it meets the ceiling, as it appears slightly off",
+     "enhance the clarity of the book titles on the coffee table as they are slightly blurred",
+     "align the texture of the light strip on the ceiling, as it appears slightly uneven",
+     "adjust the reflections in the right window as they do not fully match the room"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "overall inspection",
+    "diff": {
+     "same_room": true,
+     "same_viewpoint": false,
+     "angle_change_deg": 45,
+     "reason": "The room layout, furniture, and colors match the description. The viewpoint has shifted to the left, showing more of the west wall and less of the east wall."
+    },
+    "raw": "https://v3b.fal.media/files/b/0ab2cacc/XGQmj3w9mzCTql-5OSt5D_4v3WQ6IU.jpg",
+    "accuracy": {
+     "ok": false,
+     "problems": [
+      "add a 1.0 m wide door on the south wall to match the list",
+      "remove the window from the north wall and replace it with a 2.2 m wide window as per the list",
+      "remove the gold accents from the coffee pot and tray"
+     ]
+    }
+   }
+  ],
+  "accuracy_ok": false,
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/client-sample-20261117_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/client-sample-20261117_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/client-sample-20261117_3_plan.jpg"
+  ],
+  "views": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/client-sample-20261117_1b_view.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/client-sample-20261117_1c_view.jpg"
+  ],
+  "pdf": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/client-sample-20261117.pdf",
+  "created_riyadh": "2026-11-17 08:54"
  }
 ]
