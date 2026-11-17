@@ -1,9 +1,14 @@
-2026-11-17T23:53:36.621791+03:00
+2026-11-18T01:54:48.083484+03:00
 plan 200 36 rows 2026-11-20 21:30
-skip 2026-11-18 13:00 in 13:06:24.391003 done
-skip 2026-11-18 21:30 in 21:36:24.391003 done
-skip 2026-11-19 13:00 in 1 day, 13:06:24.391003 
-skip 2026-11-19 21:30 in 1 day, 21:36:24.391003 
-skip 2026-11-20 13:00 in 2 days, 13:06:24.391003 
-skip 2026-11-20 21:30 in 2 days, 21:36:24.391003 
-buffer full or no specs
+skip 2026-11-18 13:00 in 11:05:39.053398 done
+skip 2026-11-18 21:30 in 19:35:39.053398 done
+skip 2026-11-19 21:30 in 1 day, 19:35:39.053398 
+skip 2026-11-20 13:00 in 2 days, 11:05:39.053398 
+skip 2026-11-20 21:30 in 2 days, 19:35:39.053398 
+fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
+fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
+fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
+fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
+fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
+fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
+hero failed 2026-11-19_1300_winter-courtyard-ann
