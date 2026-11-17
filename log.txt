@@ -1,11 +1,11 @@
-2026-11-17T10:16:44.845817+03:00
+2026-11-17T11:58:39.382138+03:00
 plan 200 36 rows 2026-11-20 21:30
-skip 2026-11-17 13:00 in 2:43:57.910651 done
-skip 2026-11-17 21:30 in 11:13:57.910651 done
-skip 2026-11-18 13:00 in 1 day, 2:43:57.910651 done
-skip 2026-11-19 13:00 in 2 days, 2:43:57.910651 
-skip 2026-11-19 21:30 in 2 days, 11:13:57.910651 
-skip 2026-11-20 13:00 in 3 days, 2:43:57.910651 
-skip 2026-11-20 21:30 in 3 days, 11:13:57.910651 
-QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the top edge of the patterned wall panel on the left", "straighten the top edge of the patterned wall panel on the right", "fix the minor sag in the ceiling molding on the left side", "fix the slight distortion in the top part of the left curtain", "fix the slight distortion in the top part of the right curtain", "adjust the reflection on the floor to be more consistent with the light source"], "inappropriate": false, "item_visible": true, "point": [0.5, 0.5], "reason": "overall good, but minor geometric inconsistencies and slight texture smoothness reduce photorealism"}
-OK 2026-11-18_2130_womens-majlis-modern 3 images
+skip 2026-11-17 13:00 in 1:01:21.156610 done
+skip 2026-11-17 21:30 in 9:31:21.156610 done
+skip 2026-11-18 13:00 in 1 day, 1:01:21.156610 done
+skip 2026-11-18 21:30 in 1 day, 9:31:21.156610 done
+skip 2026-11-19 13:00 in 2 days, 1:01:21.156610 
+skip 2026-11-19 21:30 in 2 days, 9:31:21.156610 
+skip 2026-11-20 13:00 in 3 days, 1:01:21.156610 
+skip 2026-11-20 21:30 in 3 days, 9:31:21.156610 
+buffer full or no specs
