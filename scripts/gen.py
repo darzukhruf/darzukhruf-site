@@ -17,6 +17,7 @@ EDIT = os.environ.get("EDIT_MODEL", "").strip() or "fal-ai/nano-banana/edit"
 REPO = os.environ.get("REPO", "darzukhruf/darzukhruf-site")
 PLAN_CSV = "https://docs.google.com/spreadsheets/d/14RmR325nkLONa_PhRXNLEbjbQoZdrlOTTxM1CIm9XrQ/export?format=csv"
 RIY = dt.timezone(dt.timedelta(hours=3))
+BLOCK = []
 LOG = []
 def log(*a):
     s = " ".join(str(x) for x in a); print(s); LOG.append(s)
@@ -30,6 +31,8 @@ def fal(model, payload, timeout=300):
             r = requests.post(f"https://fal.run/{model}", headers=H, json=payload, timeout=timeout)
             if r.ok: return r.json()
             log("fal", model, r.status_code, r.text[:300])
+            if r.status_code in (402, 403) and ("balance" in r.text.lower() or "locked" in r.text.lower()):
+                BLOCK.append(r.text[:200]); return None  # account locked: no retry (CEO 18-11, incident 14)
         except Exception as ex:
             log("fal err", model, ex)
         time.sleep(4)
@@ -536,3 +539,9 @@ try:
 finally:
     with open(os.path.join(OUT, "log.txt"), "w", encoding="utf-8") as f:
         f.write(dt.datetime.now(RIY).isoformat() + "\n" + "\n".join(LOG) + "\n")
+    # status.json on the media branch: read by the publishing/control agents (incident 14: fal balance hidden behind "success")
+    st = {"checked_riyadh": dt.datetime.now(RIY).strftime("%Y-%m-%d %H:%M"), "fal": "blocked" if BLOCK else "ok",
+          "detail": BLOCK[0] if BLOCK else ""}
+    json.dump(st, open(os.path.join(OUT, "status.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+if BLOCK:
+    print("::error::fal account blocked (balance) - no designs generated"); sys.exit(1)
