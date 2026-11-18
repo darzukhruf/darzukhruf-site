@@ -3497,7 +3497,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-12_2300_apartment-entrance-h_s2.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-12_2300_apartment-entrance-h_reel.mp4",
-  "created_riyadh": "2026-11-11 11:55"
+  "created_riyadh": "2026-11-11 11:55",
+  "pruned": true
  },
  {
   "id": "2026-11-13_1300_mens-majlis-hejazi",
