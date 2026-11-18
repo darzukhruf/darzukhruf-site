@@ -3405,7 +3405,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-12_2130_newlyweds-bedroom_s2.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-12_2130_newlyweds-bedroom_reel.mp4",
-  "created_riyadh": "2026-11-11 10:09"
+  "created_riyadh": "2026-11-11 10:09",
+  "pruned": true
  },
  {
   "id": "2026-11-12_2300_apartment-entrance-h",
