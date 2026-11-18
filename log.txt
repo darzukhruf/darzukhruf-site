@@ -1,10 +1,10 @@
-2026-11-18T04:26:51.865833+03:00
+2026-11-18T05:52:34.631988+03:00
 plan 200 36 rows 2026-11-20 21:30
-skip 2026-11-18 13:00 in 8:33:35.974352 done
-skip 2026-11-18 21:30 in 17:03:35.974352 done
-skip 2026-11-19 21:30 in 1 day, 17:03:35.974352 
-skip 2026-11-20 13:00 in 2 days, 8:33:35.974352 
-skip 2026-11-20 21:30 in 2 days, 17:03:35.974352 
+skip 2026-11-18 13:00 in 7:07:54.097855 done
+skip 2026-11-18 21:30 in 15:37:54.097855 done
+skip 2026-11-19 21:30 in 1 day, 15:37:54.097855 
+skip 2026-11-20 13:00 in 2 days, 7:07:54.097855 
+skip 2026-11-20 21:30 in 2 days, 15:37:54.097855 
 fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
 fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
 fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
