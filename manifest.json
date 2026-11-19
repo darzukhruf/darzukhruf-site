@@ -3603,7 +3603,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-13_1300_mens-majlis-hejazi_s2.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-13_1300_mens-majlis-hejazi_reel.mp4",
-  "created_riyadh": "2026-11-12 01:55"
+  "created_riyadh": "2026-11-12 01:55",
+  "pruned": true
  },
  {
   "id": "2026-11-13_2130_studio-apartment-38s",
