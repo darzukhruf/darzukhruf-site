@@ -5564,5 +5564,68 @@
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-19_2300_newlyweds-bedroom-ja_plan_reel.mp4",
   "created_riyadh": "2026-11-19 10:18"
+ },
+ {
+  "id": "2026-11-20_1300_family-dining-room-i_plan",
+  "format": "single",
+  "plan_only": true,
+  "category": "residential",
+  "slot": "2026-11-20 13:00",
+  "title_ar": "غرفة طعام بأحمر الرمان",
+  "space_ar": "غرفة طعام عائلية",
+  "style_ar": "إيطالي معاصر",
+  "palette_ar": "أحمر رمّان مطفي، عاجي، جوز داكن، حديد أسود",
+  "room": {
+   "w": 4.5,
+   "l": 4.0,
+   "h": 3.0
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Organic Red",
+    "code": "20120",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن المعتمدة",
+    "locate_en": "back wall",
+    "sample_color": true
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Tech Marble White",
+    "code": "A12GTCMB-CCA.O0X5P",
+    "brand": "RAK Ceramics",
+    "where_ar": "متجر راك سيراميكس",
+    "locate_en": "floor",
+    "sample_color": false
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "Dexter Linen Pendant Lamp",
+    "code": "",
+    "brand": "Home Centre",
+    "where_ar": "هوم سنتر",
+    "locate_en": "pendant lamp",
+    "sample_color": false
+   },
+   {
+    "type_ar": "قطعة مختارة",
+    "name": "STOENSE rug low pile beige",
+    "code": "806.076.84",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض/جدة/الدمام",
+    "locate_en": "rug",
+    "sample_color": false
+   }
+  ],
+  "qa": [],
+  "notes": "مخطط ولوحة مواد فقط (fal مقفول) — بلا صورة واقعية",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-20_1300_family-dining-room-i_plan_1_plan.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-20_1300_family-dining-room-i_plan_2_board.jpg"
+  ],
+  "stories": [],
+  "reel": null,
+  "created_riyadh": "2026-11-19 14:00"
  }
 ]
