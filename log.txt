@@ -1,14 +1,17 @@
-2026-11-19T08:04:15.832068+03:00
+2026-11-19T10:18:20.823056+03:00
 plan 200 38 rows 2026-11-20 23:00
 fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
 fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
 fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
 hero failed 2026-11-19_1300_winter-courtyard-ann
+OK 2026-11-19_1300_winter-courtyard-ann 2 images plan_only
 fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
 fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
 fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
 hero failed 2026-11-19_2130_specialty-cafe-retro
+OK 2026-11-19_2130_specialty-cafe-retro 2 images plan_only
 fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
 fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
 fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
 hero failed 2026-11-19_2300_newlyweds-bedroom-ja
+OK 2026-11-19_2300_newlyweds-bedroom-ja 2 images plan_only

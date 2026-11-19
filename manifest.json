@@ -3695,7 +3695,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-13_2130_studio-apartment-38s_s2.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-13_2130_studio-apartment-38s_reel.mp4",
-  "created_riyadh": "2026-11-12 10:14"
+  "created_riyadh": "2026-11-12 10:14",
+  "pruned": true
  },
  {
   "id": "2026-11-13_2300_guest-powder-room",
@@ -5367,5 +5368,194 @@
   ],
   "pdf": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/client-sample-20261117b.pdf",
   "created_riyadh": "2026-11-17 14:54"
+ },
+ {
+  "id": "2026-11-19_1300_winter-courtyard-ann_plan",
+  "format": "single",
+  "plan_only": true,
+  "category": "residential",
+  "slot": "2026-11-19 13:00",
+  "title_ar": "جلسة حوش شتوية بموقد",
+  "space_ar": "ملحق/حوش شتوي",
+  "style_ar": "مودرن ريفي",
+  "palette_ar": "فحمي مطفي، خشب ساج، عاجي، حجر طبيعي",
+  "room": {
+   "w": 5.5,
+   "l": 4.0,
+   "h": 3.0
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Silky Greige",
+    "code": "12307",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن المعتمدة",
+    "locate_en": "walls",
+    "sample_color": true
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Neutra Concrete Grey",
+    "code": "A12GNTRC-LIG.A6X5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "متجر راك سيراميكس",
+    "locate_en": "floor",
+    "sample_color": false
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "NARRKOLV pendant lamp rattan",
+    "code": "005.943.41",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض/جدة/الدمام",
+    "locate_en": "pendant lamp",
+    "sample_color": false
+   },
+   {
+    "type_ar": "القماش",
+    "name": "GURLI cushion cover",
+    "code": "805.987.31",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض/جدة/الدمام",
+    "locate_en": "sofa cushions",
+    "sample_color": false
+   }
+  ],
+  "qa": [],
+  "notes": "مخطط ولوحة مواد فقط (fal مقفول) — بلا صورة واقعية",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-19_1300_winter-courtyard-ann_plan_1_plan.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-19_1300_winter-courtyard-ann_plan_2_board.jpg"
+  ],
+  "stories": [],
+  "reel": null,
+  "created_riyadh": "2026-11-19 10:18"
+ },
+ {
+  "id": "2026-11-19_2130_specialty-cafe-retro_plan",
+  "format": "single",
+  "plan_only": true,
+  "category": "commercial",
+  "slot": "2026-11-19 21:30",
+  "title_ar": "كافيه ريترو بكاونتر منحني",
+  "space_ar": "كافيه مختص",
+  "style_ar": "ريترو معاصر 70s",
+  "palette_ar": "موف مغبر، كريمي، جوز، حديد أسود",
+  "room": {
+   "w": 7.0,
+   "l": 5.0,
+   "h": 3.2
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Washed Linen",
+    "code": "10679",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن المعتمدة",
+    "locate_en": "walls",
+    "sample_color": true
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Kyoto Brown",
+    "code": "A45RKYOT-BRN.M0X0R",
+    "brand": "RAK Ceramics",
+    "where_ar": "متجر راك سيراميكس",
+    "locate_en": "floor",
+    "sample_color": false
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "Collect Socket Pendant Cashmere",
+    "code": "100297693",
+    "brand": "Ferm Living",
+    "where_ar": "ذا بويري كومباني الرياض",
+    "locate_en": "pendant lamps",
+    "sample_color": false
+   },
+   {
+    "type_ar": "سطح العمل",
+    "name": "Calacatta Imperiale",
+    "code": "",
+    "brand": "RAK Ceramics",
+    "where_ar": "متجر راك سيراميكس",
+    "locate_en": "counter top",
+    "sample_color": false
+   }
+  ],
+  "qa": [],
+  "notes": "مخطط ولوحة مواد فقط (fal مقفول) — بلا صورة واقعية",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-19_2130_specialty-cafe-retro_plan_1_plan.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-19_2130_specialty-cafe-retro_plan_2_board.jpg"
+  ],
+  "stories": [],
+  "reel": null,
+  "created_riyadh": "2026-11-19 10:18"
+ },
+ {
+  "id": "2026-11-19_2300_newlyweds-bedroom-ja_plan",
+  "format": "single",
+  "plan_only": true,
+  "category": "residential",
+  "slot": "2026-11-19 23:00",
+  "title_ar": "غرفة عروسين ياباندي صغيرة",
+  "space_ar": "غرفة نوم عروسين صغيرة 3.6×4.2م",
+  "style_ar": "ياباندي",
+  "palette_ar": "كاشو دافئ، عاجي، بتولا فاتح، كتان طبيعي، موكا غامق",
+  "room": {
+   "w": 3.6,
+   "l": 4.2,
+   "h": 2.8
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Cashew",
+    "code": "1931",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن المعتمدة",
+    "locate_en": "walls",
+    "sample_color": true
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Hard Wood Ivory",
+    "code": "A99GZHRD#IV0.W2S5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "راك سيراميكس الإلكتروني",
+    "locate_en": "floor",
+    "sample_color": true
+   },
+   {
+    "type_ar": "القماش",
+    "name": "SILVERLÖNN sheer curtains",
+    "code": "104.939.78",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة",
+    "locate_en": "sheer curtains",
+    "sample_color": true
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "NARRKOLV rattan pendant",
+    "code": "005.943.41",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة",
+    "locate_en": "rattan pendant lamp",
+    "sample_color": false
+   }
+  ],
+  "qa": [],
+  "notes": "مخطط ولوحة مواد فقط (fal مقفول) — بلا صورة واقعية",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-19_2300_newlyweds-bedroom-ja_plan_1_plan.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-19_2300_newlyweds-bedroom-ja_plan_2_board.jpg"
+  ],
+  "stories": [],
+  "reel": null,
+  "created_riyadh": "2026-11-19 10:18"
  }
 ]
