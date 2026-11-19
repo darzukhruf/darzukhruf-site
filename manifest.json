@@ -3788,7 +3788,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-13_2300_guest-powder-room_s2.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-13_2300_guest-powder-room_reel.mp4",
-  "created_riyadh": "2026-11-12 11:59"
+  "created_riyadh": "2026-11-12 11:59",
+  "pruned": true
  },
  {
   "id": "2026-11-14_1300_abaya-showroom",
@@ -5428,8 +5429,10 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-19_1300_winter-courtyard-ann_plan_1_plan.jpg",
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-19_1300_winter-courtyard-ann_plan_2_board.jpg"
   ],
-  "stories": [],
-  "reel": null,
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-19_1300_winter-courtyard-ann_plan_v2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-19_1300_winter-courtyard-ann_plan_reel.mp4",
   "created_riyadh": "2026-11-19 10:18"
  },
  {
@@ -5491,8 +5494,10 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-19_2130_specialty-cafe-retro_plan_1_plan.jpg",
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-19_2130_specialty-cafe-retro_plan_2_board.jpg"
   ],
-  "stories": [],
-  "reel": null,
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-19_2130_specialty-cafe-retro_plan_v2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-19_2130_specialty-cafe-retro_plan_reel.mp4",
   "created_riyadh": "2026-11-19 10:18"
  },
  {
@@ -5554,8 +5559,10 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-19_2300_newlyweds-bedroom-ja_plan_1_plan.jpg",
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-19_2300_newlyweds-bedroom-ja_plan_2_board.jpg"
   ],
-  "stories": [],
-  "reel": null,
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-19_2300_newlyweds-bedroom-ja_plan_v2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-19_2300_newlyweds-bedroom-ja_plan_reel.mp4",
   "created_riyadh": "2026-11-19 10:18"
  }
 ]
