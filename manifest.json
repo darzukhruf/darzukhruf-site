@@ -5689,8 +5689,73 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-20_2130_villa-entrance-bioph_plan_1_plan.jpg",
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-20_2130_villa-entrance-bioph_plan_2_board.jpg"
   ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-20_2130_villa-entrance-bioph_plan_v2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-20_2130_villa-entrance-bioph_plan_reel.mp4",
+  "created_riyadh": "2026-11-19 21:58"
+ },
+ {
+  "id": "2026-11-20_2300_abaya-boutique-showr_plan",
+  "format": "single",
+  "plan_only": true,
+  "category": "commercial",
+  "slot": "2026-11-20 23:00",
+  "title_ar": "معرض عبايات بحجر دافئ",
+  "space_ar": "معرض عبايات وأزياء محتشمة",
+  "style_ar": "حداثة حجرية دافئة",
+  "palette_ar": "رملي ترافرتين، أبيض مكسور، بيج أنتويرب، أسود مطفي",
+  "room": {
+   "w": 6.0,
+   "l": 8.0,
+   "h": 3.2
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Antwerp Beige",
+    "code": "12290",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن وموزعوها",
+    "locate_en": "walls",
+    "sample_color": true
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Rhode Island Beige",
+    "code": "A12GRDIL-BEE.M0X5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "متجر راك سيراميكس",
+    "locate_en": "floor",
+    "sample_color": true
+   },
+   {
+    "type_ar": "سطح العمل",
+    "name": "Travertine Crosscut Osso Light Beige",
+    "code": "",
+    "brand": "RAK Ceramics",
+    "where_ar": "راك سيراميكس",
+    "locate_en": "cashier counter front",
+    "sample_color": true
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "NARRKOLV pendant rattan",
+    "code": "005.943.41",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "rattan pendant lamps over the central table",
+    "sample_color": false
+   }
+  ],
+  "qa": [],
+  "notes": "مخطط ولوحة مواد فقط (fal مقفول) — بلا صورة واقعية",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-20_2300_abaya-boutique-showr_plan_1_plan.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-20_2300_abaya-boutique-showr_plan_2_board.jpg"
+  ],
   "stories": [],
   "reel": null,
-  "created_riyadh": "2026-11-19 21:58"
+  "created_riyadh": "2026-11-19 23:53"
  }
 ]
