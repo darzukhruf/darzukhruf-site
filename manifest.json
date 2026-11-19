@@ -5624,8 +5624,10 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-20_1300_family-dining-room-i_plan_1_plan.jpg",
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-20_1300_family-dining-room-i_plan_2_board.jpg"
   ],
-  "stories": [],
-  "reel": null,
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-20_1300_family-dining-room-i_plan_v2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-20_1300_family-dining-room-i_plan_reel.mp4",
   "created_riyadh": "2026-11-19 14:00"
  }
 ]
