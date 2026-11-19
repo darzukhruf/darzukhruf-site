@@ -450,6 +450,21 @@ def build_single(spec, browser, ident, slot=None):
             "stories": [raw + f for f in stories], "reel": (raw + reel) if reel else None, "reel_frame_sec": rsec, "reel_order": ("reveal" if reveal else "normal"),
             "created_riyadh": dt.datetime.now(RIY).strftime("%Y-%m-%d %H:%M")}
 
+def build_plan_only(spec, browser, ident, slot=None):
+    """E-47 (CEO 19-11): fal blocked -> a no-photo carousel the publisher can still post: 2D plan + material board
+    (plan as thumbnail). Rendered locally with Playwright only. Marked plan_only so a real design replaces it if fal returns."""
+    if not spec.get("room"): return None
+    mats = [dict(m) for m in spec.get("materials", [])][:4]
+    os.makedirs(os.path.join(OUT, "gen"), exist_ok=True); page = browser.new_page()
+    f1 = f"gen/{ident}_1_plan.jpg"; shoot(page, plan_html(spec, 1, 2), os.path.join(OUT, f1))
+    f2 = f"gen/{ident}_2_board.jpg"; shoot(page, board_html(spec, open(os.path.join(OUT, f1), "rb").read(), mats, 2, 2), os.path.join(OUT, f2))
+    page.close(); raw = f"https://raw.githubusercontent.com/{REPO}/media/"
+    return {"id": ident, "format": "single", "plan_only": True, "category": spec.get("category", "residential"), "slot": slot or "manual",
+            "title_ar": spec.get("title_ar"), "space_ar": spec.get("space_ar"), "style_ar": spec.get("style_ar"),
+            "palette_ar": spec.get("palette_ar"), "room": spec.get("room"), "materials": mats, "qa": [],
+            "notes": "مخطط ولوحة مواد فقط (fal مقفول) — بلا صورة واقعية", "images": [raw + f1, raw + f2], "stories": [], "reel": None,
+            "created_riyadh": dt.datetime.now(RIY).strftime("%Y-%m-%d %H:%M")}
+
 def build(spec, browser, ident, slot=None):
     if spec.get("format") == "single" or ("materials" in spec and "slides" not in spec):
         return build_single(spec, browser, ident, slot)
@@ -488,7 +503,7 @@ def main():
     if changed: json.dump(manifest, open(man_path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     if not jobs:  # buffer: build up to MAX_SETS upcoming slots (next 36h) that have a spec and no design yet
         now = dt.datetime.now(RIY).replace(tzinfo=None); max_sets = int(os.environ.get("MAX_SETS", "3"))
-        done_slots = {m.get("slot") for m in manifest}
+        done_slots = {m.get("slot") for m in manifest if not m.get("plan_only")}
         try:
             r = requests.get(PLAN_CSV, timeout=30); r.encoding = "utf-8"
             plan = {}
@@ -516,7 +531,9 @@ def main():
         for sp, ident, slot in jobs:
             try:
                 m = build(sp, br, ident, slot)
-                if m: manifest.append(m); log("OK", ident, len(m["images"]), "images")
+                if not m and BLOCK and slot and not is_client(sp, ident) and not any(x.get("plan_only") and x.get("slot") == slot for x in manifest):
+                    m = build_plan_only(sp, br, ident + "_plan", slot)  # E-47
+                if m: manifest.append(m); log("OK", ident, len(m["images"]), "images", "plan_only" if m.get("plan_only") else "")
             except Exception as ex:
                 log("build error", ident, repr(ex))
             json.dump(manifest[-300:], open(man_path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
