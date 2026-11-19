@@ -1,5 +1,5 @@
-2026-11-19T23:53:35.996728+03:00
-backfilled vertical 2026-11-20_2130_villa-entrance-bioph_plan
+2026-11-20T01:49:47.757734+03:00
+backfilled vertical 2026-11-20_2300_abaya-boutique-showr_plan
 plan 200 38 rows 2026-11-20 23:00
 fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
 fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
@@ -13,4 +13,3 @@ fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted bala
 fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
 fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
 hero failed 2026-11-20_2300_abaya-boutique-showr
-OK 2026-11-20_2300_abaya-boutique-showr 2 images plan_only

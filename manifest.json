@@ -3882,7 +3882,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-14_1300_abaya-showroom_s2.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-14_1300_abaya-showroom_reel.mp4",
-  "created_riyadh": "2026-11-13 01:46"
+  "created_riyadh": "2026-11-13 01:46",
+  "pruned": true
  },
  {
   "id": "2026-11-14_2130_winter-family-living",
@@ -5754,8 +5755,10 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-20_2300_abaya-boutique-showr_plan_1_plan.jpg",
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-20_2300_abaya-boutique-showr_plan_2_board.jpg"
   ],
-  "stories": [],
-  "reel": null,
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-20_2300_abaya-boutique-showr_plan_v2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-20_2300_abaya-boutique-showr_plan_reel.mp4",
   "created_riyadh": "2026-11-19 23:53"
  }
 ]
