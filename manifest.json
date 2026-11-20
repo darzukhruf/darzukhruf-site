@@ -5822,8 +5822,10 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_1300_mens-majlis-mid-cent_plan_1_plan.jpg",
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_1300_mens-majlis-mid-cent_plan_2_board.jpg"
   ],
-  "stories": [],
-  "reel": null,
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_1300_mens-majlis-mid-cent_plan_v2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_1300_mens-majlis-mid-cent_plan_reel.mp4",
   "created_riyadh": "2026-11-20 14:00"
  }
 ]
