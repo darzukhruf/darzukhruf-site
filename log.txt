@@ -1,5 +1,4 @@
-2026-11-20T16:07:10.035914+03:00
-backfilled vertical 2026-11-21_1300_mens-majlis-mid-cent_plan
+2026-11-20T17:55:05.042949+03:00
 plan 200 41 rows 2026-11-21 23:00
 fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
 fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
