@@ -5887,8 +5887,73 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_2130_studio-apartment-wab_plan_1_plan.jpg",
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_2130_studio-apartment-wab_plan_2_board.jpg"
   ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_2130_studio-apartment-wab_plan_v2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_2130_studio-apartment-wab_plan_reel.mp4",
+  "created_riyadh": "2026-11-20 21:58"
+ },
+ {
+  "id": "2026-11-21_2300_guest-powder-room-mo_plan",
+  "format": "single",
+  "plan_only": true,
+  "category": "residential",
+  "slot": "2026-11-21 23:00",
+  "title_ar": "دورة مياه ضيوف بأصفر زبدي",
+  "space_ar": "دورة مياه ضيوف",
+  "style_ar": "متوسطي حديث",
+  "palette_ar": "أصفر زبدي باهت، أبيض جيري، خشب فاتح",
+  "room": {
+   "w": 1.8,
+   "l": 2.4,
+   "h": 2.8
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Cashew",
+    "code": "1931",
+    "brand": "Jotun",
+    "where_ar": "جوتن · معارض الرياض",
+    "locate_en": "butter yellow walls",
+    "sample_color": true
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Rhode Island White",
+    "code": "A12GRDIL-WHE.M0X5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "راك سيراميكس",
+    "locate_en": "floor",
+    "sample_color": true
+   },
+   {
+    "type_ar": "قطعة مختارة",
+    "name": "STOCKHOLM mirror oak veneer 80 cm",
+    "code": "",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة",
+    "locate_en": "mirror above vanity",
+    "sample_color": false
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "Dexter Linen Pendant",
+    "code": "",
+    "brand": "Home Centre",
+    "where_ar": "هوم سنتر · فروع المملكة",
+    "locate_en": "pendant lamp beside mirror",
+    "sample_color": false
+   }
+  ],
+  "qa": [],
+  "notes": "مخطط ولوحة مواد فقط (fal مقفول) — بلا صورة واقعية",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_2300_guest-powder-room-mo_plan_1_plan.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_2300_guest-powder-room-mo_plan_2_board.jpg"
+  ],
   "stories": [],
   "reel": null,
-  "created_riyadh": "2026-11-20 21:58"
+  "created_riyadh": "2026-11-20 23:50"
  }
 ]
