@@ -17,8 +17,22 @@
     s = (q.get('utm_source') || q.get('ref') || '').replace(/[^\w.\-]/g, '').slice(0, 24);
     try { if (s) sessionStorage.setItem('dz_src', s); else s = sessionStorage.getItem('dz_src') || ''; } catch (e) {}
   } catch (e) {}
+  /* E-50 (20-11): بلا utm على github.io = زائر بحث قوقل/مباشر — نوسم باسم الصفحة عشان نعرف من وين جت المحادثة */
+  if (!s && /github\.io$/.test(location.hostname)) {
+    var pg = (location.pathname.split('/').pop() || 'index').replace(/\.html$/, '').replace(/[^\w\-]/g, '').slice(0, 20) || 'index';
+    s = 'gh-' + pg;
+  }
   if (!s) return;
   var tag = '\n[مصدر: ' + s + ']';
+  /* عدّاد نقرات واتساب: طلب favicon صغير من Netlify عند الضغط (نفس آلية البكسل، بلا كوكيز ولا بيانات شخصية) */
+  document.addEventListener('click', function(ev){
+    try {
+      var a = ev.target.closest && ev.target.closest('a[href*="wa.me/966578771717"]');
+      if (!a) return;
+      var im = new Image(); im.referrerPolicy = 'unsafe-url';
+      im.src = 'https://darzukhruf.netlify.app/favicon.svg?wa=' + encodeURIComponent(s) + '&t=' + Date.now();
+    } catch (e) {}
+  }, true);
   var links = document.querySelectorAll('a[href^="https://wa.me/966578771717"]');
   for (var i = 0; i < links.length; i++) {
     var a = links[i], h = a.getAttribute('href');
