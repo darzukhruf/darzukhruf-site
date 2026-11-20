@@ -5762,5 +5762,68 @@
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-20_2300_abaya-boutique-showr_plan_reel.mp4",
   "created_riyadh": "2026-11-19 23:53"
+ },
+ {
+  "id": "2026-11-21_1300_mens-majlis-mid-cent_plan",
+  "format": "single",
+  "plan_only": true,
+  "category": "residential",
+  "slot": "2026-11-21 13:00",
+  "title_ar": "[جمعة] مجلس رجال لعشرة ضيوف",
+  "space_ar": "مجلس رجال",
+  "style_ar": "ميد سنشري معاصر",
+  "palette_ar": "أزرق بترولي، كراميل جوز، كريمي، أسود مطفي",
+  "room": {
+   "w": 6.5,
+   "l": 5.0,
+   "h": 3.0
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Deco Blue",
+    "code": "4477",
+    "brand": "Jotun",
+    "where_ar": "جوتن · معارض الرياض",
+    "locate_en": "north accent wall",
+    "sample_color": true
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Kyoto Brown",
+    "code": "A45RKYOT-BRN.M0X0R",
+    "brand": "RAK Ceramics",
+    "where_ar": "راك سيراميكس",
+    "locate_en": "wood-look floor",
+    "sample_color": true
+   },
+   {
+    "type_ar": "قطعة مختارة",
+    "name": "UGGLERUM coffee table walnut",
+    "code": "",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة",
+    "locate_en": "coffee table",
+    "sample_color": false
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "STRANDAD floor lamp",
+    "code": "705.948.37",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة",
+    "locate_en": "floor lamp",
+    "sample_color": false
+   }
+  ],
+  "qa": [],
+  "notes": "مخطط ولوحة مواد فقط (fal مقفول) — بلا صورة واقعية",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_1300_mens-majlis-mid-cent_plan_1_plan.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_1300_mens-majlis-mid-cent_plan_2_board.jpg"
+  ],
+  "stories": [],
+  "reel": null,
+  "created_riyadh": "2026-11-20 14:00"
  }
 ]
