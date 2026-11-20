@@ -4162,7 +4162,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-15_1300_shared-kids-room-thr_s2.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-15_1300_shared-kids-room-thr_reel.mp4",
-  "created_riyadh": "2026-11-14 01:44"
+  "created_riyadh": "2026-11-14 01:44",
+  "pruned": true
  },
  {
   "id": "2026-11-15_2130_dessert-patisserie-s",
@@ -5952,8 +5953,10 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_2300_guest-powder-room-mo_plan_1_plan.jpg",
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_2300_guest-powder-room-mo_plan_2_board.jpg"
   ],
-  "stories": [],
-  "reel": null,
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_2300_guest-powder-room-mo_plan_v2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_2300_guest-powder-room-mo_plan_reel.mp4",
   "created_riyadh": "2026-11-20 23:50"
  }
 ]

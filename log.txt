@@ -1,5 +1,5 @@
-2026-11-20T23:50:47.667015+03:00
-backfilled vertical 2026-11-21_2130_studio-apartment-wab_plan
+2026-11-21T01:47:23.685889+03:00
+backfilled vertical 2026-11-21_2300_guest-powder-room-mo_plan
 plan 200 41 rows 2026-11-21 23:00
 fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
 fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
@@ -13,4 +13,3 @@ fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted bala
 fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
 fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
 hero failed 2026-11-21_2300_guest-powder-room-mo
-OK 2026-11-21_2300_guest-powder-room-mo 2 images plan_only
