@@ -87,6 +87,10 @@ def to_jpg(raw, size=(1080, 1440)):
 
 STYLE = (" Shot as a real professional architectural interior photograph: full-frame camera, 24mm tilt-shift lens, natural "
          "daylight with warm practical lights, true-to-life materials and textures, straight verticals, realistic scale. "
+         "Contemporary modern design, fully furnished and styled like a high-end interior magazine shoot: layered textures "
+         "(wood, stone, boucle, linen, metal), styled decor (books, ceramics, vases, indoor plants, framed abstract art, throws, "
+         "cushions), layered lighting (cove, pendant, wall and table lamps) and one confident accent colour; the room must feel "
+         "lived-in and complete, never empty or sparse, but not cluttered, and every listed piece stays where the layout says. "
          "Modest and family-friendly: no people, no statues or nude art, no alcohol, no religious symbols except Arabic "
          "geometric patterns, no text, no logos, no watermark.")
 
@@ -253,7 +257,7 @@ def build_multi(spec, browser, ident, slot=None):
             "stories": [raw + f for f in stories], "reel": (raw + reel) if reel else None,
             "created_riyadh": dt.datetime.now(RIY).strftime("%Y-%m-%d %H:%M")}
 
-HERO_T2I = os.environ.get("HERO_MODEL", "").strip() or "fal-ai/nano-banana-pro"
+HERO_T2I = os.environ.get("HERO_MODEL", "").strip() or "fal-ai/gpt-image-2"  # owner 21-11: model test winner (2/6 failed checks vs 5/6)
 LOCATE = ("Reply ONLY JSON {\"items\":[{\"point\":[x,y],\"hex\":\"#RRGGBB\"},...]} — one item per element below, same order: "
           "point = normalized (0..1 from top-left) centre of a clean, evenly lit patch of that element (not a shadow, highlight, window or "
           "another object); hex = the element's true base colour as it appears in the photo (null if not visible). Elements: ")
