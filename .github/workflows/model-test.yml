@@ -1,0 +1,39 @@
+name: model-test
+# Owner request 21-11: compare image models on the same 3 rooms (scripts/model_test.py). Runs ONLY when
+# specs/model-test/run.txt changes (after fal is topped up) or manually. Results -> media/model-test/<run>/
+on:
+  push:
+    branches: [main]
+    paths: ["specs/model-test/run.txt"]
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: generate-designs
+  cancel-in-progress: false
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with: { path: site }
+      - uses: actions/checkout@v4
+        with: { ref: media, path: media }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install pillow requests
+      - run: python site/scripts/model_test.py media
+        env:
+          FAL_KEY: ${{ secrets.FAL_KEY }}
+          REPO: ${{ github.repository }}
+      - name: push to media branch
+        if: always()
+        run: |
+          cd media
+          git config user.name "dar-zukhruf-bot"
+          git config user.email "darzukhruf@gmail.com"
+          git add -A model-test || true
+          git diff --cached --quiet && exit 0
+          git commit -m "model test $(date -u +%Y%m%d-%H%M)"
+          git pull --rebase origin media && git push origin media
