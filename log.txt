@@ -1,14 +1,8 @@
-2026-11-21T11:50:50.656672+03:00
+2026-11-21T13:52:13.099935+03:00
 plan 200 43 rows 2026-11-22 21:30
-fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
-fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
-fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
-hero failed 2026-11-21_1300_mens-majlis-mid-cent
-fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
-fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
-fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
-hero failed 2026-11-21_2130_studio-apartment-wab
-fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
-fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
-fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
-hero failed 2026-11-21_2300_guest-powder-room-mo
+QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the top edge of the bedside table on the right", "adjust the perspective of the arch niche on the left wall to align with the room"], "inappropriate": false, "item_visible": true, "point": [0.702, 0.704], "reason": "beside table edge is not straight"}
+OK 2026-11-21_2130_studio-apartment-wab 3 images 
+QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the top edge of the window frame", "adjust the shadow under the toilet to match the lighting direction", "improve the texture realism of the small plant next to the toilet", "soften the glowing edge on the left side of the mirror reflection of the wall"], "inappropriate": false, "item_visible": true, "point": [0.5, 0.5], "reason": "butter yellow walls"}
+OK 2026-11-21_2300_guest-powder-room-mo 3 images 
+QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the top left corner of the window frame", "adjust the reflection of the light strip under the counter to be more consistent", "correct the slightly warped wood texture on the counter front where the light strip is", "add more realistic texture to the floor, it appears a bit too smooth and repetitive in places", "straighten the right vertical edge of the decorative wood panel"], "inappropriate": false, "item_visible": true, "point": [0.5, 0.5], "reason": "overall good, but minor structural and texture issues"}
+OK 2026-11-22_1300_dental-clinic-recept 3 images 

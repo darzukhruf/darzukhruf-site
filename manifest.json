@@ -5959,5 +5959,283 @@
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_2300_guest-powder-room-mo_plan_reel.mp4",
   "created_riyadh": "2026-11-20 23:50"
+ },
+ {
+  "id": "2026-11-21_2130_studio-apartment-wab",
+  "format": "single",
+  "category": "residential",
+  "slot": "2026-11-21 21:30",
+  "title_ar": "استوديو 32 م² بتقسيم ذكي",
+  "space_ar": "شقة استوديو 32 م²",
+  "style_ar": "وابي سابي ناعم",
+  "palette_ar": "رمادي ضبابي، أبيض عظمي، بيج كتان، رمادي إسمنتي",
+  "reel_hook_ar": "كيف تقسم 32 متر بدون جدران؟",
+  "room": {
+   "w": 6.4,
+   "l": 5.0,
+   "h": 2.9
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Smoke",
+    "code": "CT-2109",
+    "brand": "Jazeera Paints",
+    "where_ar": "الجزيرة · معارض الرياض",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#D3D1CD"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Surface Grey",
+    "code": "A12GZSUR-AS0.M0S5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "راك سيراميكس",
+    "locate_en": "floor tiles",
+    "sample_color": true,
+    "hex": "#B6B2AE"
+   },
+   {
+    "type_ar": "القماش",
+    "name": "SILVERLÖNN sheer curtains beige",
+    "code": "104.939.78",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة",
+    "locate_en": "window curtains",
+    "sample_color": false,
+    "hex": "#F1EEE9"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "Dexter Linen Pendant",
+    "code": "",
+    "brand": "Home Centre",
+    "where_ar": "هوم سنتر · فروع المملكة",
+    "locate_en": "pendant lamp",
+    "sample_color": false,
+    "hex": "#F8F3E5"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top edge of the bedside table on the right",
+     "adjust the perspective of the arch niche on the left wall to align with the room"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.702,
+     0.704
+    ],
+    "reason": "beside table edge is not straight",
+    "raw": "https://v3b.fal.media/files/b/0ab358ac/tdQAsmJgzEkj0PrQmFduI_bxFhMyMr.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_2130_studio-apartment-wab_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_2130_studio-apartment-wab_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_2130_studio-apartment-wab_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_2130_studio-apartment-wab_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_2130_studio-apartment-wab_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_2130_studio-apartment-wab_reel.mp4",
+  "reel_frame_sec": 3.4,
+  "reel_order": "normal",
+  "created_riyadh": "2026-11-21 13:49"
+ },
+ {
+  "id": "2026-11-21_2300_guest-powder-room-mo",
+  "format": "single",
+  "category": "residential",
+  "slot": "2026-11-21 23:00",
+  "title_ar": "دورة مياه ضيوف بأصفر زبدي",
+  "space_ar": "دورة مياه ضيوف",
+  "style_ar": "متوسطي حديث",
+  "palette_ar": "أصفر زبدي باهت، أبيض جيري، خشب فاتح",
+  "reel_hook_ar": "دورة مياه الضيوف: وش يبين أول؟",
+  "room": {
+   "w": 1.8,
+   "l": 2.4,
+   "h": 2.8
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Cashew",
+    "code": "1931",
+    "brand": "Jotun",
+    "where_ar": "جوتن · معارض الرياض",
+    "locate_en": "butter yellow walls",
+    "sample_color": true,
+    "hex": "#C7A75B"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Rhode Island White",
+    "code": "A12GRDIL-WHE.M0X5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "راك سيراميكس",
+    "locate_en": "floor",
+    "sample_color": true,
+    "hex": "#E0E0E0"
+   },
+   {
+    "type_ar": "قطعة مختارة",
+    "name": "STOCKHOLM mirror oak veneer 80 cm",
+    "code": "",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة",
+    "locate_en": "mirror above vanity",
+    "sample_color": false,
+    "hex": "#C09D62"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "Dexter Linen Pendant",
+    "code": "",
+    "brand": "Home Centre",
+    "where_ar": "هوم سنتر · فروع المملكة",
+    "locate_en": "pendant lamp beside mirror",
+    "sample_color": false,
+    "hex": "#D9C3A0"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top edge of the window frame",
+     "adjust the shadow under the toilet to match the lighting direction",
+     "improve the texture realism of the small plant next to the toilet",
+     "soften the glowing edge on the left side of the mirror reflection of the wall"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "butter yellow walls",
+    "raw": "https://v3b.fal.media/files/b/0ab358b6/3w6ZmsiAi8MH4S736uaoK_Nz8n0qrS.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_2300_guest-powder-room-mo_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_2300_guest-powder-room-mo_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_2300_guest-powder-room-mo_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_2300_guest-powder-room-mo_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_2300_guest-powder-room-mo_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_2300_guest-powder-room-mo_reel.mp4",
+  "reel_frame_sec": 3.4,
+  "reel_order": "normal",
+  "created_riyadh": "2026-11-21 13:50"
+ },
+ {
+  "id": "2026-11-22_1300_dental-clinic-recept",
+  "format": "single",
+  "category": "commercial",
+  "slot": "2026-11-22 13:00",
+  "title_ar": "استقبال عيادة أسنان بهدوء سكاندنافي",
+  "space_ar": "استقبال عيادة أسنان",
+  "style_ar": "سكاندنافي نظيف",
+  "palette_ar": "أزرق ثلجي باهت، أبيض، بلوط فاتح",
+  "reel_hook_ar": "وش يحس فيه مريضك أول ما يدخل العيادة؟",
+  "room": {
+   "w": 6.0,
+   "l": 5.0,
+   "h": 3.0
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Skylight",
+    "code": "1624",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن المعتمدة",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#D8C8B4"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Hard Wood Ivory",
+    "code": "A99GZHRD#IV0.W2S5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "متجر راك سيراميكس",
+    "locate_en": "floor planks",
+    "sample_color": true,
+    "hex": "#D7BBA2"
+   },
+   {
+    "type_ar": "سطح الاستقبال",
+    "name": "Uni White (Hyperwhite)",
+    "code": "A83GMAXI-HWH.X0C2P",
+    "brand": "RAK Ceramics",
+    "where_ar": "متجر راك سيراميكس",
+    "locate_en": "reception counter top",
+    "sample_color": true,
+    "hex": "#E4DFD5"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "Collect Pendant Cashmere",
+    "code": "100297693",
+    "brand": "Ferm Living",
+    "where_ar": "ذا بويري كومباني · العليا",
+    "locate_en": "globe pendant lamp",
+    "sample_color": false,
+    "hex": "#D8CDC2"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top left corner of the window frame",
+     "adjust the reflection of the light strip under the counter to be more consistent",
+     "correct the slightly warped wood texture on the counter front where the light strip is",
+     "add more realistic texture to the floor, it appears a bit too smooth and repetitive in places",
+     "straighten the right vertical edge of the decorative wood panel"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "overall good, but minor structural and texture issues",
+    "raw": "https://v3b.fal.media/files/b/0ab358c0/XsDuMRFujVbbdITKezCeU_oXVKaxXO.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-22_1300_dental-clinic-recept_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-22_1300_dental-clinic-recept_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-22_1300_dental-clinic-recept_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-22_1300_dental-clinic-recept_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-22_1300_dental-clinic-recept_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-22_1300_dental-clinic-recept_reel.mp4",
+  "reel_frame_sec": 2.4,
+  "reel_order": "normal",
+  "created_riyadh": "2026-11-21 13:52"
  }
 ]
