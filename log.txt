@@ -1,4 +1,4 @@
-2026-11-21T10:06:04.966188+03:00
+2026-11-21T11:50:50.656672+03:00
 plan 200 43 rows 2026-11-22 21:30
 fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
 fal fal-ai/nano-banana-pro 403 {"detail":"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing."}
