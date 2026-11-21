@@ -1,0 +1,180 @@
+{
+ "run": "20261121-1334",
+ "note": "صورة واحدة خام لكل موديل بلا إعادة ولا ترميم",
+ "models": {
+  "GPT Image (OpenAI)": {
+   "images": 3,
+   "errors_total": 10,
+   "photoreal_avg": 8.0,
+   "endpoint": "fal-ai/gpt-image-2"
+  }
+ },
+ "rooms": [
+  {
+   "id": "1-women-majlis-5x7",
+   "name": "مجلس نساء",
+   "size": "5.0×7.0",
+   "results": {
+    "GPT Image (OpenAI)": {
+     "endpoint": "fal-ai/gpt-image-2",
+     "seconds": 72,
+     "url": "https://v3b.fal.media/files/b/0ab35863/di_Dk4u6p8pRAVL2Olz8d_PpIyWIUk.jpg",
+     "file": "1-women-majlis-5x7__gpt-image-openai.jpg",
+     "qa": {
+      "photoreal": 8,
+      "artifacts": true,
+      "major_artifacts": false,
+      "issues": [
+       "straighten the ceiling line above the right door frame",
+       "adjust the shadow under the left large floor lamp to be consistent with the light source",
+       "adjust the shadow under the right large floor lamp to be consistent with the light source",
+       "fix slight warping of the left wall"
+      ],
+      "inappropriate": false,
+      "item_visible": true,
+      "point": [
+       0.505,
+       0.54
+      ],
+      "reason": "main seating area"
+     },
+     "openings": {
+      "ok": false,
+      "problems": [
+       "The visible door on the left (south wall) is too narrow. It should be 1.0 m wide, but it appears narrower. Please adjust the width of the door to match the specified 1.0 m."
+      ]
+     },
+     "layout": {
+      "matches": false,
+      "problems": [
+       "east wall: sofa (كنبة 3), sofa (كنبة 3) - expected two, found one.",
+       "west wall: sofa (كنبة 3), sofa (كنبة 3) - expected two, found one.",
+       "centre of the room: table (طاولة وسط), table (طاولة وسط) - expected two, found one."
+      ]
+     },
+     "errors": 4,
+     "photoreal": 8
+    }
+   }
+  },
+  {
+   "id": "2-master-bedroom-5x6",
+   "name": "غرفة نوم رئيسية",
+   "size": "5×6",
+   "results": {
+    "GPT Image (OpenAI)": {
+     "endpoint": "fal-ai/gpt-image-2",
+     "seconds": 68,
+     "url": "https://v3b.fal.media/files/b/0ab3586f/RMXYjP9Ifm88v9w6D_ev1_Cx5VhH3z.jpg",
+     "file": "2-master-bedroom-5x6__gpt-image-openai.jpg",
+     "qa": {
+      "photoreal": 8,
+      "artifacts": true,
+      "major_artifacts": false,
+      "issues": [
+       "straighten the top left corner of the ceiling molding",
+       "straighten the right vertical edge of the mirror on the left",
+       "adjust the shadow under the bed so it looks more natural"
+      ],
+      "inappropriate": false,
+      "item_visible": true,
+      "point": [
+       0.5,
+       0.5
+      ],
+      "reason": "The image is generally good, but there are a few minor distortions in lines and some slight irregularities in shadows that prevent it from being a perfect 10."
+     },
+     "openings": {
+      "ok": false,
+      "problems": [
+       "remove the door on the right of the image (partially visible on the right edge) and continue the plain wall."
+      ]
+     },
+     "layout": {
+      "matches": false,
+      "problems": [
+       "furniture NOT in the layout appears",
+       "floor/wall colours clearly differ",
+       "a piece that is clearly in view is missing"
+      ]
+     },
+     "errors": 4,
+     "photoreal": 8
+    }
+   }
+  },
+  {
+   "id": "3-dressing-room-4.5x4",
+   "name": "غرفة زينة وملابس للسيدة",
+   "size": "4.5×4.0",
+   "results": {
+    "GPT Image (OpenAI)": {
+     "endpoint": "fal-ai/gpt-image-2",
+     "seconds": 70,
+     "url": "https://v3b.fal.media/files/b/0ab3587a/rATiTE-kKbiPcp2z4lBmG_E1Lr0wUU.jpg",
+     "file": "3-dressing-room-4.5x4__gpt-image-openai.jpg",
+     "qa": {
+      "photoreal": 8,
+      "artifacts": true,
+      "major_artifacts": false,
+      "issues": [
+       "straighten the top left corner of the ceiling cove lighting",
+       "remove faint white halo around the top edge of the right wall lights",
+       "adjust the light reflection on the floor to match the light source"
+      ],
+      "inappropriate": false,
+      "item_visible": true,
+      "point": [
+       0.24,
+       0.77
+      ],
+      "reason": "main furniture piece"
+     },
+     "openings": {
+      "ok": true,
+      "problems": []
+     },
+     "layout": {
+      "matches": false,
+      "problems": [
+       "furniture NOT in the layout appears",
+       "a piece that is clearly in view is missing"
+      ]
+     },
+     "errors": 2,
+     "photoreal": 8
+    }
+   }
+  }
+ ],
+ "blocked": false,
+ "log": [
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "TEST 1-women-majlis-5x7 GPT Image (OpenAI) {\"endpoint\": \"fal-ai/gpt-image-2\", \"errors\": 4, \"photoreal\": 8, \"seconds\": 72}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "TEST 2-master-bedroom-5x6 GPT Image (OpenAI) {\"endpoint\": \"fal-ai/gpt-image-2\", \"errors\": 4, \"photoreal\": 8, \"seconds\": 68}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "TEST 3-dressing-room-4.5x4 GPT Image (OpenAI) {\"endpoint\": \"fal-ai/gpt-image-2\", \"errors\": 2, \"photoreal\": 8, \"seconds\": 70}"
+ ]
+}
