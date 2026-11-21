@@ -16,6 +16,8 @@ FAMILIES = {
   "Seedream 5 Pro (ByteDance)": ["fal-ai/bytedance/seedream/v5/pro/text-to-image", "fal-ai/bytedance/seedream/v5/text-to-image",
                                   "fal-ai/bytedance/seedream/v4.5/text-to-image"],
 }
+_only = os.environ.get("ONLY", "").strip().lower()
+if _only: FAMILIES = {k: v for k, v in FAMILIES.items() if _only in k.lower()}
 SEARCH = {"GPT Image (OpenAI)": "gpt-image", "Seedream 5 Pro (ByteDance)": "seedream"}
 def search(q):
     try:

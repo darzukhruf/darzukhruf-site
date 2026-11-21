@@ -27,6 +27,7 @@ jobs:
         env:
           FAL_KEY: ${{ secrets.FAL_KEY }}
           REPO: ${{ github.repository }}
+          ONLY: gpt
       - name: push to media branch
         if: always()
         run: |
