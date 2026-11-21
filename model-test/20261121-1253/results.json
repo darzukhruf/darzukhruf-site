@@ -1,0 +1,37 @@
+{
+ "run": "20261121-1253",
+ "note": "صورة واحدة خام لكل موديل بلا إعادة ولا ترميم",
+ "models": {
+  "Nano Banana Pro (Google)": {
+   "images": 0,
+   "errors_total": 0,
+   "photoreal_avg": null,
+   "endpoint": null
+  },
+  "GPT Image (OpenAI)": {
+   "images": 0,
+   "errors_total": 0,
+   "photoreal_avg": null,
+   "endpoint": null
+  },
+  "Seedream 5 Pro (ByteDance)": {
+   "images": 0,
+   "errors_total": 0,
+   "photoreal_avg": null,
+   "endpoint": null
+  }
+ },
+ "rooms": [
+  {
+   "id": "1-women-majlis-5x7",
+   "name": "مجلس نساء",
+   "size": "5.0×7.0",
+   "results": {}
+  }
+ ],
+ "blocked": true,
+ "log": [
+  "fal fal-ai/nano-banana-pro 403 {\"detail\":\"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing.\"}",
+  "fal blocked - stopping"
+ ]
+}
