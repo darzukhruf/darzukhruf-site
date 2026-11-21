@@ -1,7 +1,7 @@
-2026-11-21T15:55:38.260551+03:00
+2026-11-21T17:51:11.606563+03:00
 plan 200 43 rows 2026-11-22 21:30
-skip 2026-11-21 21:30 in 5:35:57.573481 done
-skip 2026-11-21 23:00 in 7:05:57.573481 done
-skip 2026-11-22 13:00 in 21:05:57.573481 done
-QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the top left ceiling-wall joint light strip", "adjust texture of the wall behind the bed, it appears slightly blurry or over-smoothed", "smooth out the slight distortion/blur on the lower part of the window frame behind the curtains", "add a more realistic shadow for the pot plant on the right shelf"], "inappropriate": false, "item_visible": true, "point": [0.34, 0.41], "reason": "head wall behind the bed"}
-OK 2026-11-22_2130_teen-bedroom 3 images 
+skip 2026-11-21 21:30 in 3:38:48.997056 done
+skip 2026-11-21 23:00 in 5:08:48.997056 done
+skip 2026-11-22 13:00 in 19:08:48.997056 done
+skip 2026-11-22 21:30 in 1 day, 3:38:48.997056 done
+buffer full or no specs
