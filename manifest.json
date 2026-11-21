@@ -6237,5 +6237,98 @@
   "reel_frame_sec": 2.4,
   "reel_order": "normal",
   "created_riyadh": "2026-11-21 13:52"
+ },
+ {
+  "id": "2026-11-22_2130_teen-bedroom",
+  "format": "single",
+  "category": "residential",
+  "slot": "2026-11-22 21:30",
+  "title_ar": "غرفة مراهقة 14 متر بركن دراسة",
+  "space_ar": "غرفة مراهقة 14 م²",
+  "style_ar": "إندستريال ناعم",
+  "palette_ar": "خوخي ناعم، كريمي، رمادي دافئ",
+  "reel_hook_ar": "غرفة مراهقة بـ 14 متر.. كيف تتسع كل شي؟",
+  "room": {
+   "w": 3.5,
+   "l": 4.0,
+   "h": 2.9
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Latte",
+    "code": "1393",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن المعتمدة",
+    "locate_en": "head wall behind the bed",
+    "sample_color": true,
+    "hex": "#C69B89"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Neutra Concrete Grey",
+    "code": "A12GNTRC-LIG.A6X5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "متجر راك سيراميكس",
+    "locate_en": "floor tiles",
+    "sample_color": true,
+    "hex": "#D9D9D9"
+   },
+   {
+    "type_ar": "القماش",
+    "name": "SILVERLÖNN ستارة شفافة بيج",
+    "code": "104.939.78",
+    "brand": "IKEA",
+    "where_ar": "ايكيا · الرياض وجدة والدمام",
+    "locate_en": "sheer window curtains",
+    "sample_color": true,
+    "hex": "#EADECE"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "KAPPELAND/HAVSDJUP",
+    "code": "496.040.51",
+    "brand": "IKEA",
+    "where_ar": "ايكيا · الرياض وجدة والدمام",
+    "locate_en": "black rattan pendant lamp",
+    "sample_color": false,
+    "hex": "#392A20"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top left ceiling-wall joint light strip",
+     "adjust texture of the wall behind the bed, it appears slightly blurry or over-smoothed",
+     "smooth out the slight distortion/blur on the lower part of the window frame behind the curtains",
+     "add a more realistic shadow for the pot plant on the right shelf"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.34,
+     0.41
+    ],
+    "reason": "head wall behind the bed",
+    "raw": "https://v3b.fal.media/files/b/0ab35ba4/7NOAOy-iRvgHnla7H7C36_vN2yMBrZ.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-22_2130_teen-bedroom_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-22_2130_teen-bedroom_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-22_2130_teen-bedroom_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-22_2130_teen-bedroom_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-22_2130_teen-bedroom_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-22_2130_teen-bedroom_reel.mp4",
+  "reel_frame_sec": 2.4,
+  "reel_order": "normal",
+  "created_riyadh": "2026-11-21 15:55"
  }
 ]
