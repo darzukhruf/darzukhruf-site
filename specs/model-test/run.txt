@@ -1,3 +1,4 @@
 run 2026-11-21 12:53 — owner topped up fal ($25)
 run2 2026-11-21 12:59
 run3 gpt-only new modern style 13:27
+run4 gpt decor-only 13:34

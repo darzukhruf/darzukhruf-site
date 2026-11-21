@@ -90,7 +90,9 @@ STYLE = (" Shot as a real professional architectural interior photograph: full-f
          "Contemporary modern design, fully furnished and styled like a high-end interior magazine shoot: layered textures "
          "(wood, stone, boucle, linen, metal), styled decor (books, ceramics, vases, indoor plants, framed abstract art, throws, "
          "cushions), layered lighting (cove, pendant, wall and table lamps) and one confident accent colour; the room must feel "
-         "lived-in and complete, never empty or sparse, but not cluttered, and every listed piece stays where the layout says. "
+         "lived-in and complete, never empty or sparse, but not cluttered. Richness comes ONLY from decor accessories placed on "
+         "tables, shelves, walls and in corners: NEVER add, remove or move furniture pieces, doors or windows; the furniture "
+         "list and the wall of each piece are exactly as given. "
          "Modest and family-friendly: no people, no statues or nude art, no alcohol, no religious symbols except Arabic "
          "geometric patterns, no text, no logos, no watermark.")
 
