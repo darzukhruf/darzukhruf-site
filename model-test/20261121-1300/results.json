@@ -1,0 +1,483 @@
+{
+ "run": "20261121-1300",
+ "note": "صورة واحدة خام لكل موديل بلا إعادة ولا ترميم",
+ "models": {
+  "Nano Banana Pro (Google)": {
+   "images": 3,
+   "errors_total": 12,
+   "photoreal_avg": 8.0,
+   "endpoint": "fal-ai/nano-banana-pro"
+  },
+  "GPT Image (OpenAI)": {
+   "images": 3,
+   "errors_total": 9,
+   "photoreal_avg": 8.0,
+   "endpoint": "fal-ai/gpt-image-2"
+  },
+  "Seedream 5 Pro (ByteDance)": {
+   "images": 3,
+   "errors_total": 10,
+   "photoreal_avg": 8.0,
+   "endpoint": "fal-ai/bytedance/seedream/v4.5/text-to-image"
+  }
+ },
+ "rooms": [
+  {
+   "id": "1-women-majlis-5x7",
+   "name": "مجلس نساء",
+   "size": "5.0×7.0",
+   "results": {
+    "Nano Banana Pro (Google)": {
+     "endpoint": "fal-ai/nano-banana-pro",
+     "seconds": 18,
+     "url": "https://v3b.fal.media/files/b/0ab35791/zBkB9M4UICBTj9TUvFZGl_f2uRfjw6.jpg",
+     "file": "1-women-majlis-5x7__nano-banana-pro-google.jpg",
+     "qa": {
+      "photoreal": 8,
+      "artifacts": true,
+      "major_artifacts": false,
+      "issues": [
+       "straighten the ceiling lighting channels on both sides",
+       "fix the subtle glowing edge around the right pendant lamp",
+       "refine the texture and shape of the pampas grass in the vase",
+       "adjust the reflection of the light in the mirror on the right wall",
+       "ensure all sofa legs are clearly defined and consistent in shape",
+       "sharpen the texture of the rugs to avoid a slightly soft appearance"
+      ],
+      "inappropriate": false,
+      "item_visible": true,
+      "point": [
+       0.5,
+       0.73
+      ],
+      "reason": "main coffee table"
+     },
+     "openings": {
+      "ok": false,
+      "problems": [
+       "remove the door and frame on the right side of the image and continue the plain wall."
+      ]
+     },
+     "layout": {
+      "matches": false,
+      "problems": [
+       "coffee (ركن قهوة) missing",
+       "sofa (كنبة 3) missing",
+       "furniture NOT in the layout appears"
+      ]
+     },
+     "errors": 4,
+     "photoreal": 8
+    },
+    "GPT Image (OpenAI)": {
+     "endpoint": "fal-ai/gpt-image-2",
+     "seconds": 69,
+     "url": "https://v3b.fal.media/files/b/0ab35797/2zk5k7mThM_kyjIC5h5hd_McNAaepX.jpg",
+     "file": "1-women-majlis-5x7__gpt-image-openai.jpg",
+     "qa": {
+      "photoreal": 8,
+      "artifacts": true,
+      "major_artifacts": false,
+      "issues": [
+       "straighten the ceiling cove light on the far left",
+       "correct the perspective of the left wall and painting",
+       "fix the slight distortion in the mirror's reflection",
+       "adjust the shadow direction of the coffee table on the right"
+      ],
+      "inappropriate": false,
+      "item_visible": true,
+      "point": [
+       0.5,
+       0.6
+      ],
+      "reason": "main furniture piece"
+     },
+     "openings": {
+      "ok": false,
+      "problems": [
+       "remove the door on the right wall and continue the plain wall"
+      ]
+     },
+     "layout": {
+      "matches": false,
+      "problems": [
+       "sofa (كنبة 3) on the east wall appears to be two sofas based on the layout description, but only one is clearly visible on the east wall in the image, the other is not visible, making it missing",
+       "sofa (كنبة 3) on the west wall appears to be two sofas based on the layout description, but only one is clearly visible on the west wall in the image, the other is not visible, making it missing",
+       "coffee (ركن قهوة) on the south wall should be a coffee station, but the visible furniture on the south wall is a cabinet with a mirror above it, suggesting it's not purely a coffee station and might be a different piece of furniture or an expanded version of what was intended.",
+       "table (طاولة وسط) in the center of the room should be two tables, but only one is clearly visible in the foreground, and a second one is partially visible behind it, however, it's not clear if these are two distinct tables or one large table. Assuming they are two, they seem to be placed in a line rather than side by side as 'center of the room' might imply for two tables. The phrasing 'centre of the room: table (طاولة وسط), table (طاولة وسط)' implies two separate items that should be clearly distinguishable and occupying the center. The second table is not fully visible and could be seen as part of the first. This is ambiguous. If only one is visible then the other is missing.",
+       "furniture NOT in the layout appears, there is a large painting on the west wall, which is not mentioned in the layout.",
+       "furniture NOT in the layout appears, there is a large floor lamp on the east wall, which is not mentioned in the layout.",
+       "furniture NOT in the layout appears, there is a large floor lamp on the west wall, which is not mentioned in the layout.",
+       "furniture NOT in the layout appears, there is a large vase with dried plants on the west wall, which is not mentioned in the layout."
+      ]
+     },
+     "errors": 9,
+     "photoreal": 8
+    },
+    "Seedream 5 Pro (ByteDance)": {
+     "endpoint": "fal-ai/bytedance/seedream/v4.5/text-to-image",
+     "seconds": 37,
+     "url": "https://v3b.fal.media/files/b/0ab357a9/A0crIinTjftJcTpenQj_j_e897c079f7144d868aeb02b5048daf0c.jpg",
+     "file": "1-women-majlis-5x7__seedream-5-pro-bytedance.jpg",
+     "qa": {
+      "photoreal": 8,
+      "artifacts": true,
+      "major_artifacts": false,
+      "issues": [
+       "straighten the ceiling light lines",
+       "remove the faint circular smudges on the ceiling",
+       "adjust the reflection in the mirror so it aligns with the door and room perspective",
+       "smooth the texture of the pampas grass in the vase to appear more natural",
+       "straighten the hanging wires for the ceiling lamps"
+      ],
+      "inappropriate": false,
+      "item_visible": true,
+      "point": [
+       0.5,
+       0.7
+      ],
+      "reason": "main sofa"
+     },
+     "openings": {
+      "ok": false,
+      "problems": [
+       "remove the door on the right wall and continue the plain wall."
+      ]
+     },
+     "layout": {
+      "matches": false,
+      "problems": [
+       "east wall: sofa (كنبة 3) is missing",
+       "west wall: sofa (كنبة 3) is missing",
+       "coffee (ركن قهوة) is missing",
+       "furniture NOT in the layout appears"
+      ]
+     },
+     "errors": 5,
+     "photoreal": 8
+    }
+   }
+  },
+  {
+   "id": "2-master-bedroom-5x6",
+   "name": "غرفة نوم رئيسية",
+   "size": "5×6",
+   "results": {
+    "Nano Banana Pro (Google)": {
+     "endpoint": "fal-ai/nano-banana-pro",
+     "seconds": 17,
+     "url": "https://v3b.fal.media/files/b/0ab357ab/wCOMbl087OUpXBpMkmbe7_ifJfNrNZ.jpg",
+     "file": "2-master-bedroom-5x6__nano-banana-pro-google.jpg",
+     "qa": {
+      "photoreal": 8,
+      "artifacts": true,
+      "major_artifacts": false,
+      "issues": [
+       "straighten the top edge of the bedside table on the right",
+       "adjust the reflection on the floor to match the light sources more accurately",
+       "smooth out the slight distortion in the top left corner of the ceiling cove"
+      ],
+      "inappropriate": false,
+      "item_visible": true,
+      "point": [
+       0.5,
+       0.5
+      ],
+      "reason": "main furniture piece"
+     },
+     "openings": {
+      "ok": false,
+      "problems": [
+       "remove the wall on the left side and replace it with a plain wall without any door, window, arch or opening.",
+       "remove the door on the right wall and continue the plain wall."
+      ]
+     },
+     "layout": {
+      "matches": true,
+      "problems": []
+     },
+     "errors": 2,
+     "photoreal": 8
+    },
+    "GPT Image (OpenAI)": {
+     "endpoint": "fal-ai/gpt-image-2",
+     "seconds": 67,
+     "url": "https://v3b.fal.media/files/b/0ab357b1/PpZx0qLtoYF7ciykMbPqa_ZojDHMMe.jpg",
+     "file": "2-master-bedroom-5x6__gpt-image-openai.jpg",
+     "qa": {
+      "photoreal": 8,
+      "artifacts": true,
+      "major_artifacts": false,
+      "issues": [
+       "straighten the top left ceiling trim line",
+       "adjust the top ceiling light to be perfectly even",
+       "correct the perspective of the mirror to be consistent with the room",
+       "smooth out the texture of the side table on the left, it looks a bit blurry",
+       "smooth out the texture of the side table on the right, it looks a bit blurry",
+       "ensure the wall panel seams are perfectly straight and consistent",
+       "correct the slight waviness in the curtain fabric at the bottom right"
+      ],
+      "inappropriate": false,
+      "item_visible": true,
+      "point": [
+       0.5,
+       0.6
+      ],
+      "reason": "main bed and bench are central"
+     },
+     "openings": {
+      "ok": true,
+      "problems": []
+     },
+     "layout": {
+      "matches": true,
+      "problems": []
+     },
+     "errors": 0,
+     "photoreal": 8
+    },
+    "Seedream 5 Pro (ByteDance)": {
+     "endpoint": "fal-ai/bytedance/seedream/v4.5/text-to-image",
+     "seconds": 21,
+     "url": "https://v3b.fal.media/files/b/0ab357c2/KmMDy0Nd3CmSNEX1etCQD_e402dfac014a41939cd9b6bddc1c1d3e.jpg",
+     "file": "2-master-bedroom-5x6__seedream-5-pro-bytedance.jpg",
+     "qa": {
+      "photoreal": 8,
+      "artifacts": true,
+      "major_artifacts": false,
+      "issues": [
+       "straighten the top left curtain rod track",
+       "remove the floating 1.0m text on the right wall",
+       "straighten the horizontal lines of the wood panel behind the headboard",
+       "align the texture of the floor tiles"
+      ],
+      "inappropriate": false,
+      "item_visible": true,
+      "point": [
+       0.5,
+       0.5
+      ],
+      "reason": "bedroom"
+     },
+     "openings": {
+      "ok": false,
+      "problems": [
+       "remove the door on the north wall and continue the plain wall",
+       "reduce the window on the west wall to 2.4 m wide"
+      ]
+     },
+     "layout": {
+      "matches": false,
+      "problems": [
+       "furniture NOT in the layout appears",
+       "a piece that is clearly in view is missing"
+      ]
+     },
+     "errors": 4,
+     "photoreal": 8
+    }
+   }
+  },
+  {
+   "id": "3-dressing-room-4.5x4",
+   "name": "غرفة زينة وملابس للسيدة",
+   "size": "4.5×4.0",
+   "results": {
+    "Nano Banana Pro (Google)": {
+     "endpoint": "fal-ai/nano-banana-pro",
+     "seconds": 16,
+     "url": "https://v3b.fal.media/files/b/0ab357c3/ZCYC8ORg9JnOar0D0UA8z_6X6moyj4.jpg",
+     "file": "3-dressing-room-4.5x4__nano-banana-pro-google.jpg",
+     "qa": {
+      "photoreal": 8,
+      "artifacts": true,
+      "major_artifacts": false,
+      "issues": [
+       "straighten the top edge of the window frame behind the curtains",
+       "adjust the shadow direction on the right wall decorative panel to match other lighting"
+      ],
+      "inappropriate": false,
+      "item_visible": true,
+      "point": [
+       0.49,
+       0.62
+      ],
+      "reason": "central island"
+     },
+     "openings": {
+      "ok": false,
+      "problems": [
+       "remove the door on the right wall and continue the plain wall",
+       "remove the window on the east wall and continue the plain wall",
+       "remove the door on the west wall and continue the plain wall"
+      ]
+     },
+     "layout": {
+      "matches": false,
+      "problems": [
+       "furniture NOT in the layout appears",
+       "a listed piece stands on a different wall",
+       "a piece that is clearly in view is missing"
+      ]
+     },
+     "errors": 6,
+     "photoreal": 8
+    },
+    "GPT Image (OpenAI)": {
+     "endpoint": "fal-ai/gpt-image-2",
+     "seconds": 68,
+     "url": "https://v3b.fal.media/files/b/0ab357c9/E3hcfGFhnw5CiMDUVK72N_pWGuJhzj.jpg",
+     "file": "3-dressing-room-4.5x4__gpt-image-openai.jpg",
+     "qa": {
+      "photoreal": 8,
+      "artifacts": true,
+      "major_artifacts": false,
+      "issues": [
+       "straighten the top left corner of the ceiling cove lighting",
+       "straighten the bottom right corner of the mirror frame",
+       "adjust the shadow consistency on the floor near the window, it seems to have multiple light sources",
+       "improve the texture of the white wall and the curtains for more realistic fabric detail",
+       "adjust the reflection in the mirror to match the room more accurately"
+      ],
+      "inappropriate": false,
+      "item_visible": true,
+      "point": [
+       0.33,
+       0.8
+      ],
+      "reason": "main furniture piece"
+     },
+     "openings": {
+      "ok": true,
+      "problems": []
+     },
+     "layout": {
+      "matches": true,
+      "problems": []
+     },
+     "errors": 0,
+     "photoreal": 8
+    },
+    "Seedream 5 Pro (ByteDance)": {
+     "endpoint": "fal-ai/bytedance/seedream/v4.5/text-to-image",
+     "seconds": 16,
+     "url": "https://v3b.fal.media/files/b/0ab357da/YyXePjc8JVDs1b9poTGEU_422b607726334d6da4aa7eedec8492d2.jpg",
+     "file": "3-dressing-room-4.5x4__seedream-5-pro-bytedance.jpg",
+     "qa": {
+      "photoreal": 8,
+      "artifacts": true,
+      "major_artifacts": false,
+      "issues": [
+       "straighten the top left corner of the ceiling",
+       "remove the slight HDR halo around the window",
+       "soften the glow on the ceiling from the cove lighting",
+       "adjust the reflection on the vase to match the room"
+      ],
+      "inappropriate": false,
+      "item_visible": true,
+      "point": [
+       0.49,
+       0.6
+      ],
+      "reason": "center island table"
+     },
+     "openings": {
+      "ok": false,
+      "problems": [
+       "remove the decorative niche on the right wall and continue the plain wall"
+      ]
+     },
+     "layout": {
+      "matches": true,
+      "problems": []
+     },
+     "errors": 1,
+     "photoreal": 8
+    }
+   }
+  }
+ ],
+ "blocked": false,
+ "log": [
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "TEST 1-women-majlis-5x7 GPT Image (OpenAI) {\"endpoint\": \"fal-ai/gpt-image-2\", \"errors\": 9, \"photoreal\": 8, \"seconds\": 69}",
+  "fal fal-ai/bytedance/seedream/v5/pro/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/pro/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/pro/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/pro/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/pro/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/pro/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/pro/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/pro/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/pro/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/pro/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/pro/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/pro/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/pro/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/pro/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/pro/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/pro/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "TEST 1-women-majlis-5x7 Seedream 5 Pro (ByteDance) {\"endpoint\": \"fal-ai/bytedance/seedream/v4.5/text-to-image\", \"errors\": 5, \"photoreal\": 8, \"seconds\": 37}",
+  "TEST 2-master-bedroom-5x6 Nano Banana Pro (Google) {\"endpoint\": \"fal-ai/nano-banana-pro\", \"errors\": 2, \"photoreal\": 8, \"seconds\": 17}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "TEST 2-master-bedroom-5x6 GPT Image (OpenAI) {\"endpoint\": \"fal-ai/gpt-image-2\", \"errors\": 0, \"photoreal\": 8, \"seconds\": 67}",
+  "fal fal-ai/bytedance/seedream/v5/pro/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/pro/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/pro/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/pro/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/pro/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/pro/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/pro/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/pro/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/pro/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/pro/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/pro/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/pro/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/pro/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/pro/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/pro/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/pro/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "TEST 2-master-bedroom-5x6 Seedream 5 Pro (ByteDance) {\"endpoint\": \"fal-ai/bytedance/seedream/v4.5/text-to-image\", \"errors\": 4, \"photoreal\": 8, \"seconds\": 21}",
+  "TEST 3-dressing-room-4.5x4 Nano Banana Pro (Google) {\"endpoint\": \"fal-ai/nano-banana-pro\", \"errors\": 6, \"photoreal\": 8, \"seconds\": 16}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "fal fal-ai/gpt-image-2.5 404 {\"detail\":\"Application \\\"gpt-image-2.5\\\" not found\"}",
+  "TEST 3-dressing-room-4.5x4 GPT Image (OpenAI) {\"endpoint\": \"fal-ai/gpt-image-2\", \"errors\": 0, \"photoreal\": 8, \"seconds\": 68}",
+  "fal fal-ai/bytedance/seedream/v5/pro/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/pro/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/pro/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/pro/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/pro/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/pro/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/pro/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/pro/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/pro/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/pro/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/pro/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/pro/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/pro/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/pro/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/pro/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/pro/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "fal fal-ai/bytedance/seedream/v5/text-to-image 403 {\"detail\":\"Endpoint fal-ai/bytedance/seedream/v5/text-to-image is not available: no billing definition.\",\"type\":\"endpoint_not_priced\"}",
+  "TEST 3-dressing-room-4.5x4 Seedream 5 Pro (ByteDance) {\"endpoint\": \"fal-ai/bytedance/seedream/v4.5/text-to-image\", \"errors\": 1, \"photoreal\": 8, \"seconds\": 16}"
+ ]
+}
