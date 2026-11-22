@@ -4349,7 +4349,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-16_1300_family-living-room-m_s2.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-16_1300_family-living-room-m_reel.mp4",
-  "created_riyadh": "2026-11-15 01:39"
+  "created_riyadh": "2026-11-15 01:39",
+  "pruned": true
  },
  {
   "id": "2026-11-16_2130_womens-walk-in-close",
@@ -6330,5 +6331,96 @@
   "reel_frame_sec": 2.4,
   "reel_order": "normal",
   "created_riyadh": "2026-11-21 15:55"
+ },
+ {
+  "id": "2026-11-23_1300_family-living-room-o",
+  "format": "single",
+  "category": "residential",
+  "slot": "2026-11-23 13:00",
+  "title_ar": "صالة عائلية دافئة 4×6",
+  "space_ar": "صالة معيشة عائلية 4×6 م",
+  "style_ar": "أورقانيك مودرن",
+  "palette_ar": "تراكوتا ناعم، كريمي، بلوط فاتح، بيج كتان",
+  "reel_hook_ar": "قبل لا تشتري كنب الجمعة.. قِس صالتك!",
+  "room": {
+   "w": 4.0,
+   "l": 6.0,
+   "h": 3.0
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Rustic Terracotta",
+    "code": "2771",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن المعتمدة",
+    "locate_en": "west feature wall behind the sofa",
+    "sample_color": true,
+    "hex": "#AF5844"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Line Wood Beige",
+    "code": "A99GZLNW#DBE.W2S5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "متجر راك سيراميكس",
+    "locate_en": "floor planks",
+    "sample_color": true,
+    "hex": "#C4B39B"
+   },
+   {
+    "type_ar": "قطعة مختارة",
+    "name": "EKHOLMA كنبة 3 مقاعد بيج",
+    "code": "795.355.94",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "three-seat sofa",
+    "sample_color": true,
+    "hex": "#C8B49D"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "NARRKOLV مصباح معلّق راتان",
+    "code": "005.943.41",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "rattan pendant lamp",
+    "sample_color": true,
+    "hex": "#B17749"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top edge of the baseboard on the right wall",
+     "adjust the reflection in the windowpane on the right side to better match the outdoors"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.26,
+     0.53
+    ],
+    "reason": "The west feature wall behind the sofa has a good texture and appears natural with appropriate lighting and shadow, contributing well to the overall aesthetic.",
+    "raw": "https://v3b.fal.media/files/b/0ab3723b/qMIDUe-tfOYbU58zYHeAk_M3deMHt7.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-23_1300_family-living-room-o_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-23_1300_family-living-room-o_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-23_1300_family-living-room-o_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-23_1300_family-living-room-o_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-23_1300_family-living-room-o_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-23_1300_family-living-room-o_reel.mp4",
+  "reel_frame_sec": 3.4,
+  "reel_order": "reveal",
+  "created_riyadh": "2026-11-22 07:59"
  }
 ]

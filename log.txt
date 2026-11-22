@@ -1,5 +1,7 @@
-2026-11-22T05:53:29.816174+03:00
-plan 200 43 rows 2026-11-22 21:30
-skip 2026-11-22 13:00 in 7:06:30.756090 done
-skip 2026-11-22 21:30 in 15:36:30.756090 done
-buffer full or no specs
+2026-11-22T07:59:44.400594+03:00
+plan 200 45 rows 2026-11-23 21:30
+skip 2026-11-22 13:00 in 5:02:10.969424 done
+skip 2026-11-22 21:30 in 13:32:10.969424 done
+skip 2026-11-23 21:30 in 1 day, 13:32:10.969424 
+QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the top edge of the baseboard on the right wall", "adjust the reflection in the windowpane on the right side to better match the outdoors"], "inappropriate": false, "item_visible": true, "point": [0.26, 0.53], "reason": "The west feature wall behind the sofa has a good texture and appears natural with appropriate lighting and shadow, contributing well to the overall aesthetic."}
+OK 2026-11-23_1300_family-living-room-o 3 images 
