@@ -1,7 +1,7 @@
-2026-11-22T10:08:46.555873+03:00
+2026-11-22T11:50:39.244582+03:00
 plan 200 45 rows 2026-11-23 21:30
-skip 2026-11-22 13:00 in 2:53:20.368857 done
-skip 2026-11-22 21:30 in 11:23:20.368857 done
-skip 2026-11-23 13:00 in 1 day, 2:53:20.368857 done
-QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": [{"issue": "straighten the top left corner of the ceiling molding", "item_visible": true, "point": [0.15, 0.05]}, {"issue": "smooth the texture of the plant on the left, it looks a bit blurry/plastic", "item_visible": true, "point": [0.08, 0.4]}, {"issue": "straighten the right edge of the white curtain", "item_visible": true, "point": [0.61, 0.6]}, {"issue": "slightly sharpen the texture of the vase on the desk, it's a bit smooth", "item_visible": true, "point": [0.66, 0.44]}, {"issue": "fix the reflection on the black door handle, it doesn't quite match the room", "item_visible": true, "point": [0.93, 0.45]}], "inappropriate": false}
-OK 2026-11-23_2130_home-office-nook-7sq 3 images 
+skip 2026-11-22 13:00 in 1:09:21.495895 done
+skip 2026-11-22 21:30 in 9:39:21.495895 done
+skip 2026-11-23 13:00 in 1 day, 1:09:21.495895 done
+skip 2026-11-23 21:30 in 1 day, 9:39:21.495895 done
+buffer full or no specs
