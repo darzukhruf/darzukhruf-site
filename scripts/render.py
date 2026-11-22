@@ -10,6 +10,10 @@ STAR = ("<svg viewBox='-100 -100 200 200' width='{s}' height='{s}'><g fill='none
         "<rect x='-58' y='-58' width='116' height='116'/><rect x='-58' y='-58' width='116' height='116' transform='rotate(45)'/></g></svg>")
 e = lambda t: html.escape(str(t or ""))
 
+def _pg(idx, total):
+    """Carousel counter; total=0 hides it (client PDFs, T-20261122-03)."""
+    return f"<div class='pg'>{idx}/{total}</div>" if total else ""
+
 def card_html(photo_bytes, item, point=None, idx=1, total=5):
     b64 = base64.b64encode(photo_bytes).decode()
     sw = item.get("hex") or ""
@@ -33,7 +37,7 @@ def card_html(photo_bytes, item, point=None, idx=1, total=5):
 .n{{color:{S};font-size:44px;font-weight:700;line-height:1.25;margin:4px 0}} .c{{color:{S};opacity:.9;font-size:30px;direction:ltr;text-align:right}}
 .w{{color:{G};font-size:26px;margin-top:8px}}
 </style></head><body><div class='ph'></div>{marker}
-<div class='top'>{STAR.format(s=40, c=G)}<span>دار زخرف</span></div><div class='pg'>{idx}/{total}</div>
+<div class='top'>{STAR.format(s=40, c=G)}<span>دار زخرف</span></div>{_pg(idx, total)}
 <div class='card'>{swatch}<div class='tx'><div class='k'>{e(item.get('type_ar'))}</div><div class='n'>{e(item.get('name'))}</div>
 <div class='c'>{e(code)}</div><div class='w'>{e(item.get('where_ar'))}</div></div></div></body></html>"""
 
@@ -129,7 +133,7 @@ def plan_html(spec, idx=5, total=5):
 .lg{{position:absolute;bottom:86px;right:70px;left:70px;height:76px;line-height:38px;text-align:center;color:{G};font-size:24px;opacity:.92;overflow:hidden}}
 .br{{position:absolute;bottom:34px;left:0;right:0;display:flex;justify-content:center;align-items:center;gap:12px;color:{G};font-size:26px}}
 .pg{{position:absolute;top:40px;left:40px;color:{G};font-size:26px;border:1.5px solid {G};border-radius:30px;padding:6px 18px}}
-</style></head><body>{svg}<div class='pg'>{idx}/{total}</div>
+</style></head><body>{svg}{_pg(idx, total)}
 <div class='hd'><div class='t'>{e(spec.get('title_ar'))}</div><div class='s'>مخطط توضيحي · الأبعاد بالمتر</div></div>
 <div class='ft'><span>المساحة {area:.1f} م²</span><span>الارتفاع {H:.2f} م</span></div>
 <div class='lg' data-fit='19'>{legend}</div><div class='br'>{STAR.format(s=30, c=G)}<span>دار زخرف · تصميم مقترح</span></div>{FIT_JS}</body></html>"""
@@ -169,7 +173,7 @@ def board_html(spec, hero_bytes, materials, idx=2, total=3):
 .ft{{position:absolute;bottom:40px;right:56px;left:56px;display:flex;justify-content:space-between;align-items:center;color:{G};font-size:24px}}
 .ft .b{{display:flex;align-items:center;gap:10px;font-size:28px;font-weight:700}}
 .pg{{position:absolute;top:14px;left:20px;color:{G};font-size:22px}}
-</style></head><body><div class='pg'>{idx}/{total}</div>
+</style></head><body>{_pg(idx, total)}
 <div class='hd'><div class='th'></div><div class='ti'><div class='a'>لوحة المواد</div><div class='t' data-fit='34'>{e(spec.get('title_ar'))}</div>
 <div class='s' data-fit='20'>{e(" · ".join(x for x in [spec.get('style_ar'), spec.get('palette_ar')] if x))}</div></div></div>
 <div class='list'>{''.join(rows)}</div>

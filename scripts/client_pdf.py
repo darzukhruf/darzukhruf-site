@@ -46,10 +46,13 @@ def build_pdf(page, spec, out_dir, files, views, mats, pdf_path):
     def add(body, cls=""):
         nonlocal n; n += 1; pages.append(f"<section class='pg {cls}'>{body}{_foot(t, n)}</section>")
     client = spec.get("client_name_ar", "")
-    add(f"<img class='ph' src='{_img(P(files[0]))}'><div class='tx'><div class='sub'>دار زخرف · ملف التصميم</div><h1>{e(t)}</h1>"
+    po = bool(spec.get("plan_only"))
+    cover_img = "" if po else f"<img class='ph' src='{_img(P(files[0]))}'>"
+    add(f"{cover_img}<div class='tx'><div class='sub'>دار زخرف · ملف التصميم</div><h1>{e(t)}</h1>"
         f"<div class='lb'>{('للعميل: ' + e(client) + '<br>') if client else ''}المساحة: {e(spec.get('space_ar'))} · "
         f"{e(spec['room']['w'])}×{e(spec['room']['l'])} م · ارتفاع {e(spec['room'].get('h', 3))} م<br>"
-        f"النمط: {e(spec.get('style_ar'))}<br>الألوان: {e(spec.get('palette_ar'))}<br>تاريخ الإصدار: {today:%Y-%m-%d}</div></div>", "cover")
+        f"النمط: {e(spec.get('style_ar'))}<br>الألوان: {e(spec.get('palette_ar'))}<br>تاريخ الإصدار: {today:%Y-%m-%d}"
+        f"{'<br>المحتوى: مخطط توزيع بالمقاسات · لوحة ألوان وخامات بأكوادها · قائمة مشتريات · ملاحظات المقاول' if po else ''}</div></div>", "cover")
     for i in range(0, len(views), 2):
         imgs = "".join(f"<img src='{_img(P(v))}'>" for v in views[i:i + 2])
         add(f"<h2>زوايا إضافية لنفس التصميم</h2><div class='two'>{imgs}</div>")
@@ -67,8 +70,9 @@ def build_pdf(page, spec, out_dir, files, views, mats, pdf_path):
         f"<div class='note'>الألوان تقريبية وتختلف حسب الإضاءة والشاشة — اطلب عينة من الوكيل قبل الدهان.</div></div></div>")
     shop = spec.get("shopping") or []
     if shop:
-        tot, body = 0.0, ""
-        for it in shop:
+        tot, body, chunks = 0.0, "", []
+        for k, it in enumerate(shop):
+            if k and k % 10 == 0: chunks.append(body); body = ""
             q = _num(it.get("qty")) or 1; p = _num(it.get("price"))
             line = (p * q) if p is not None else None
             if line: tot += line
@@ -76,7 +80,11 @@ def build_pdf(page, spec, out_dir, files, views, mats, pdf_path):
                      f"<td>{e(it.get('supplier_ar'))}</td><td>{('{:,.0f}'.format(line)) if line else 'عند المورد'}</td><td>{e(it.get('alt_ar', ''))}</td></tr>")
         budget = spec.get("budget_ar", "")
         body += f"<tr class='tot'><td colspan='4'>الإجمالي التقريبي للبنود المسعّرة</td><td>{tot:,.0f} ريال</td><td>{('ميزانيتك: ' + e(budget)) if budget else ''}</td></tr>"
-        add(f"<h2>قائمة المشتريات</h2><table><tr><th>القطعة</th><th>المقاس</th><th>الكمية</th><th>المورد المقترح</th><th>السعر التقريبي</th><th>بديل أوفر</th></tr>{body}</table>"
+        chunks.append(body); hdr = "<tr><th>القطعة</th><th>المقاس</th><th>الكمية</th><th>المورد المقترح</th><th>السعر التقريبي</th><th>بديل أوفر</th></tr>"
+        for k, ch in enumerate(chunks[:-1]):
+            add(f"<h2>قائمة المشتريات ({k + 1}/{len(chunks)})</h2><table>{hdr}{ch}</table><div class='note'>يتبع في الصفحة التالية.</div>")
+        ttl = "قائمة المشتريات" + (f" ({len(chunks)}/{len(chunks)})" if len(chunks) > 1 else "")
+        add(f"<h2>{ttl}</h2><table>{hdr}{chunks[-1]}</table>"
             f"<div class='note'>الأسعار تقريبية بتاريخ {today:%Y-%m-%d} وصالحة كمرجع 30 يوماً (حتى {today + dt.timedelta(days=30):%Y-%m-%d})؛ "
             f"تأكد من السعر والتوفر عند المورد. لا نبيع ولا نستلم أي مبلغ عن المشتريات — الاختيار لك.</div>")
     walls, light, elec, cn = spec.get("walls_ar") or {}, spec.get("lighting_ar") or [], spec.get("electrical_ar") or [], spec.get("contractor_notes_ar") or []
@@ -90,7 +98,9 @@ def build_pdf(page, spec, out_dir, files, views, mats, pdf_path):
             + ("<b>نقاط الكهرباء</b><ul>" + "".join(f"<li>{e(x)}</li>" for x in elec) + "</ul>" if elec else "")
             + "</div></div><div class='note'>تصميم فقط: التنفيذ والقياس النهائي والتمديدات مسؤولية المقاول المرخّص.</div>")
     rev = spec.get("revisions_left", 2)
-    add(f"<h2>قبل لا تبدأ</h2><div class='box'>• هذا <b>تصميم مقترح</b>، والصور توضيحية للفكرة وليست صور مشروع منفّذ.<br>"
+    add(f"<h2>قبل لا تبدأ</h2><div class='box'>• هذا <b>تصميم مقترح</b>، "
+        + ("والمخطط ولوحة الألوان توضيحية للفكرة، وكل المقاسات تُراجع في الموقع قبل التنفيذ." if po else "والصور توضيحية للفكرة وليست صور مشروع منفّذ.")
+        + "<br>"
         f"• الألوان تقريبية وتختلف حسب الإضاءة والشاشة.<br>• التعديلات المتبقية لك: <b>{e(rev)}</b>.<br>"
         f"• لطلب تعديل: أرسل لنا واتساب ملاحظاتك في رسالة وحدة (وش تغيّر ووين)، ويوصلك التعديل خلال يومي عمل تقريباً.<br>"
         f"• واتساب: <span class='c'>0578771717</span></div>")

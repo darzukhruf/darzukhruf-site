@@ -471,7 +471,30 @@ def build_plan_only(spec, browser, ident, slot=None):
             "notes": "مخطط ولوحة مواد فقط (fal مقفول) — بلا صورة واقعية", "images": [raw + f1, raw + f2], "stories": [], "reel": None,
             "created_riyadh": dt.datetime.now(RIY).strftime("%Y-%m-%d %H:%M")}
 
+def build_client_plan_only(spec, browser, ident):
+    """T-20261122-03 (E-49 «البداية السريعة 149»): paid client, plan_only spec -> 2D plan + material board (no fal,
+    no carousel counter) + delivery PDF. Client branch only; the posts path is untouched."""
+    if not spec.get("room"): log("client plan_only without room", ident); return None
+    mats = [dict(m) for m in spec.get("materials", [])][:4]
+    os.makedirs(os.path.join(OUT, "gen"), exist_ok=True); page = browser.new_page()
+    f1 = f"gen/{ident}_3_plan.jpg"; shoot(page, plan_html(spec, 0, 0), os.path.join(OUT, f1))
+    f2 = f"gen/{ident}_2_board.jpg"; shoot(page, board_html(spec, open(os.path.join(OUT, f1), "rb").read(), mats, 0, 0), os.path.join(OUT, f2))
+    files, pdf = [f2, f1], None
+    try:
+        from client_pdf import build_pdf
+        pdf = f"gen/{ident}.pdf"; build_pdf(page, spec, OUT, files, [], mats, os.path.join(OUT, pdf))
+    except Exception as ex: log("client pdf failed", repr(ex)); pdf = None
+    page.close(); raw = f"https://raw.githubusercontent.com/{REPO}/media/"
+    return {"id": ident, "format": "single", "plan_only": True, "client": True, "do_not_publish": True,
+            "category": spec.get("category", "residential"), "slot": "client (لا يُنشر)", "title_ar": spec.get("title_ar"),
+            "space_ar": spec.get("space_ar"), "style_ar": spec.get("style_ar"), "palette_ar": spec.get("palette_ar"),
+            "room": spec.get("room"), "materials": mats, "qa": [], "accuracy_ok": None,
+            "notes": "البداية السريعة: مخطط + لوحة مواد + PDF بلا صورة واقعية", "images": [raw + f for f in files], "views": [],
+            "pdf": (raw + pdf) if pdf else None, "created_riyadh": dt.datetime.now(RIY).strftime("%Y-%m-%d %H:%M")}
+
 def build(spec, browser, ident, slot=None):
+    if spec.get("plan_only") and is_client(spec, ident):
+        return build_client_plan_only(spec, browser, ident)
     if spec.get("format") == "single" or ("materials" in spec and "slides" not in spec):
         return build_single(spec, browser, ident, slot)
     return build_multi(spec, browser, ident, slot)
