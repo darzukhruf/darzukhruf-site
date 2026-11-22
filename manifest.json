@@ -4441,7 +4441,8 @@
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-16_2130_womens-walk-in-close_reel.mp4",
   "reel_frame_sec": 2.4,
-  "created_riyadh": "2026-11-15 10:00"
+  "created_riyadh": "2026-11-15 10:00",
+  "pruned": true
  },
  {
   "id": "2026-11-17_1300_teen-boy-room-soft-i",
@@ -6422,5 +6423,128 @@
   "reel_frame_sec": 3.4,
   "reel_order": "reveal",
   "created_riyadh": "2026-11-22 07:59"
+ },
+ {
+  "id": "2026-11-23_2130_home-office-nook-7sq",
+  "format": "single",
+  "category": "residential",
+  "slot": "2026-11-23 21:30",
+  "title_ar": "ركن مكتب منزلي 7 أمتار",
+  "space_ar": "ركن مكتب منزلي 7 م²",
+  "style_ar": "مينيمال دافئ",
+  "palette_ar": "كابتشينو فاتح، عاجي، أسود مطفي، بيج كتان",
+  "reel_hook_ar": "مكتب كامل في 7 أمتار؟ ممكن!",
+  "room": {
+   "w": 2.5,
+   "l": 2.8,
+   "h": 2.8
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "White Mocha",
+    "code": "WH-2108",
+    "brand": "Jazeera Paints",
+    "where_ar": "معارض ووكلاء الجزيرة",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#C2C4A4"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Rhode Island Beige",
+    "code": "A12GRDIL-BEE.M0X5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "متجر راك سيراميكس",
+    "locate_en": "floor",
+    "sample_color": true,
+    "hex": "#C4B9AA"
+   },
+   {
+    "type_ar": "القماش",
+    "name": "STOCKHOLM 2025 ستائر أبيض/أسود",
+    "code": "106.010.96",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "window curtains",
+    "sample_color": true,
+    "hex": "#383334"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "STRANDAD أباجورة أرضية",
+    "code": "705.948.37",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "floor lamp in the corner",
+    "sample_color": true,
+    "hex": "#BCAFA1"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     {
+      "issue": "straighten the top left corner of the ceiling molding",
+      "item_visible": true,
+      "point": [
+       0.15,
+       0.05
+      ]
+     },
+     {
+      "issue": "smooth the texture of the plant on the left, it looks a bit blurry/plastic",
+      "item_visible": true,
+      "point": [
+       0.08,
+       0.4
+      ]
+     },
+     {
+      "issue": "straighten the right edge of the white curtain",
+      "item_visible": true,
+      "point": [
+       0.61,
+       0.6
+      ]
+     },
+     {
+      "issue": "slightly sharpen the texture of the vase on the desk, it's a bit smooth",
+      "item_visible": true,
+      "point": [
+       0.66,
+       0.44
+      ]
+     },
+     {
+      "issue": "fix the reflection on the black door handle, it doesn't quite match the room",
+      "item_visible": true,
+      "point": [
+       0.93,
+       0.45
+      ]
+     }
+    ],
+    "inappropriate": false,
+    "raw": "https://v3b.fal.media/files/b/0ab37540/5WuLXIHTOwpQc77-CTxYV_h8mTFI0r.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-23_2130_home-office-nook-7sq_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-23_2130_home-office-nook-7sq_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-23_2130_home-office-nook-7sq_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-23_2130_home-office-nook-7sq_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-23_2130_home-office-nook-7sq_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-23_2130_home-office-nook-7sq_reel.mp4",
+  "reel_frame_sec": 3.4,
+  "reel_order": "reveal",
+  "created_riyadh": "2026-11-22 10:08"
  }
 ]
