@@ -1,8 +1,8 @@
-2026-11-23T10:34:27.490863+03:00
+2026-11-23T12:29:34.042876+03:00
 plan 200 48 rows 2026-11-24 21:30
-skip 2026-11-23 13:00 in 2:27:24.736935 done
-skip 2026-11-23 21:30 in 10:57:24.736935 done
-skip 2026-11-24 13:00 in 1 day, 2:27:24.736935 done
-skip 2026-11-24 18:00 in 1 day, 7:27:24.736935 done
-QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the top left shelf frame", "correct the perspective of the left display shelves", "straighten the top right shelf frame", "straighten the horizontal lines of the left wall's baseboard", "adjust the light reflection on the left chair to be more consistent with the surrounding light", "straighten the vertical lines of the window frame on the left", "adjust the top frame of the window on the left to be more parallel to the ceiling", "remove the slight HDR halo around the chandelier light source", "correct the warped perspective of the glass shelves on the right display unit"], "inappropriate": false, "item_visible": true, "point": [0.35, 0.44], "reason": "left display shelves"}
-OK 2026-11-24_2130_perfume-showroom-qui 3 images 
+skip 2026-11-23 13:00 in 0:30:26.497260 done
+skip 2026-11-23 21:30 in 9:00:26.497260 done
+skip 2026-11-24 13:00 in 1 day, 0:30:26.497260 done
+skip 2026-11-24 18:00 in 1 day, 5:30:26.497260 done
+skip 2026-11-24 21:30 in 1 day, 9:00:26.497260 done
+buffer full or no specs
