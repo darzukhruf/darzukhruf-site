@@ -6733,5 +6733,103 @@
   "reel_frame_sec": 2.4,
   "reel_order": "reveal",
   "created_riyadh": "2026-11-23 08:20"
+ },
+ {
+  "id": "2026-11-24_2130_perfume-showroom-qui",
+  "format": "single",
+  "category": "commercial",
+  "slot": "2026-11-24 21:30",
+  "title_ar": "معرض عطور بفخامة هادئة",
+  "space_ar": "معرض عطور 5×7",
+  "style_ar": "فخامة هادئة",
+  "palette_ar": "غريج دافئ، رخام أبيض، شمبانيا مطفي، فحمي",
+  "reel_hook_ar": "كيف تخلي معرض عطرك يبيع؟",
+  "room": {
+   "w": 5.0,
+   "l": 7.0,
+   "h": 3.2
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Tender Greige",
+    "code": "12306",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن وموزعوها",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#E4E0D7"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Soft Lux White",
+    "code": "A22GSFLX-CCB.O0X5P",
+    "brand": "RAK Ceramics",
+    "where_ar": "راك سيراميكس السعودية",
+    "locate_en": "floor",
+    "sample_color": true,
+    "hex": "#E9E7E2"
+   },
+   {
+    "type_ar": "سطح العمل",
+    "name": "Calacatta Imperiale",
+    "code": "",
+    "brand": "RAK Ceramics",
+    "where_ar": "راك سيراميكس السعودية",
+    "locate_en": "sales counter top",
+    "sample_color": true,
+    "hex": "#C8C3B7"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "Multi-Lite Floor Lamp brass",
+    "code": "10014434",
+    "brand": "Gubi",
+    "where_ar": "ذا بويري كومباني الرياض",
+    "locate_en": "brass floor lamp by the lounge",
+    "sample_color": false,
+    "hex": "#AE8B53"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top left shelf frame",
+     "correct the perspective of the left display shelves",
+     "straighten the top right shelf frame",
+     "straighten the horizontal lines of the left wall's baseboard",
+     "adjust the light reflection on the left chair to be more consistent with the surrounding light",
+     "straighten the vertical lines of the window frame on the left",
+     "adjust the top frame of the window on the left to be more parallel to the ceiling",
+     "remove the slight HDR halo around the chandelier light source",
+     "correct the warped perspective of the glass shelves on the right display unit"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.35,
+     0.44
+    ],
+    "reason": "left display shelves",
+    "raw": "https://v3b.fal.media/files/b/0ab3979b/Jk24G2sCs2i0xGVYFCkOt_3F0zavTt.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-24_2130_perfume-showroom-qui_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-24_2130_perfume-showroom-qui_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-24_2130_perfume-showroom-qui_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-24_2130_perfume-showroom-qui_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-24_2130_perfume-showroom-qui_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-24_2130_perfume-showroom-qui_reel.mp4",
+  "reel_frame_sec": 2.4,
+  "reel_order": "reveal",
+  "created_riyadh": "2026-11-23 10:34"
  }
 ]
