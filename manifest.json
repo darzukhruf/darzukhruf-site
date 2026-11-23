@@ -4534,7 +4534,8 @@
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-17_1300_teen-boy-room-soft-i_reel.mp4",
   "reel_frame_sec": 3.4,
-  "created_riyadh": "2026-11-16 01:40"
+  "created_riyadh": "2026-11-16 01:40",
+  "pruned": true
  },
  {
   "id": "2026-11-17_2130_womens-salon-parisia",
@@ -6546,5 +6547,191 @@
   "reel_frame_sec": 3.4,
   "reel_order": "reveal",
   "created_riyadh": "2026-11-22 10:08"
+ },
+ {
+  "id": "2026-11-24_1300_apartment-entrance-s",
+  "format": "single",
+  "category": "residential",
+  "slot": "2026-11-24 13:00",
+  "title_ar": "مدخل شقة أرت ديكو ناعم",
+  "space_ar": "مدخل شقة 5 م²",
+  "style_ar": "أرت ديكو ناعم",
+  "palette_ar": "زنجبيلي مطفي، عاجي، جوز، أسود مطفي",
+  "reel_hook_ar": "مدخلك الصغير يستاهل أكثر؟",
+  "room": {
+   "w": 2.0,
+   "l": 2.6,
+   "h": 2.8
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Ginger Brown",
+    "code": "1445",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن وموزعوها",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#C4835A"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Calacatta Gold White",
+    "code": "A05GCTAG-WHE.M0X0R",
+    "brand": "RAK Ceramics",
+    "where_ar": "راك سيراميكس السعودية",
+    "locate_en": "floor tiles",
+    "sample_color": true,
+    "hex": "#F2EFE8"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "ARSTID wall lamp brass/white",
+    "code": "203.303.25",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة",
+    "locate_en": "wall lamp beside the mirror",
+    "sample_color": false,
+    "hex": "#F0D9BC"
+   },
+   {
+    "type_ar": "قطعة مختارة",
+    "name": "DVARGSYREN mirror oak",
+    "code": "305.915.91",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة",
+    "locate_en": "oak framed mirror on the west wall",
+    "sample_color": false,
+    "hex": "#683D14"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top edge of the mirror frame",
+     "adjust the shadow direction of the sconce to match the window light",
+     "correct the warped perspective of the right door frame",
+     "remove the slight HDR halo around the window frame",
+     "remove the faint glowing edges around some objects like the bench and console"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.2,
+     0.37
+    ],
+    "reason": "mirror frame",
+    "raw": "https://v3b.fal.media/files/b/0ab3946f/piRHZQdd-8v_D97qJCes6_WunKs0Ih.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-24_1300_apartment-entrance-s_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-24_1300_apartment-entrance-s_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-24_1300_apartment-entrance-s_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-24_1300_apartment-entrance-s_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-24_1300_apartment-entrance-s_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-24_1300_apartment-entrance-s_reel.mp4",
+  "reel_frame_sec": 2.4,
+  "reel_order": "reveal",
+  "created_riyadh": "2026-11-23 08:19"
+ },
+ {
+  "id": "2026-11-24_1800_shared-kids-room-jap",
+  "format": "single",
+  "category": "residential",
+  "slot": "2026-11-24 18:00",
+  "title_ar": "غرفة أطفال مشتركة بتخزين ذكي",
+  "space_ar": "غرفة أطفال مشتركة 3.4×4",
+  "style_ar": "ياباندي ناعم",
+  "palette_ar": "عاجي، بتولا فاتح، رمادي فاتح، ليموني باهت",
+  "reel_hook_ar": "غرفة لولدين بدون زحمة؟",
+  "room": {
+   "w": 3.4,
+   "l": 4.0,
+   "h": 2.8
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Natural White",
+    "code": "12303",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن وموزعوها",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#F0EDE5"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Hard Wood Ivory",
+    "code": "A99GZHRD#IV0.W2S5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "راك سيراميكس السعودية",
+    "locate_en": "floor planks",
+    "sample_color": true,
+    "hex": "#DCCDC8"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "Dexter Linen Pendant Lamp",
+    "code": "",
+    "brand": "Home Centre",
+    "where_ar": "هوم سنتر فروع المملكة",
+    "locate_en": "pendant lamp in the centre",
+    "sample_color": false,
+    "hex": "#D1C6BB"
+   },
+   {
+    "type_ar": "القماش",
+    "name": "VALLKRASSING cushion cover",
+    "code": "705.709.59",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة",
+    "locate_en": "cushions on the beds",
+    "sample_color": false,
+    "hex": "#EDDF82"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the lower part of the right window frame",
+     "align the left baseboard with the floor",
+     "fix the blurred floor texture near the basket"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.7,
+     0.48
+    ],
+    "reason": "right window frame",
+    "raw": "https://v3b.fal.media/files/b/0ab39482/jVl5RtQ871lNci2X8jDZq_12qYeddp.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-24_1800_shared-kids-room-jap_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-24_1800_shared-kids-room-jap_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-24_1800_shared-kids-room-jap_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-24_1800_shared-kids-room-jap_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-24_1800_shared-kids-room-jap_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-24_1800_shared-kids-room-jap_reel.mp4",
+  "reel_frame_sec": 2.4,
+  "reel_order": "reveal",
+  "created_riyadh": "2026-11-23 08:20"
  }
 ]

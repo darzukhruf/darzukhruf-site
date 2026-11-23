@@ -1,5 +1,10 @@
-2026-11-23T05:56:53.898881+03:00
-plan 200 45 rows 2026-11-23 21:30
-skip 2026-11-23 13:00 in 7:03:06.851908 done
-skip 2026-11-23 21:30 in 15:33:06.851908 done
-buffer full or no specs
+2026-11-23T08:20:50.607457+03:00
+plan 200 48 rows 2026-11-24 21:30
+skip 2026-11-23 13:00 in 4:42:47.393979 done
+skip 2026-11-23 21:30 in 13:12:47.393979 done
+skip 2026-11-24 21:30 in 1 day, 13:12:47.393979 
+QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the top edge of the mirror frame", "adjust the shadow direction of the sconce to match the window light", "correct the warped perspective of the right door frame", "remove the slight HDR halo around the window frame", "remove the faint glowing edges around some objects like the bench and console"], "inappropriate": false, "item_visible": true, "point": [0.2, 0.37], "reason": "mirror frame"}
+OK 2026-11-24_1300_apartment-entrance-s 3 images 
+QA {"photoreal": 7, "artifacts": true, "major_artifacts": false, "issues": ["straighten the left edge of the window frame", "fix the texture repetition on the floorboards", "ensure consistent lighting/shadows around the left wall sconce"], "inappropriate": false, "item_visible": true, "point": [0.5, 0.5], "reason": "main room"}
+REPAIR 1 straighten the left edge of the window frame; fix the texture repetition on the floorboards; ensure consistent lighting/shadows around the left wall sconce -> {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the lower part of the right window frame", "align the left baseboard with the floor", "fix the blurred floor texture near the basket"], "inappropriate": false, "item_visible": true, "point": [0.7, 0.48], "reason": "right window frame"}
+OK 2026-11-24_1800_shared-kids-room-jap 3 images 
