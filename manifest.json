@@ -4628,7 +4628,8 @@
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-17_2130_womens-salon-parisia_reel.mp4",
   "reel_frame_sec": 3.4,
   "reel_order": "normal",
-  "created_riyadh": "2026-11-16 11:43"
+  "created_riyadh": "2026-11-16 11:43",
+  "pruned": true
  },
  {
   "id": "sample-client-women-majlis-5x7",
@@ -4723,7 +4724,8 @@
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/sample-client-women-majlis-5x7_reel.mp4",
   "reel_frame_sec": 3.4,
   "reel_order": "reveal",
-  "created_riyadh": "2026-11-16 12:58"
+  "created_riyadh": "2026-11-16 12:58",
+  "pruned": true
  },
  {
   "id": "client-sample-20261116",
@@ -4985,7 +4987,8 @@
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-18_1300_master-bedroom-wabi-_reel.mp4",
   "reel_frame_sec": 2.4,
   "reel_order": "normal",
-  "created_riyadh": "2026-11-17 01:48"
+  "created_riyadh": "2026-11-17 01:48",
+  "pruned": true
  },
  {
   "id": "client-sample-20261117",
@@ -5253,7 +5256,8 @@
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-18_2130_womens-majlis-modern_reel.mp4",
   "reel_frame_sec": 2.4,
   "reel_order": "normal",
-  "created_riyadh": "2026-11-17 10:16"
+  "created_riyadh": "2026-11-17 10:16",
+  "pruned": true
  },
  {
   "id": "client-sample-20261117b",
@@ -6831,5 +6835,190 @@
   "reel_frame_sec": 2.4,
   "reel_order": "reveal",
   "created_riyadh": "2026-11-23 10:34"
+ },
+ {
+  "id": "2026-11-25_1300_master-bedroom-soft-",
+  "format": "single",
+  "category": "residential",
+  "slot": "2026-11-25 13:00",
+  "title_ar": "غرفة نوم رئيسية 4×5 بلمسة كلاسيك",
+  "space_ar": "غرفة نوم رئيسية 4×5",
+  "style_ar": "كلاسيك معاصر ناعم",
+  "palette_ar": "لاتيه موفي مغبر، كريمي، بلوط رمادي، بيج كتان",
+  "reel_hook_ar": "وين تحط السرير في غرفة 4×5؟",
+  "room": {
+   "w": 4.0,
+   "l": 5.0,
+   "h": 2.9
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Latte",
+    "code": "1393",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن وموزعوها",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#C2B4A5"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Line Wood Beige",
+    "code": "A99GZLNW#DBE.W2S5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "متجر راك سيراميكس",
+    "locate_en": "floor",
+    "sample_color": true,
+    "hex": "#D4CAC0"
+   },
+   {
+    "type_ar": "القماش",
+    "name": "SILVERLONN sheer curtains beige",
+    "code": "104.939.78",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "sheer curtains",
+    "sample_color": true,
+    "hex": "#F5F1ED"
+   },
+   {
+    "type_ar": "قطعة مختارة",
+    "name": "TVERSTED rug low pile beige",
+    "code": "405.608.05",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "rug under the bed",
+    "sample_color": true,
+    "hex": "#BEAF9E"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top left edge of the wall paneling",
+     "adjust the reflection in the mirror/glass on the left side table lamp to match the room lighting",
+     "fix the minor warping/bending in the bottom left edge of the wall paneling near the wardrobe"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.34,
+     0.05
+    ],
+    "reason": "slight line deviation",
+    "raw": "https://v3b.fal.media/files/b/0ab3b8f0/LdWwWSETQewNtfvdcQbvc_fYDAi9Kv.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-25_1300_master-bedroom-soft-_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-25_1300_master-bedroom-soft-_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-25_1300_master-bedroom-soft-_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-25_1300_master-bedroom-soft-_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-25_1300_master-bedroom-soft-_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-25_1300_master-bedroom-soft-_reel.mp4",
+  "reel_frame_sec": 3.4,
+  "reel_order": "reveal",
+  "created_riyadh": "2026-11-24 10:16"
+ },
+ {
+  "id": "2026-11-25_2130_small-office-recepti",
+  "format": "single",
+  "category": "commercial",
+  "slot": "2026-11-25 21:30",
+  "title_ar": "استقبال مكتب صغير بدفء ميد سنشري",
+  "space_ar": "استقبال شركة صغيرة 5×5",
+  "style_ar": "ميد سنشري معاصر",
+  "palette_ar": "بيج حجري، بلوط، أسود مطفي",
+  "reel_hook_ar": "وش أول شي يشوفه عميلك عند الباب؟",
+  "room": {
+   "w": 5.0,
+   "l": 5.0,
+   "h": 3.0
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Loving Beige",
+    "code": "12293",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن وموزعوها",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#C7C2B7"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Rhode Island Beige",
+    "code": "A12GRDIL-BEE.M0X5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "متجر راك سيراميكس",
+    "locate_en": "floor",
+    "sample_color": true,
+    "hex": "#DCD8D0"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "Collect Socket Pendant Cashmere",
+    "code": "100297693",
+    "brand": "Ferm Living",
+    "where_ar": "ذا بوتري كومباني",
+    "locate_en": "pendant lamp over the desk",
+    "sample_color": true,
+    "hex": "#D3C9BE"
+   },
+   {
+    "type_ar": "قطعة مختارة",
+    "name": "UGGLERUM coffee table walnut",
+    "code": "",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "coffee table",
+    "sample_color": true,
+    "hex": "#7A4420"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top edge of the window frame",
+     "straighten the back wall's top corner",
+     "adjust the shadow direction of the pendant lamp to match the other lighting",
+     "ensure all floor tiles are perfectly aligned and consistent in texture"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.28,
+     0.09
+    ],
+    "reason": "window frame",
+    "raw": "https://v3b.fal.media/files/b/0ab3b8f9/x9H0QfGQ0xbDW8uFs-DV__royPyWXd.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-25_2130_small-office-recepti_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-25_2130_small-office-recepti_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-25_2130_small-office-recepti_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-25_2130_small-office-recepti_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-25_2130_small-office-recepti_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-25_2130_small-office-recepti_reel.mp4",
+  "reel_frame_sec": 3.4,
+  "reel_order": "reveal",
+  "created_riyadh": "2026-11-24 10:17"
  }
 ]

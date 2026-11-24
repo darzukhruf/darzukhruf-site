@@ -1,6 +1,9 @@
-2026-11-24T05:54:52.824427+03:00
-plan 200 48 rows 2026-11-24 21:30
-skip 2026-11-24 13:00 in 7:05:07.890231 done
-skip 2026-11-24 18:00 in 12:05:07.890231 done
-skip 2026-11-24 21:30 in 15:35:07.890231 done
-buffer full or no specs
+2026-11-24T10:17:55.768818+03:00
+plan 200 50 rows 2026-11-25 21:30
+skip 2026-11-24 13:00 in 2:45:20.182332 done
+skip 2026-11-24 18:00 in 7:45:20.182332 done
+skip 2026-11-24 21:30 in 11:15:20.182332 done
+QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the top left edge of the wall paneling", "adjust the reflection in the mirror/glass on the left side table lamp to match the room lighting", "fix the minor warping/bending in the bottom left edge of the wall paneling near the wardrobe"], "inappropriate": false, "item_visible": true, "point": [0.34, 0.05], "reason": "slight line deviation"}
+OK 2026-11-25_1300_master-bedroom-soft- 3 images 
+QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the top edge of the window frame", "straighten the back wall's top corner", "adjust the shadow direction of the pendant lamp to match the other lighting", "ensure all floor tiles are perfectly aligned and consistent in texture"], "inappropriate": false, "item_visible": true, "point": [0.28, 0.09], "reason": "window frame"}
+OK 2026-11-25_2130_small-office-recepti 3 images 
