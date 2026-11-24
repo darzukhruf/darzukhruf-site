@@ -12,6 +12,7 @@
 - [تصميم غرفة نوم 4×4](https://darzukhruf.github.io/darzukhruf-site/bedroom-4x4.html)
 - [تصميم داخلي أونلاين](https://darzukhruf.github.io/darzukhruf-site/online-interior-design.html)
 - [تصميم كافيه وصالون](https://darzukhruf.github.io/darzukhruf-site/cafe-salon.html)
+- [ألوان جوتن 2027 (رحلات) وكيف تستخدمها](https://darzukhruf.github.io/darzukhruf-site/jotun-2027.html)
 - [الدليل](https://darzukhruf.github.io/darzukhruf-site/guide.html)
 - [كيف نشتغل](https://darzukhruf.github.io/darzukhruf-site/how.html)
 - [مثال كامل لملف العميل (توضيحي)](https://darzukhruf.github.io/darzukhruf-site/sample.html)
