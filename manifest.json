@@ -7205,5 +7205,96 @@
   "reel_frame_sec": 2.4,
   "reel_order": "reveal",
   "created_riyadh": "2026-11-25 10:21"
+ },
+ {
+  "id": "2026-11-26_2300_small-guest-bedroom-",
+  "format": "single",
+  "category": "residential",
+  "slot": "2026-11-26 23:00",
+  "title_ar": "غرفة ضيوف صغيرة بأبيض وأسود",
+  "space_ar": "غرفة ضيوف 3.2×3.8",
+  "style_ar": "مودرن أحادي دافئ",
+  "palette_ar": "أبيض ناصع، أسود، خشب بني، برتقالي محروق",
+  "reel_hook_ar": "غرفة ضيوف 3.2×3.8 تكفي لشخصين؟",
+  "room": {
+   "w": 3.2,
+   "l": 3.8,
+   "h": 3.0
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Classic White",
+    "code": "9918",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن وموزعوها",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#E7E0D8"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Kyoto Brown",
+    "code": "A45RKYOT-BRN.M0X0R",
+    "brand": "RAK Ceramics",
+    "where_ar": "متجر راك سيراميكس",
+    "locate_en": "floor",
+    "sample_color": true,
+    "hex": "#6A5237"
+   },
+   {
+    "type_ar": "القماش",
+    "name": "STOCKHOLM 2025 curtains",
+    "code": "106.010.96",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "curtains",
+    "sample_color": true,
+    "hex": "#F8F4EE"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "STRANDAD floor lamp",
+    "code": "705.948.37",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "floor lamp",
+    "sample_color": true,
+    "hex": "#EDE0CA"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top left curtain rod",
+     "adjust the reflection in the right wardrobe door to match the room"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.28,
+     0.16
+    ],
+    "reason": "Top left curtain rod is slightly bent.",
+    "raw": "https://v3b.fal.media/files/b/0ab3dd50/GGxSl0usks4ow3ZKse_4f_VtzG0S69.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-26_2300_small-guest-bedroom-_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-26_2300_small-guest-bedroom-_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-26_2300_small-guest-bedroom-_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-26_2300_small-guest-bedroom-_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-26_2300_small-guest-bedroom-_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-26_2300_small-guest-bedroom-_reel.mp4",
+  "reel_frame_sec": 2.4,
+  "reel_order": "reveal",
+  "created_riyadh": "2026-11-25 12:09"
  }
 ]
