@@ -13,6 +13,7 @@
 - [تصميم داخلي أونلاين](https://darzukhruf.github.io/darzukhruf-site/online-interior-design.html)
 - [تصميم كافيه وصالون](https://darzukhruf.github.io/darzukhruf-site/cafe-salon.html)
 - [ألوان جوتن 2027 (رحلات) وكيف تستخدمها](https://darzukhruf.github.io/darzukhruf-site/jotun-2027.html)
+- [تجهيز المجلس لرمضان 2027: توزيع الجلسات والإضاءة بالمقاسات](https://darzukhruf.github.io/darzukhruf-site/ramadan-majlis.html)
 - [الدليل](https://darzukhruf.github.io/darzukhruf-site/guide.html)
 - [كيف نشتغل](https://darzukhruf.github.io/darzukhruf-site/how.html)
 - [مثال كامل لملف العميل (توضيحي)](https://darzukhruf.github.io/darzukhruf-site/sample.html)
