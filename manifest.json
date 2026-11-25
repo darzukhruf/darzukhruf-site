@@ -7020,5 +7020,97 @@
   "reel_frame_sec": 3.4,
   "reel_order": "reveal",
   "created_riyadh": "2026-11-24 10:17"
+ },
+ {
+  "id": "2026-11-26_1300_womens-majlis-modern",
+  "format": "single",
+  "category": "residential",
+  "slot": "2026-11-26 13:00",
+  "title_ar": "مجلس نساء حجازي يتسع للجمعة",
+  "space_ar": "مجلس نساء 5×7 لـ 14 ضيفة",
+  "style_ar": "حجازي عصري",
+  "palette_ar": "لؤلؤي، عاجي، جوز فاتح، مريمي باهت",
+  "reel_hook_ar": "مجلسك يتسع لـ 14 ضيفة براحة؟",
+  "room": {
+   "w": 5.0,
+   "l": 7.0,
+   "h": 3.2
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Sage Beige",
+    "code": "8584",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن وموزعوها",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#D9DBD1"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Rhode Island White",
+    "code": "A12GRDIL-WHE.M0X5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "متجر راك سيراميكس",
+    "locate_en": "floor",
+    "sample_color": true,
+    "hex": "#E7E7E3"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "NARRKOLV rattan pendant",
+    "code": "005.943.41",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "pendant lamp",
+    "sample_color": true,
+    "hex": "#8C6A4B"
+   },
+   {
+    "type_ar": "قطعة مختارة",
+    "name": "Pebble Capiz Shell Vase",
+    "code": "",
+    "brand": "Home Centre",
+    "where_ar": "فروع هوم سنتر",
+    "locate_en": "vase on the console",
+    "sample_color": true,
+    "hex": "#DCD8CA"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top-right corner of the ceiling cove lighting",
+     "adjust the reflection in the glossy floor tiles to match the room lighting",
+     "fix the slight blurriness and plastic texture on the cushions"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "overall good but minor flaws",
+    "raw": "https://v3b.fal.media/files/b/0ab3d7bb/rhAJHS8qnphNCFc5yd_GT_Yf0vajdQ.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-26_1300_womens-majlis-modern_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-26_1300_womens-majlis-modern_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-26_1300_womens-majlis-modern_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-26_1300_womens-majlis-modern_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-26_1300_womens-majlis-modern_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-26_1300_womens-majlis-modern_reel.mp4",
+  "reel_frame_sec": 2.4,
+  "reel_order": "reveal",
+  "created_riyadh": "2026-11-25 08:10"
  }
 ]
