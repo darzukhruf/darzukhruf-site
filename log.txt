@@ -1,8 +1,7 @@
-2026-11-25T12:09:05.761845+03:00
+2026-11-25T13:58:30.663834+03:00
 plan 200 53 rows 2026-11-26 23:00
-skip 2026-11-25 13:00 in 0:53:16.428146 done
-skip 2026-11-25 21:30 in 9:23:16.428146 done
-skip 2026-11-26 13:00 in 1 day, 0:53:16.428146 done
-skip 2026-11-26 21:30 in 1 day, 9:23:16.428146 done
-QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the top left curtain rod", "adjust the reflection in the right wardrobe door to match the room"], "inappropriate": false, "item_visible": true, "point": [0.28, 0.16], "reason": "Top left curtain rod is slightly bent."}
-OK 2026-11-26_2300_small-guest-bedroom- 3 images 
+skip 2026-11-25 21:30 in 7:31:29.826111 done
+skip 2026-11-26 13:00 in 23:01:29.826111 done
+skip 2026-11-26 21:30 in 1 day, 7:31:29.826111 done
+skip 2026-11-26 23:00 in 1 day, 9:01:29.826111 done
+buffer full or no specs
