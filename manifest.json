@@ -7112,5 +7112,98 @@
   "reel_frame_sec": 2.4,
   "reel_order": "reveal",
   "created_riyadh": "2026-11-25 08:10"
+ },
+ {
+  "id": "2026-11-26_2130_dining-room-six-warm",
+  "format": "single",
+  "category": "residential",
+  "slot": "2026-11-26 21:30",
+  "title_ar": "طعام لستة بدفء سكاندنافي",
+  "space_ar": "غرفة طعام 3.5×5 لستة أشخاص",
+  "style_ar": "سكاندنافي دافئ",
+  "palette_ar": "كراميل فاتح، كريمي، بلوط",
+  "reel_hook_ar": "طاولة لستة تتسع في 3.5×5؟",
+  "room": {
+   "w": 3.5,
+   "l": 5.0,
+   "h": 3.0
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Cashew",
+    "code": "1931",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن وموزعوها",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#C3BCAC"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Hard Wood Ivory",
+    "code": "A99GZHRD#IV0.W2S5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "متجر راك سيراميكس",
+    "locate_en": "floor",
+    "sample_color": true,
+    "hex": "#D9C9B4"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "Dexter Linen Pendant",
+    "code": "",
+    "brand": "Home Centre",
+    "where_ar": "فروع هوم سنتر",
+    "locate_en": "pendant lamp over the table",
+    "sample_color": true,
+    "hex": "#F6CB8C"
+   },
+   {
+    "type_ar": "السجادة",
+    "name": "BRÖNDEN wool rug",
+    "code": "705.329.72",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "rug under the table",
+    "sample_color": true,
+    "hex": "#917E68"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the wall line above the door frame",
+     "adjust the light reflection on the left wall above the door to be more natural",
+     "adjust the inconsistent shadow under the rightmost chair leg",
+     "fix the slight distortion in the lower left corner of the window frame"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.2,
+     0.05
+    ],
+    "reason": "slight curve",
+    "raw": "https://v3b.fal.media/files/b/0ab3dacd/S-H-onQNWkU89xkEHEkZl_sLOLdr9j.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-26_2130_dining-room-six-warm_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-26_2130_dining-room-six-warm_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-26_2130_dining-room-six-warm_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-26_2130_dining-room-six-warm_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-26_2130_dining-room-six-warm_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-26_2130_dining-room-six-warm_reel.mp4",
+  "reel_frame_sec": 2.4,
+  "reel_order": "reveal",
+  "created_riyadh": "2026-11-25 10:21"
  }
 ]
