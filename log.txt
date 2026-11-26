@@ -1,6 +1,9 @@
-2026-11-26T05:54:47.335043+03:00
-plan 200 53 rows 2026-11-26 23:00
-skip 2026-11-26 13:00 in 7:05:13.309088 done
-skip 2026-11-26 21:30 in 15:35:13.309088 done
-skip 2026-11-26 23:00 in 17:05:13.309088 done
-buffer full or no specs
+2026-11-26T08:09:32.953277+03:00
+plan 200 56 rows 2026-11-27 23:00
+skip 2026-11-26 13:00 in 4:52:17.902369 done
+skip 2026-11-26 21:30 in 13:22:17.902369 done
+skip 2026-11-26 23:00 in 14:52:17.902369 done
+skip 2026-11-27 21:30 in 1 day, 13:22:17.902369 
+skip 2026-11-27 23:00 in 1 day, 14:52:17.902369 
+QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the wall paneling lines on the left", "correct the perspective of the left wall paneling near the plant", "straighten the shelf lines in the background display", "adjust the lighting on the ceiling to be more even", "clarify the texture of the ceiling molding near the main light"], "inappropriate": false, "item_visible": true, "point": [0.5, 0.5], "reason": "Overall good, but subtle line inconsistencies and minor texture issues are present."}
+OK 2026-11-27_1300_sweets-bakery-shop-p 3 images 

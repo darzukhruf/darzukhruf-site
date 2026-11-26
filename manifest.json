@@ -7296,5 +7296,99 @@
   "reel_frame_sec": 2.4,
   "reel_order": "reveal",
   "created_riyadh": "2026-11-25 12:09"
+ },
+ {
+  "id": "2026-11-27_1300_sweets-bakery-shop-p",
+  "format": "single",
+  "category": "commercial",
+  "slot": "2026-11-27 13:00",
+  "title_ar": "محل حلويات بلمسة باريسية",
+  "space_ar": "محل حلويات صغير 4×6",
+  "style_ar": "كلاسيك باريسي ناعم",
+  "palette_ar": "بيج لوزي، رخام أبيض، وردي مغبر",
+  "reel_hook_ar": "كم زبون يرتاح بمحل 4×6؟",
+  "room": {
+   "w": 4.0,
+   "l": 6.0,
+   "h": 3.2
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Washed Linen",
+    "code": "10679",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن وموزعوها",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#E7E1D4"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Calacatta Gold White",
+    "code": "A05GCTAG-WHE.M0X0R",
+    "brand": "RAK Ceramics",
+    "where_ar": "معارض ومتجر راك",
+    "locate_en": "floor",
+    "sample_color": true,
+    "hex": "#E9E1DA"
+   },
+   {
+    "type_ar": "سطح العمل",
+    "name": "Calacatta Imperiale",
+    "code": "",
+    "brand": "RAK Ceramics",
+    "where_ar": "معارض ومتجر راك",
+    "locate_en": "display counter",
+    "sample_color": true,
+    "hex": "#ECE6DF"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "Dexter Linen Pendant Lamp",
+    "code": "",
+    "brand": "Home Centre",
+    "where_ar": "فروع هوم سنتر",
+    "locate_en": "pendant lamp",
+    "sample_color": true,
+    "hex": "#F4DDBD"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the wall paneling lines on the left",
+     "correct the perspective of the left wall paneling near the plant",
+     "straighten the shelf lines in the background display",
+     "adjust the lighting on the ceiling to be more even",
+     "clarify the texture of the ceiling molding near the main light"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "Overall good, but subtle line inconsistencies and minor texture issues are present.",
+    "raw": "https://v3b.fal.media/files/b/0ab3f976/APCOwF1aNxqBAleGycJIH_wVsrIT5e.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-27_1300_sweets-bakery-shop-p_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-27_1300_sweets-bakery-shop-p_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-27_1300_sweets-bakery-shop-p_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-27_1300_sweets-bakery-shop-p_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-27_1300_sweets-bakery-shop-p_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-27_1300_sweets-bakery-shop-p_reel.mp4",
+  "reel_frame_sec": 3.4,
+  "reel_order": "reveal",
+  "created_riyadh": "2026-11-26 08:09"
  }
 ]
