@@ -1,0 +1,28 @@
+name: site-health
+# فحص يومي إن الموقع الحي يفتح وفورم الطلب موجود (البروكسي يمنع الوكلاء من فتحه). بلا أسرار وبلا صرف.
+# قرار الـ CEO 26-11 (T-20261126-R1). النتيجة: نجاح/فشل التشغيل + ملخص الوظيفة. يملكه الـ CEO.
+on:
+  schedule:
+    - cron: '17 3 * * *'   # 06:17 الرياض
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check pages
+        run: |
+          fail=0
+          check () { # url  must-contain
+            code=$(curl -sL -o page.html -w '%{http_code}' --max-time 30 "$1" || echo 000)
+            if [ "$code" = "200" ] && grep -q "$2" page.html; then r="OK"; else r="FAIL"; fail=1; fi
+            echo "| $1 | $code | $r |" >> "$GITHUB_STEP_SUMMARY"
+            echo "$r $code $1"
+          }
+          echo "| الرابط | الكود | النتيجة |" >> "$GITHUB_STEP_SUMMARY"
+          echo "|---|---|---|" >> "$GITHUB_STEP_SUMMARY"
+          check "https://darzukhruf.netlify.app/" "name=\"request\""
+          check "https://darzukhruf.netlify.app/brief.html" "<form"
+          check "https://darzukhruf.github.io/darzukhruf-site/sample.html" "زخرف"
+          exit $fail
