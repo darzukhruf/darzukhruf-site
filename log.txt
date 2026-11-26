@@ -1,9 +1,9 @@
-2026-11-26T10:19:09.409732+03:00
+2026-11-26T12:06:16.348934+03:00
 plan 200 56 rows 2026-11-27 23:00
-skip 2026-11-26 13:00 in 2:43:14.251919 done
-skip 2026-11-26 21:30 in 11:13:14.251919 done
-skip 2026-11-26 23:00 in 12:43:14.251919 done
-skip 2026-11-27 13:00 in 1 day, 2:43:14.251919 done
-skip 2026-11-27 23:00 in 1 day, 12:43:14.251919 
-QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the top left decorative border", "straighten the top right decorative border", "straighten the decorative border above the fireplace", "adjust the shadow on the left wall to match the light source"], "inappropriate": false, "item_visible": true, "point": [0.5, 0.5], "reason": "overall good, but borders are slightly wavy and some lighting feels off"}
-OK 2026-11-27_2130_winter-annex-courtya 3 images 
+skip 2026-11-26 13:00 in 0:55:28.041245 done
+skip 2026-11-26 21:30 in 9:25:28.041245 done
+skip 2026-11-26 23:00 in 10:55:28.041245 done
+skip 2026-11-27 13:00 in 1 day, 0:55:28.041245 done
+skip 2026-11-27 21:30 in 1 day, 9:25:28.041245 done
+QA {"photoreal": 9, "artifacts": true, "major_artifacts": false, "issues": ["straighten the top left door frame", "adjust the reflection on the floor to match the light source", "smooth the texture of the plant leaves for a more natural look"], "inappropriate": false, "item_visible": true, "point": [0.05, 0.3], "reason": "door frame"}
+OK 2026-11-27_2300_home-reading-library 3 images 

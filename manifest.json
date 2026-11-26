@@ -7486,5 +7486,97 @@
   "reel_frame_sec": 3.4,
   "reel_order": "reveal",
   "created_riyadh": "2026-11-26 10:19"
+ },
+ {
+  "id": "2026-11-27_2300_home-reading-library",
+  "format": "single",
+  "category": "residential",
+  "slot": "2026-11-27 23:00",
+  "title_ar": "ركن قراءة بهدوء صناعي",
+  "space_ar": "غرفة قراءة 3×3.5",
+  "style_ar": "إندستريال ناعم",
+  "palette_ar": "رمادي طيني، خشب بني، أسود مطفي، زيتوني",
+  "reel_hook_ar": "غرفة 3×3.5 تصير مكتبة؟",
+  "room": {
+   "w": 3.0,
+   "l": 3.5,
+   "h": 3.0
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Sable Stone",
+    "code": "10342",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن وموزعوها",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#D1CBBF"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Kyoto Brown",
+    "code": "A45RKYOT-BRN.M0X0R",
+    "brand": "RAK Ceramics",
+    "where_ar": "معارض ومتجر راك",
+    "locate_en": "floor",
+    "sample_color": true,
+    "hex": "#836B55"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "KAPPELAND pendant",
+    "code": "496.040.51",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "pendant lamp",
+    "sample_color": true,
+    "hex": "#8F643A"
+   },
+   {
+    "type_ar": "قطعة مختارة",
+    "name": "TVERSTED rug",
+    "code": "405.608.05",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "rug",
+    "sample_color": true,
+    "hex": "#B1997A"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 9,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top left door frame",
+     "adjust the reflection on the floor to match the light source",
+     "smooth the texture of the plant leaves for a more natural look"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.05,
+     0.3
+    ],
+    "reason": "door frame",
+    "raw": "https://v3b.fal.media/files/b/0ab3ff03/0bx1q5IOmGSABK0qCBesV_uGQhbqDA.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-27_2300_home-reading-library_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-27_2300_home-reading-library_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-27_2300_home-reading-library_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-27_2300_home-reading-library_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-27_2300_home-reading-library_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-27_2300_home-reading-library_reel.mp4",
+  "reel_frame_sec": 3.4,
+  "reel_order": "reveal",
+  "created_riyadh": "2026-11-26 12:06"
  }
 ]
