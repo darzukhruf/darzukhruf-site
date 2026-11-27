@@ -7768,5 +7768,99 @@
   "reel_frame_sec": 2.4,
   "reel_order": "reveal",
   "created_riyadh": "2026-11-27 10:18"
+ },
+ {
+  "id": "2026-11-28_2300_small-laundry-room-w",
+  "format": "single",
+  "category": "residential",
+  "slot": "2026-11-28 23:00",
+  "title_ar": "غرفة غسيل صغيرة ومرتبة",
+  "space_ar": "غرفة غسيل 2×2.5",
+  "style_ar": "مينيمال دافئ",
+  "palette_ar": "أبيض بيضي، أبيض ناصع، خشب فاتح، لمسة خردلية",
+  "reel_hook_ar": "غرفة غسيل 2×2.5 بدون فوضى؟",
+  "room": {
+   "w": 2,
+   "l": 2.5,
+   "h": 2.9
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Egg White",
+    "code": "1001",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن المعتمدة",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#E0DDCE"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Rhode Island Beige",
+    "code": "A12GRDIL-BEE.M0X5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "معارض راك",
+    "locate_en": "floor",
+    "sample_color": true,
+    "hex": "#D1C9BC"
+   },
+   {
+    "type_ar": "سطح العمل",
+    "name": "Uni White",
+    "code": "A83GMAXI-HWH.X0C2P",
+    "brand": "RAK Ceramics",
+    "where_ar": "معارض راك",
+    "locate_en": "countertop",
+    "sample_color": true,
+    "hex": "#F0F0EE"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "Dexter Linen",
+    "code": "",
+    "brand": "Home Centre",
+    "where_ar": "فروع هوم سنتر",
+    "locate_en": "pendant lamp",
+    "sample_color": true,
+    "hex": "#B5A793"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top left shelf",
+     "adjust the top shelf to the wall line",
+     "remove glow from under the shelves",
+     "straighten the right vertical line of the cabinet",
+     "correct the perspective of the laundry basket, it appears to lean slightly to the right"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "Overall good, but some lines and perspective issues are visible on close inspection.",
+    "raw": "https://v3b.fal.media/files/b/0ab420c0/a_fe72A0zWNR6PU24kDGE_gIdX0gnm.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-28_2300_small-laundry-room-w_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-28_2300_small-laundry-room-w_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-28_2300_small-laundry-room-w_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-28_2300_small-laundry-room-w_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-28_2300_small-laundry-room-w_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-28_2300_small-laundry-room-w_reel.mp4",
+  "reel_frame_sec": 2.4,
+  "reel_order": "reveal",
+  "created_riyadh": "2026-11-27 12:06"
  }
 ]
