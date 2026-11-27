@@ -5643,7 +5643,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-20_1300_family-dining-room-i_plan_v2.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-20_1300_family-dining-room-i_plan_reel.mp4",
-  "created_riyadh": "2026-11-19 14:00"
+  "created_riyadh": "2026-11-19 14:00",
+  "pruned": true
  },
  {
   "id": "2026-11-20_2130_villa-entrance-bioph_plan",
@@ -5708,7 +5709,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-20_2130_villa-entrance-bioph_plan_v2.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-20_2130_villa-entrance-bioph_plan_reel.mp4",
-  "created_riyadh": "2026-11-19 21:58"
+  "created_riyadh": "2026-11-19 21:58",
+  "pruned": true
  },
  {
   "id": "2026-11-20_2300_abaya-boutique-showr_plan",
@@ -5773,7 +5775,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-20_2300_abaya-boutique-showr_plan_v2.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-20_2300_abaya-boutique-showr_plan_reel.mp4",
-  "created_riyadh": "2026-11-19 23:53"
+  "created_riyadh": "2026-11-19 23:53",
+  "pruned": true
  },
  {
   "id": "2026-11-21_1300_mens-majlis-mid-cent_plan",
@@ -7578,5 +7581,98 @@
   "reel_frame_sec": 3.4,
   "reel_order": "reveal",
   "created_riyadh": "2026-11-26 12:06"
+ },
+ {
+  "id": "2026-11-28_1300_newlyweds-bedroom-wa",
+  "format": "single",
+  "category": "residential",
+  "slot": "2026-11-28 13:00",
+  "title_ar": "غرفة عروسين بهدوء الجص",
+  "space_ar": "غرفة نوم عروسين 4×4.5",
+  "style_ar": "وابي سابي دافئ",
+  "palette_ar": "رمادي ضبابي، كريمي جيري، بلوط مدخّن",
+  "reel_hook_ar": "4×4.5 تكفي سرير ودولاب براحة؟",
+  "room": {
+   "w": 4,
+   "l": 4.5,
+   "h": 3
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Smoke",
+    "code": "CT-2109",
+    "brand": "الجزيرة",
+    "where_ar": "معارض الجزيرة للدهانات",
+    "locate_en": "walls",
+    "sample_color": true,
+    "hex": "#A0948B"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Clapton White",
+    "code": "",
+    "brand": "Navarti",
+    "where_ar": "أرض الفخامة",
+    "locate_en": "floor",
+    "sample_color": true,
+    "hex": "#C4C3BF"
+   },
+   {
+    "type_ar": "الستائر",
+    "name": "SILVERLÖNN",
+    "code": "104.939.78",
+    "brand": "IKEA",
+    "where_ar": "ايكيا السعودية",
+    "locate_en": "curtains",
+    "sample_color": true,
+    "hex": "#E0D4C5"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "NARRKOLV",
+    "code": "005.943.41",
+    "brand": "IKEA",
+    "where_ar": "ايكيا السعودية",
+    "locate_en": "pendant lamp",
+    "sample_color": true,
+    "hex": "#8F5E34"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the recessed ceiling line above the wardrobe",
+     "slightly soften the visible glowing edges around the ceiling light strips",
+     "straighten the top edge of the bedside table on the right",
+     "remove the slightly irregular reflection of the ceiling light on the top left of the wardrobe"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.2,
+     0.1
+    ],
+    "reason": "ceiling light",
+    "raw": "https://v3b.fal.media/files/b/0ab41b35/IxB7KViWZR5wT-QAVvNA__vxZ0tEM1.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-28_1300_newlyweds-bedroom-wa_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-28_1300_newlyweds-bedroom-wa_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-28_1300_newlyweds-bedroom-wa_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-28_1300_newlyweds-bedroom-wa_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-28_1300_newlyweds-bedroom-wa_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-28_1300_newlyweds-bedroom-wa_reel.mp4",
+  "reel_frame_sec": 2.4,
+  "reel_order": "reveal",
+  "created_riyadh": "2026-11-27 08:09"
  }
 ]
