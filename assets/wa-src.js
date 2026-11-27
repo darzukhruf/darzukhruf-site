@@ -8,6 +8,13 @@
     var i = new Image();
     i.referrerPolicy = 'unsafe-url';
     i.src = 'https://darzukhruf.netlify.app/favicon.svg?gh=1';
+    /* عدّاد مجهول مقروء (27-11، الـ CEO): Netlify ما يسجّل طلبات البكسل، فنعدّ بعدّاد عام بلا كوكيز (اسم الصفحة + المصدر فقط). يقراه site-health.yml يومياً */
+    var pg = (location.pathname.split('/').pop() || 'index').replace(/\.html$/, '').replace(/[^\w\-]/g, '').slice(0, 30) || 'index';
+    var sr = '';
+    try { sr = (new URLSearchParams(location.search).get('utm_source') || '').replace(/[^\w\-]/g, '').slice(0, 20); } catch (e) {}
+    var C = 'https://abacus.jasoncameron.dev/hit/darzukhruf/';
+    var hit = function(key){ try { fetch(C + key, {mode: 'no-cors', keepalive: true}); } catch (e) {} };
+    hit('pg-' + pg); hit('src-' + (sr || 'none')); hit('all-views');
   } catch (e) {}
 })();
 (function(){
@@ -31,6 +38,7 @@
       if (!a) return;
       var im = new Image(); im.referrerPolicy = 'unsafe-url';
       im.src = 'https://darzukhruf.netlify.app/favicon.svg?wa=' + encodeURIComponent(s) + '&t=' + Date.now();
+      if (/github\.io$/.test(location.hostname)) { try { fetch('https://abacus.jasoncameron.dev/hit/darzukhruf/wa-' + s.replace(/[^\w\-]/g, '').slice(0, 30), {mode: 'no-cors', keepalive: true}); } catch (e) {} }
     } catch (e) {}
   }, true);
   var links = document.querySelectorAll('a[href^="https://wa.me/966578771717"]');

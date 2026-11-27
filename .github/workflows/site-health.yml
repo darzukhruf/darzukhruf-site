@@ -26,3 +26,19 @@ jobs:
           check "https://darzukhruf.netlify.app/brief.html" "<form"
           check "https://darzukhruf.github.io/darzukhruf-site/sample.html" "زخرف"
           exit $fail
+      - name: visit counters
+        if: always()
+        continue-on-error: true
+        run: |
+          # عدّاد زيارات github.io المجهول (assets/wa-src.js). القراءة فقط، بلا أسرار.
+          C=https://abacus.jasoncameron.dev/get/darzukhruf
+          echo "" >> "$GITHUB_STEP_SUMMARY"; echo "| العدّاد | القيمة |" >> "$GITHUB_STEP_SUMMARY"; echo "|---|---|" >> "$GITHUB_STEP_SUMMARY"
+          keys="all-views src-none src-pinterest src-tiktok src-instagram"
+          for p in index $(curl -s --max-time 20 https://darzukhruf.github.io/darzukhruf-site/sitemap.xml | grep -o '<loc>[^<]*' | sed 's#.*/##; s#\.html$##'); do keys="$keys pg-$p wa-gh-$p"; done
+          for k in $keys; do
+            v=$(curl -s --max-time 10 "$C/$k" | grep -o '"value":[0-9]*' | cut -d: -f2)
+            echo "COUNT $k=${v:-0}"
+            [ -n "$v" ] && echo "| $k | $v |" >> "$GITHUB_STEP_SUMMARY"
+          done
+          echo "HITTEST $(curl -s --max-time 10 https://abacus.jasoncameron.dev/hit/darzukhruf/ci-probe)"
+          echo "PROBE $(curl -s -o /dev/null -w '%{http_code}' --max-time 10 https://abacus.jasoncameron.dev/info/darzukhruf/all-views)"
