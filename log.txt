@@ -1,9 +1,9 @@
-2026-11-27T08:09:23.698979+03:00
+2026-11-27T10:18:58.115571+03:00
 plan 200 59 rows 2026-11-28 23:00
-skip 2026-11-27 13:00 in 4:52:23.790048 done
-skip 2026-11-27 21:30 in 13:22:23.790048 done
-skip 2026-11-27 23:00 in 14:52:23.790048 done
-skip 2026-11-28 21:30 in 1 day, 13:22:23.790048 
-skip 2026-11-28 23:00 in 1 day, 14:52:23.790048 
-QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the recessed ceiling line above the wardrobe", "slightly soften the visible glowing edges around the ceiling light strips", "straighten the top edge of the bedside table on the right", "remove the slightly irregular reflection of the ceiling light on the top left of the wardrobe"], "inappropriate": false, "item_visible": true, "point": [0.2, 0.1], "reason": "ceiling light"}
-OK 2026-11-28_1300_newlyweds-bedroom-wa 3 images 
+skip 2026-11-27 13:00 in 2:42:42.388954 done
+skip 2026-11-27 21:30 in 11:12:42.388954 done
+skip 2026-11-27 23:00 in 12:42:42.388954 done
+skip 2026-11-28 13:00 in 1 day, 2:42:42.388954 done
+skip 2026-11-28 23:00 in 1 day, 12:42:42.388954 
+QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the top left ceiling trim", "correct the perspective of the left pendant light", "straighten the left wall on the right side of the image", "adjust the shadow direction under the large olive tree to match other shadows", "refine the texture of the floor to reduce repetitive tiling pattern"], "inappropriate": false, "item_visible": true, "point": [0.5, 0.5], "reason": "Overall very good, but minor perspective issues and repetitive textures are present."}
+OK 2026-11-28_2130_specialty-cafe-moder 3 images 

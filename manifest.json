@@ -7674,5 +7674,99 @@
   "reel_frame_sec": 2.4,
   "reel_order": "reveal",
   "created_riyadh": "2026-11-27 08:09"
+ },
+ {
+  "id": "2026-11-28_2130_specialty-cafe-moder",
+  "format": "single",
+  "category": "commercial",
+  "slot": "2026-11-28 21:30",
+  "title_ar": "كافيه متوسطي لعشرة ضيوف",
+  "space_ar": "كافيه مختص 5×7",
+  "style_ar": "متوسطي حديث",
+  "palette_ar": "أزرق ميناء، أبيض جيري، ترافرتين، خشب زان",
+  "reel_hook_ar": "كم ضيف يتسع كافيه 5×7؟",
+  "room": {
+   "w": 5,
+   "l": 7,
+   "h": 3.4
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Deco Blue",
+    "code": "4477",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن المعتمدة",
+    "locate_en": "back wall",
+    "sample_color": true,
+    "hex": "#365A84"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Navona Greige",
+    "code": "",
+    "brand": "Navarti",
+    "where_ar": "أرض الفخامة",
+    "locate_en": "floor",
+    "sample_color": true,
+    "hex": "#C6BBAF"
+   },
+   {
+    "type_ar": "سطح الكاونتر",
+    "name": "Travertine Osso Light Beige",
+    "code": "",
+    "brand": "RAK Ceramics",
+    "where_ar": "معارض راك",
+    "locate_en": "counter",
+    "sample_color": true,
+    "hex": "#BCA891"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "KAPPELAND / HAVSDJUP",
+    "code": "496.040.51",
+    "brand": "IKEA",
+    "where_ar": "ايكيا السعودية",
+    "locate_en": "pendant lamps",
+    "sample_color": true,
+    "hex": "#B69B73"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top left ceiling trim",
+     "correct the perspective of the left pendant light",
+     "straighten the left wall on the right side of the image",
+     "adjust the shadow direction under the large olive tree to match other shadows",
+     "refine the texture of the floor to reduce repetitive tiling pattern"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "Overall very good, but minor perspective issues and repetitive textures are present.",
+    "raw": "https://v3b.fal.media/files/b/0ab41e40/DtX_z8Ue2l2T465y6hMMn_JKkbCrsa.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-28_2130_specialty-cafe-moder_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-28_2130_specialty-cafe-moder_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-28_2130_specialty-cafe-moder_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-28_2130_specialty-cafe-moder_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-28_2130_specialty-cafe-moder_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-28_2130_specialty-cafe-moder_reel.mp4",
+  "reel_frame_sec": 2.4,
+  "reel_order": "reveal",
+  "created_riyadh": "2026-11-27 10:18"
  }
 ]
