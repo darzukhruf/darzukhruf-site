@@ -1,8 +1,9 @@
-2026-11-28T08:01:22.116522+03:00
+2026-11-28T10:12:04.513669+03:00
 plan 200 61 rows 2026-11-29 21:30
-skip 2026-11-28 13:00 in 5:00:19.648589 done
-skip 2026-11-28 21:30 in 13:30:19.648589 done
-skip 2026-11-28 23:00 in 15:00:19.648589 done
-skip 2026-11-29 21:30 in 1 day, 13:30:19.648589 
-QA {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the top edge of the recessed ceiling light", "adjust the shadow under the coffee table to be more consistent with the light source", "fix the slight distortion in the lower left corner of the painting on the back wall"], "inappropriate": false, "item_visible": true, "point": [0.5, 0.5], "reason": "General shot of the room"}
-OK 2026-11-29_1300_mens-majlis-organic- 3 images 
+skip 2026-11-28 13:00 in 2:49:53.272598 done
+skip 2026-11-28 21:30 in 11:19:53.272598 done
+skip 2026-11-28 23:00 in 12:49:53.272598 done
+skip 2026-11-29 13:00 in 1 day, 2:49:53.272598 done
+QA {"photoreal": 8, "artifacts": true, "major_artifacts": true, "issues": ["straighten the top left mirror frame, it is slightly bent inwards", "correct the perspective of the arch in the rightmost picture frame, it is skewed", "adjust the shadow on the right wall under the picture frame, it appears too dark and harsh", "straighten the lines of the fluted desk in the foreground right, they are slightly wavy", "fix the floating leg of the stool in the foreground right, the front-left leg is not touching the floor", "adjust the texture on the floor tiles, some are blurry and inconsistent"], "inappropriate": false, "item_visible": true, "point": [0.5, 0.5], "reason": "Overall good, but noticeable issues in perspective, alignment, and a floating furniture leg."}
+REPAIR 1 straighten the top left mirror frame, it is slightly bent inwards; correct the perspective of the arch in the rightmost picture frame, it is skewed; adjust the shadow on the right wall under the picture frame, it appears too dark and harsh; straighten the lines of the fluted desk in the foreground right, they are slightly wavy; fix the floating leg of the stool in the foreground right, the front-left leg is not touching the floor -> {"photoreal": 8, "artifacts": true, "major_artifacts": false, "issues": ["straighten the top edge of the recessed shelf on the back wall", "adjust the light reflection on the floor to be more consistent with the ceiling lights", "smooth out the slight plastic texture on the cushions of the waiting sofa", "ensure the wall sconces cast consistent light and shadows on the wall"], "inappropriate": false, "item_visible": true, "point": [0.73, 0.28], "reason": "slightly wobbly top edge"}
+OK 2026-11-29_2130_womens-salon-soft-ne 3 images 
