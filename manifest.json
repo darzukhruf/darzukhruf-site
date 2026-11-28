@@ -5841,7 +5841,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_1300_mens-majlis-mid-cent_plan_v2.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_1300_mens-majlis-mid-cent_plan_reel.mp4",
-  "created_riyadh": "2026-11-20 14:00"
+  "created_riyadh": "2026-11-20 14:00",
+  "pruned": true
  },
  {
   "id": "2026-11-21_2130_studio-apartment-wab_plan",
@@ -5906,7 +5907,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_2130_studio-apartment-wab_plan_v2.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_2130_studio-apartment-wab_plan_reel.mp4",
-  "created_riyadh": "2026-11-20 21:58"
+  "created_riyadh": "2026-11-20 21:58",
+  "pruned": true
  },
  {
   "id": "2026-11-21_2300_guest-powder-room-mo_plan",
@@ -5971,7 +5973,8 @@
    "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_2300_guest-powder-room-mo_plan_v2.jpg"
   ],
   "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-21_2300_guest-powder-room-mo_plan_reel.mp4",
-  "created_riyadh": "2026-11-20 23:50"
+  "created_riyadh": "2026-11-20 23:50",
+  "pruned": true
  },
  {
   "id": "2026-11-21_2130_studio-apartment-wab",
@@ -7862,5 +7865,97 @@
   "reel_frame_sec": 2.4,
   "reel_order": "reveal",
   "created_riyadh": "2026-11-27 12:06"
+ },
+ {
+  "id": "2026-11-29_1300_mens-majlis-organic-",
+  "format": "single",
+  "category": "residential",
+  "slot": "2026-11-29 13:00",
+  "title_ar": "مجلس رجال بدفء البني",
+  "space_ar": "مجلس رجال 4×5",
+  "style_ar": "أورقانيك مودرن",
+  "palette_ar": "بني فانديك، أبيض طبيعي، رملي، جوز",
+  "reel_hook_ar": "مجلس 4×5 يكفي عشرة بدون زحمة؟",
+  "room": {
+   "w": 4.0,
+   "l": 5.0,
+   "h": 3.1
+  },
+  "materials": [
+   {
+    "type_ar": "البوية · أقرب درجة",
+    "name": "Vandyke Brown",
+    "code": "10249",
+    "brand": "Jotun",
+    "where_ar": "معارض جوتن وموزعوها",
+    "locate_en": "north wall",
+    "sample_color": true,
+    "hex": "#4B281B"
+   },
+   {
+    "type_ar": "الأرضية",
+    "name": "Line Wood Beige",
+    "code": "A99GZLNW#DBE.W2S5R",
+    "brand": "RAK Ceramics",
+    "where_ar": "متجر راك سيراميكس",
+    "locate_en": "floor",
+    "sample_color": true,
+    "hex": "#B59374"
+   },
+   {
+    "type_ar": "قطعة مختارة",
+    "name": "UGGLERUM walnut table",
+    "code": "",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "coffee table",
+    "sample_color": true,
+    "hex": "#5F3E27"
+   },
+   {
+    "type_ar": "الإضاءة",
+    "name": "STOCKHOLM 2025 table lamp",
+    "code": "905.859.31",
+    "brand": "IKEA",
+    "where_ar": "ايكيا الرياض وجدة والدمام",
+    "locate_en": "table lamp on the console",
+    "sample_color": true,
+    "hex": "#E7D3BB"
+   }
+  ],
+  "qa": [
+   {
+    "photoreal": 8,
+    "artifacts": true,
+    "major_artifacts": false,
+    "issues": [
+     "straighten the top edge of the recessed ceiling light",
+     "adjust the shadow under the coffee table to be more consistent with the light source",
+     "fix the slight distortion in the lower left corner of the painting on the back wall"
+    ],
+    "inappropriate": false,
+    "item_visible": true,
+    "point": [
+     0.5,
+     0.5
+    ],
+    "reason": "General shot of the room",
+    "raw": "https://v3b.fal.media/files/b/0ab43cc6/4B4GIwPKT5m5V1Xl-VySI_XKno9aAK.jpg"
+   }
+  ],
+  "notes": "",
+  "images": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-29_1300_mens-majlis-organic-_1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-29_1300_mens-majlis-organic-_2_board.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-29_1300_mens-majlis-organic-_3_plan.jpg"
+  ],
+  "stories": [
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-29_1300_mens-majlis-organic-_s1.jpg",
+   "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-29_1300_mens-majlis-organic-_s2.jpg"
+  ],
+  "reel": "https://raw.githubusercontent.com/darzukhruf/darzukhruf-site/media/gen/2026-11-29_1300_mens-majlis-organic-_reel.mp4",
+  "reel_frame_sec": 3.4,
+  "reel_order": "reveal",
+  "created_riyadh": "2026-11-28 08:01"
  }
 ]
